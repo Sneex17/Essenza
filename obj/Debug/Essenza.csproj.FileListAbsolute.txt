@@ -1,0 +1,169 @@
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Essenza.exe.config
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Essenza.exe
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Essenza.pdb
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.csproj.AssemblyReference.cache
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Form1.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.MenuPrincipal.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Properties.Resources.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.csproj.GenerateResource.cache
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.csproj.CoreCompileInputs.cache
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.exe
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.pdb
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.exe.config
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.RegistroClientes.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.RegistrationEmployee.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.EmployeeReports.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.ReportesClientes.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\DocumentFormat.OpenXml.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\OpenXmlPowerTools.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\SpreadsheetLight.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\System.Drawing.Common.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\System.IO.Packaging.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\System.Management.Automation.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\DocumentFormat.OpenXml.xml
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\SpreadsheetLight.xml
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\System.IO.Packaging.xml
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.csproj.Up2Date
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.RegistroInventarios.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Essenza.exe.config
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Essenza.exe
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Essenza.pdb
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\DocumentFormat.OpenXml.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Microsoft.ReportViewer.Common.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Microsoft.ReportViewer.Design.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\Microsoft.SqlServer.Types.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\OpenXmlPowerTools.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\SpreadsheetLight.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\System.Drawing.Common.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\System.IO.Packaging.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\System.Management.Automation.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\EnvDTE.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\stdole.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\DocumentFormat.OpenXml.xml
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\SpreadsheetLight.xml
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\System.Drawing.Common.pdb
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\System.Drawing.Common.xml
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\System.IO.Packaging.xml
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.csproj.AssemblyReference.cache
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.exe.config
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Form1.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.EmployeeReports.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.MenuPrincipal.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.RegistrationEmployee.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.RegistroClientes.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.RegistroInventarios.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.ReporteInventario.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Forms.ReportesClientes.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.Properties.Resources.resources
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.csproj.GenerateResource.cache
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.csproj.CoreCompileInputs.cache
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.csproj.Up2Date
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.exe
+S:\xrami\Downloads\Nueva carpeta\Essenza\obj\Debug\Essenza.pdb
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Microsoft.ReportViewer.Common.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Microsoft.ReportViewer.Design.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\Microsoft.SqlServer.Types.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\EnvDTE.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\stdole.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\System.Drawing.Common.pdb
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\System.Drawing.Common.xml
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.Forms.RegistroSuplidores.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.AcercaDe.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.FormsReportes.ReportesSuplidores.resources
+S:\xrami\OneDrive - Universidad Central del Este\Trabajos de Programación Media ISW-123-1\Proyecto Final\Essenza\obj\Debug\Essenza.FormsReportes.ReportesInventarios.resources
