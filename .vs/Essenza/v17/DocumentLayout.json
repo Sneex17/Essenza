@@ -1,54 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\",
+  "WorkspaceRootPath": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\forms\\registroinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registroinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|s:\\xrami\\onedrive - universidad central del este\\trabajos de programaci\u00F3n media isw-123-1\\proyecto final\\essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\forms\\registroinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registroinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\clases\\suplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\clases\\suplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\suplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\employeereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\employeereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\reportesclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\reportesclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\registrationemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrationemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clases\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\registrationemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrationemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsRepores\\ReporteInventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FormsRepores\\ReporteInventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,19 +50,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MenuPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\MenuPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T15:25:19.654Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
+              "RelativeToolTip": "Forms\\MenuPrincipal.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAADwvwIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T18:59:17.887Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportesSuplidores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesSuplidores.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormsReportes\\ReportesSuplidores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:10:06.133Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Bookmark",
@@ -78,69 +98,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReportesSuplidores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\ReportesSuplidores.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormsReportes\\ReportesSuplidores.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "RegistroInventarios.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroInventarios.cs",
+              "RelativeDocumentMoniker": "Forms\\RegistroInventarios.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroInventarios.cs",
+              "RelativeToolTip": "Forms\\RegistroInventarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:10:06.133Z",
+              "WhenOpened": "2025-10-21T20:31:44.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistroInventarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroInventarios.cs",
+              "RelativeDocumentMoniker": "Forms\\RegistroInventarios.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroInventarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\RegistroInventarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:31:40.376Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MenuPrincipal.cs",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
-              "RelativeToolTip": "Forms\\MenuPrincipal.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAgwAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:59:17.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReportesClientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\ReportesClientes.cs",
-              "RelativeDocumentMoniker": "Forms\\ReportesClientes.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\ReportesClientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\ReportesClientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:57:52.353Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RegistrationEmployee.cs",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistrationEmployee.cs",
-              "RelativeDocumentMoniker": "Forms\\RegistrationEmployee.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistrationEmployee.cs",
-              "RelativeToolTip": "Forms\\RegistrationEmployee.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Categorias.cs",
+              "RelativeDocumentMoniker": "Clases\\Categorias.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Categorias.cs",
+              "RelativeToolTip": "Clases\\Categorias.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:46:51.231Z"
+              "WhenOpened": "2025-10-21T20:21:42.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegistrationEmployee.cs [Dise\u00F1o]",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistrationEmployee.cs",
-              "RelativeDocumentMoniker": "Forms\\RegistrationEmployee.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistrationEmployee.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\RegistrationEmployee.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:21:36.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "RegistroSuplidores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
               "RelativeDocumentMoniker": "Forms\\RegistroSuplidores.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\RegistroSuplidores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T17:27:46.263Z",
@@ -148,22 +148,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmployeeReports.cs [Dise\u00F1o]",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\EmployeeReports.cs",
-              "RelativeDocumentMoniker": "Forms\\EmployeeReports.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\EmployeeReports.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\EmployeeReports.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:11:47.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "ReportesSuplidores.cs",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
               "RelativeDocumentMoniker": "FormsReportes\\ReportesSuplidores.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
               "RelativeToolTip": "FormsReportes\\ReportesSuplidores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -172,35 +161,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Suplidores.cs",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Clases\\Suplidores.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Suplidores.cs",
               "RelativeDocumentMoniker": "Clases\\Suplidores.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Clases\\Suplidores.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Suplidores.cs",
               "RelativeToolTip": "Clases\\Suplidores.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAiwAoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:44:10.449Z"
+              "WhenOpened": "2025-10-21T17:44:10.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReporteInventario.cs",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsRepores\\ReporteInventario.cs",
-              "RelativeDocumentMoniker": "FormsRepores\\ReporteInventario.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\FormsRepores\\ReporteInventario.cs",
-              "RelativeToolTip": "FormsRepores\\ReporteInventario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:02:03.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "RegistroSuplidores.cs",
-              "DocumentMoniker": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
               "RelativeDocumentMoniker": "Forms\\RegistroSuplidores.cs",
-              "ToolTip": "S:\\xrami\\OneDrive - Universidad Central del Este\\Trabajos de Programaci\u00F3n Media ISW-123-1\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
               "RelativeToolTip": "Forms\\RegistroSuplidores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
