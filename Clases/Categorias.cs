@@ -8,5 +8,7 @@ namespace Essenza.Clases
 {
     public class Categorias
     {
+        public int id_categoria {  get; set; }
+        public string categoria { get; set; }
     }
 }
