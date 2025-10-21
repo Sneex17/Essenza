@@ -11,36 +11,24 @@
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registroinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\clases\\suplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\suplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clases\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\registrosuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clases\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MenuPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
@@ -77,7 +65,7 @@
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
               "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeToolTip": "Forms\\MenuPrincipal.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAADwvwIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T18:59:17.887Z",
               "IsPinned": true,
@@ -85,15 +73,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReportesSuplidores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\ReportesSuplidores.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormsReportes\\ReportesSuplidores.cs [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "Inventarios.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Inventarios.cs",
+              "RelativeDocumentMoniker": "Clases\\Inventarios.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Inventarios.cs",
+              "RelativeToolTip": "Clases\\Inventarios.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAmwFUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:10:06.133Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-10-21T23:11:06.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportesInventarios.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesInventarios.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs",
+              "RelativeToolTip": "FormsReportes\\ReportesInventarios.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:08:48.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportesInventarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesInventarios.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormsReportes\\ReportesInventarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:08:44.285Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
@@ -104,9 +117,9 @@
               "RelativeDocumentMoniker": "Forms\\RegistroInventarios.cs",
               "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroInventarios.cs",
               "RelativeToolTip": "Forms\\RegistroInventarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAADwv80AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:31:44.525Z",
+              "WhenOpened": "2025-10-21T22:44:42.613Z",
               "EditorCaption": ""
             },
             {
@@ -118,72 +131,8 @@
               "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroInventarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\RegistroInventarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:31:40.376Z",
+              "WhenOpened": "2025-10-21T22:44:32.414Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Categorias.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Categorias.cs",
-              "RelativeDocumentMoniker": "Clases\\Categorias.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Categorias.cs",
-              "RelativeToolTip": "Clases\\Categorias.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:21:42.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistroSuplidores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
-              "RelativeDocumentMoniker": "Forms\\RegistroSuplidores.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\RegistroSuplidores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:27:46.263Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReportesSuplidores.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\ReportesSuplidores.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
-              "RelativeToolTip": "FormsReportes\\ReportesSuplidores.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:14:09.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Suplidores.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Suplidores.cs",
-              "RelativeDocumentMoniker": "Clases\\Suplidores.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Suplidores.cs",
-              "RelativeToolTip": "Clases\\Suplidores.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAiwAoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:44:10.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegistroSuplidores.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
-              "RelativeDocumentMoniker": "Forms\\RegistroSuplidores.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\RegistroSuplidores.cs",
-              "RelativeToolTip": "Forms\\RegistroSuplidores.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T18:19:04.968Z",
-              "EditorCaption": ""
             }
           ]
         }

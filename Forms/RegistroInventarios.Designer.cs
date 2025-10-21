@@ -33,9 +33,9 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.BuBuscarE = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.BuRegister = new System.Windows.Forms.Button();
-            this.BuUpdate = new System.Windows.Forms.Button();
-            this.BuDeleteE = new System.Windows.Forms.Button();
+            this.BuRegistroInventario = new System.Windows.Forms.Button();
+            this.BuUpdateInventario = new System.Windows.Forms.Button();
+            this.BuDeleteInventario = new System.Windows.Forms.Button();
             this.dateIngreso = new System.Windows.Forms.DateTimePicker();
             this.txtPventas = new System.Windows.Forms.TextBox();
             this.txtPcompras = new System.Windows.Forms.TextBox();
@@ -67,9 +67,9 @@
             this.plDock.Controls.Add(this.txtDescripcion);
             this.plDock.Controls.Add(this.BuBuscarE);
             this.plDock.Controls.Add(this.label1);
-            this.plDock.Controls.Add(this.BuRegister);
-            this.plDock.Controls.Add(this.BuUpdate);
-            this.plDock.Controls.Add(this.BuDeleteE);
+            this.plDock.Controls.Add(this.BuRegistroInventario);
+            this.plDock.Controls.Add(this.BuUpdateInventario);
+            this.plDock.Controls.Add(this.BuDeleteInventario);
             this.plDock.Controls.Add(this.dateIngreso);
             this.plDock.Controls.Add(this.txtPventas);
             this.plDock.Controls.Add(this.txtPcompras);
@@ -128,6 +128,7 @@
             this.BuBuscarE.TabIndex = 70;
             this.BuBuscarE.Text = "Buscar";
             this.BuBuscarE.UseVisualStyleBackColor = false;
+            this.BuBuscarE.Click += new System.EventHandler(this.BuBuscarE_Click);
             // 
             // label1
             // 
@@ -139,53 +140,56 @@
             this.label1.TabIndex = 67;
             this.label1.Text = "Buscador";
             // 
-            // BuRegister
+            // BuRegistroInventario
             // 
-            this.BuRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuRegister.FlatAppearance.BorderSize = 0;
-            this.BuRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BuRegister.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuRegister.ForeColor = System.Drawing.Color.White;
-            this.BuRegister.Location = new System.Drawing.Point(626, 54);
-            this.BuRegister.Name = "BuRegister";
-            this.BuRegister.Size = new System.Drawing.Size(105, 27);
-            this.BuRegister.TabIndex = 65;
-            this.BuRegister.Text = "Register";
-            this.BuRegister.UseVisualStyleBackColor = false;
+            this.BuRegistroInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuRegistroInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuRegistroInventario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuRegistroInventario.FlatAppearance.BorderSize = 0;
+            this.BuRegistroInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuRegistroInventario.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuRegistroInventario.ForeColor = System.Drawing.Color.White;
+            this.BuRegistroInventario.Location = new System.Drawing.Point(626, 54);
+            this.BuRegistroInventario.Name = "BuRegistroInventario";
+            this.BuRegistroInventario.Size = new System.Drawing.Size(105, 27);
+            this.BuRegistroInventario.TabIndex = 65;
+            this.BuRegistroInventario.Text = "Register";
+            this.BuRegistroInventario.UseVisualStyleBackColor = false;
+            this.BuRegistroInventario.Click += new System.EventHandler(this.BuRegistroInventario_Click);
             // 
-            // BuUpdate
+            // BuUpdateInventario
             // 
-            this.BuUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuUpdate.FlatAppearance.BorderSize = 0;
-            this.BuUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BuUpdate.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuUpdate.ForeColor = System.Drawing.Color.White;
-            this.BuUpdate.Location = new System.Drawing.Point(626, 131);
-            this.BuUpdate.Name = "BuUpdate";
-            this.BuUpdate.Size = new System.Drawing.Size(105, 27);
-            this.BuUpdate.TabIndex = 64;
-            this.BuUpdate.Text = "Update";
-            this.BuUpdate.UseVisualStyleBackColor = false;
+            this.BuUpdateInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuUpdateInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuUpdateInventario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuUpdateInventario.FlatAppearance.BorderSize = 0;
+            this.BuUpdateInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuUpdateInventario.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuUpdateInventario.ForeColor = System.Drawing.Color.White;
+            this.BuUpdateInventario.Location = new System.Drawing.Point(626, 131);
+            this.BuUpdateInventario.Name = "BuUpdateInventario";
+            this.BuUpdateInventario.Size = new System.Drawing.Size(105, 27);
+            this.BuUpdateInventario.TabIndex = 64;
+            this.BuUpdateInventario.Text = "Update";
+            this.BuUpdateInventario.UseVisualStyleBackColor = false;
+            this.BuUpdateInventario.Click += new System.EventHandler(this.BuUpdateInventario_Click);
             // 
-            // BuDeleteE
+            // BuDeleteInventario
             // 
-            this.BuDeleteE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuDeleteE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuDeleteE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuDeleteE.FlatAppearance.BorderSize = 0;
-            this.BuDeleteE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BuDeleteE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuDeleteE.ForeColor = System.Drawing.Color.White;
-            this.BuDeleteE.Location = new System.Drawing.Point(626, 205);
-            this.BuDeleteE.Name = "BuDeleteE";
-            this.BuDeleteE.Size = new System.Drawing.Size(105, 27);
-            this.BuDeleteE.TabIndex = 63;
-            this.BuDeleteE.Text = "Delete";
-            this.BuDeleteE.UseVisualStyleBackColor = false;
+            this.BuDeleteInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuDeleteInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuDeleteInventario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuDeleteInventario.FlatAppearance.BorderSize = 0;
+            this.BuDeleteInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuDeleteInventario.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuDeleteInventario.ForeColor = System.Drawing.Color.White;
+            this.BuDeleteInventario.Location = new System.Drawing.Point(626, 205);
+            this.BuDeleteInventario.Name = "BuDeleteInventario";
+            this.BuDeleteInventario.Size = new System.Drawing.Size(105, 27);
+            this.BuDeleteInventario.TabIndex = 63;
+            this.BuDeleteInventario.Text = "Delete";
+            this.BuDeleteInventario.UseVisualStyleBackColor = false;
+            this.BuDeleteInventario.Click += new System.EventHandler(this.BuDeleteInventario_Click);
             // 
             // dateIngreso
             // 
@@ -395,7 +399,7 @@
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistroInventarios";
             this.Text = "RegistroInventarios";
             this.plDock.ResumeLayout(false);
@@ -412,9 +416,9 @@
         private System.Windows.Forms.Panel plDock;
         private System.Windows.Forms.Button BuBuscarE;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BuRegister;
-        private System.Windows.Forms.Button BuUpdate;
-        private System.Windows.Forms.Button BuDeleteE;
+        private System.Windows.Forms.Button BuRegistroInventario;
+        private System.Windows.Forms.Button BuUpdateInventario;
+        private System.Windows.Forms.Button BuDeleteInventario;
         private System.Windows.Forms.DateTimePicker dateIngreso;
         private System.Windows.Forms.TextBox txtPventas;
         private System.Windows.Forms.TextBox txtPcompras;

@@ -144,6 +144,7 @@
             this.dataListSuplidores.RowHeadersWidth = 51;
             this.dataListSuplidores.Size = new System.Drawing.Size(674, 325);
             this.dataListSuplidores.TabIndex = 0;
+            this.dataListSuplidores.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListSuplidores_CellDoubleClick);
             // 
             // plTop
             // 

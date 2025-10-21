@@ -49,8 +49,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.plTop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.plDock.SuspendLayout();
             this.plTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,6 +99,7 @@
             this.BuBuscarSuplidor.TabIndex = 70;
             this.BuBuscarSuplidor.Text = "Buscar";
             this.BuBuscarSuplidor.UseVisualStyleBackColor = false;
+            this.BuBuscarSuplidor.Click += new System.EventHandler(this.BuBuscarSuplidor_Click);
             // 
             // label1
             // 
@@ -142,6 +143,7 @@
             this.BuUpdateSuplidor.TabIndex = 64;
             this.BuUpdateSuplidor.Text = "Update";
             this.BuUpdateSuplidor.UseVisualStyleBackColor = false;
+            this.BuUpdateSuplidor.Click += new System.EventHandler(this.BuUpdateSuplidor_Click);
             // 
             // BuDeleteSuplidor
             // 
@@ -158,6 +160,7 @@
             this.BuDeleteSuplidor.TabIndex = 63;
             this.BuDeleteSuplidor.Text = "Delete";
             this.BuDeleteSuplidor.UseVisualStyleBackColor = false;
+            this.BuDeleteSuplidor.Click += new System.EventHandler(this.BuDeleteSuplidor_Click);
             // 
             // cbxEstadoS
             // 
@@ -318,17 +321,6 @@
             this.plTop.Size = new System.Drawing.Size(784, 54);
             this.plTop.TabIndex = 15;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(103, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 22);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Registro de Suplidores";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -339,6 +331,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(103, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 22);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Registro de Suplidores";
             // 
             // RegistroSuplidores
             // 

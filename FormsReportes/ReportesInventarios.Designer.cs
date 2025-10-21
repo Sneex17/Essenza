@@ -36,12 +36,12 @@
             this.cbxFilroInventarios = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFilterInventarios = new System.Windows.Forms.TextBox();
-            this.dataReportsInventarios = new System.Windows.Forms.DataGridView();
+            this.dataListInventarios = new System.Windows.Forms.DataGridView();
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.plDock.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataReportsInventarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListInventarios)).BeginInit();
             this.plTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             this.plDock.Controls.Add(this.cbxFilroInventarios);
             this.plDock.Controls.Add(this.label1);
             this.plDock.Controls.Add(this.txtFilterInventarios);
-            this.plDock.Controls.Add(this.dataReportsInventarios);
+            this.plDock.Controls.Add(this.dataListInventarios);
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
@@ -111,14 +111,14 @@
             this.txtFilterInventarios.Size = new System.Drawing.Size(436, 21);
             this.txtFilterInventarios.TabIndex = 67;
             // 
-            // dataReportsInventarios
+            // dataListInventarios
             // 
-            this.dataReportsInventarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataListInventarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataReportsInventarios.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            this.dataReportsInventarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataReportsInventarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataListInventarios.BackgroundColor = System.Drawing.Color.LightSteelBlue;
+            this.dataListInventarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataListInventarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,8 +126,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataReportsInventarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataReportsInventarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListInventarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataListInventarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,15 +135,16 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataReportsInventarios.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataReportsInventarios.EnableHeadersVisualStyles = false;
-            this.dataReportsInventarios.Location = new System.Drawing.Point(49, 78);
-            this.dataReportsInventarios.MaximumSize = new System.Drawing.Size(674, 325);
-            this.dataReportsInventarios.MinimumSize = new System.Drawing.Size(674, 325);
-            this.dataReportsInventarios.Name = "dataReportsInventarios";
-            this.dataReportsInventarios.RowHeadersWidth = 51;
-            this.dataReportsInventarios.Size = new System.Drawing.Size(674, 325);
-            this.dataReportsInventarios.TabIndex = 0;
+            this.dataListInventarios.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataListInventarios.EnableHeadersVisualStyles = false;
+            this.dataListInventarios.Location = new System.Drawing.Point(49, 78);
+            this.dataListInventarios.MaximumSize = new System.Drawing.Size(674, 325);
+            this.dataListInventarios.MinimumSize = new System.Drawing.Size(674, 325);
+            this.dataListInventarios.Name = "dataListInventarios";
+            this.dataListInventarios.RowHeadersWidth = 51;
+            this.dataListInventarios.Size = new System.Drawing.Size(674, 325);
+            this.dataListInventarios.TabIndex = 0;
+            this.dataListInventarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListInventarios_CellDoubleClick);
             // 
             // plTop
             // 
@@ -191,7 +192,7 @@
             this.Text = "ReportesInventarios";
             this.plDock.ResumeLayout(false);
             this.plDock.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataReportsInventarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListInventarios)).EndInit();
             this.plTop.ResumeLayout(false);
             this.plTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -207,7 +208,7 @@
         private System.Windows.Forms.ComboBox cbxFilroInventarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtFilterInventarios;
-        private System.Windows.Forms.DataGridView dataReportsInventarios;
+        private System.Windows.Forms.DataGridView dataListInventarios;
         private System.Windows.Forms.Panel plTop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
