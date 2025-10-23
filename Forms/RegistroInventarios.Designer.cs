@@ -32,7 +32,6 @@
             this.cbxCategoria = new System.Windows.Forms.ComboBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.BuBuscarE = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.BuRegistroInventario = new System.Windows.Forms.Button();
             this.BuUpdateInventario = new System.Windows.Forms.Button();
             this.BuDeleteInventario = new System.Windows.Forms.Button();
@@ -66,7 +65,6 @@
             this.plDock.Controls.Add(this.cbxCategoria);
             this.plDock.Controls.Add(this.txtDescripcion);
             this.plDock.Controls.Add(this.BuBuscarE);
-            this.plDock.Controls.Add(this.label1);
             this.plDock.Controls.Add(this.BuRegistroInventario);
             this.plDock.Controls.Add(this.BuUpdateInventario);
             this.plDock.Controls.Add(this.BuDeleteInventario);
@@ -115,43 +113,37 @@
             // 
             // BuBuscarE
             // 
-            this.BuBuscarE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuBuscarE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuBuscarE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
             this.BuBuscarE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuBuscarE.FlatAppearance.BorderSize = 0;
-            this.BuBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuBuscarE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuBuscarE.ForeColor = System.Drawing.Color.White;
-            this.BuBuscarE.Location = new System.Drawing.Point(54, 343);
+            this.BuBuscarE.Image = global::Essenza.Properties.Resources.Search_in_List;
+            this.BuBuscarE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuBuscarE.Location = new System.Drawing.Point(588, 32);
             this.BuBuscarE.Name = "BuBuscarE";
-            this.BuBuscarE.Size = new System.Drawing.Size(105, 27);
+            this.BuBuscarE.Size = new System.Drawing.Size(154, 40);
             this.BuBuscarE.TabIndex = 70;
-            this.BuBuscarE.Text = "Buscar";
+            this.BuBuscarE.Text = "Buscador";
             this.BuBuscarE.UseVisualStyleBackColor = false;
             this.BuBuscarE.Click += new System.EventHandler(this.BuBuscarE_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 316);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "Buscador";
-            // 
             // BuRegistroInventario
             // 
-            this.BuRegistroInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuRegistroInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuRegistroInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuRegistroInventario.BackColor = System.Drawing.Color.ForestGreen;
             this.BuRegistroInventario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuRegistroInventario.FlatAppearance.BorderSize = 0;
-            this.BuRegistroInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuRegistroInventario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuRegistroInventario.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuRegistroInventario.ForeColor = System.Drawing.Color.White;
-            this.BuRegistroInventario.Location = new System.Drawing.Point(626, 54);
+            this.BuRegistroInventario.Image = global::Essenza.Properties.Resources.Add_New;
+            this.BuRegistroInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuRegistroInventario.Location = new System.Drawing.Point(341, 398);
             this.BuRegistroInventario.Name = "BuRegistroInventario";
-            this.BuRegistroInventario.Size = new System.Drawing.Size(105, 27);
+            this.BuRegistroInventario.Size = new System.Drawing.Size(130, 40);
             this.BuRegistroInventario.TabIndex = 65;
             this.BuRegistroInventario.Text = "Register";
             this.BuRegistroInventario.UseVisualStyleBackColor = false;
@@ -159,16 +151,18 @@
             // 
             // BuUpdateInventario
             // 
-            this.BuUpdateInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuUpdateInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuUpdateInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuUpdateInventario.BackColor = System.Drawing.Color.DodgerBlue;
             this.BuUpdateInventario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuUpdateInventario.FlatAppearance.BorderSize = 0;
-            this.BuUpdateInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuUpdateInventario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuUpdateInventario.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuUpdateInventario.ForeColor = System.Drawing.Color.White;
-            this.BuUpdateInventario.Location = new System.Drawing.Point(626, 131);
+            this.BuUpdateInventario.Image = global::Essenza.Properties.Resources.Edit_Property;
+            this.BuUpdateInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuUpdateInventario.Location = new System.Drawing.Point(477, 398);
             this.BuUpdateInventario.Name = "BuUpdateInventario";
-            this.BuUpdateInventario.Size = new System.Drawing.Size(105, 27);
+            this.BuUpdateInventario.Size = new System.Drawing.Size(130, 40);
             this.BuUpdateInventario.TabIndex = 64;
             this.BuUpdateInventario.Text = "Update";
             this.BuUpdateInventario.UseVisualStyleBackColor = false;
@@ -176,16 +170,18 @@
             // 
             // BuDeleteInventario
             // 
-            this.BuDeleteInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuDeleteInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuDeleteInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuDeleteInventario.BackColor = System.Drawing.Color.Firebrick;
             this.BuDeleteInventario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuDeleteInventario.FlatAppearance.BorderSize = 0;
-            this.BuDeleteInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuDeleteInventario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuDeleteInventario.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuDeleteInventario.ForeColor = System.Drawing.Color.White;
-            this.BuDeleteInventario.Location = new System.Drawing.Point(626, 205);
+            this.BuDeleteInventario.Image = global::Essenza.Properties.Resources.Delete;
+            this.BuDeleteInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuDeleteInventario.Location = new System.Drawing.Point(612, 398);
             this.BuDeleteInventario.Name = "BuDeleteInventario";
-            this.BuDeleteInventario.Size = new System.Drawing.Size(105, 27);
+            this.BuDeleteInventario.Size = new System.Drawing.Size(130, 40);
             this.BuDeleteInventario.TabIndex = 63;
             this.BuDeleteInventario.Text = "Delete";
             this.BuDeleteInventario.UseVisualStyleBackColor = false;
@@ -415,7 +411,6 @@
 
         private System.Windows.Forms.Panel plDock;
         private System.Windows.Forms.Button BuBuscarE;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BuRegistroInventario;
         private System.Windows.Forms.Button BuUpdateInventario;
         private System.Windows.Forms.Button BuDeleteInventario;

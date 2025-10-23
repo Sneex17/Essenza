@@ -129,6 +129,12 @@
     <Compile Include="FormsReportes\EmployeeReports.Designer.cs">
       <DependentUpon>EmployeeReports.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsVentasYFacturas\FormVender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsVentasYFacturas\FormVender.Designer.cs">
+      <DependentUpon>FormVender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     <EmbeddedResource Include="FormsReportes\EmployeeReports.resx">
       <DependentUpon>EmployeeReports.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsVentasYFacturas\FormVender.resx">
+      <DependentUpon>FormVender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,13 +242,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Icons\Add New.png" />
     <Content Include="Icons\Checked Identification Documents.png" />
     <Content Include="Icons\Close.png" />
+    <Content Include="Icons\Delete.png" />
+    <Content Include="Icons\Edit Property.png" />
     <Content Include="Icons\Financial Tasks.png" />
     <Content Include="Icons\Get Cash.png" />
     <Content Include="Icons\Info.png" />
     <Content Include="Icons\LogoApp.ico" />
     <Content Include="Icons\Manager.png" />
+    <Content Include="Icons\Search in List.png" />
     <Content Include="Icons\Sell Stock.png" />
     <Content Include="Icons\Warehouse.png" />
     <Content Include="Photos\Fondo1-Login.png" />

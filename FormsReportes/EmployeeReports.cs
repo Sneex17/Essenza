@@ -1,4 +1,5 @@
-﻿using Essenza.Clases;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using Essenza.Clases;
 using Essenza.ClasesAR;
 using System;
 using System.Collections.Generic;
@@ -100,20 +101,97 @@ namespace Essenza.Forms
             
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+
+        private void BuBuscarFechas_Click(object sender, EventArgs e)
         {
-            datosLinq();
+            if(String.IsNullOrWhiteSpace(cbxFechas.Text))
+            {
+                MessageBox.Show($"Debe elegir el tipo de fecha para filtar los datos", "Filtro por Fechas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                switch (cbxFechas.Text)
+                {
+                    case "Contrato":
+                        {
+                            List<Empleados> list = Empleados.DatosReportsE();
+                            var datosPorFechas = list.Where(n => n.fecha_contrato >= fechaInicio.Value &&
+                            n.fecha_contrato <= fechaFin.Value).Select(n => n).ToList();
+
+                            dataReportsInventarios.DataSource = datosPorFechas.ToList();
+                        }
+                        break;
+
+                    case "Nacimiento":
+                        {
+                            List<Empleados> list = Empleados.DatosReportsE();
+                            var datosPorFechas = list.Where(n => n.fecha_nacimiento >= fechaInicio.Value &&
+                            n.fecha_nacimiento <= fechaFin.Value).Select(n => n).ToList();
+
+                            dataReportsInventarios.DataSource = datosPorFechas.ToList();
+                        }
+                        break;
+                }
+            }
+
         }
 
-        private void datosLinq()
+        private void BuOrdenar_Click(object sender, EventArgs e)
         {
-            List<Empleados> lista = Empleados.DatosReportsE();
-            //IEnumerable<Empleados> datos = from nd in lista orderby nd.nombres descending select nd;
-            IEnumerable<Empleados> datos = from nd in lista orderby nd.edad descending select nd;
-            //dataReportsInventarios.DataSource = datos.ToList();
+            if (String.IsNullOrWhiteSpace(cbxOrderBy.Text))
+            {
+                MessageBox.Show($"Debe elegir el tipo de atributo para filtar los datos", "Filtro por Atributos",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                if (rBaz.Checked)
+                {
+                    switch (cbxOrderBy.Text)
+                    {
+                        case "Nombres":
+                            {
+                                List<Empleados> list = Empleados.DatosReportsE();
+                                var datos = from n in list orderby n.nombres select n;
+                                dataReportsInventarios.DataSource = datos.ToList();
+                            }
+                            break;
 
-            var dato = lista.Where(n => n.edad > 25).Select(n => n).ToList();
-            dataReportsInventarios.DataSource = dato.ToList();
+                        case "Apellidos":
+                            {
+                                List<Empleados> list = Empleados.DatosReportsE();
+                                var datos = from n in list orderby n.apellidos select n;
+                                dataReportsInventarios.DataSource = datos.ToList();
+                            }
+                            break;
+
+                    }
+
+                }
+                if (rBza.Checked)
+                {
+                    switch (cbxOrderBy.Text)
+                    {
+                        case "Nombres":
+                            {
+                                List<Empleados> list = Empleados.DatosReportsE();
+                                var datos = from n in list orderby n.nombres descending select n;
+                                dataReportsInventarios.DataSource = datos.ToList();
+                            }
+                            break;
+
+                        case "Apellidos":
+                            {
+                                List<Empleados> list = Empleados.DatosReportsE();
+                                var datos = from n in list orderby n.apellidos descending select n;
+                                dataReportsInventarios.DataSource = datos.ToList();
+                            }
+                            break;
+
+                    }
+                }
+            }
         }
     }
 }

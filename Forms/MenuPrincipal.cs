@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Essenza.ViewsAdmin;
+using Essenza.FormsVentasYFacturas;
 
 namespace Essenza.Forms
 {
@@ -164,6 +165,11 @@ namespace Essenza.Forms
         private void BuReportesSuplidores_Click(object sender, EventArgs e)
         {
             OpenForms(new ReportesSuplidores());
+        }
+
+        private void BuVender_Click(object sender, EventArgs e)
+        {
+            OpenForms(new FormVender());
         }
     }
 }

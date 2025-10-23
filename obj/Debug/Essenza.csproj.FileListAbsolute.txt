@@ -254,3 +254,4 @@ C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.cspr
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.csproj.Up2Date
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.exe
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.pdb
+C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.FormsVentasYFacturas.FormVender.resources

@@ -135,6 +135,7 @@
             this.BuVender.Text = "Vender Producto";
             this.BuVender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BuVender.UseVisualStyleBackColor = true;
+            this.BuVender.Click += new System.EventHandler(this.BuVender_Click);
             // 
             // panelInventarioSM
             // 

@@ -30,7 +30,6 @@
         {
             this.plDock = new System.Windows.Forms.Panel();
             this.BuBuscarSuplidor = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.BuRegisterSuplidor = new System.Windows.Forms.Button();
             this.BuUpdateSuplidor = new System.Windows.Forms.Button();
             this.BuDeleteSuplidor = new System.Windows.Forms.Button();
@@ -60,7 +59,6 @@
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.plDock.Controls.Add(this.BuBuscarSuplidor);
-            this.plDock.Controls.Add(this.label1);
             this.plDock.Controls.Add(this.BuRegisterSuplidor);
             this.plDock.Controls.Add(this.BuUpdateSuplidor);
             this.plDock.Controls.Add(this.BuDeleteSuplidor);
@@ -81,48 +79,42 @@
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(784, 507);
+            this.plDock.Size = new System.Drawing.Size(770, 468);
             this.plDock.TabIndex = 16;
             // 
             // BuBuscarSuplidor
             // 
-            this.BuBuscarSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuBuscarSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuBuscarSuplidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
             this.BuBuscarSuplidor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuBuscarSuplidor.FlatAppearance.BorderSize = 0;
-            this.BuBuscarSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuBuscarSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuBuscarSuplidor.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuBuscarSuplidor.ForeColor = System.Drawing.Color.White;
-            this.BuBuscarSuplidor.Location = new System.Drawing.Point(54, 383);
+            this.BuBuscarSuplidor.Image = global::Essenza.Properties.Resources.Search_in_List;
+            this.BuBuscarSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuBuscarSuplidor.Location = new System.Drawing.Point(588, 32);
             this.BuBuscarSuplidor.Name = "BuBuscarSuplidor";
-            this.BuBuscarSuplidor.Size = new System.Drawing.Size(105, 27);
+            this.BuBuscarSuplidor.Size = new System.Drawing.Size(154, 40);
             this.BuBuscarSuplidor.TabIndex = 70;
-            this.BuBuscarSuplidor.Text = "Buscar";
+            this.BuBuscarSuplidor.Text = "Buscador";
             this.BuBuscarSuplidor.UseVisualStyleBackColor = false;
             this.BuBuscarSuplidor.Click += new System.EventHandler(this.BuBuscarSuplidor_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 316);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "Buscador";
             // 
             // BuRegisterSuplidor
             // 
             this.BuRegisterSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuRegisterSuplidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuRegisterSuplidor.BackColor = System.Drawing.Color.ForestGreen;
             this.BuRegisterSuplidor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuRegisterSuplidor.FlatAppearance.BorderSize = 0;
-            this.BuRegisterSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuRegisterSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuRegisterSuplidor.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuRegisterSuplidor.ForeColor = System.Drawing.Color.White;
-            this.BuRegisterSuplidor.Location = new System.Drawing.Point(639, 54);
+            this.BuRegisterSuplidor.Image = global::Essenza.Properties.Resources.Add_New;
+            this.BuRegisterSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuRegisterSuplidor.Location = new System.Drawing.Point(341, 398);
             this.BuRegisterSuplidor.Name = "BuRegisterSuplidor";
-            this.BuRegisterSuplidor.Size = new System.Drawing.Size(105, 27);
+            this.BuRegisterSuplidor.Size = new System.Drawing.Size(130, 40);
             this.BuRegisterSuplidor.TabIndex = 65;
             this.BuRegisterSuplidor.Text = "Register";
             this.BuRegisterSuplidor.UseVisualStyleBackColor = false;
@@ -131,15 +123,17 @@
             // BuUpdateSuplidor
             // 
             this.BuUpdateSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuUpdateSuplidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuUpdateSuplidor.BackColor = System.Drawing.Color.DodgerBlue;
             this.BuUpdateSuplidor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuUpdateSuplidor.FlatAppearance.BorderSize = 0;
-            this.BuUpdateSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuUpdateSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuUpdateSuplidor.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuUpdateSuplidor.ForeColor = System.Drawing.Color.White;
-            this.BuUpdateSuplidor.Location = new System.Drawing.Point(639, 131);
+            this.BuUpdateSuplidor.Image = global::Essenza.Properties.Resources.Edit_Property;
+            this.BuUpdateSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuUpdateSuplidor.Location = new System.Drawing.Point(477, 398);
             this.BuUpdateSuplidor.Name = "BuUpdateSuplidor";
-            this.BuUpdateSuplidor.Size = new System.Drawing.Size(105, 27);
+            this.BuUpdateSuplidor.Size = new System.Drawing.Size(130, 40);
             this.BuUpdateSuplidor.TabIndex = 64;
             this.BuUpdateSuplidor.Text = "Update";
             this.BuUpdateSuplidor.UseVisualStyleBackColor = false;
@@ -148,15 +142,17 @@
             // BuDeleteSuplidor
             // 
             this.BuDeleteSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuDeleteSuplidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuDeleteSuplidor.BackColor = System.Drawing.Color.Firebrick;
             this.BuDeleteSuplidor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuDeleteSuplidor.FlatAppearance.BorderSize = 0;
-            this.BuDeleteSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuDeleteSuplidor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuDeleteSuplidor.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuDeleteSuplidor.ForeColor = System.Drawing.Color.White;
-            this.BuDeleteSuplidor.Location = new System.Drawing.Point(639, 205);
+            this.BuDeleteSuplidor.Image = global::Essenza.Properties.Resources.Delete;
+            this.BuDeleteSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuDeleteSuplidor.Location = new System.Drawing.Point(612, 398);
             this.BuDeleteSuplidor.Name = "BuDeleteSuplidor";
-            this.BuDeleteSuplidor.Size = new System.Drawing.Size(105, 27);
+            this.BuDeleteSuplidor.Size = new System.Drawing.Size(130, 40);
             this.BuDeleteSuplidor.TabIndex = 63;
             this.BuDeleteSuplidor.Text = "Delete";
             this.BuDeleteSuplidor.UseVisualStyleBackColor = false;
@@ -180,7 +176,7 @@
             this.txtEmailS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailS.Location = new System.Drawing.Point(412, 60);
             this.txtEmailS.Name = "txtEmailS";
-            this.txtEmailS.Size = new System.Drawing.Size(152, 21);
+            this.txtEmailS.Size = new System.Drawing.Size(138, 21);
             this.txtEmailS.TabIndex = 59;
             // 
             // cbxPaisesS
@@ -201,7 +197,7 @@
             this.txtDirectionS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDirectionS.Location = new System.Drawing.Point(412, 108);
             this.txtDirectionS.Name = "txtDirectionS";
-            this.txtDirectionS.Size = new System.Drawing.Size(152, 21);
+            this.txtDirectionS.Size = new System.Drawing.Size(138, 21);
             this.txtDirectionS.TabIndex = 57;
             // 
             // txtPhoneS
@@ -213,7 +209,7 @@
             this.txtPhoneS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneS.Location = new System.Drawing.Point(232, 60);
             this.txtPhoneS.Name = "txtPhoneS";
-            this.txtPhoneS.Size = new System.Drawing.Size(152, 21);
+            this.txtPhoneS.Size = new System.Drawing.Size(138, 21);
             this.txtPhoneS.TabIndex = 55;
             // 
             // txtNamesS
@@ -225,7 +221,7 @@
             this.txtNamesS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamesS.Location = new System.Drawing.Point(54, 108);
             this.txtNamesS.Name = "txtNamesS";
-            this.txtNamesS.Size = new System.Drawing.Size(152, 21);
+            this.txtNamesS.Size = new System.Drawing.Size(138, 21);
             this.txtNamesS.TabIndex = 52;
             // 
             // txtIdS
@@ -237,7 +233,7 @@
             this.txtIdS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdS.Location = new System.Drawing.Point(54, 60);
             this.txtIdS.Name = "txtIdS";
-            this.txtIdS.Size = new System.Drawing.Size(152, 21);
+            this.txtIdS.Size = new System.Drawing.Size(138, 21);
             this.txtIdS.TabIndex = 51;
             // 
             // label13
@@ -318,7 +314,7 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(784, 54);
+            this.plTop.Size = new System.Drawing.Size(770, 54);
             this.plTop.TabIndex = 15;
             // 
             // pictureBox1
@@ -347,7 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(770, 522);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -366,7 +362,6 @@
 
         private System.Windows.Forms.Panel plDock;
         private System.Windows.Forms.Button BuBuscarSuplidor;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BuRegisterSuplidor;
         private System.Windows.Forms.Button BuUpdateSuplidor;
         private System.Windows.Forms.Button BuDeleteSuplidor;

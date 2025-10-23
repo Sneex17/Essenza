@@ -31,7 +31,6 @@
             this.plDock = new System.Windows.Forms.Panel();
             this.txtCedulaC = new System.Windows.Forms.TextBox();
             this.BuBuscarC = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.BuRegisterC = new System.Windows.Forms.Button();
             this.BuUpdateC = new System.Windows.Forms.Button();
             this.BuDeleteC = new System.Windows.Forms.Button();
@@ -67,7 +66,6 @@
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.plDock.Controls.Add(this.txtCedulaC);
             this.plDock.Controls.Add(this.BuBuscarC);
-            this.plDock.Controls.Add(this.label1);
             this.plDock.Controls.Add(this.BuRegisterC);
             this.plDock.Controls.Add(this.BuUpdateC);
             this.plDock.Controls.Add(this.BuDeleteC);
@@ -93,7 +91,7 @@
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(784, 507);
+            this.plDock.Size = new System.Drawing.Size(768, 468);
             this.plDock.TabIndex = 18;
             // 
             // txtCedulaC
@@ -105,7 +103,7 @@
             this.txtCedulaC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaC.Location = new System.Drawing.Point(232, 108);
             this.txtCedulaC.Name = "txtCedulaC";
-            this.txtCedulaC.Size = new System.Drawing.Size(152, 21);
+            this.txtCedulaC.Size = new System.Drawing.Size(136, 21);
             this.txtCedulaC.TabIndex = 71;
             // 
             // BuBuscarC
@@ -114,39 +112,33 @@
             this.BuBuscarC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
             this.BuBuscarC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuBuscarC.FlatAppearance.BorderSize = 0;
-            this.BuBuscarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuBuscarC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuBuscarC.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuBuscarC.ForeColor = System.Drawing.Color.White;
-            this.BuBuscarC.Location = new System.Drawing.Point(54, 344);
+            this.BuBuscarC.Image = global::Essenza.Properties.Resources.Search_in_List;
+            this.BuBuscarC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuBuscarC.Location = new System.Drawing.Point(588, 32);
             this.BuBuscarC.Name = "BuBuscarC";
-            this.BuBuscarC.Size = new System.Drawing.Size(105, 27);
+            this.BuBuscarC.Size = new System.Drawing.Size(154, 40);
             this.BuBuscarC.TabIndex = 70;
-            this.BuBuscarC.Text = "Buscar";
+            this.BuBuscarC.Text = "Buscador";
             this.BuBuscarC.UseVisualStyleBackColor = false;
             this.BuBuscarC.Click += new System.EventHandler(this.BuBuscarC_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 316);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "Buscador";
-            // 
             // BuRegisterC
             // 
-            this.BuRegisterC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuRegisterC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuRegisterC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuRegisterC.BackColor = System.Drawing.Color.ForestGreen;
             this.BuRegisterC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuRegisterC.FlatAppearance.BorderSize = 0;
-            this.BuRegisterC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuRegisterC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuRegisterC.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuRegisterC.ForeColor = System.Drawing.Color.White;
-            this.BuRegisterC.Location = new System.Drawing.Point(639, 54);
+            this.BuRegisterC.Image = global::Essenza.Properties.Resources.Add_New;
+            this.BuRegisterC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuRegisterC.Location = new System.Drawing.Point(341, 398);
             this.BuRegisterC.Name = "BuRegisterC";
-            this.BuRegisterC.Size = new System.Drawing.Size(105, 27);
+            this.BuRegisterC.Size = new System.Drawing.Size(130, 40);
             this.BuRegisterC.TabIndex = 65;
             this.BuRegisterC.Text = "Register";
             this.BuRegisterC.UseVisualStyleBackColor = false;
@@ -154,16 +146,18 @@
             // 
             // BuUpdateC
             // 
-            this.BuUpdateC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuUpdateC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuUpdateC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuUpdateC.BackColor = System.Drawing.Color.DodgerBlue;
             this.BuUpdateC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuUpdateC.FlatAppearance.BorderSize = 0;
-            this.BuUpdateC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuUpdateC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuUpdateC.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuUpdateC.ForeColor = System.Drawing.Color.White;
-            this.BuUpdateC.Location = new System.Drawing.Point(639, 131);
+            this.BuUpdateC.Image = global::Essenza.Properties.Resources.Edit_Property;
+            this.BuUpdateC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuUpdateC.Location = new System.Drawing.Point(477, 398);
             this.BuUpdateC.Name = "BuUpdateC";
-            this.BuUpdateC.Size = new System.Drawing.Size(105, 27);
+            this.BuUpdateC.Size = new System.Drawing.Size(130, 40);
             this.BuUpdateC.TabIndex = 64;
             this.BuUpdateC.Text = "Update";
             this.BuUpdateC.UseVisualStyleBackColor = false;
@@ -171,16 +165,18 @@
             // 
             // BuDeleteC
             // 
-            this.BuDeleteC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuDeleteC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuDeleteC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuDeleteC.BackColor = System.Drawing.Color.Firebrick;
             this.BuDeleteC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuDeleteC.FlatAppearance.BorderSize = 0;
-            this.BuDeleteC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuDeleteC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuDeleteC.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuDeleteC.ForeColor = System.Drawing.Color.White;
-            this.BuDeleteC.Location = new System.Drawing.Point(639, 205);
+            this.BuDeleteC.Image = global::Essenza.Properties.Resources.Delete;
+            this.BuDeleteC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuDeleteC.Location = new System.Drawing.Point(612, 398);
             this.BuDeleteC.Name = "BuDeleteC";
-            this.BuDeleteC.Size = new System.Drawing.Size(105, 27);
+            this.BuDeleteC.Size = new System.Drawing.Size(130, 40);
             this.BuDeleteC.TabIndex = 63;
             this.BuDeleteC.Text = "Delete";
             this.BuDeleteC.UseVisualStyleBackColor = false;
@@ -192,7 +188,7 @@
             this.cbxEstadoC.FormattingEnabled = true;
             this.cbxEstadoC.Location = new System.Drawing.Point(412, 158);
             this.cbxEstadoC.Name = "cbxEstadoC";
-            this.cbxEstadoC.Size = new System.Drawing.Size(152, 24);
+            this.cbxEstadoC.Size = new System.Drawing.Size(136, 24);
             this.cbxEstadoC.TabIndex = 62;
             // 
             // txtEmailC
@@ -204,7 +200,7 @@
             this.txtEmailC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailC.Location = new System.Drawing.Point(412, 60);
             this.txtEmailC.Name = "txtEmailC";
-            this.txtEmailC.Size = new System.Drawing.Size(152, 21);
+            this.txtEmailC.Size = new System.Drawing.Size(136, 21);
             this.txtEmailC.TabIndex = 59;
             // 
             // cbxEstadoCivilC
@@ -213,7 +209,7 @@
             this.cbxEstadoCivilC.FormattingEnabled = true;
             this.cbxEstadoCivilC.Location = new System.Drawing.Point(232, 158);
             this.cbxEstadoCivilC.Name = "cbxEstadoCivilC";
-            this.cbxEstadoCivilC.Size = new System.Drawing.Size(152, 24);
+            this.cbxEstadoCivilC.Size = new System.Drawing.Size(136, 24);
             this.cbxEstadoCivilC.TabIndex = 58;
             // 
             // txtDirectionC
@@ -225,7 +221,7 @@
             this.txtDirectionC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDirectionC.Location = new System.Drawing.Point(412, 108);
             this.txtDirectionC.Name = "txtDirectionC";
-            this.txtDirectionC.Size = new System.Drawing.Size(152, 21);
+            this.txtDirectionC.Size = new System.Drawing.Size(136, 21);
             this.txtDirectionC.TabIndex = 57;
             // 
             // txtPhoneC
@@ -237,7 +233,7 @@
             this.txtPhoneC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneC.Location = new System.Drawing.Point(232, 60);
             this.txtPhoneC.Name = "txtPhoneC";
-            this.txtPhoneC.Size = new System.Drawing.Size(152, 21);
+            this.txtPhoneC.Size = new System.Drawing.Size(136, 21);
             this.txtPhoneC.TabIndex = 55;
             // 
             // cbxSexoC
@@ -246,7 +242,7 @@
             this.cbxSexoC.FormattingEnabled = true;
             this.cbxSexoC.Location = new System.Drawing.Point(54, 210);
             this.cbxSexoC.Name = "cbxSexoC";
-            this.cbxSexoC.Size = new System.Drawing.Size(152, 24);
+            this.cbxSexoC.Size = new System.Drawing.Size(136, 24);
             this.cbxSexoC.TabIndex = 54;
             // 
             // txtLstNamesC
@@ -258,7 +254,7 @@
             this.txtLstNamesC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLstNamesC.Location = new System.Drawing.Point(54, 158);
             this.txtLstNamesC.Name = "txtLstNamesC";
-            this.txtLstNamesC.Size = new System.Drawing.Size(152, 21);
+            this.txtLstNamesC.Size = new System.Drawing.Size(136, 21);
             this.txtLstNamesC.TabIndex = 53;
             // 
             // txtNamesC
@@ -270,7 +266,7 @@
             this.txtNamesC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamesC.Location = new System.Drawing.Point(54, 108);
             this.txtNamesC.Name = "txtNamesC";
-            this.txtNamesC.Size = new System.Drawing.Size(152, 21);
+            this.txtNamesC.Size = new System.Drawing.Size(136, 21);
             this.txtNamesC.TabIndex = 52;
             // 
             // txtIdC
@@ -282,7 +278,7 @@
             this.txtIdC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdC.Location = new System.Drawing.Point(54, 60);
             this.txtIdC.Name = "txtIdC";
-            this.txtIdC.Size = new System.Drawing.Size(152, 21);
+            this.txtIdC.Size = new System.Drawing.Size(136, 21);
             this.txtIdC.TabIndex = 51;
             // 
             // label13
@@ -393,7 +389,7 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(784, 54);
+            this.plTop.Size = new System.Drawing.Size(768, 54);
             this.plTop.TabIndex = 17;
             // 
             // pictureBox1
@@ -422,7 +418,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(768, 522);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -442,7 +438,6 @@
 
         private System.Windows.Forms.Panel plDock;
         private System.Windows.Forms.Button BuBuscarC;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BuRegisterC;
         private System.Windows.Forms.Button BuUpdateC;
         private System.Windows.Forms.Button BuDeleteC;
