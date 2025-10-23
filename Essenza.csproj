@@ -243,6 +243,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Icons\Add New.png" />
+    <Content Include="Icons\Add Shopping Cart.png" />
+    <Content Include="Icons\Cash.png" />
     <Content Include="Icons\Checked Identification Documents.png" />
     <Content Include="Icons\Close.png" />
     <Content Include="Icons\Delete.png" />
@@ -251,6 +253,7 @@
     <Content Include="Icons\Get Cash.png" />
     <Content Include="Icons\Info.png" />
     <Content Include="Icons\LogoApp.ico" />
+    <Content Include="Icons\Logout Rounded Left.png" />
     <Content Include="Icons\Manager.png" />
     <Content Include="Icons\Search in List.png" />
     <Content Include="Icons\Sell Stock.png" />

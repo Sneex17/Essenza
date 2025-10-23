@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuExit = new System.Windows.Forms.Button();
             this.BuBuscarSuplidor = new System.Windows.Forms.Button();
             this.BuRegisterSuplidor = new System.Windows.Forms.Button();
             this.BuUpdateSuplidor = new System.Windows.Forms.Button();
@@ -58,6 +59,7 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.Controls.Add(this.BuExit);
             this.plDock.Controls.Add(this.BuBuscarSuplidor);
             this.plDock.Controls.Add(this.BuRegisterSuplidor);
             this.plDock.Controls.Add(this.BuUpdateSuplidor);
@@ -81,6 +83,25 @@
             this.plDock.Name = "plDock";
             this.plDock.Size = new System.Drawing.Size(770, 468);
             this.plDock.TabIndex = 16;
+            // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 85;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
             // BuBuscarSuplidor
             // 
@@ -382,5 +403,6 @@
         private System.Windows.Forms.Panel plTop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BuExit;
     }
 }

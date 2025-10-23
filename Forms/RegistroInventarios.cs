@@ -212,5 +212,8 @@ namespace Essenza.Forms
             }
             
         }
+
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
+       
     }
 }

@@ -62,6 +62,7 @@
             this.BuUpdate = new System.Windows.Forms.Button();
             this.BuDeleteE = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BuExit = new System.Windows.Forms.Button();
             this.plTop.SuspendLayout();
             this.plDock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -212,6 +213,7 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.Controls.Add(this.BuExit);
             this.plDock.Controls.Add(this.BuBuscarE);
             this.plDock.Controls.Add(this.cbxCargoEmp);
             this.plDock.Controls.Add(this.label3);
@@ -487,6 +489,25 @@
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
             // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 84;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
+            // 
             // RegistrationEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -542,5 +563,6 @@
         private System.Windows.Forms.ComboBox cbxCargoEmp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BuBuscarE;
+        private System.Windows.Forms.Button BuExit;
     }
 }

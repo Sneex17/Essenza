@@ -221,5 +221,7 @@ namespace Essenza.Forms
 
         private void txtEmailE_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtNamesE.Focus(); }
 
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
+
     }
 }
