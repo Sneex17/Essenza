@@ -31,54 +31,65 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
-            this.groupBoxEmpleado = new System.Windows.Forms.GroupBox();
-            this.groupBoxVenta = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dataCarrito = new System.Windows.Forms.DataGridView();
             this.groupBoxBuscar = new System.Windows.Forms.GroupBox();
-            this.radioButtonEmpleado = new System.Windows.Forms.RadioButton();
-            this.radioButtonCliente = new System.Windows.Forms.RadioButton();
             this.radioButtonProducto = new System.Windows.Forms.RadioButton();
-            this.txtIdClientFact = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtNameClientFact = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.radioButtonCliente = new System.Windows.Forms.RadioButton();
+            this.radioButtonEmpleado = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPhoneClientFact = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCedulaClientFact = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtEmailEmpFact = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCargoEmpFact = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtNameEmpFact = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtIdEmpFact = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.CantidadPorProducto = new System.Windows.Forms.NumericUpDown();
-            this.txtIdProductFact = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNameProductFact = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtPventaProductFact = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.txtNameClientFact = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIdClientFact = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBoxVenta = new System.Windows.Forms.GroupBox();
             this.txtSubTotalFact = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataCarrito = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtPventaProductFact = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtNameProductFact = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtIdProductFact = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.CantidadPorProducto = new System.Windows.Forms.NumericUpDown();
+            this.groupBoxEmpleado = new System.Windows.Forms.GroupBox();
+            this.txtEmailEmpFact = new System.Windows.Forms.TextBox();
+            this.txtNameEmpFact = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtCargoEmpFact = new System.Windows.Forms.TextBox();
+            this.txtIdEmpFact = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtTotalFact = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio_cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itbis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opcion = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.BuExit = new System.Windows.Forms.Button();
             this.BuPagar = new System.Windows.Forms.Button();
             this.BuBuscarDatos = new System.Windows.Forms.Button();
             this.BuAddCarrito = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BuExit = new System.Windows.Forms.Button();
             this.plTop.SuspendLayout();
             this.panelDatos.SuspendLayout();
-            this.groupBoxEmpleado.SuspendLayout();
-            this.groupBoxVenta.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBoxBuscar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CantidadPorProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataCarrito)).BeginInit();
+            this.groupBoxBuscar.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBoxVenta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CantidadPorProducto)).BeginInit();
+            this.groupBoxEmpleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,6 +118,8 @@
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.panelDatos.Controls.Add(this.txtTotalFact);
+            this.panelDatos.Controls.Add(this.label16);
             this.panelDatos.Controls.Add(this.BuExit);
             this.panelDatos.Controls.Add(this.BuPagar);
             this.panelDatos.Controls.Add(this.label15);
@@ -121,46 +134,82 @@
             this.panelDatos.Size = new System.Drawing.Size(768, 468);
             this.panelDatos.TabIndex = 19;
             // 
-            // groupBoxEmpleado
+            // label15
             // 
-            this.groupBoxEmpleado.BackColor = System.Drawing.Color.SeaShell;
-            this.groupBoxEmpleado.Controls.Add(this.txtEmailEmpFact);
-            this.groupBoxEmpleado.Controls.Add(this.txtNameEmpFact);
-            this.groupBoxEmpleado.Controls.Add(this.label5);
-            this.groupBoxEmpleado.Controls.Add(this.label8);
-            this.groupBoxEmpleado.Controls.Add(this.txtCargoEmpFact);
-            this.groupBoxEmpleado.Controls.Add(this.txtIdEmpFact);
-            this.groupBoxEmpleado.Controls.Add(this.label6);
-            this.groupBoxEmpleado.Controls.Add(this.label7);
-            this.groupBoxEmpleado.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxEmpleado.Location = new System.Drawing.Point(41, 18);
-            this.groupBoxEmpleado.Name = "groupBoxEmpleado";
-            this.groupBoxEmpleado.Size = new System.Drawing.Size(280, 128);
-            this.groupBoxEmpleado.TabIndex = 0;
-            this.groupBoxEmpleado.TabStop = false;
-            this.groupBoxEmpleado.Text = "Detalles del Empleado";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(38, 252);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(138, 18);
+            this.label15.TabIndex = 77;
+            this.label15.Text = "Detalles del Carrito";
             // 
-            // groupBoxVenta
+            // dataCarrito
             // 
-            this.groupBoxVenta.BackColor = System.Drawing.Color.SeaShell;
-            this.groupBoxVenta.Controls.Add(this.txtSubTotalFact);
-            this.groupBoxVenta.Controls.Add(this.label13);
-            this.groupBoxVenta.Controls.Add(this.BuAddCarrito);
-            this.groupBoxVenta.Controls.Add(this.label12);
-            this.groupBoxVenta.Controls.Add(this.txtPventaProductFact);
-            this.groupBoxVenta.Controls.Add(this.label11);
-            this.groupBoxVenta.Controls.Add(this.txtNameProductFact);
-            this.groupBoxVenta.Controls.Add(this.label10);
-            this.groupBoxVenta.Controls.Add(this.txtIdProductFact);
-            this.groupBoxVenta.Controls.Add(this.label9);
-            this.groupBoxVenta.Controls.Add(this.CantidadPorProducto);
-            this.groupBoxVenta.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxVenta.Location = new System.Drawing.Point(41, 155);
-            this.groupBoxVenta.Name = "groupBoxVenta";
-            this.groupBoxVenta.Size = new System.Drawing.Size(685, 88);
-            this.groupBoxVenta.TabIndex = 1;
-            this.groupBoxVenta.TabStop = false;
-            this.groupBoxVenta.Text = "Detalles del Producto";
+            this.dataCarrito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_cliente,
+            this.id_empleado,
+            this.id_inventario,
+            this.cantidad,
+            this.precio_unitario,
+            this.precio_cantidad,
+            this.itbis,
+            this.subtotal,
+            this.opcion});
+            this.dataCarrito.Location = new System.Drawing.Point(41, 273);
+            this.dataCarrito.Name = "dataCarrito";
+            this.dataCarrito.Size = new System.Drawing.Size(685, 122);
+            this.dataCarrito.TabIndex = 3;
+            this.dataCarrito.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCarrito_CellClick);
+            // 
+            // groupBoxBuscar
+            // 
+            this.groupBoxBuscar.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBoxBuscar.Controls.Add(this.BuBuscarDatos);
+            this.groupBoxBuscar.Controls.Add(this.radioButtonProducto);
+            this.groupBoxBuscar.Controls.Add(this.radioButtonCliente);
+            this.groupBoxBuscar.Controls.Add(this.radioButtonEmpleado);
+            this.groupBoxBuscar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBuscar.Location = new System.Drawing.Point(613, 18);
+            this.groupBoxBuscar.Name = "groupBoxBuscar";
+            this.groupBoxBuscar.Size = new System.Drawing.Size(113, 128);
+            this.groupBoxBuscar.TabIndex = 2;
+            this.groupBoxBuscar.TabStop = false;
+            this.groupBoxBuscar.Text = "Buscar";
+            // 
+            // radioButtonProducto
+            // 
+            this.radioButtonProducto.AutoSize = true;
+            this.radioButtonProducto.Location = new System.Drawing.Point(6, 100);
+            this.radioButtonProducto.Name = "radioButtonProducto";
+            this.radioButtonProducto.Size = new System.Drawing.Size(88, 22);
+            this.radioButtonProducto.TabIndex = 2;
+            this.radioButtonProducto.TabStop = true;
+            this.radioButtonProducto.Text = "Producto";
+            this.radioButtonProducto.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonCliente
+            // 
+            this.radioButtonCliente.AutoSize = true;
+            this.radioButtonCliente.Location = new System.Drawing.Point(6, 78);
+            this.radioButtonCliente.Name = "radioButtonCliente";
+            this.radioButtonCliente.Size = new System.Drawing.Size(74, 22);
+            this.radioButtonCliente.TabIndex = 1;
+            this.radioButtonCliente.TabStop = true;
+            this.radioButtonCliente.Text = "Cliente";
+            this.radioButtonCliente.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonEmpleado
+            // 
+            this.radioButtonEmpleado.AutoSize = true;
+            this.radioButtonEmpleado.Location = new System.Drawing.Point(6, 57);
+            this.radioButtonEmpleado.Name = "radioButtonEmpleado";
+            this.radioButtonEmpleado.Size = new System.Drawing.Size(95, 22);
+            this.radioButtonEmpleado.TabIndex = 0;
+            this.radioButtonEmpleado.TabStop = true;
+            this.radioButtonEmpleado.Text = "Empleado";
+            this.radioButtonEmpleado.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -180,98 +229,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles del Cliente";
-            // 
-            // groupBoxBuscar
-            // 
-            this.groupBoxBuscar.BackColor = System.Drawing.Color.SeaShell;
-            this.groupBoxBuscar.Controls.Add(this.BuBuscarDatos);
-            this.groupBoxBuscar.Controls.Add(this.radioButtonProducto);
-            this.groupBoxBuscar.Controls.Add(this.radioButtonCliente);
-            this.groupBoxBuscar.Controls.Add(this.radioButtonEmpleado);
-            this.groupBoxBuscar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBuscar.Location = new System.Drawing.Point(613, 18);
-            this.groupBoxBuscar.Name = "groupBoxBuscar";
-            this.groupBoxBuscar.Size = new System.Drawing.Size(113, 128);
-            this.groupBoxBuscar.TabIndex = 2;
-            this.groupBoxBuscar.TabStop = false;
-            this.groupBoxBuscar.Text = "Buscar";
-            // 
-            // radioButtonEmpleado
-            // 
-            this.radioButtonEmpleado.AutoSize = true;
-            this.radioButtonEmpleado.Location = new System.Drawing.Point(6, 57);
-            this.radioButtonEmpleado.Name = "radioButtonEmpleado";
-            this.radioButtonEmpleado.Size = new System.Drawing.Size(95, 22);
-            this.radioButtonEmpleado.TabIndex = 0;
-            this.radioButtonEmpleado.TabStop = true;
-            this.radioButtonEmpleado.Text = "Empleado";
-            this.radioButtonEmpleado.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonCliente
-            // 
-            this.radioButtonCliente.AutoSize = true;
-            this.radioButtonCliente.Location = new System.Drawing.Point(6, 78);
-            this.radioButtonCliente.Name = "radioButtonCliente";
-            this.radioButtonCliente.Size = new System.Drawing.Size(74, 22);
-            this.radioButtonCliente.TabIndex = 1;
-            this.radioButtonCliente.TabStop = true;
-            this.radioButtonCliente.Text = "Cliente";
-            this.radioButtonCliente.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonProducto
-            // 
-            this.radioButtonProducto.AutoSize = true;
-            this.radioButtonProducto.Location = new System.Drawing.Point(6, 100);
-            this.radioButtonProducto.Name = "radioButtonProducto";
-            this.radioButtonProducto.Size = new System.Drawing.Size(88, 22);
-            this.radioButtonProducto.TabIndex = 2;
-            this.radioButtonProducto.TabStop = true;
-            this.radioButtonProducto.Text = "Producto";
-            this.radioButtonProducto.UseVisualStyleBackColor = true;
-            // 
-            // txtIdClientFact
-            // 
-            this.txtIdClientFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdClientFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdClientFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdClientFact.Location = new System.Drawing.Point(15, 46);
-            this.txtIdClientFact.Name = "txtIdClientFact";
-            this.txtIdClientFact.Size = new System.Drawing.Size(100, 21);
-            this.txtIdClientFact.TabIndex = 53;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 27);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 16);
-            this.label14.TabIndex = 52;
-            this.label14.Text = "Id Cliente:";
-            // 
-            // txtNameClientFact
-            // 
-            this.txtNameClientFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNameClientFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNameClientFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameClientFact.Location = new System.Drawing.Point(138, 46);
-            this.txtNameClientFact.Name = "txtNameClientFact";
-            this.txtNameClientFact.Size = new System.Drawing.Size(125, 21);
-            this.txtNameClientFact.TabIndex = 55;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Nombre:";
             // 
             // txtPhoneClientFact
             // 
@@ -317,191 +274,71 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Cedula:";
             // 
-            // txtEmailEmpFact
+            // txtNameClientFact
             // 
-            this.txtEmailEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtNameClientFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmailEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmailEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailEmpFact.Location = new System.Drawing.Point(139, 88);
-            this.txtEmailEmpFact.Name = "txtEmailEmpFact";
-            this.txtEmailEmpFact.Size = new System.Drawing.Size(125, 21);
-            this.txtEmailEmpFact.TabIndex = 67;
+            this.txtNameClientFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNameClientFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameClientFact.Location = new System.Drawing.Point(138, 46);
+            this.txtNameClientFact.Name = "txtNameClientFact";
+            this.txtNameClientFact.Size = new System.Drawing.Size(125, 21);
+            this.txtNameClientFact.TabIndex = 55;
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(136, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 66;
-            this.label5.Text = "Email:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(135, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Nombre:";
             // 
-            // txtCargoEmpFact
+            // txtIdClientFact
             // 
-            this.txtCargoEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtIdClientFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCargoEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCargoEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargoEmpFact.Location = new System.Drawing.Point(16, 88);
-            this.txtCargoEmpFact.Name = "txtCargoEmpFact";
-            this.txtCargoEmpFact.Size = new System.Drawing.Size(100, 21);
-            this.txtCargoEmpFact.TabIndex = 65;
+            this.txtIdClientFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdClientFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdClientFact.Location = new System.Drawing.Point(15, 46);
+            this.txtIdClientFact.Name = "txtIdClientFact";
+            this.txtIdClientFact.Size = new System.Drawing.Size(100, 21);
+            this.txtIdClientFact.TabIndex = 53;
             // 
-            // label6
+            // label14
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 64;
-            this.label6.Text = "Id Cargo:";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 16);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "Id Cliente:";
             // 
-            // txtNameEmpFact
+            // groupBoxVenta
             // 
-            this.txtNameEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNameEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNameEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameEmpFact.Location = new System.Drawing.Point(139, 46);
-            this.txtNameEmpFact.Name = "txtNameEmpFact";
-            this.txtNameEmpFact.Size = new System.Drawing.Size(125, 21);
-            this.txtNameEmpFact.TabIndex = 63;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(136, 27);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 16);
-            this.label7.TabIndex = 62;
-            this.label7.Text = "Nombre:";
-            // 
-            // txtIdEmpFact
-            // 
-            this.txtIdEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdEmpFact.Location = new System.Drawing.Point(16, 46);
-            this.txtIdEmpFact.Name = "txtIdEmpFact";
-            this.txtIdEmpFact.Size = new System.Drawing.Size(100, 21);
-            this.txtIdEmpFact.TabIndex = 61;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 27);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 16);
-            this.label8.TabIndex = 60;
-            this.label8.Text = "Id Empleado:";
-            // 
-            // CantidadPorProducto
-            // 
-            this.CantidadPorProducto.Location = new System.Drawing.Point(399, 48);
-            this.CantidadPorProducto.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.CantidadPorProducto.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.CantidadPorProducto.Name = "CantidadPorProducto";
-            this.CantidadPorProducto.Size = new System.Drawing.Size(74, 23);
-            this.CantidadPorProducto.TabIndex = 0;
-            this.CantidadPorProducto.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // txtIdProductFact
-            // 
-            this.txtIdProductFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdProductFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdProductFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProductFact.Location = new System.Drawing.Point(16, 48);
-            this.txtIdProductFact.Name = "txtIdProductFact";
-            this.txtIdProductFact.Size = new System.Drawing.Size(100, 21);
-            this.txtIdProductFact.TabIndex = 69;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(13, 29);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 16);
-            this.label9.TabIndex = 68;
-            this.label9.Text = "Id Producto:";
-            // 
-            // txtNameProductFact
-            // 
-            this.txtNameProductFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNameProductFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNameProductFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameProductFact.Location = new System.Drawing.Point(133, 48);
-            this.txtNameProductFact.Name = "txtNameProductFact";
-            this.txtNameProductFact.Size = new System.Drawing.Size(120, 21);
-            this.txtNameProductFact.TabIndex = 71;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(130, 29);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 16);
-            this.label10.TabIndex = 70;
-            this.label10.Text = "Producto:";
-            // 
-            // txtPventaProductFact
-            // 
-            this.txtPventaProductFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPventaProductFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPventaProductFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPventaProductFact.Location = new System.Drawing.Point(270, 48);
-            this.txtPventaProductFact.Name = "txtPventaProductFact";
-            this.txtPventaProductFact.Size = new System.Drawing.Size(110, 21);
-            this.txtPventaProductFact.TabIndex = 73;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(267, 29);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 16);
-            this.label11.TabIndex = 72;
-            this.label11.Text = "Precio de Venta:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(396, 29);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 16);
-            this.label12.TabIndex = 74;
-            this.label12.Text = "Cantidad:";
+            this.groupBoxVenta.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBoxVenta.Controls.Add(this.txtSubTotalFact);
+            this.groupBoxVenta.Controls.Add(this.label13);
+            this.groupBoxVenta.Controls.Add(this.BuAddCarrito);
+            this.groupBoxVenta.Controls.Add(this.label12);
+            this.groupBoxVenta.Controls.Add(this.txtPventaProductFact);
+            this.groupBoxVenta.Controls.Add(this.label11);
+            this.groupBoxVenta.Controls.Add(this.txtNameProductFact);
+            this.groupBoxVenta.Controls.Add(this.label10);
+            this.groupBoxVenta.Controls.Add(this.txtIdProductFact);
+            this.groupBoxVenta.Controls.Add(this.label9);
+            this.groupBoxVenta.Controls.Add(this.CantidadPorProducto);
+            this.groupBoxVenta.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxVenta.Location = new System.Drawing.Point(41, 155);
+            this.groupBoxVenta.Name = "groupBoxVenta";
+            this.groupBoxVenta.Size = new System.Drawing.Size(685, 88);
+            this.groupBoxVenta.TabIndex = 1;
+            this.groupBoxVenta.TabStop = false;
+            this.groupBoxVenta.Text = "Detalles del Producto";
             // 
             // txtSubTotalFact
             // 
@@ -525,23 +362,297 @@
             this.label13.TabIndex = 75;
             this.label13.Text = "SubTotal:";
             // 
-            // dataCarrito
+            // label12
             // 
-            this.dataCarrito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCarrito.Location = new System.Drawing.Point(41, 273);
-            this.dataCarrito.Name = "dataCarrito";
-            this.dataCarrito.Size = new System.Drawing.Size(685, 122);
-            this.dataCarrito.TabIndex = 3;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(396, 29);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 16);
+            this.label12.TabIndex = 74;
+            this.label12.Text = "Cantidad:";
             // 
-            // label15
+            // txtPventaProductFact
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(38, 252);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(138, 18);
-            this.label15.TabIndex = 77;
-            this.label15.Text = "Detalles del Carrito";
+            this.txtPventaProductFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPventaProductFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPventaProductFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPventaProductFact.Location = new System.Drawing.Point(270, 48);
+            this.txtPventaProductFact.Name = "txtPventaProductFact";
+            this.txtPventaProductFact.Size = new System.Drawing.Size(110, 21);
+            this.txtPventaProductFact.TabIndex = 73;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(267, 29);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(105, 16);
+            this.label11.TabIndex = 72;
+            this.label11.Text = "Precio de Venta:";
+            // 
+            // txtNameProductFact
+            // 
+            this.txtNameProductFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNameProductFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNameProductFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameProductFact.Location = new System.Drawing.Point(133, 48);
+            this.txtNameProductFact.Name = "txtNameProductFact";
+            this.txtNameProductFact.Size = new System.Drawing.Size(120, 21);
+            this.txtNameProductFact.TabIndex = 71;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(130, 29);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 16);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "Producto:";
+            // 
+            // txtIdProductFact
+            // 
+            this.txtIdProductFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdProductFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdProductFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdProductFact.Location = new System.Drawing.Point(16, 48);
+            this.txtIdProductFact.Name = "txtIdProductFact";
+            this.txtIdProductFact.Size = new System.Drawing.Size(100, 21);
+            this.txtIdProductFact.TabIndex = 69;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(13, 29);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 16);
+            this.label9.TabIndex = 68;
+            this.label9.Text = "Id Producto:";
+            // 
+            // CantidadPorProducto
+            // 
+            this.CantidadPorProducto.Location = new System.Drawing.Point(399, 48);
+            this.CantidadPorProducto.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.CantidadPorProducto.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CantidadPorProducto.Name = "CantidadPorProducto";
+            this.CantidadPorProducto.Size = new System.Drawing.Size(74, 23);
+            this.CantidadPorProducto.TabIndex = 0;
+            this.CantidadPorProducto.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CantidadPorProducto.ValueChanged += new System.EventHandler(this.CantidadPorProducto_ValueChanged);
+            // 
+            // groupBoxEmpleado
+            // 
+            this.groupBoxEmpleado.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBoxEmpleado.Controls.Add(this.txtEmailEmpFact);
+            this.groupBoxEmpleado.Controls.Add(this.txtNameEmpFact);
+            this.groupBoxEmpleado.Controls.Add(this.label5);
+            this.groupBoxEmpleado.Controls.Add(this.label8);
+            this.groupBoxEmpleado.Controls.Add(this.txtCargoEmpFact);
+            this.groupBoxEmpleado.Controls.Add(this.txtIdEmpFact);
+            this.groupBoxEmpleado.Controls.Add(this.label6);
+            this.groupBoxEmpleado.Controls.Add(this.label7);
+            this.groupBoxEmpleado.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxEmpleado.Location = new System.Drawing.Point(41, 18);
+            this.groupBoxEmpleado.Name = "groupBoxEmpleado";
+            this.groupBoxEmpleado.Size = new System.Drawing.Size(280, 128);
+            this.groupBoxEmpleado.TabIndex = 0;
+            this.groupBoxEmpleado.TabStop = false;
+            this.groupBoxEmpleado.Text = "Detalles del Empleado";
+            // 
+            // txtEmailEmpFact
+            // 
+            this.txtEmailEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmailEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmailEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailEmpFact.Location = new System.Drawing.Point(139, 88);
+            this.txtEmailEmpFact.Name = "txtEmailEmpFact";
+            this.txtEmailEmpFact.Size = new System.Drawing.Size(125, 21);
+            this.txtEmailEmpFact.TabIndex = 67;
+            // 
+            // txtNameEmpFact
+            // 
+            this.txtNameEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNameEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNameEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameEmpFact.Location = new System.Drawing.Point(139, 46);
+            this.txtNameEmpFact.Name = "txtNameEmpFact";
+            this.txtNameEmpFact.Size = new System.Drawing.Size(125, 21);
+            this.txtNameEmpFact.TabIndex = 63;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(136, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Email:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(13, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 16);
+            this.label8.TabIndex = 60;
+            this.label8.Text = "Id Empleado:";
+            // 
+            // txtCargoEmpFact
+            // 
+            this.txtCargoEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCargoEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCargoEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargoEmpFact.Location = new System.Drawing.Point(16, 88);
+            this.txtCargoEmpFact.Name = "txtCargoEmpFact";
+            this.txtCargoEmpFact.Size = new System.Drawing.Size(100, 21);
+            this.txtCargoEmpFact.TabIndex = 65;
+            // 
+            // txtIdEmpFact
+            // 
+            this.txtIdEmpFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdEmpFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdEmpFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEmpFact.Location = new System.Drawing.Point(16, 46);
+            this.txtIdEmpFact.Name = "txtIdEmpFact";
+            this.txtIdEmpFact.Size = new System.Drawing.Size(100, 21);
+            this.txtIdEmpFact.TabIndex = 61;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.TabIndex = 64;
+            this.label6.Text = "Id Cargo:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(136, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 16);
+            this.label7.TabIndex = 62;
+            this.label7.Text = "Nombre:";
+            // 
+            // txtTotalFact
+            // 
+            this.txtTotalFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalFact.Location = new System.Drawing.Point(465, 424);
+            this.txtTotalFact.Name = "txtTotalFact";
+            this.txtTotalFact.Size = new System.Drawing.Size(110, 21);
+            this.txtTotalFact.TabIndex = 78;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(462, 405);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 16);
+            this.label16.TabIndex = 77;
+            this.label16.Text = "Total:";
+            // 
+            // id_cliente
+            // 
+            this.id_cliente.HeaderText = "id_cliente";
+            this.id_cliente.Name = "id_cliente";
+            // 
+            // id_empleado
+            // 
+            this.id_empleado.HeaderText = "id_empleado";
+            this.id_empleado.Name = "id_empleado";
+            // 
+            // id_inventario
+            // 
+            this.id_inventario.HeaderText = "id_inventario";
+            this.id_inventario.Name = "id_inventario";
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "cantidad";
+            this.cantidad.Name = "cantidad";
+            // 
+            // precio_unitario
+            // 
+            this.precio_unitario.HeaderText = "precio_unitario";
+            this.precio_unitario.Name = "precio_unitario";
+            // 
+            // precio_cantidad
+            // 
+            this.precio_cantidad.HeaderText = "precio_cantidad";
+            this.precio_cantidad.Name = "precio_cantidad";
+            // 
+            // itbis
+            // 
+            this.itbis.HeaderText = "itbis";
+            this.itbis.Name = "itbis";
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "subtotal";
+            this.subtotal.Name = "subtotal";
+            // 
+            // opcion
+            // 
+            this.opcion.HeaderText = "opcion";
+            this.opcion.Name = "opcion";
+            // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 86;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
             // BuPagar
             // 
@@ -557,6 +668,7 @@
             this.BuPagar.TabIndex = 77;
             this.BuPagar.Text = "Pagar";
             this.BuPagar.UseVisualStyleBackColor = false;
+            this.BuPagar.Click += new System.EventHandler(this.BuPagar_Click);
             // 
             // BuBuscarDatos
             // 
@@ -580,6 +692,7 @@
             this.BuAddCarrito.Size = new System.Drawing.Size(53, 29);
             this.BuAddCarrito.TabIndex = 4;
             this.BuAddCarrito.UseVisualStyleBackColor = false;
+            this.BuAddCarrito.Click += new System.EventHandler(this.BuAddCarrito_Click);
             // 
             // pictureBox1
             // 
@@ -591,25 +704,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
-            // 
-            // BuExit
-            // 
-            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuExit.FlatAppearance.BorderSize = 0;
-            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExit.ForeColor = System.Drawing.Color.White;
-            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
-            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
-            this.BuExit.Name = "BuExit";
-            this.BuExit.Size = new System.Drawing.Size(128, 37);
-            this.BuExit.TabIndex = 86;
-            this.BuExit.Text = "Volver";
-            this.BuExit.UseVisualStyleBackColor = false;
-            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
             // FormVender
             // 
@@ -625,16 +719,16 @@
             this.plTop.PerformLayout();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
-            this.groupBoxEmpleado.ResumeLayout(false);
-            this.groupBoxEmpleado.PerformLayout();
-            this.groupBoxVenta.ResumeLayout(false);
-            this.groupBoxVenta.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCarrito)).EndInit();
             this.groupBoxBuscar.ResumeLayout(false);
             this.groupBoxBuscar.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBoxVenta.ResumeLayout(false);
+            this.groupBoxVenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadPorProducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCarrito)).EndInit();
+            this.groupBoxEmpleado.ResumeLayout(false);
+            this.groupBoxEmpleado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -685,5 +779,16 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataCarrito;
         private System.Windows.Forms.Button BuExit;
+        private System.Windows.Forms.TextBox txtTotalFact;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_empleado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_inventario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio_unitario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio_cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itbis;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
+        private System.Windows.Forms.DataGridViewButtonColumn opcion;
     }
 }

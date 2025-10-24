@@ -1,4 +1,6 @@
-﻿using Essenza.Clases;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using Essenza.Clases;
+using Essenza.ClasesAR;
 using Essenza.Forms;
 using Essenza.FormsReportes;
 using System;
@@ -60,10 +62,93 @@ namespace Essenza.FormsVentasYFacturas
                     txtIdProductFact.Text = inventarios.id_inventario.ToString();
                     txtNameProductFact.Text = inventarios.producto;
                     txtPventaProductFact.Text = inventarios.precio_venta.ToString();
+                    txtSubTotalFact.Text = txtPventaProductFact.Text;
                 };
                 reportesInventarios.ShowDialog();
             }
 
+        }
+
+        private void ClearTxtProducts()
+        {
+            txtIdProductFact.Text = String.Empty;
+            txtNameProductFact.Text = String.Empty;
+            txtPventaProductFact.Text = String.Empty;
+            txtSubTotalFact.Text = String.Empty;
+            CantidadPorProducto.Value = 1;
+
+        }
+        private void CantidadPorProducto_ValueChanged(object sender, EventArgs e)
+        {
+            if(!String.IsNullOrWhiteSpace(txtPventaProductFact.Text))
+            {
+                decimal PrecioCantidad;
+                decimal Precio = Convert.ToDecimal(txtPventaProductFact.Text);
+                PrecioCantidad = Precio * CantidadPorProducto.Value;
+                txtSubTotalFact.Text = PrecioCantidad.ToString();
+            }
+            
+            
+        }
+
+        private void BuAddCarrito_Click(object sender, EventArgs e)
+        {
+            string IdC, IdE, IdP, cantidad, precioU, precioC;
+            double itbis, subtotal;
+
+            IdC = txtIdClientFact.Text;
+            IdE = txtIdEmpFact.Text;
+            IdP = txtIdProductFact.Text;
+            cantidad = CantidadPorProducto.Value.ToString();
+            precioU = txtPventaProductFact.Text;
+            precioC = txtSubTotalFact.Text;
+
+            itbis = (Convert.ToDouble(precioC) * 0.18) / 1.18;
+            subtotal = Convert.ToDouble(precioC) + itbis;
+
+            dataCarrito.Rows.Add(new object[] { IdC, IdE, IdP, cantidad, 
+                precioU, precioC, Math.Round(itbis, 2), Math.Round(subtotal, 2), "Eliminar" });
+            CalcularTotal();
+            ClearTxtProducts();
+            
+
+        }
+
+        private void dataCarrito_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex < 0 || e.ColumnIndex != dataCarrito.Columns["opcion"].Index)
+                return;
+                
+            dataCarrito.Rows.RemoveAt(e.RowIndex);
+            CalcularTotal();
+        }
+
+        private void CalcularTotal()
+        {
+            decimal Total = 0;
+
+            foreach(DataGridViewRow row in dataCarrito.Rows)
+            {
+                if (row.IsNewRow) continue;
+                if (row.Cells[7].Value != null &&
+                    decimal.TryParse(row.Cells[7].Value.ToString(),
+                    out decimal subtotal)) { Total += subtotal; }
+
+            }
+            txtTotalFact.Text = Math.Round(Total,2).ToString();
+        }
+
+        private void BuPagar_Click(object sender, EventArgs e)
+        {
+            Facturas facturas = new Facturas(); 
+            facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
+            FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas);
+
+
+
+
+
+            PagoEfectivo.ShowDialog();
         }
     }
 }
