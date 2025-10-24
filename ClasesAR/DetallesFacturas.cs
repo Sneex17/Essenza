@@ -42,7 +42,7 @@ namespace Essenza.ClasesAR
                 comando.Parameters.AddWithValue(@"fecha_venta", detallesFacturas.fecha_venta);
                 comando.Parameters.AddWithValue(@"descripcion", detallesFacturas.descripcion);
                 comando.Parameters.AddWithValue(@"cantidad", detallesFacturas.cantidad);
-                comando.Parameters.AddWithValue(@"precio_uitario", detallesFacturas.precio_unitario);
+                comando.Parameters.AddWithValue(@"precio_unitario", detallesFacturas.precio_unitario);
                 comando.Parameters.AddWithValue(@"precio_cantidad", detallesFacturas.precio_cantidad);
                 comando.Parameters.AddWithValue(@"itbis", detallesFacturas.itbis);
                 comando.Parameters.AddWithValue(@"subtotal", detallesFacturas.subtotal);
@@ -55,13 +55,15 @@ namespace Essenza.ClasesAR
         {
             int resultado;
             string NewQuery = @"update detalle_factura set
-                                id_factura = @id_factura
-                                where id_cliente = @id_cliente";
+                                id_factura = @id_factura,
+                                descripcion = @descripcion
+                                where id_cliente = @id_cliente and descripcion = 'Procesando Pago'";
             using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
             {
                 SqlCommand comando = new SqlCommand(NewQuery, acceso);
                 comando.Parameters.AddWithValue(@"id_factura", detallesFacturas.id_factura);
                 comando.Parameters.AddWithValue(@"id_cliente", detallesFacturas.id_cliente);
+                comando.Parameters.AddWithValue(@"descripcion", detallesFacturas.descripcion);
                 resultado = comando.ExecuteNonQuery();
             }
         }
@@ -70,11 +72,12 @@ namespace Essenza.ClasesAR
         public static void PagoCancelado(DetallesFacturas detallesFacturas)
         {
             int resultado;
-            string NewQuery = @"delete detalle_factura where id_cliente = @id_cliente";
+            string NewQuery = @"delete detalle_factura where id_cliente = @id_cliente and fecha_venta = @fecha_venta";
             using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
             {
                 SqlCommand comando = new SqlCommand(NewQuery, acceso);
                 comando.Parameters.AddWithValue(@"id_cliente", detallesFacturas.id_cliente);
+                comando.Parameters.AddWithValue(@"fecha_venta", detallesFacturas.fecha_venta);
                 resultado = comando.ExecuteNonQuery();
             }
         }

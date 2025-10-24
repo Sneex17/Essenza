@@ -140,15 +140,39 @@ namespace Essenza.FormsVentasYFacturas
 
         private void BuPagar_Click(object sender, EventArgs e)
         {
-            Facturas facturas = new Facturas(); 
-            facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
-            FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas);
+            if(radioButtonEfectivo.Checked)
+            {
+                DateTime fechaHoy = DateTime.Now;
+                foreach (DataGridViewRow carrito in dataCarrito.Rows)
+                {
+                    if (carrito.IsNewRow) continue;
+                    DetallesFacturas detallesFacturas = new DetallesFacturas();
+                    detallesFacturas.id_cliente = Convert.ToInt32(carrito.Cells[0].Value.ToString());
+                    detallesFacturas.id_empleado = Convert.ToInt32(carrito.Cells[1].Value.ToString());
+                    detallesFacturas.id_inventario = Convert.ToInt32(carrito.Cells[2].Value.ToString());
+                    detallesFacturas.fecha_venta = fechaHoy;
+                    detallesFacturas.descripcion = "Procesando Pago";
+                    detallesFacturas.cantidad = Convert.ToInt32(carrito.Cells[3].Value.ToString());
+                    detallesFacturas.precio_unitario = Convert.ToDecimal(carrito.Cells[4].Value.ToString());
+                    detallesFacturas.precio_cantidad = Convert.ToDecimal(carrito.Cells[5].Value.ToString());
+                    detallesFacturas.itbis = Convert.ToDecimal(carrito.Cells[6].Value.ToString());
+                    detallesFacturas.subtotal = Convert.ToDecimal(carrito.Cells[7].Value.ToString());
+                    DetallesFacturas.AddDetalleFactura(detallesFacturas);
+                }
 
+                Facturas facturas = new Facturas();
+                facturas.id_cliente = Convert.ToInt32(txtIdClientFact.Text);
+                facturas.fecha_venta = fechaHoy;
+                facturas.id_metodo_pago = 1;
+                facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
+                FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas);
+                PagoEfectivo.ShowDialog();
+            }
+            if(radioButtonTransferencia.Checked)
+            {
 
-
-
-
-            PagoEfectivo.ShowDialog();
+            }
+           
         }
     }
 }

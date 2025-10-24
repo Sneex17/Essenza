@@ -29,11 +29,26 @@
         private void InitializeComponent()
         {
             this.plTop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.txtTotalFact = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.BuExit = new System.Windows.Forms.Button();
+            this.BuPagar = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.dataCarrito = new System.Windows.Forms.DataGridView();
+            this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio_cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itbis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opcion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBoxBuscar = new System.Windows.Forms.GroupBox();
+            this.BuBuscarDatos = new System.Windows.Forms.Button();
             this.radioButtonProducto = new System.Windows.Forms.RadioButton();
             this.radioButtonCliente = new System.Windows.Forms.RadioButton();
             this.radioButtonEmpleado = new System.Windows.Forms.RadioButton();
@@ -49,6 +64,7 @@
             this.groupBoxVenta = new System.Windows.Forms.GroupBox();
             this.txtSubTotalFact = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.BuAddCarrito = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtPventaProductFact = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -66,23 +82,11 @@
             this.txtIdEmpFact = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTotalFact = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio_cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itbis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opcion = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.BuExit = new System.Windows.Forms.Button();
-            this.BuPagar = new System.Windows.Forms.Button();
-            this.BuBuscarDatos = new System.Windows.Forms.Button();
-            this.BuAddCarrito = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButtonTransferencia = new System.Windows.Forms.RadioButton();
+            this.radioButtonEfectivo = new System.Windows.Forms.RadioButton();
             this.plTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCarrito)).BeginInit();
             this.groupBoxBuscar.SuspendLayout();
@@ -90,7 +94,7 @@
             this.groupBoxVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadPorProducto)).BeginInit();
             this.groupBoxEmpleado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // plTop
@@ -103,6 +107,17 @@
             this.plTop.Name = "plTop";
             this.plTop.Size = new System.Drawing.Size(768, 54);
             this.plTop.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Essenza.Properties.Resources.Sell_Stock;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 68;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -118,27 +133,83 @@
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.panelDatos.Controls.Add(this.txtTotalFact);
-            this.panelDatos.Controls.Add(this.label16);
             this.panelDatos.Controls.Add(this.BuExit);
-            this.panelDatos.Controls.Add(this.BuPagar);
             this.panelDatos.Controls.Add(this.label15);
             this.panelDatos.Controls.Add(this.dataCarrito);
             this.panelDatos.Controls.Add(this.groupBoxBuscar);
             this.panelDatos.Controls.Add(this.groupBox1);
             this.panelDatos.Controls.Add(this.groupBoxVenta);
             this.panelDatos.Controls.Add(this.groupBoxEmpleado);
+            this.panelDatos.Controls.Add(this.groupBox2);
             this.panelDatos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDatos.Location = new System.Drawing.Point(0, 54);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(768, 468);
             this.panelDatos.TabIndex = 19;
             // 
+            // txtTotalFact
+            // 
+            this.txtTotalFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalFact.Location = new System.Drawing.Point(203, 18);
+            this.txtTotalFact.Name = "txtTotalFact";
+            this.txtTotalFact.Size = new System.Drawing.Size(110, 21);
+            this.txtTotalFact.TabIndex = 78;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(147, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 16);
+            this.label16.TabIndex = 77;
+            this.label16.Text = "Total:";
+            // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 86;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
+            // 
+            // BuPagar
+            // 
+            this.BuPagar.BackColor = System.Drawing.Color.ForestGreen;
+            this.BuPagar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuPagar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuPagar.ForeColor = System.Drawing.Color.White;
+            this.BuPagar.Image = global::Essenza.Properties.Resources.Cash;
+            this.BuPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuPagar.Location = new System.Drawing.Point(183, 45);
+            this.BuPagar.Name = "BuPagar";
+            this.BuPagar.Size = new System.Drawing.Size(130, 29);
+            this.BuPagar.TabIndex = 77;
+            this.BuPagar.Text = "Pagar";
+            this.BuPagar.UseVisualStyleBackColor = false;
+            this.BuPagar.Click += new System.EventHandler(this.BuPagar_Click);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(38, 252);
+            this.label15.Location = new System.Drawing.Point(38, 239);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(138, 18);
             this.label15.TabIndex = 77;
@@ -157,11 +228,56 @@
             this.itbis,
             this.subtotal,
             this.opcion});
-            this.dataCarrito.Location = new System.Drawing.Point(41, 273);
+            this.dataCarrito.Location = new System.Drawing.Point(41, 260);
             this.dataCarrito.Name = "dataCarrito";
-            this.dataCarrito.Size = new System.Drawing.Size(685, 122);
+            this.dataCarrito.Size = new System.Drawing.Size(685, 104);
             this.dataCarrito.TabIndex = 3;
             this.dataCarrito.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCarrito_CellClick);
+            // 
+            // id_cliente
+            // 
+            this.id_cliente.HeaderText = "id_cliente";
+            this.id_cliente.Name = "id_cliente";
+            // 
+            // id_empleado
+            // 
+            this.id_empleado.HeaderText = "id_empleado";
+            this.id_empleado.Name = "id_empleado";
+            // 
+            // id_inventario
+            // 
+            this.id_inventario.HeaderText = "id_inventario";
+            this.id_inventario.Name = "id_inventario";
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "cantidad";
+            this.cantidad.Name = "cantidad";
+            // 
+            // precio_unitario
+            // 
+            this.precio_unitario.HeaderText = "precio_unitario";
+            this.precio_unitario.Name = "precio_unitario";
+            // 
+            // precio_cantidad
+            // 
+            this.precio_cantidad.HeaderText = "precio_cantidad";
+            this.precio_cantidad.Name = "precio_cantidad";
+            // 
+            // itbis
+            // 
+            this.itbis.HeaderText = "itbis";
+            this.itbis.Name = "itbis";
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "subtotal";
+            this.subtotal.Name = "subtotal";
+            // 
+            // opcion
+            // 
+            this.opcion.HeaderText = "opcion";
+            this.opcion.Name = "opcion";
             // 
             // groupBoxBuscar
             // 
@@ -177,6 +293,18 @@
             this.groupBoxBuscar.TabIndex = 2;
             this.groupBoxBuscar.TabStop = false;
             this.groupBoxBuscar.Text = "Buscar";
+            // 
+            // BuBuscarDatos
+            // 
+            this.BuBuscarDatos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BuBuscarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuBuscarDatos.Image = global::Essenza.Properties.Resources.Search_in_List;
+            this.BuBuscarDatos.Location = new System.Drawing.Point(8, 22);
+            this.BuBuscarDatos.Name = "BuBuscarDatos";
+            this.BuBuscarDatos.Size = new System.Drawing.Size(95, 29);
+            this.BuBuscarDatos.TabIndex = 3;
+            this.BuBuscarDatos.UseVisualStyleBackColor = false;
+            this.BuBuscarDatos.Click += new System.EventHandler(this.BuBuscarDatos_Click);
             // 
             // radioButtonProducto
             // 
@@ -335,7 +463,7 @@
             this.groupBoxVenta.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxVenta.Location = new System.Drawing.Point(41, 155);
             this.groupBoxVenta.Name = "groupBoxVenta";
-            this.groupBoxVenta.Size = new System.Drawing.Size(685, 88);
+            this.groupBoxVenta.Size = new System.Drawing.Size(685, 82);
             this.groupBoxVenta.TabIndex = 1;
             this.groupBoxVenta.TabStop = false;
             this.groupBoxVenta.Text = "Detalles del Producto";
@@ -361,6 +489,18 @@
             this.label13.Size = new System.Drawing.Size(62, 16);
             this.label13.TabIndex = 75;
             this.label13.Text = "SubTotal:";
+            // 
+            // BuAddCarrito
+            // 
+            this.BuAddCarrito.BackColor = System.Drawing.Color.ForestGreen;
+            this.BuAddCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuAddCarrito.Image = global::Essenza.Properties.Resources.Add_Shopping_Cart;
+            this.BuAddCarrito.Location = new System.Drawing.Point(615, 29);
+            this.BuAddCarrito.Name = "BuAddCarrito";
+            this.BuAddCarrito.Size = new System.Drawing.Size(53, 29);
+            this.BuAddCarrito.TabIndex = 4;
+            this.BuAddCarrito.UseVisualStyleBackColor = false;
+            this.BuAddCarrito.Click += new System.EventHandler(this.BuAddCarrito_Click);
             // 
             // label12
             // 
@@ -568,142 +708,43 @@
             this.label7.TabIndex = 62;
             this.label7.Text = "Nombre:";
             // 
-            // txtTotalFact
+            // groupBox2
             // 
-            this.txtTotalFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalFact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotalFact.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalFact.Location = new System.Drawing.Point(465, 424);
-            this.txtTotalFact.Name = "txtTotalFact";
-            this.txtTotalFact.Size = new System.Drawing.Size(110, 21);
-            this.txtTotalFact.TabIndex = 78;
+            this.groupBox2.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox2.Controls.Add(this.txtTotalFact);
+            this.groupBox2.Controls.Add(this.BuPagar);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.radioButtonTransferencia);
+            this.groupBox2.Controls.Add(this.radioButtonEfectivo);
+            this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(401, 370);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(325, 86);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Metodos de Pago";
             // 
-            // label16
+            // radioButtonTransferencia
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(462, 405);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(39, 16);
-            this.label16.TabIndex = 77;
-            this.label16.Text = "Total:";
+            this.radioButtonTransferencia.AutoSize = true;
+            this.radioButtonTransferencia.Location = new System.Drawing.Point(6, 48);
+            this.radioButtonTransferencia.Name = "radioButtonTransferencia";
+            this.radioButtonTransferencia.Size = new System.Drawing.Size(118, 22);
+            this.radioButtonTransferencia.TabIndex = 2;
+            this.radioButtonTransferencia.TabStop = true;
+            this.radioButtonTransferencia.Text = "Transferencia";
+            this.radioButtonTransferencia.UseVisualStyleBackColor = true;
             // 
-            // id_cliente
+            // radioButtonEfectivo
             // 
-            this.id_cliente.HeaderText = "id_cliente";
-            this.id_cliente.Name = "id_cliente";
-            // 
-            // id_empleado
-            // 
-            this.id_empleado.HeaderText = "id_empleado";
-            this.id_empleado.Name = "id_empleado";
-            // 
-            // id_inventario
-            // 
-            this.id_inventario.HeaderText = "id_inventario";
-            this.id_inventario.Name = "id_inventario";
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "cantidad";
-            this.cantidad.Name = "cantidad";
-            // 
-            // precio_unitario
-            // 
-            this.precio_unitario.HeaderText = "precio_unitario";
-            this.precio_unitario.Name = "precio_unitario";
-            // 
-            // precio_cantidad
-            // 
-            this.precio_cantidad.HeaderText = "precio_cantidad";
-            this.precio_cantidad.Name = "precio_cantidad";
-            // 
-            // itbis
-            // 
-            this.itbis.HeaderText = "itbis";
-            this.itbis.Name = "itbis";
-            // 
-            // subtotal
-            // 
-            this.subtotal.HeaderText = "subtotal";
-            this.subtotal.Name = "subtotal";
-            // 
-            // opcion
-            // 
-            this.opcion.HeaderText = "opcion";
-            this.opcion.Name = "opcion";
-            // 
-            // BuExit
-            // 
-            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuExit.FlatAppearance.BorderSize = 0;
-            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExit.ForeColor = System.Drawing.Color.White;
-            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
-            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
-            this.BuExit.Name = "BuExit";
-            this.BuExit.Size = new System.Drawing.Size(128, 37);
-            this.BuExit.TabIndex = 86;
-            this.BuExit.Text = "Volver";
-            this.BuExit.UseVisualStyleBackColor = false;
-            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
-            // 
-            // BuPagar
-            // 
-            this.BuPagar.BackColor = System.Drawing.Color.ForestGreen;
-            this.BuPagar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuPagar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuPagar.ForeColor = System.Drawing.Color.White;
-            this.BuPagar.Image = global::Essenza.Properties.Resources.Cash;
-            this.BuPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuPagar.Location = new System.Drawing.Point(596, 416);
-            this.BuPagar.Name = "BuPagar";
-            this.BuPagar.Size = new System.Drawing.Size(130, 29);
-            this.BuPagar.TabIndex = 77;
-            this.BuPagar.Text = "Pagar";
-            this.BuPagar.UseVisualStyleBackColor = false;
-            this.BuPagar.Click += new System.EventHandler(this.BuPagar_Click);
-            // 
-            // BuBuscarDatos
-            // 
-            this.BuBuscarDatos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BuBuscarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuBuscarDatos.Image = global::Essenza.Properties.Resources.Search_in_List;
-            this.BuBuscarDatos.Location = new System.Drawing.Point(8, 22);
-            this.BuBuscarDatos.Name = "BuBuscarDatos";
-            this.BuBuscarDatos.Size = new System.Drawing.Size(95, 29);
-            this.BuBuscarDatos.TabIndex = 3;
-            this.BuBuscarDatos.UseVisualStyleBackColor = false;
-            this.BuBuscarDatos.Click += new System.EventHandler(this.BuBuscarDatos_Click);
-            // 
-            // BuAddCarrito
-            // 
-            this.BuAddCarrito.BackColor = System.Drawing.Color.ForestGreen;
-            this.BuAddCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuAddCarrito.Image = global::Essenza.Properties.Resources.Add_Shopping_Cart;
-            this.BuAddCarrito.Location = new System.Drawing.Point(615, 29);
-            this.BuAddCarrito.Name = "BuAddCarrito";
-            this.BuAddCarrito.Size = new System.Drawing.Size(53, 29);
-            this.BuAddCarrito.TabIndex = 4;
-            this.BuAddCarrito.UseVisualStyleBackColor = false;
-            this.BuAddCarrito.Click += new System.EventHandler(this.BuAddCarrito_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Essenza.Properties.Resources.Sell_Stock;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 68;
-            this.pictureBox1.TabStop = false;
+            this.radioButtonEfectivo.AutoSize = true;
+            this.radioButtonEfectivo.Location = new System.Drawing.Point(6, 26);
+            this.radioButtonEfectivo.Name = "radioButtonEfectivo";
+            this.radioButtonEfectivo.Size = new System.Drawing.Size(82, 22);
+            this.radioButtonEfectivo.TabIndex = 1;
+            this.radioButtonEfectivo.TabStop = true;
+            this.radioButtonEfectivo.Text = "Efectivo";
+            this.radioButtonEfectivo.UseVisualStyleBackColor = true;
             // 
             // FormVender
             // 
@@ -717,6 +758,7 @@
             this.Text = "FormVender";
             this.plTop.ResumeLayout(false);
             this.plTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCarrito)).EndInit();
@@ -729,7 +771,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CantidadPorProducto)).EndInit();
             this.groupBoxEmpleado.ResumeLayout(false);
             this.groupBoxEmpleado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -790,5 +833,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn itbis;
         private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
         private System.Windows.Forms.DataGridViewButtonColumn opcion;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButtonTransferencia;
+        private System.Windows.Forms.RadioButton radioButtonEfectivo;
     }
 }
