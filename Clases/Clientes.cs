@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Management.Automation.Language;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -125,6 +126,34 @@ namespace Essenza.Clases
                 resultado = comando.ExecuteNonQuery();
             }
             return resultado;
+        }
+
+
+        public static List<Clientes> DatosReporteFiltroClientes(string NewQuery)
+        {
+            List<Clientes> listClientes = new List<Clientes>();
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    Clientes clientes = new Clientes();
+                    clientes.id_cliente = reader.GetInt32(0);
+                    clientes.nombres = reader.GetString(1);
+                    clientes.apellidos = reader.GetString(2);
+                    clientes.id_sexo = reader.GetInt32(3);
+                    clientes.id_estado_civil = reader.GetInt32(4);
+                    clientes.cedula = reader.GetString(5);
+                    clientes.telefono = reader.GetString(6);
+                    clientes.email = reader.GetString(7);
+                    clientes.direccion = reader.GetString(8);
+                    clientes.id_estado = reader.GetInt32(9);
+                    listClientes.Add(clientes);
+                }
+                reader.Close();
+            }
+            return listClientes;
         }
     }
 }

@@ -18,6 +18,11 @@ namespace Essenza.Clases
         public int id_pais { get; set; }
         public int id_estado { get; set; }
 
+        public List<string> listDatosCbx = new List<string>()
+        {
+            "id_suplidor", "nombres", "telefono", "email", "direccion", "id_pais", "id_estado"
+        };
+
 
         //registrar suplidores
         public static void AgregarSuplidor(Suplidores suplidores)
@@ -85,6 +90,31 @@ namespace Essenza.Clases
             using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
             {
                 string NewQuery = @"select * from suplidores";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    Suplidores suplidores = new Suplidores();
+                    suplidores.id_suplidor = reader.GetInt32(0);
+                    suplidores.nombres = reader.GetString(1);
+                    suplidores.telefono = reader.GetString(2);
+                    suplidores.email = reader.GetString(3);
+                    suplidores.direccion = reader.GetString(4);
+                    suplidores.id_pais = reader.GetInt32(5);
+                    suplidores.id_estado = reader.GetInt32(6);
+                    listSuplidores.Add(suplidores);
+                }
+                reader.Close();
+            }
+            return listSuplidores;
+        }
+
+        //Mostrar Datos por Filtros
+        public static List<Suplidores> ListaFiltroSuplidores(string NewQuery)
+        {
+            List<Suplidores> listSuplidores = new List<Suplidores>();
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
                 SqlCommand comando = new SqlCommand(NewQuery, acceso);
                 SqlDataReader reader = comando.ExecuteReader();
                 while (reader.Read())

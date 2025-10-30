@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuExit = new System.Windows.Forms.Button();
             this.rBza = new System.Windows.Forms.RadioButton();
             this.rBaz = new System.Windows.Forms.RadioButton();
             this.cbxOrderBy = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.cbxFechas = new System.Windows.Forms.ComboBox();
             this.fechaFin = new System.Windows.Forms.DateTimePicker();
             this.fechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.BuBuscarFechas = new System.Windows.Forms.Button();
             this.BuOrdenar = new System.Windows.Forms.Button();
             this.BuExcelRI = new System.Windows.Forms.Button();
@@ -48,49 +46,63 @@
             this.txtFilterInventarios = new System.Windows.Forms.TextBox();
             this.dataReportsInventarios = new System.Windows.Forms.DataGridView();
             this.plTop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.BuExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.plDock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataReportsInventarios)).BeginInit();
             this.plTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.Controls.Add(this.groupBox3);
+            this.plDock.Controls.Add(this.groupBox2);
             this.plDock.Controls.Add(this.BuExit);
-            this.plDock.Controls.Add(this.rBza);
-            this.plDock.Controls.Add(this.rBaz);
-            this.plDock.Controls.Add(this.cbxOrderBy);
-            this.plDock.Controls.Add(this.label5);
-            this.plDock.Controls.Add(this.cbxFechas);
-            this.plDock.Controls.Add(this.fechaFin);
-            this.plDock.Controls.Add(this.fechaInicio);
-            this.plDock.Controls.Add(this.label4);
-            this.plDock.Controls.Add(this.label3);
-            this.plDock.Controls.Add(this.BuBuscarFechas);
-            this.plDock.Controls.Add(this.BuOrdenar);
             this.plDock.Controls.Add(this.BuExcelRI);
-            this.plDock.Controls.Add(this.cbxFilroInventarios);
             this.plDock.Controls.Add(this.label1);
-            this.plDock.Controls.Add(this.txtFilterInventarios);
             this.plDock.Controls.Add(this.dataReportsInventarios);
+            this.plDock.Controls.Add(this.groupBox1);
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
             this.plDock.Size = new System.Drawing.Size(768, 468);
             this.plDock.TabIndex = 16;
             // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 83;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
+            // 
             // rBza
             // 
             this.rBza.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBza.AutoSize = true;
-            this.rBza.Location = new System.Drawing.Point(595, 112);
+            this.rBza.Location = new System.Drawing.Point(155, 55);
             this.rBza.Name = "rBza";
-            this.rBza.Size = new System.Drawing.Size(42, 17);
+            this.rBza.Size = new System.Drawing.Size(44, 19);
             this.rBza.TabIndex = 82;
             this.rBza.TabStop = true;
             this.rBza.Text = "Z-A";
@@ -101,9 +113,9 @@
             this.rBaz.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBaz.AutoSize = true;
-            this.rBaz.Location = new System.Drawing.Point(595, 80);
+            this.rBaz.Location = new System.Drawing.Point(155, 26);
             this.rBaz.Name = "rBaz";
-            this.rBaz.Size = new System.Drawing.Size(42, 17);
+            this.rBaz.Size = new System.Drawing.Size(44, 19);
             this.rBaz.TabIndex = 81;
             this.rBaz.TabStop = true;
             this.rBaz.Text = "A-Z";
@@ -118,22 +130,10 @@
             this.cbxOrderBy.Items.AddRange(new object[] {
             "Nombres",
             "Apellidos"});
-            this.cbxOrderBy.Location = new System.Drawing.Point(461, 106);
+            this.cbxOrderBy.Location = new System.Drawing.Point(21, 49);
             this.cbxOrderBy.Name = "cbxOrderBy";
             this.cbxOrderBy.Size = new System.Drawing.Size(114, 23);
             this.cbxOrderBy.TabIndex = 80;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(458, 58);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 18);
-            this.label5.TabIndex = 79;
-            this.label5.Text = "Orden";
             // 
             // cbxFechas
             // 
@@ -144,7 +144,7 @@
             this.cbxFechas.Items.AddRange(new object[] {
             "Contrato",
             "Nacimiento"});
-            this.cbxFechas.Location = new System.Drawing.Point(320, 106);
+            this.cbxFechas.Location = new System.Drawing.Point(117, 50);
             this.cbxFechas.Name = "cbxFechas";
             this.cbxFechas.Size = new System.Drawing.Size(114, 23);
             this.cbxFechas.TabIndex = 78;
@@ -153,49 +153,25 @@
             // 
             this.fechaFin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaFin.Location = new System.Drawing.Point(214, 109);
+            this.fechaFin.Location = new System.Drawing.Point(11, 53);
             this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(100, 20);
+            this.fechaFin.Size = new System.Drawing.Size(100, 21);
             this.fechaFin.TabIndex = 77;
             // 
             // fechaInicio
             // 
             this.fechaInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaInicio.Location = new System.Drawing.Point(214, 80);
+            this.fechaInicio.Location = new System.Drawing.Point(11, 24);
             this.fechaInicio.Name = "fechaInicio";
-            this.fechaInicio.Size = new System.Drawing.Size(100, 20);
+            this.fechaInicio.Size = new System.Drawing.Size(100, 21);
             this.fechaInicio.TabIndex = 76;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(211, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 18);
-            this.label4.TabIndex = 75;
-            this.label4.Text = "Fechas";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 18);
-            this.label3.TabIndex = 74;
-            this.label3.Text = "Columnas";
             // 
             // BuBuscarFechas
             // 
             this.BuBuscarFechas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuBuscarFechas.Location = new System.Drawing.Point(320, 77);
+            this.BuBuscarFechas.Location = new System.Drawing.Point(117, 21);
             this.BuBuscarFechas.Name = "BuBuscarFechas";
             this.BuBuscarFechas.Size = new System.Drawing.Size(114, 23);
             this.BuBuscarFechas.TabIndex = 73;
@@ -207,7 +183,7 @@
             // 
             this.BuOrdenar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuOrdenar.Location = new System.Drawing.Point(461, 77);
+            this.BuOrdenar.Location = new System.Drawing.Point(21, 20);
             this.BuOrdenar.Name = "BuOrdenar";
             this.BuOrdenar.Size = new System.Drawing.Size(114, 23);
             this.BuOrdenar.TabIndex = 72;
@@ -233,7 +209,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxFilroInventarios.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilroInventarios.FormattingEnabled = true;
-            this.cbxFilroInventarios.Location = new System.Drawing.Point(49, 106);
+            this.cbxFilroInventarios.Location = new System.Drawing.Point(24, 55);
             this.cbxFilroInventarios.Name = "cbxFilroInventarios";
             this.cbxFilroInventarios.Size = new System.Drawing.Size(129, 23);
             this.cbxFilroInventarios.TabIndex = 70;
@@ -254,7 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilterInventarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilterInventarios.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterInventarios.Location = new System.Drawing.Point(49, 79);
+            this.txtFilterInventarios.Location = new System.Drawing.Point(24, 28);
             this.txtFilterInventarios.Name = "txtFilterInventarios";
             this.txtFilterInventarios.Size = new System.Drawing.Size(130, 21);
             this.txtFilterInventarios.TabIndex = 67;
@@ -268,23 +244,23 @@
             this.dataReportsInventarios.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataReportsInventarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataReportsInventarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataReportsInventarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataReportsInventarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataReportsInventarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataReportsInventarios.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataReportsInventarios.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataReportsInventarios.EnableHeadersVisualStyles = false;
             this.dataReportsInventarios.Location = new System.Drawing.Point(49, 164);
             this.dataReportsInventarios.Name = "dataReportsInventarios";
@@ -304,6 +280,17 @@
             this.plTop.Size = new System.Drawing.Size(768, 54);
             this.plTop.TabIndex = 15;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Essenza.Properties.Resources.Checked_Identification_Documents;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 68;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -315,35 +302,45 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Empleados";
             // 
-            // BuExit
+            // groupBox1
             // 
-            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuExit.FlatAppearance.BorderSize = 0;
-            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExit.ForeColor = System.Drawing.Color.White;
-            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
-            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
-            this.BuExit.Name = "BuExit";
-            this.BuExit.Size = new System.Drawing.Size(128, 37);
-            this.BuExit.TabIndex = 83;
-            this.BuExit.Text = "Volver";
-            this.BuExit.UseVisualStyleBackColor = false;
-            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
+            this.groupBox1.Controls.Add(this.BuOrdenar);
+            this.groupBox1.Controls.Add(this.rBza);
+            this.groupBox1.Controls.Add(this.cbxOrderBy);
+            this.groupBox1.Controls.Add(this.rBaz);
+            this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(509, 52);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(214, 94);
+            this.groupBox1.TabIndex = 84;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Orden";
             // 
-            // pictureBox1
+            // groupBox2
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Essenza.Properties.Resources.Checked_Identification_Documents;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 68;
-            this.pictureBox1.TabStop = false;
+            this.groupBox2.Controls.Add(this.cbxFechas);
+            this.groupBox2.Controls.Add(this.fechaFin);
+            this.groupBox2.Controls.Add(this.fechaInicio);
+            this.groupBox2.Controls.Add(this.BuBuscarFechas);
+            this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(242, 52);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(248, 94);
+            this.groupBox2.TabIndex = 85;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Fechas";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cbxFilroInventarios);
+            this.groupBox3.Controls.Add(this.txtFilterInventarios);
+            this.groupBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(49, 52);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(171, 94);
+            this.groupBox3.TabIndex = 86;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Columnas";
             // 
             // EmployeeReports
             // 
@@ -362,6 +359,11 @@
             this.plTop.ResumeLayout(false);
             this.plTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -378,16 +380,16 @@
         private System.Windows.Forms.ComboBox cbxFilroInventarios;
         private System.Windows.Forms.Button BuExcelRI;
         private System.Windows.Forms.Button BuOrdenar;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BuBuscarFechas;
         private System.Windows.Forms.ComboBox cbxFechas;
         private System.Windows.Forms.DateTimePicker fechaFin;
         private System.Windows.Forms.DateTimePicker fechaInicio;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rBaz;
         private System.Windows.Forms.ComboBox cbxOrderBy;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton rBza;
         private System.Windows.Forms.Button BuExit;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

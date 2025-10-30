@@ -21,7 +21,9 @@ namespace Essenza.Forms
         }
         private void DatosClientes()
         {
+            Clientes clientes = new Clientes();
             dataReportsC.DataSource = Clientes.DatosClientes();
+            cbxFilroClientes.DataSource = clientes.ListDatosClientesFiltro;
         }
         private void dataReportsE_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -42,6 +44,94 @@ namespace Essenza.Forms
                 };
                 ClienteSelecionado?.Invoke(clientes);
                 this.Close();
+            }
+        }
+
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
+
+
+
+
+        private void txtFilterClientes_TextChanged(object sender, EventArgs e)
+        {
+            string campo = cbxFilroClientes.SelectedItem?.ToString();
+            string valor = txtFilterClientes.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(valor))
+            {
+                DatosClientes();
+            }
+            else if (!string.IsNullOrEmpty(campo))
+            {
+                string NewQuery = "";
+
+                if (campo == "id_cliente" || campo == "id_sexo" || 
+                    campo == "id_estado_civil" || campo == "id_estado")
+                {
+                    NewQuery = $"SELECT * FROM clientes WHERE {campo} LIKE '{valor}%'";
+                }
+                else
+                {
+                    NewQuery = $"SELECT * FROM clientes WHERE {campo} LIKE '{valor}%'";
+                }
+                dataReportsC.DataSource = Clientes.DatosReporteFiltroClientes(NewQuery);
+            }
+        }
+
+        private void BuOrdenar_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(cbxOrderBy.Text))
+            {
+                MessageBox.Show($"Debe elegir el tipo de atributo para filtar los datos", "Filtro por Atributos",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            {
+                if (rBaz.Checked)
+                {
+                    switch (cbxOrderBy.Text)
+                    {
+                        case "Nombres":
+                            {
+                                List<Clientes> list = Clientes.DatosClientes();
+                                var datos = from n in list orderby n.nombres select n;
+                                dataReportsC.DataSource = datos.ToList();
+                            }
+                            break;
+
+                        case "Apellidos":
+                            {
+                                List<Clientes> list = Clientes.DatosClientes();
+                                var datos = from n in list orderby n.apellidos select n;
+                                dataReportsC.DataSource = datos.ToList();
+                            }
+                            break;
+
+                    }
+
+                }
+                if (rBza.Checked)
+                {
+                    switch (cbxOrderBy.Text)
+                    {
+                        case "Nombres":
+                            {
+                                List<Clientes> list = Clientes.DatosClientes();
+                                var datos = from n in list orderby n.nombres descending select n;
+                                dataReportsC.DataSource = datos.ToList();
+                            }
+                            break;
+
+                        case "Apellidos":
+                            {
+                                List<Clientes> list = Clientes.DatosClientes();
+                                var datos = from n in list orderby n.apellidos descending select n;
+                                dataReportsC.DataSource = datos.ToList();
+                            }
+                            break;
+
+                    }
+                }
+
             }
         }
     }

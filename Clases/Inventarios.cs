@@ -19,6 +19,12 @@ namespace Essenza.Clases
         public int id_categoria { get; set; }
         public DateTime fecha_ingreso { get; set; }
 
+        public List<string> listDatosCbx = new List<string>()
+        {
+            "id_inventario", "id_suplidor", "producto", "descripcion", "cantidad", "precio_compra",
+            "precio_venta", "id_categoria", "fecha_ingreso"
+        };
+
         //Monstrar Datos del Invetario
         public static List<Inventarios> DatosInventarios()
         {
@@ -114,6 +120,35 @@ namespace Essenza.Clases
                 resultado= comando.ExecuteNonQuery();
             }
             return resultado;
+        }
+
+        //Monstrar Datos del Invetario con Filtro
+        public static List<Inventarios> ListaFiltroInventarios(string NewQuery)
+        {
+            List<Inventarios> listInve = new List<Inventarios>();
+
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    Inventarios inventarios = new Inventarios();
+                    inventarios.id_inventario = reader.GetInt32(0);
+                    inventarios.id_suplidor = reader.GetInt32(1);
+                    inventarios.producto = reader.GetString(2);
+                    inventarios.descripcion = reader.GetString(3);
+                    inventarios.cantidad = reader.GetInt32(4);
+                    inventarios.precio_compra = reader.GetDecimal(5);
+                    inventarios.precio_venta = reader.GetDecimal(6);
+                    inventarios.id_categoria = reader.GetInt32(7);
+                    inventarios.fecha_ingreso = reader.GetDateTime(8);
+                    listInve.Add(inventarios);
+
+                }
+                reader.Close();
+            }
+            return listInve;
         }
     }
 }
