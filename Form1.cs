@@ -41,48 +41,66 @@ namespace Essenza
                     usuarios.usuario = txtUser.Text;
                     usuarios.pass = txtPass.Text;
 
-                    using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+                    List<Usuarios> list = Usuarios.VerificacionUsuarios();
+                    var Verificacion = list.Where(n => n.usuario == usuarios.usuario && n.pass == usuarios.pass).Select(n => n).ToList();
+
+                    if (Verificacion.Count > 0)
                     {
-                        string NewQuery = $"select * from usuarios where usuario = '{usuarios.usuario}'";
-                        SqlCommand cmd = new SqlCommand(NewQuery, acceso);
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        while (reader.Read())
-                        {
-                            if (reader.HasRows == true)
-                            {
-                                string NewQuery2 = $"select * from usuarios where pass = '{usuarios.pass}'";
-                                using (SqlConnection verificacion = EssenzaSystemDB.EssenzaDB())
-                                {
-                                    SqlCommand cmd2 = new SqlCommand(NewQuery2, verificacion);
-                                    SqlDataReader reader2 = cmd2.ExecuteReader();
-                                    while (reader2.Read())
-                                    {
-                                        if (reader2.HasRows == true)
-                                        {
-                                            MenuPrincipal principal = new MenuPrincipal(usuarios);
-                                            principal.Show();
-                                            this.Hide();
-                                            Usuarios.UltimoAcceso(usuarios);
-                                            MessageBox.Show($"Bienvenido {usuarios.usuario}", "Informacion",
-                                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Cotraseña incorrecta", "Informacion",
-                                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        }
-                                    }
-                                    reader2.Close();
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("usuario no encontrado", "Informacion",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
-                        }
-                        reader.Close();
+                        MenuPrincipal principal = new MenuPrincipal(usuarios);
+                        principal.Show();
+                        this.Hide();
+                        Usuarios.UltimoAcceso(usuarios);
+                        MessageBox.Show($"Bienvenido {usuarios.usuario}", "Informacion",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                    else
+                    {
+                        MessageBox.Show("usuario no encontrado", "Informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                    //using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+                    //{
+                    //    string NewQuery = $"select * from usuarios where usuario = '{usuarios.usuario}'";
+                    //    SqlCommand cmd = new SqlCommand(NewQuery, acceso);
+                    //    SqlDataReader reader = cmd.ExecuteReader();
+                    //    while (reader.Read())
+                    //    {
+                    //        if (reader.HasRows == true)
+                    //        {
+                    //            string NewQuery2 = $"select * from usuarios where pass = '{usuarios.pass}'";
+                    //            using (SqlConnection verificacion = EssenzaSystemDB.EssenzaDB())
+                    //            {
+                    //                SqlCommand cmd2 = new SqlCommand(NewQuery2, verificacion);
+                    //                SqlDataReader reader2 = cmd2.ExecuteReader();
+                    //                while (reader2.Read())
+                    //                {
+                    //                    if (reader2.HasRows == true)
+                    //                    {
+                    //                        MenuPrincipal principal = new MenuPrincipal(usuarios);
+                    //                        principal.Show();
+                    //                        this.Hide();
+                    //                        Usuarios.UltimoAcceso(usuarios);
+                    //                        MessageBox.Show($"Bienvenido {usuarios.usuario}", "Informacion",
+                    //                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //                    }
+                    //                    else
+                    //                    {
+                    //                        MessageBox.Show("Cotraseña incorrecta", "Informacion",
+                    //                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //                    }
+                    //                }
+                    //                reader2.Close();
+                    //            }
+                    //        }
+                    //        else
+                    //        {
+                    //            MessageBox.Show("usuario no encontrado", "Informacion",
+                    //                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //        }
+                    //    }
+                    //    reader.Close();
+                    //}
                 }
             }
 
@@ -92,6 +110,16 @@ namespace Essenza
 
         private void txtPass_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtUser.Focus(); }
 
-
+        private void checkSeePassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkSeePassword.Checked)
+            {
+                txtPass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
+            }
+        }
     }
 }

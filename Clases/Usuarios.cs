@@ -38,7 +38,7 @@ namespace Essenza.Clases
         {
             using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
             {
-                String NewQuery = $"Select id_rol from Usuarios where usuario = @usuario and pass = @pass";
+                string NewQuery = $"Select id_rol from Usuarios where usuario = @usuario and pass = @pass";
                 SqlCommand comando = new SqlCommand(NewQuery, acceso);
                 comando.Parameters.AddWithValue("@usuario", usuarios.usuario);
                 comando.Parameters.AddWithValue("@pass", usuarios.pass);
@@ -51,6 +51,28 @@ namespace Essenza.Clases
                 reader.Close();
             }
             return usuarios.id_rol;
+        }
+
+        public static List<Usuarios> VerificacionUsuarios()
+        {
+            List<Usuarios> listU = new List<Usuarios>();
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                string NewQuery = $"select * from Usuarios";
+                SqlCommand comando = new SqlCommand(NewQuery,acceso);
+                SqlDataReader reader = comando.ExecuteReader();
+                while(reader.Read())
+                {
+                    Usuarios usuarios = new Usuarios();
+                    usuarios.usuario = (string)reader["usuario"];
+                    usuarios.pass = (string)reader["pass"];
+                    listU.Add(usuarios);
+                }
+                reader.Close();
+
+            }
+            return listU;
+            
         }
     }
 }

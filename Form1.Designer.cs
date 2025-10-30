@@ -90,6 +90,7 @@
             this.checkSeePassword.TabIndex = 11;
             this.checkSeePassword.Text = "See your password";
             this.checkSeePassword.UseVisualStyleBackColor = true;
+            this.checkSeePassword.CheckedChanged += new System.EventHandler(this.checkSeePassword_CheckedChanged);
             // 
             // txtPass
             // 
@@ -100,6 +101,7 @@
             this.txtPass.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(64, 197);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(211, 21);
             this.txtPass.TabIndex = 10;
             this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
