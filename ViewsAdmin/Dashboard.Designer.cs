@@ -29,23 +29,26 @@
         private void InitializeComponent()
         {
             this.plDock = new System.Windows.Forms.Panel();
-            this.plTop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBoxIngresos = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LbTotalVentas = new System.Windows.Forms.Label();
-            this.groupBoxVentas = new System.Windows.Forms.GroupBox();
-            this.LbCantidadVentas = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.groupBoxUnderstock = new System.Windows.Forms.GroupBox();
+            this.dataProductsUnderstock = new System.Windows.Forms.DataGridView();
             this.groupBoxRegistros = new System.Windows.Forms.GroupBox();
-            this.LbCountEmpl = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.LbCountClient = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.LbCountProd = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.LbCountSupl = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.LbCountClient = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.LbCountEmpl = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBoxVentas = new System.Windows.Forms.GroupBox();
+            this.LbCantidadVentas = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBoxIngresos = new System.Windows.Forms.GroupBox();
+            this.LbTotalVentas = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.plTop = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BuExit = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -53,14 +56,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBoxUnderstock = new System.Windows.Forms.GroupBox();
-            this.dataProductsUnderstock = new System.Windows.Forms.DataGridView();
-            this.BuExit = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
-            this.plTop.SuspendLayout();
-            this.groupBoxIngresos.SuspendLayout();
-            this.groupBoxVentas.SuspendLayout();
+            this.groupBoxUnderstock.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataProductsUnderstock)).BeginInit();
             this.groupBoxRegistros.SuspendLayout();
+            this.groupBoxVentas.SuspendLayout();
+            this.groupBoxIngresos.SuspendLayout();
+            this.plTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -68,8 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxUnderstock.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataProductsUnderstock)).BeginInit();
             this.SuspendLayout();
             // 
             // plDock
@@ -86,99 +86,27 @@
             this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 18;
             // 
-            // plTop
+            // groupBoxUnderstock
             // 
-            this.plTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            this.plTop.Controls.Add(this.pictureBox1);
-            this.plTop.Controls.Add(this.label2);
-            this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plTop.Location = new System.Drawing.Point(0, 0);
-            this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(884, 54);
-            this.plTop.TabIndex = 17;
+            this.groupBoxUnderstock.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxUnderstock.Controls.Add(this.dataProductsUnderstock);
+            this.groupBoxUnderstock.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxUnderstock.Location = new System.Drawing.Point(226, 140);
+            this.groupBoxUnderstock.Name = "groupBoxUnderstock";
+            this.groupBoxUnderstock.Size = new System.Drawing.Size(632, 288);
+            this.groupBoxUnderstock.TabIndex = 80;
+            this.groupBoxUnderstock.TabStop = false;
+            this.groupBoxUnderstock.Text = "Productos de Stock Bajo";
             // 
-            // label2
+            // dataProductsUnderstock
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(103, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 22);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Dashboard";
-            // 
-            // groupBoxIngresos
-            // 
-            this.groupBoxIngresos.BackColor = System.Drawing.Color.Snow;
-            this.groupBoxIngresos.Controls.Add(this.LbTotalVentas);
-            this.groupBoxIngresos.Controls.Add(this.pictureBox2);
-            this.groupBoxIngresos.Controls.Add(this.label1);
-            this.groupBoxIngresos.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxIngresos.Location = new System.Drawing.Point(610, 19);
-            this.groupBoxIngresos.Name = "groupBoxIngresos";
-            this.groupBoxIngresos.Size = new System.Drawing.Size(248, 86);
-            this.groupBoxIngresos.TabIndex = 51;
-            this.groupBoxIngresos.TabStop = false;
-            this.groupBoxIngresos.Text = "Ingresos por Ventas";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(87, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 21);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Total";
-            // 
-            // LbTotalVentas
-            // 
-            this.LbTotalVentas.AutoSize = true;
-            this.LbTotalVentas.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTotalVentas.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LbTotalVentas.Location = new System.Drawing.Point(86, 51);
-            this.LbTotalVentas.Name = "LbTotalVentas";
-            this.LbTotalVentas.Size = new System.Drawing.Size(107, 26);
-            this.LbTotalVentas.TabIndex = 70;
-            this.LbTotalVentas.Text = "$0000.00\r\n";
-            // 
-            // groupBoxVentas
-            // 
-            this.groupBoxVentas.BackColor = System.Drawing.Color.Snow;
-            this.groupBoxVentas.Controls.Add(this.LbCantidadVentas);
-            this.groupBoxVentas.Controls.Add(this.pictureBox3);
-            this.groupBoxVentas.Controls.Add(this.label4);
-            this.groupBoxVentas.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxVentas.Location = new System.Drawing.Point(341, 19);
-            this.groupBoxVentas.Name = "groupBoxVentas";
-            this.groupBoxVentas.Size = new System.Drawing.Size(248, 86);
-            this.groupBoxVentas.TabIndex = 71;
-            this.groupBoxVentas.TabStop = false;
-            this.groupBoxVentas.Text = "Cantidad de Ventas";
-            // 
-            // LbCantidadVentas
-            // 
-            this.LbCantidadVentas.AutoSize = true;
-            this.LbCantidadVentas.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbCantidadVentas.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LbCantidadVentas.Location = new System.Drawing.Point(86, 51);
-            this.LbCantidadVentas.Name = "LbCantidadVentas";
-            this.LbCantidadVentas.Size = new System.Drawing.Size(51, 26);
-            this.LbCantidadVentas.TabIndex = 70;
-            this.LbCantidadVentas.Text = "000";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(87, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 21);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Total";
+            this.dataProductsUnderstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataProductsUnderstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataProductsUnderstock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataProductsUnderstock.Location = new System.Drawing.Point(16, 27);
+            this.dataProductsUnderstock.Name = "dataProductsUnderstock";
+            this.dataProductsUnderstock.Size = new System.Drawing.Size(597, 249);
+            this.dataProductsUnderstock.TabIndex = 0;
             // 
             // groupBoxRegistros
             // 
@@ -202,50 +130,6 @@
             this.groupBoxRegistros.TabIndex = 72;
             this.groupBoxRegistros.TabStop = false;
             this.groupBoxRegistros.Text = "Total de Registros";
-            // 
-            // LbCountEmpl
-            // 
-            this.LbCountEmpl.AutoSize = true;
-            this.LbCountEmpl.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbCountEmpl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LbCountEmpl.Location = new System.Drawing.Point(86, 51);
-            this.LbCountEmpl.Name = "LbCountEmpl";
-            this.LbCountEmpl.Size = new System.Drawing.Size(51, 26);
-            this.LbCountEmpl.TabIndex = 70;
-            this.LbCountEmpl.Text = "000";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label5.Location = new System.Drawing.Point(87, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 21);
-            this.label5.TabIndex = 51;
-            this.label5.Text = "Empleados";
-            // 
-            // LbCountClient
-            // 
-            this.LbCountClient.AutoSize = true;
-            this.LbCountClient.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbCountClient.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LbCountClient.Location = new System.Drawing.Point(86, 117);
-            this.LbCountClient.Name = "LbCountClient";
-            this.LbCountClient.Size = new System.Drawing.Size(51, 26);
-            this.LbCountClient.TabIndex = 73;
-            this.LbCountClient.Text = "000";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label7.Location = new System.Drawing.Point(87, 93);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 21);
-            this.label7.TabIndex = 71;
-            this.label7.Text = "Clientes";
             // 
             // LbCountProd
             // 
@@ -290,6 +174,163 @@
             this.label11.Size = new System.Drawing.Size(90, 21);
             this.label11.TabIndex = 74;
             this.label11.Text = "Suplidores";
+            // 
+            // LbCountClient
+            // 
+            this.LbCountClient.AutoSize = true;
+            this.LbCountClient.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbCountClient.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LbCountClient.Location = new System.Drawing.Point(86, 117);
+            this.LbCountClient.Name = "LbCountClient";
+            this.LbCountClient.Size = new System.Drawing.Size(51, 26);
+            this.LbCountClient.TabIndex = 73;
+            this.LbCountClient.Text = "000";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label7.Location = new System.Drawing.Point(87, 93);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 21);
+            this.label7.TabIndex = 71;
+            this.label7.Text = "Clientes";
+            // 
+            // LbCountEmpl
+            // 
+            this.LbCountEmpl.AutoSize = true;
+            this.LbCountEmpl.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbCountEmpl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LbCountEmpl.Location = new System.Drawing.Point(86, 51);
+            this.LbCountEmpl.Name = "LbCountEmpl";
+            this.LbCountEmpl.Size = new System.Drawing.Size(51, 26);
+            this.LbCountEmpl.TabIndex = 70;
+            this.LbCountEmpl.Text = "000";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label5.Location = new System.Drawing.Point(87, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 21);
+            this.label5.TabIndex = 51;
+            this.label5.Text = "Empleados";
+            // 
+            // groupBoxVentas
+            // 
+            this.groupBoxVentas.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxVentas.Controls.Add(this.LbCantidadVentas);
+            this.groupBoxVentas.Controls.Add(this.pictureBox3);
+            this.groupBoxVentas.Controls.Add(this.label4);
+            this.groupBoxVentas.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxVentas.Location = new System.Drawing.Point(341, 19);
+            this.groupBoxVentas.Name = "groupBoxVentas";
+            this.groupBoxVentas.Size = new System.Drawing.Size(248, 86);
+            this.groupBoxVentas.TabIndex = 71;
+            this.groupBoxVentas.TabStop = false;
+            this.groupBoxVentas.Text = "Cantidad de Ventas";
+            // 
+            // LbCantidadVentas
+            // 
+            this.LbCantidadVentas.AutoSize = true;
+            this.LbCantidadVentas.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbCantidadVentas.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LbCantidadVentas.Location = new System.Drawing.Point(86, 51);
+            this.LbCantidadVentas.Name = "LbCantidadVentas";
+            this.LbCantidadVentas.Size = new System.Drawing.Size(51, 26);
+            this.LbCantidadVentas.TabIndex = 70;
+            this.LbCantidadVentas.Text = "000";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label4.Location = new System.Drawing.Point(87, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 21);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Total";
+            // 
+            // groupBoxIngresos
+            // 
+            this.groupBoxIngresos.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxIngresos.Controls.Add(this.LbTotalVentas);
+            this.groupBoxIngresos.Controls.Add(this.pictureBox2);
+            this.groupBoxIngresos.Controls.Add(this.label1);
+            this.groupBoxIngresos.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxIngresos.Location = new System.Drawing.Point(610, 19);
+            this.groupBoxIngresos.Name = "groupBoxIngresos";
+            this.groupBoxIngresos.Size = new System.Drawing.Size(248, 86);
+            this.groupBoxIngresos.TabIndex = 51;
+            this.groupBoxIngresos.TabStop = false;
+            this.groupBoxIngresos.Text = "Ingresos por Ventas";
+            // 
+            // LbTotalVentas
+            // 
+            this.LbTotalVentas.AutoSize = true;
+            this.LbTotalVentas.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTotalVentas.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LbTotalVentas.Location = new System.Drawing.Point(86, 51);
+            this.LbTotalVentas.Name = "LbTotalVentas";
+            this.LbTotalVentas.Size = new System.Drawing.Size(107, 26);
+            this.LbTotalVentas.TabIndex = 70;
+            this.LbTotalVentas.Text = "$0000.00\r\n";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(87, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 21);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Total";
+            // 
+            // plTop
+            // 
+            this.plTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.plTop.Controls.Add(this.pictureBox1);
+            this.plTop.Controls.Add(this.label2);
+            this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plTop.Location = new System.Drawing.Point(0, 0);
+            this.plTop.Name = "plTop";
+            this.plTop.Size = new System.Drawing.Size(884, 54);
+            this.plTop.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(103, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 22);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Dashboard";
+            // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 440);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 87;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
             // pictureBox6
             // 
@@ -368,47 +409,6 @@
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBoxUnderstock
-            // 
-            this.groupBoxUnderstock.BackColor = System.Drawing.Color.Snow;
-            this.groupBoxUnderstock.Controls.Add(this.dataProductsUnderstock);
-            this.groupBoxUnderstock.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxUnderstock.Location = new System.Drawing.Point(226, 140);
-            this.groupBoxUnderstock.Name = "groupBoxUnderstock";
-            this.groupBoxUnderstock.Size = new System.Drawing.Size(632, 288);
-            this.groupBoxUnderstock.TabIndex = 80;
-            this.groupBoxUnderstock.TabStop = false;
-            this.groupBoxUnderstock.Text = "Productos de Stock Bajo";
-            // 
-            // dataProductsUnderstock
-            // 
-            this.dataProductsUnderstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataProductsUnderstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataProductsUnderstock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataProductsUnderstock.Location = new System.Drawing.Point(16, 27);
-            this.dataProductsUnderstock.Name = "dataProductsUnderstock";
-            this.dataProductsUnderstock.Size = new System.Drawing.Size(597, 249);
-            this.dataProductsUnderstock.TabIndex = 0;
-            // 
-            // BuExit
-            // 
-            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuExit.FlatAppearance.BorderSize = 0;
-            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExit.ForeColor = System.Drawing.Color.White;
-            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
-            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 440);
-            this.BuExit.Name = "BuExit";
-            this.BuExit.Size = new System.Drawing.Size(128, 37);
-            this.BuExit.TabIndex = 87;
-            this.BuExit.Text = "Volver";
-            this.BuExit.UseVisualStyleBackColor = false;
-            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,14 +422,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.plDock.ResumeLayout(false);
-            this.plTop.ResumeLayout(false);
-            this.plTop.PerformLayout();
-            this.groupBoxIngresos.ResumeLayout(false);
-            this.groupBoxIngresos.PerformLayout();
-            this.groupBoxVentas.ResumeLayout(false);
-            this.groupBoxVentas.PerformLayout();
+            this.groupBoxUnderstock.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataProductsUnderstock)).EndInit();
             this.groupBoxRegistros.ResumeLayout(false);
             this.groupBoxRegistros.PerformLayout();
+            this.groupBoxVentas.ResumeLayout(false);
+            this.groupBoxVentas.PerformLayout();
+            this.groupBoxIngresos.ResumeLayout(false);
+            this.groupBoxIngresos.PerformLayout();
+            this.plTop.ResumeLayout(false);
+            this.plTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -437,8 +439,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxUnderstock.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataProductsUnderstock)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -182,5 +182,10 @@ namespace Essenza.Forms
         {
             OpenForms(new Dashboard());
         }
+
+        private void BuReportesVentas_Click(object sender, EventArgs e)
+        {
+            OpenForms(new ReportesVentas());
+        }
     }
 }

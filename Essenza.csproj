@@ -131,6 +131,12 @@
     <Compile Include="FormsReportes\EmployeeReports.Designer.cs">
       <DependentUpon>EmployeeReports.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsReportes\ReportesVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsReportes\ReportesVentas.Designer.cs">
+      <DependentUpon>ReportesVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsVentasYFacturas\FormPagoEfectivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsReportes\EmployeeReports.resx">
       <DependentUpon>EmployeeReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsReportes\ReportesVentas.resx">
+      <DependentUpon>ReportesVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsVentasYFacturas\FormPagoEfectivo.resx">
       <DependentUpon>FormPagoEfectivo.cs</DependentUpon>

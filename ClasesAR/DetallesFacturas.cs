@@ -82,5 +82,34 @@ namespace Essenza.ClasesAR
             }
         }
 
+        public static List<DetallesFacturas> datosDetallesFactura()
+        {
+            string NewQuery = $"select * from detalle_factura";
+            List<DetallesFacturas> listDetalles = new List<DetallesFacturas>();
+            using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                SqlDataReader reader = comando.ExecuteReader();
+                while(reader.Read())
+                {
+                    DetallesFacturas detallesFacturas = new DetallesFacturas();
+                    detallesFacturas.id_factura = reader.GetInt32(0);
+                    detallesFacturas.id_cliente = reader.GetInt32(1);
+                    detallesFacturas.id_empleado = reader.GetInt32(2);
+                    detallesFacturas.id_inventario = reader.GetInt32(3);
+                    detallesFacturas.fecha_venta = reader.GetDateTime(4);
+                    detallesFacturas.descripcion = reader.GetString(5);
+                    detallesFacturas.cantidad = reader.GetInt32(6);
+                    detallesFacturas.precio_unitario = reader.GetDecimal(7);
+                    detallesFacturas.precio_cantidad = reader.GetDecimal(8);
+                    detallesFacturas.itbis = reader.GetDecimal(9);
+                    detallesFacturas.subtotal = reader.GetDecimal(10);
+                    listDetalles.Add(detallesFacturas);
+                }
+                reader.Close();
+            }
+            return listDetalles;
+        }
+
     }
 }

@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clasesar\\detallesfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clasesar\\detallesfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\clasesar\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clasesar\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\clases\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\clases\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clases\\inventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clasesar\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clasesar\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,12 +57,8 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MenuPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
@@ -63,47 +71,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
               "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeToolTip": "Forms\\MenuPrincipal.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAwLYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAawLsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T18:59:17.887Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "DetallesFacturas.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\DetallesFacturas.cs",
+              "RelativeDocumentMoniker": "ClasesAR\\DetallesFacturas.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\DetallesFacturas.cs",
+              "RelativeToolTip": "ClasesAR\\DetallesFacturas.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwFgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T21:41:52.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportesVentas.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesVentas.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs*",
+              "RelativeToolTip": "FormsReportes\\ReportesVentas.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAEwCUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T20:12:56.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReportesVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesVentas.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "FormsReportes\\ReportesVentas.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T20:01:20.091Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Facturas.cs",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\Facturas.cs",
               "RelativeDocumentMoniker": "ClasesAR\\Facturas.cs",
               "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\Facturas.cs",
               "RelativeToolTip": "ClasesAR\\Facturas.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwFAAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwFAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T14:49:41.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs",
               "RelativeDocumentMoniker": "ViewsAdmin\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs*",
-              "RelativeToolTip": "ViewsAdmin\\Dashboard.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAqwC0AAAA4AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs",
+              "RelativeToolTip": "ViewsAdmin\\Dashboard.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wCwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T14:14:02.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "FormPagoEfectivo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoEfectivo.cs",
               "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormPagoEfectivo.cs",
@@ -115,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "FormVender.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormVender.cs",
               "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormVender.cs",
@@ -127,25 +177,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Dashboard.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs",
               "RelativeDocumentMoniker": "ViewsAdmin\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ViewsAdmin\\Dashboard.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ViewsAdmin\\Dashboard.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T13:20:53.469Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Inventarios.cs",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Inventarios.cs",
               "RelativeDocumentMoniker": "Clases\\Inventarios.cs",
               "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Clases\\Inventarios.cs",
               "RelativeToolTip": "Clases\\Inventarios.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA8wAkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA4wAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T17:03:36.655Z",
               "EditorCaption": ""
