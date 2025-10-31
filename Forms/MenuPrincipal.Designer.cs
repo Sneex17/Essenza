@@ -51,6 +51,10 @@
             this.panelMenuPrincipal = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelDashBoard = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.BuEstadisticas = new System.Windows.Forms.Button();
+            this.BuDashBoard = new System.Windows.Forms.Button();
             this.BuAcercaDe = new System.Windows.Forms.Button();
             this.BuExit = new System.Windows.Forms.Button();
             this.BuVentas = new System.Windows.Forms.Button();
@@ -66,12 +70,15 @@
             this.panelClientesSM.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             this.panelMenuPrincipal.SuspendLayout();
+            this.panelDashBoard.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelBns
             // 
             this.PanelBns.AutoScroll = true;
             this.PanelBns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            this.PanelBns.Controls.Add(this.panelDashBoard);
+            this.PanelBns.Controls.Add(this.BuDashBoard);
             this.PanelBns.Controls.Add(this.BuAcercaDe);
             this.PanelBns.Controls.Add(this.BuExit);
             this.PanelBns.Controls.Add(this.panelVentasSM);
@@ -365,7 +372,7 @@
             this.panelMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMenuPrincipal.Location = new System.Drawing.Point(200, 0);
             this.panelMenuPrincipal.Name = "panelMenuPrincipal";
-            this.panelMenuPrincipal.Size = new System.Drawing.Size(784, 561);
+            this.panelMenuPrincipal.Size = new System.Drawing.Size(884, 561);
             this.panelMenuPrincipal.TabIndex = 1;
             // 
             // label2
@@ -390,6 +397,70 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome Usuario!";
             // 
+            // panelDashBoard
+            // 
+            this.panelDashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(54)))), ((int)(((byte)(163)))));
+            this.panelDashBoard.Controls.Add(this.button1);
+            this.panelDashBoard.Controls.Add(this.BuEstadisticas);
+            this.panelDashBoard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDashBoard.Location = new System.Drawing.Point(0, 723);
+            this.panelDashBoard.Name = "panelDashBoard";
+            this.panelDashBoard.Size = new System.Drawing.Size(183, 80);
+            this.panelDashBoard.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat SemiBold", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.SeaShell;
+            this.button1.Location = new System.Drawing.Point(0, 40);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(183, 20);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Reportes de Ventas";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // BuEstadisticas
+            // 
+            this.BuEstadisticas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuEstadisticas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BuEstadisticas.FlatAppearance.BorderSize = 0;
+            this.BuEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuEstadisticas.Font = new System.Drawing.Font("Montserrat SemiBold", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuEstadisticas.ForeColor = System.Drawing.Color.SeaShell;
+            this.BuEstadisticas.Location = new System.Drawing.Point(0, 0);
+            this.BuEstadisticas.Name = "BuEstadisticas";
+            this.BuEstadisticas.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.BuEstadisticas.Size = new System.Drawing.Size(183, 40);
+            this.BuEstadisticas.TabIndex = 6;
+            this.BuEstadisticas.Text = "Estadísticas";
+            this.BuEstadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuEstadisticas.UseVisualStyleBackColor = true;
+            this.BuEstadisticas.Click += new System.EventHandler(this.BuEstadisticas_Click);
+            // 
+            // BuDashBoard
+            // 
+            this.BuDashBoard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuDashBoard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BuDashBoard.FlatAppearance.BorderSize = 0;
+            this.BuDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuDashBoard.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuDashBoard.ForeColor = System.Drawing.Color.White;
+            this.BuDashBoard.Image = global::Essenza.Properties.Resources.Combo_Chart;
+            this.BuDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuDashBoard.Location = new System.Drawing.Point(0, 683);
+            this.BuDashBoard.Name = "BuDashBoard";
+            this.BuDashBoard.Size = new System.Drawing.Size(183, 40);
+            this.BuDashBoard.TabIndex = 7;
+            this.BuDashBoard.Text = "Dashboard";
+            this.BuDashBoard.UseVisualStyleBackColor = true;
+            this.BuDashBoard.Click += new System.EventHandler(this.BuDashBoard_Click);
+            // 
             // BuAcercaDe
             // 
             this.BuAcercaDe.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -400,7 +471,7 @@
             this.BuAcercaDe.ForeColor = System.Drawing.Color.White;
             this.BuAcercaDe.Image = global::Essenza.Properties.Resources.Info;
             this.BuAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuAcercaDe.Location = new System.Drawing.Point(0, 683);
+            this.BuAcercaDe.Location = new System.Drawing.Point(0, 803);
             this.BuAcercaDe.Name = "BuAcercaDe";
             this.BuAcercaDe.Size = new System.Drawing.Size(183, 40);
             this.BuAcercaDe.TabIndex = 6;
@@ -418,7 +489,7 @@
             this.BuExit.ForeColor = System.Drawing.Color.White;
             this.BuExit.Image = global::Essenza.Properties.Resources.Close;
             this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(0, 723);
+            this.BuExit.Location = new System.Drawing.Point(0, 843);
             this.BuExit.Name = "BuExit";
             this.BuExit.Size = new System.Drawing.Size(183, 40);
             this.BuExit.TabIndex = 6;
@@ -520,11 +591,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.panelMenuPrincipal);
             this.Controls.Add(this.PanelBns);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(999, 599);
+            this.MinimumSize = new System.Drawing.Size(1100, 600);
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Essenza | Menu Principal";
@@ -538,6 +609,7 @@
             this.PanelLogo.PerformLayout();
             this.panelMenuPrincipal.ResumeLayout(false);
             this.panelMenuPrincipal.PerformLayout();
+            this.panelDashBoard.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -573,5 +645,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BuDashBoard;
+        private System.Windows.Forms.Panel panelDashBoard;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BuEstadisticas;
     }
 }

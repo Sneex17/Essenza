@@ -89,7 +89,7 @@
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(770, 468);
+            this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 16;
             // 
             // BuExit
@@ -103,7 +103,7 @@
             this.BuExit.ForeColor = System.Drawing.Color.White;
             this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
             this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Location = new System.Drawing.Point(28, 440);
             this.BuExit.Name = "BuExit";
             this.BuExit.Size = new System.Drawing.Size(128, 37);
             this.BuExit.TabIndex = 85;
@@ -129,7 +129,7 @@
             this.txtDescripcion.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(232, 108);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(138, 21);
+            this.txtDescripcion.Size = new System.Drawing.Size(136, 21);
             this.txtDescripcion.TabIndex = 71;
             // 
             // BuBuscarE
@@ -143,7 +143,7 @@
             this.BuBuscarE.ForeColor = System.Drawing.Color.White;
             this.BuBuscarE.Image = global::Essenza.Properties.Resources.Search_in_List;
             this.BuBuscarE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuBuscarE.Location = new System.Drawing.Point(588, 32);
+            this.BuBuscarE.Location = new System.Drawing.Point(702, 32);
             this.BuBuscarE.Name = "BuBuscarE";
             this.BuBuscarE.Size = new System.Drawing.Size(154, 40);
             this.BuBuscarE.TabIndex = 70;
@@ -162,7 +162,7 @@
             this.BuRegistroInventario.ForeColor = System.Drawing.Color.White;
             this.BuRegistroInventario.Image = global::Essenza.Properties.Resources.Add_New;
             this.BuRegistroInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuRegistroInventario.Location = new System.Drawing.Point(341, 398);
+            this.BuRegistroInventario.Location = new System.Drawing.Point(455, 437);
             this.BuRegistroInventario.Name = "BuRegistroInventario";
             this.BuRegistroInventario.Size = new System.Drawing.Size(130, 40);
             this.BuRegistroInventario.TabIndex = 65;
@@ -181,7 +181,7 @@
             this.BuUpdateInventario.ForeColor = System.Drawing.Color.White;
             this.BuUpdateInventario.Image = global::Essenza.Properties.Resources.Edit_Property;
             this.BuUpdateInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuUpdateInventario.Location = new System.Drawing.Point(477, 398);
+            this.BuUpdateInventario.Location = new System.Drawing.Point(591, 437);
             this.BuUpdateInventario.Name = "BuUpdateInventario";
             this.BuUpdateInventario.Size = new System.Drawing.Size(130, 40);
             this.BuUpdateInventario.TabIndex = 64;
@@ -200,7 +200,7 @@
             this.BuDeleteInventario.ForeColor = System.Drawing.Color.White;
             this.BuDeleteInventario.Image = global::Essenza.Properties.Resources.Delete;
             this.BuDeleteInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuDeleteInventario.Location = new System.Drawing.Point(612, 398);
+            this.BuDeleteInventario.Location = new System.Drawing.Point(726, 437);
             this.BuDeleteInventario.Name = "BuDeleteInventario";
             this.BuDeleteInventario.Size = new System.Drawing.Size(130, 40);
             this.BuDeleteInventario.TabIndex = 63;
@@ -225,7 +225,7 @@
             this.txtPventas.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPventas.Location = new System.Drawing.Point(412, 60);
             this.txtPventas.Name = "txtPventas";
-            this.txtPventas.Size = new System.Drawing.Size(138, 21);
+            this.txtPventas.Size = new System.Drawing.Size(136, 21);
             this.txtPventas.TabIndex = 59;
             // 
             // txtPcompras
@@ -237,7 +237,7 @@
             this.txtPcompras.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPcompras.Location = new System.Drawing.Point(232, 60);
             this.txtPcompras.Name = "txtPcompras";
-            this.txtPcompras.Size = new System.Drawing.Size(138, 21);
+            this.txtPcompras.Size = new System.Drawing.Size(136, 21);
             this.txtPcompras.TabIndex = 55;
             // 
             // cbxSuplidor
@@ -258,7 +258,7 @@
             this.txtCantidad.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(412, 109);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(138, 21);
+            this.txtCantidad.Size = new System.Drawing.Size(136, 21);
             this.txtCantidad.TabIndex = 53;
             // 
             // txtProducto
@@ -270,7 +270,7 @@
             this.txtProducto.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProducto.Location = new System.Drawing.Point(54, 108);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(138, 21);
+            this.txtProducto.Size = new System.Drawing.Size(136, 21);
             this.txtProducto.TabIndex = 52;
             // 
             // txtIdInv
@@ -282,7 +282,7 @@
             this.txtIdInv.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdInv.Location = new System.Drawing.Point(54, 60);
             this.txtIdInv.Name = "txtIdInv";
-            this.txtIdInv.Size = new System.Drawing.Size(138, 21);
+            this.txtIdInv.Size = new System.Drawing.Size(136, 21);
             this.txtIdInv.TabIndex = 51;
             // 
             // label14
@@ -383,7 +383,7 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(770, 54);
+            this.plTop.Size = new System.Drawing.Size(884, 54);
             this.plTop.TabIndex = 15;
             // 
             // pictureBox1
@@ -412,12 +412,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 522);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistroInventarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroInventarios";
             this.plDock.ResumeLayout(false);
             this.plDock.PerformLayout();

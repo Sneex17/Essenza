@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.plTop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -43,8 +44,13 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuExit = new System.Windows.Forms.Button();
+            this.BuBuscarE = new System.Windows.Forms.Button();
             this.cbxCargoEmp = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.BuRegister = new System.Windows.Forms.Button();
+            this.BuUpdate = new System.Windows.Forms.Button();
+            this.BuDeleteE = new System.Windows.Forms.Button();
             this.cbxEmployeeStatuses = new System.Windows.Forms.ComboBox();
             this.txtSalaryE = new System.Windows.Forms.TextBox();
             this.dateContractE = new System.Windows.Forms.DateTimePicker();
@@ -57,15 +63,9 @@
             this.txtLstNamesE = new System.Windows.Forms.TextBox();
             this.txtNamesE = new System.Windows.Forms.TextBox();
             this.txtIdE = new System.Windows.Forms.TextBox();
-            this.BuBuscarE = new System.Windows.Forms.Button();
-            this.BuRegister = new System.Windows.Forms.Button();
-            this.BuUpdate = new System.Windows.Forms.Button();
-            this.BuDeleteE = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BuExit = new System.Windows.Forms.Button();
             this.plTop.SuspendLayout();
-            this.plDock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.plDock.SuspendLayout();
             this.SuspendLayout();
             // 
             // plTop
@@ -76,8 +76,19 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(768, 54);
+            this.plTop.Size = new System.Drawing.Size(884, 54);
             this.plTop.TabIndex = 13;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Essenza.Properties.Resources.Checked_Identification_Documents;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 68;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -247,8 +258,46 @@
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(768, 468);
+            this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 14;
+            // 
+            // BuExit
+            // 
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(28, 440);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(128, 37);
+            this.BuExit.TabIndex = 84;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
+            // 
+            // BuBuscarE
+            // 
+            this.BuBuscarE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuBuscarE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuBuscarE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuBuscarE.FlatAppearance.BorderSize = 0;
+            this.BuBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuBuscarE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuBuscarE.ForeColor = System.Drawing.Color.White;
+            this.BuBuscarE.Image = global::Essenza.Properties.Resources.Search_in_List;
+            this.BuBuscarE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuBuscarE.Location = new System.Drawing.Point(704, 32);
+            this.BuBuscarE.Name = "BuBuscarE";
+            this.BuBuscarE.Size = new System.Drawing.Size(154, 40);
+            this.BuBuscarE.TabIndex = 70;
+            this.BuBuscarE.Text = "Buscador";
+            this.BuBuscarE.UseVisualStyleBackColor = false;
+            this.BuBuscarE.Click += new System.EventHandler(this.BuBuscarE_Click);
             // 
             // cbxCargoEmp
             // 
@@ -269,6 +318,63 @@
             this.label3.Size = new System.Drawing.Size(130, 16);
             this.label3.TabIndex = 68;
             this.label3.Text = "Cargo del Empleado";
+            // 
+            // BuRegister
+            // 
+            this.BuRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuRegister.BackColor = System.Drawing.Color.ForestGreen;
+            this.BuRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuRegister.FlatAppearance.BorderSize = 0;
+            this.BuRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuRegister.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuRegister.ForeColor = System.Drawing.Color.White;
+            this.BuRegister.Image = global::Essenza.Properties.Resources.Add_New;
+            this.BuRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuRegister.Location = new System.Drawing.Point(457, 437);
+            this.BuRegister.Name = "BuRegister";
+            this.BuRegister.Size = new System.Drawing.Size(130, 40);
+            this.BuRegister.TabIndex = 65;
+            this.BuRegister.Text = "Register";
+            this.BuRegister.UseVisualStyleBackColor = false;
+            this.BuRegister.Click += new System.EventHandler(this.BuRegister_Click);
+            // 
+            // BuUpdate
+            // 
+            this.BuUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuUpdate.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BuUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuUpdate.FlatAppearance.BorderSize = 0;
+            this.BuUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuUpdate.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuUpdate.ForeColor = System.Drawing.Color.White;
+            this.BuUpdate.Image = global::Essenza.Properties.Resources.Edit_Property;
+            this.BuUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuUpdate.Location = new System.Drawing.Point(593, 437);
+            this.BuUpdate.Name = "BuUpdate";
+            this.BuUpdate.Size = new System.Drawing.Size(130, 40);
+            this.BuUpdate.TabIndex = 64;
+            this.BuUpdate.Text = "Update";
+            this.BuUpdate.UseVisualStyleBackColor = false;
+            this.BuUpdate.Click += new System.EventHandler(this.BuUpdate_Click);
+            // 
+            // BuDeleteE
+            // 
+            this.BuDeleteE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuDeleteE.BackColor = System.Drawing.Color.Firebrick;
+            this.BuDeleteE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuDeleteE.FlatAppearance.BorderSize = 0;
+            this.BuDeleteE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuDeleteE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuDeleteE.ForeColor = System.Drawing.Color.White;
+            this.BuDeleteE.Image = global::Essenza.Properties.Resources.Delete;
+            this.BuDeleteE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuDeleteE.Location = new System.Drawing.Point(728, 437);
+            this.BuDeleteE.Name = "BuDeleteE";
+            this.BuDeleteE.Size = new System.Drawing.Size(130, 40);
+            this.BuDeleteE.TabIndex = 63;
+            this.BuDeleteE.Text = "Delete";
+            this.BuDeleteE.UseVisualStyleBackColor = false;
+            this.BuDeleteE.Click += new System.EventHandler(this.BuDeleteE_Click);
             // 
             // cbxEmployeeStatuses
             // 
@@ -402,127 +508,22 @@
             this.txtIdE.Size = new System.Drawing.Size(136, 21);
             this.txtIdE.TabIndex = 51;
             // 
-            // BuBuscarE
-            // 
-            this.BuBuscarE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuBuscarE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuBuscarE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuBuscarE.FlatAppearance.BorderSize = 0;
-            this.BuBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuBuscarE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuBuscarE.ForeColor = System.Drawing.Color.White;
-            this.BuBuscarE.Image = global::Essenza.Properties.Resources.Search_in_List;
-            this.BuBuscarE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuBuscarE.Location = new System.Drawing.Point(588, 32);
-            this.BuBuscarE.Name = "BuBuscarE";
-            this.BuBuscarE.Size = new System.Drawing.Size(154, 40);
-            this.BuBuscarE.TabIndex = 70;
-            this.BuBuscarE.Text = "Buscador";
-            this.BuBuscarE.UseVisualStyleBackColor = false;
-            this.BuBuscarE.Click += new System.EventHandler(this.BuBuscarE_Click);
-            // 
-            // BuRegister
-            // 
-            this.BuRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuRegister.BackColor = System.Drawing.Color.ForestGreen;
-            this.BuRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuRegister.FlatAppearance.BorderSize = 0;
-            this.BuRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuRegister.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuRegister.ForeColor = System.Drawing.Color.White;
-            this.BuRegister.Image = global::Essenza.Properties.Resources.Add_New;
-            this.BuRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuRegister.Location = new System.Drawing.Point(341, 398);
-            this.BuRegister.Name = "BuRegister";
-            this.BuRegister.Size = new System.Drawing.Size(130, 40);
-            this.BuRegister.TabIndex = 65;
-            this.BuRegister.Text = "Register";
-            this.BuRegister.UseVisualStyleBackColor = false;
-            this.BuRegister.Click += new System.EventHandler(this.BuRegister_Click);
-            // 
-            // BuUpdate
-            // 
-            this.BuUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuUpdate.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BuUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuUpdate.FlatAppearance.BorderSize = 0;
-            this.BuUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuUpdate.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuUpdate.ForeColor = System.Drawing.Color.White;
-            this.BuUpdate.Image = global::Essenza.Properties.Resources.Edit_Property;
-            this.BuUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuUpdate.Location = new System.Drawing.Point(477, 398);
-            this.BuUpdate.Name = "BuUpdate";
-            this.BuUpdate.Size = new System.Drawing.Size(130, 40);
-            this.BuUpdate.TabIndex = 64;
-            this.BuUpdate.Text = "Update";
-            this.BuUpdate.UseVisualStyleBackColor = false;
-            this.BuUpdate.Click += new System.EventHandler(this.BuUpdate_Click);
-            // 
-            // BuDeleteE
-            // 
-            this.BuDeleteE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuDeleteE.BackColor = System.Drawing.Color.Firebrick;
-            this.BuDeleteE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuDeleteE.FlatAppearance.BorderSize = 0;
-            this.BuDeleteE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuDeleteE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuDeleteE.ForeColor = System.Drawing.Color.White;
-            this.BuDeleteE.Image = global::Essenza.Properties.Resources.Delete;
-            this.BuDeleteE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuDeleteE.Location = new System.Drawing.Point(612, 398);
-            this.BuDeleteE.Name = "BuDeleteE";
-            this.BuDeleteE.Size = new System.Drawing.Size(130, 40);
-            this.BuDeleteE.TabIndex = 63;
-            this.BuDeleteE.Text = "Delete";
-            this.BuDeleteE.UseVisualStyleBackColor = false;
-            this.BuDeleteE.Click += new System.EventHandler(this.BuDeleteE_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Essenza.Properties.Resources.Checked_Identification_Documents;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 68;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BuExit
-            // 
-            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
-            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuExit.FlatAppearance.BorderSize = 0;
-            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExit.ForeColor = System.Drawing.Color.White;
-            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
-            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
-            this.BuExit.Name = "BuExit";
-            this.BuExit.Size = new System.Drawing.Size(128, 37);
-            this.BuExit.TabIndex = 84;
-            this.BuExit.Text = "Volver";
-            this.BuExit.UseVisualStyleBackColor = false;
-            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
-            // 
             // RegistrationEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 522);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrationEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrationEmployee";
             this.plTop.ResumeLayout(false);
             this.plTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.plDock.ResumeLayout(false);
             this.plDock.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

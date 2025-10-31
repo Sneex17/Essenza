@@ -81,7 +81,7 @@
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(770, 468);
+            this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 16;
             // 
             // BuExit
@@ -95,7 +95,7 @@
             this.BuExit.ForeColor = System.Drawing.Color.White;
             this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
             this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Location = new System.Drawing.Point(28, 440);
             this.BuExit.Name = "BuExit";
             this.BuExit.Size = new System.Drawing.Size(128, 37);
             this.BuExit.TabIndex = 85;
@@ -114,7 +114,7 @@
             this.BuBuscarSuplidor.ForeColor = System.Drawing.Color.White;
             this.BuBuscarSuplidor.Image = global::Essenza.Properties.Resources.Search_in_List;
             this.BuBuscarSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuBuscarSuplidor.Location = new System.Drawing.Point(588, 32);
+            this.BuBuscarSuplidor.Location = new System.Drawing.Point(702, 32);
             this.BuBuscarSuplidor.Name = "BuBuscarSuplidor";
             this.BuBuscarSuplidor.Size = new System.Drawing.Size(154, 40);
             this.BuBuscarSuplidor.TabIndex = 70;
@@ -133,7 +133,7 @@
             this.BuRegisterSuplidor.ForeColor = System.Drawing.Color.White;
             this.BuRegisterSuplidor.Image = global::Essenza.Properties.Resources.Add_New;
             this.BuRegisterSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuRegisterSuplidor.Location = new System.Drawing.Point(341, 398);
+            this.BuRegisterSuplidor.Location = new System.Drawing.Point(455, 437);
             this.BuRegisterSuplidor.Name = "BuRegisterSuplidor";
             this.BuRegisterSuplidor.Size = new System.Drawing.Size(130, 40);
             this.BuRegisterSuplidor.TabIndex = 65;
@@ -152,7 +152,7 @@
             this.BuUpdateSuplidor.ForeColor = System.Drawing.Color.White;
             this.BuUpdateSuplidor.Image = global::Essenza.Properties.Resources.Edit_Property;
             this.BuUpdateSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuUpdateSuplidor.Location = new System.Drawing.Point(477, 398);
+            this.BuUpdateSuplidor.Location = new System.Drawing.Point(591, 437);
             this.BuUpdateSuplidor.Name = "BuUpdateSuplidor";
             this.BuUpdateSuplidor.Size = new System.Drawing.Size(130, 40);
             this.BuUpdateSuplidor.TabIndex = 64;
@@ -171,7 +171,7 @@
             this.BuDeleteSuplidor.ForeColor = System.Drawing.Color.White;
             this.BuDeleteSuplidor.Image = global::Essenza.Properties.Resources.Delete;
             this.BuDeleteSuplidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuDeleteSuplidor.Location = new System.Drawing.Point(612, 398);
+            this.BuDeleteSuplidor.Location = new System.Drawing.Point(726, 437);
             this.BuDeleteSuplidor.Name = "BuDeleteSuplidor";
             this.BuDeleteSuplidor.Size = new System.Drawing.Size(130, 40);
             this.BuDeleteSuplidor.TabIndex = 63;
@@ -197,7 +197,7 @@
             this.txtEmailS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailS.Location = new System.Drawing.Point(412, 60);
             this.txtEmailS.Name = "txtEmailS";
-            this.txtEmailS.Size = new System.Drawing.Size(138, 21);
+            this.txtEmailS.Size = new System.Drawing.Size(136, 21);
             this.txtEmailS.TabIndex = 59;
             // 
             // cbxPaisesS
@@ -218,7 +218,7 @@
             this.txtDirectionS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDirectionS.Location = new System.Drawing.Point(412, 108);
             this.txtDirectionS.Name = "txtDirectionS";
-            this.txtDirectionS.Size = new System.Drawing.Size(138, 21);
+            this.txtDirectionS.Size = new System.Drawing.Size(136, 21);
             this.txtDirectionS.TabIndex = 57;
             // 
             // txtPhoneS
@@ -230,7 +230,7 @@
             this.txtPhoneS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneS.Location = new System.Drawing.Point(232, 60);
             this.txtPhoneS.Name = "txtPhoneS";
-            this.txtPhoneS.Size = new System.Drawing.Size(138, 21);
+            this.txtPhoneS.Size = new System.Drawing.Size(136, 21);
             this.txtPhoneS.TabIndex = 55;
             // 
             // txtNamesS
@@ -242,7 +242,7 @@
             this.txtNamesS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamesS.Location = new System.Drawing.Point(54, 108);
             this.txtNamesS.Name = "txtNamesS";
-            this.txtNamesS.Size = new System.Drawing.Size(138, 21);
+            this.txtNamesS.Size = new System.Drawing.Size(136, 21);
             this.txtNamesS.TabIndex = 52;
             // 
             // txtIdS
@@ -254,7 +254,7 @@
             this.txtIdS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdS.Location = new System.Drawing.Point(54, 60);
             this.txtIdS.Name = "txtIdS";
-            this.txtIdS.Size = new System.Drawing.Size(138, 21);
+            this.txtIdS.Size = new System.Drawing.Size(136, 21);
             this.txtIdS.TabIndex = 51;
             // 
             // label13
@@ -335,7 +335,7 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(770, 54);
+            this.plTop.Size = new System.Drawing.Size(884, 54);
             this.plTop.TabIndex = 15;
             // 
             // pictureBox1
@@ -364,11 +364,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 522);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroSuplidores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroSuplidores";
             this.plDock.ResumeLayout(false);
             this.plDock.PerformLayout();

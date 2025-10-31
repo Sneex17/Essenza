@@ -40,6 +40,7 @@ namespace Essenza.Forms
                         BuSuplidores.Enabled = false;
                         BnInventario.Enabled = false;
                         BuVentas.Enabled = false;
+                        BuDashBoard.Visible = false;
                     }
                     break;
 
@@ -48,6 +49,7 @@ namespace Essenza.Forms
                         BuClientes.Enabled = false;
                         BuEmpleados.Enabled = false;
                         BuVentas.Enabled = false;
+                        BuDashBoard.Visible = false;
                     }
                     break;
 
@@ -57,6 +59,7 @@ namespace Essenza.Forms
                         BnInventario.Enabled = false;
                         BuClientes.Enabled = false;
                         BuEmpleados.Enabled = false;
+                        BuDashBoard.Visible = false;
                     }
                     break;
             }
@@ -69,6 +72,7 @@ namespace Essenza.Forms
             panelInventarioSM.Visible = false;
             panelSuplidoresSM.Visible = false;
             panelVentasSM.Visible = false;
+            panelDashBoard.Visible = false;
         }
         private void hideSubMenu()
         {
@@ -77,6 +81,7 @@ namespace Essenza.Forms
             if (panelInventarioSM.Visible == true) { panelInventarioSM.Visible = false;}
             if (panelSuplidoresSM.Visible == true) { panelSuplidoresSM.Visible = false;}
             if(panelVentasSM.Visible == true) { panelVentasSM.Visible = false;}
+            if(panelDashBoard.Visible == true) { panelDashBoard.Visible = false;}
             
         }
         private void showSubMenu(Panel SubMenu)
@@ -121,6 +126,7 @@ namespace Essenza.Forms
         private void BuSuplidores_Click(object sender, EventArgs e) => showSubMenu(panelSuplidoresSM);
         private void BnInventario_Click(object sender, EventArgs e) => showSubMenu(panelInventarioSM); 
         private void BuVentas_Click(object sender, EventArgs e) =>  showSubMenu(panelVentasSM);
+        private void BuDashBoard_Click(object sender, EventArgs e) => showSubMenu(panelDashBoard);
 
         private void BuRegistrarClientes_Click(object sender, EventArgs e) 
         {
@@ -170,6 +176,11 @@ namespace Essenza.Forms
         private void BuVender_Click(object sender, EventArgs e)
         {
             OpenForms(new FormVender());
+        }
+
+        private void BuEstadisticas_Click(object sender, EventArgs e)
+        {
+            OpenForms(new Dashboard());
         }
     }
 }

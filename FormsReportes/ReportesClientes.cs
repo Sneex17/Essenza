@@ -25,9 +25,9 @@ namespace Essenza.Forms
             dataReportsC.DataSource = Clientes.DatosClientes();
             cbxFilroClientes.DataSource = clientes.ListDatosClientesFiltro;
         }
-        private void dataReportsE_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataReportsC_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0)
+            if (e.RowIndex >= 0)
             {
                 Clientes clientes = new Clientes()
                 {
@@ -46,6 +46,7 @@ namespace Essenza.Forms
                 this.Close();
             }
         }
+
 
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
 
@@ -134,5 +135,7 @@ namespace Essenza.Forms
 
             }
         }
+
+        
     }
 }

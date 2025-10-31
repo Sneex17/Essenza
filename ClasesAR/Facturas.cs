@@ -59,5 +59,29 @@ namespace Essenza.ClasesAR
             return facturas.id_factura;
         }
 
+        //Datos de las facturas
+        public static List<Facturas> DatosFacturas()
+        {
+            List<Facturas> listFacturas = new List<Facturas>();
+            string NewQuery = $"select * from facturas";
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    Facturas facturas = new Facturas();
+                    facturas.id_factura = reader.GetInt32(0);
+                    facturas.id_cliente = reader.GetInt32(1);
+                    facturas.fecha_venta = reader.GetDateTime(2);
+                    facturas.id_metodo_pago = reader.GetInt32(3);
+                    facturas.total_pagado = reader.GetDecimal(4);
+                    listFacturas.Add(facturas);
+                }
+                reader.Close();
+            }
+            return listFacturas;
+        }
+
     }
 }

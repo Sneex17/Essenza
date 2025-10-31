@@ -93,7 +93,7 @@
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(768, 468);
+            this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 18;
             // 
             // BuExit
@@ -107,7 +107,7 @@
             this.BuExit.ForeColor = System.Drawing.Color.White;
             this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
             this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 401);
+            this.BuExit.Location = new System.Drawing.Point(28, 440);
             this.BuExit.Name = "BuExit";
             this.BuExit.Size = new System.Drawing.Size(128, 37);
             this.BuExit.TabIndex = 85;
@@ -138,7 +138,7 @@
             this.BuBuscarC.ForeColor = System.Drawing.Color.White;
             this.BuBuscarC.Image = global::Essenza.Properties.Resources.Search_in_List;
             this.BuBuscarC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuBuscarC.Location = new System.Drawing.Point(588, 32);
+            this.BuBuscarC.Location = new System.Drawing.Point(704, 32);
             this.BuBuscarC.Name = "BuBuscarC";
             this.BuBuscarC.Size = new System.Drawing.Size(154, 40);
             this.BuBuscarC.TabIndex = 70;
@@ -157,7 +157,7 @@
             this.BuRegisterC.ForeColor = System.Drawing.Color.White;
             this.BuRegisterC.Image = global::Essenza.Properties.Resources.Add_New;
             this.BuRegisterC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuRegisterC.Location = new System.Drawing.Point(341, 398);
+            this.BuRegisterC.Location = new System.Drawing.Point(457, 437);
             this.BuRegisterC.Name = "BuRegisterC";
             this.BuRegisterC.Size = new System.Drawing.Size(130, 40);
             this.BuRegisterC.TabIndex = 65;
@@ -176,7 +176,7 @@
             this.BuUpdateC.ForeColor = System.Drawing.Color.White;
             this.BuUpdateC.Image = global::Essenza.Properties.Resources.Edit_Property;
             this.BuUpdateC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuUpdateC.Location = new System.Drawing.Point(477, 398);
+            this.BuUpdateC.Location = new System.Drawing.Point(593, 437);
             this.BuUpdateC.Name = "BuUpdateC";
             this.BuUpdateC.Size = new System.Drawing.Size(130, 40);
             this.BuUpdateC.TabIndex = 64;
@@ -195,7 +195,7 @@
             this.BuDeleteC.ForeColor = System.Drawing.Color.White;
             this.BuDeleteC.Image = global::Essenza.Properties.Resources.Delete;
             this.BuDeleteC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuDeleteC.Location = new System.Drawing.Point(612, 398);
+            this.BuDeleteC.Location = new System.Drawing.Point(728, 437);
             this.BuDeleteC.Name = "BuDeleteC";
             this.BuDeleteC.Size = new System.Drawing.Size(130, 40);
             this.BuDeleteC.TabIndex = 63;
@@ -410,7 +410,7 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(768, 54);
+            this.plTop.Size = new System.Drawing.Size(884, 54);
             this.plTop.TabIndex = 17;
             // 
             // pictureBox1
@@ -439,11 +439,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 522);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroClientes";
             this.Load += new System.EventHandler(this.RegistroClientes_Load);
             this.plDock.ResumeLayout(false);
