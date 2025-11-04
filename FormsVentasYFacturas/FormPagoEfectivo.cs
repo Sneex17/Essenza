@@ -1,4 +1,5 @@
-﻿using Essenza.ClasesAR;
+﻿using Essenza.Clases;
+using Essenza.ClasesAR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,13 +16,15 @@ namespace Essenza.FormsVentasYFacturas
     {
         int idCliente, idPago;
         DateTime fecha;
-        public FormPagoEfectivo(Facturas facturas)
+        List<Inventarios> listaCantidad;
+        public FormPagoEfectivo(Facturas facturas, Object lista)
         {
             InitializeComponent();
             lbTotal.Text = $"{facturas.total_pagado.ToString()}";
             idCliente = facturas.id_cliente;
             idPago = facturas.id_metodo_pago;
             fecha = facturas.fecha_venta;
+            listaCantidad = (List<Inventarios>)lista;
 
         }
 
@@ -48,6 +51,16 @@ namespace Essenza.FormsVentasYFacturas
                 detallesFacturas.id_cliente = facturas.id_cliente;
                 detallesFacturas.descripcion = "Pago realizado con exito";
                 DetallesFacturas.FinProcesoPago(detallesFacturas);
+
+                int cantiadadActual;
+                foreach(var list in listaCantidad)
+                {
+                    Inventarios inventarios = new Inventarios();
+                    inventarios.id_inventario = list.id_inventario;
+                    cantiadadActual = Convert.ToInt32(Inventarios.cantidadActual(inventarios));
+                    inventarios.cantidad = cantiadadActual - list.cantidad;
+                    Inventarios.UpdateStok(inventarios);
+                }
 
                 MessageBox.Show($"Pago realizado con exito!\nPreciototal: ${Total}" +
                     $"\nDevolucion: ${devuelta}", "Pago realizado",

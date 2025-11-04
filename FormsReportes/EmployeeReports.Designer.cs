@@ -51,6 +51,7 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -63,6 +64,7 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.Controls.Add(this.BuGeneralReporte);
             this.plDock.Controls.Add(this.groupBox3);
             this.plDock.Controls.Add(this.groupBox2);
             this.plDock.Controls.Add(this.BuExit);
@@ -342,6 +344,18 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Empleados";
             // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.Location = new System.Drawing.Point(530, 448);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(131, 28);
+            this.BuGeneralReporte.TabIndex = 87;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = true;
+            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
+            // 
             // EmployeeReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,5 +405,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BuGeneralReporte;
     }
 }

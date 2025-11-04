@@ -150,5 +150,38 @@ namespace Essenza.Clases
             }
             return listInve;
         }
+
+        //Obtener la canticad actual
+        public static object cantidadActual(Inventarios inventarios)
+        {
+            string NewQuery = @"select cantidad from inventarios where id_inventario = @id_inventario";
+            using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue(@"id_inventario", inventarios.id_inventario);
+                SqlDataReader reader = comando.ExecuteReader();
+                while(reader.Read())
+                {
+
+                    inventarios.cantidad = (int)reader["cantidad"];
+                }
+                reader.Close();
+            }
+            return inventarios.cantidad;
+        }
+        //Actualizacion de las cantidades 
+        public static void UpdateStok(Inventarios inventarios)
+        {
+            int resulatdo;
+            string NewQuery = @"Update inventarios set cantidad = @cantidad where id_inventario = @id_inventario";
+            using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue(@"cantidad", inventarios.cantidad);
+                comando.Parameters.AddWithValue(@"id_inventario", inventarios.id_inventario);
+                resulatdo = comando.ExecuteNonQuery();   
+
+            }
+        }
     }
 }

@@ -95,6 +95,7 @@
     <Compile Include="ClasesAR\DetallesFacturas.cs" />
     <Compile Include="ClasesAR\ExportarExcel.cs" />
     <Compile Include="ClasesAR\Facturas.cs" />
+    <Compile Include="ClasesAR\rutaReportes.cs" />
     <Compile Include="Clases\CargosEmpleados.cs" />
     <Compile Include="Clases\Categorias.cs" />
     <Compile Include="Clases\Clientes.cs" />
@@ -112,6 +113,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsReportes\ReportesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsReportes\ReportesG.Designer.cs">
+      <DependentUpon>ReportesG.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsReportes\ReportesInventarios.cs">
       <SubType>Form</SubType>
@@ -203,6 +210,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsReportes\ReportesG.resx">
+      <DependentUpon>ReportesG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsReportes\ReportesInventarios.resx">
       <DependentUpon>ReportesInventarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +259,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\ReportEmpleados.rdlc" />
     <EmbeddedResource Include="ViewsAdmin\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +267,7 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Essenza.Clases.Empleados.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

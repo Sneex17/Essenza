@@ -1,6 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Wordprocessing;
 using Essenza.Clases;
 using Essenza.ClasesAR;
+using Essenza.FormsReportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Essenza.Forms
 {
@@ -196,5 +198,22 @@ namespace Essenza.Forms
 
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
 
+        private void BuGeneralReporte_Click(object sender, EventArgs e)
+        {
+            List<Empleados> DsEmpl = new List<Empleados>();
+            foreach (DataGridViewRow lista in dataReportsInventarios.Rows)
+            {
+                Empleados empleados = new Empleados();
+                empleados.id_empleado = Convert.ToInt32(lista.Cells[0].Value.ToString());
+                empleados.nombres = lista.Cells[1].Value.ToString();
+                empleados.apellidos = lista.Cells[2].Value.ToString();
+                DsEmpl.Add(empleados);
+                
+            }
+            rutaReportes ruta = new rutaReportes();
+            Reportes reportes = new Reportes("DsEmpleados", $"{ruta.ruta}ReportEmpleados.rdlc", DsEmpl);
+            reportes.ShowDialog();
+            
+        }
     }
 }

@@ -64,7 +64,7 @@ namespace Essenza.Forms
             inventarios.precio_compra = Convert.ToDecimal(txtPcompras.Text);
             inventarios.precio_venta = Convert.ToDecimal(txtPventas.Text);
             inventarios.id_categoria = Convert.ToInt32(cbxCategoria.SelectedValue);
-            inventarios.fecha_ingreso = Convert.ToDateTime(dateIngreso.Text);
+            inventarios.fecha_ingreso = dateIngreso.Value;
 
             DateTime Today = DateTime.Now;
             if(inventarios.fecha_ingreso > Today)

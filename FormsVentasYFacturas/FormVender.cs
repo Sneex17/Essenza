@@ -142,6 +142,7 @@ namespace Essenza.FormsVentasYFacturas
         {
             if(radioButtonEfectivo.Checked)
             {
+                List<Inventarios> listaCant = new List<Inventarios>();
                 DateTime fechaHoy = DateTime.Now;
                 foreach (DataGridViewRow carrito in dataCarrito.Rows)
                 {
@@ -158,6 +159,10 @@ namespace Essenza.FormsVentasYFacturas
                     detallesFacturas.itbis = Convert.ToDecimal(carrito.Cells[6].Value.ToString());
                     detallesFacturas.subtotal = Convert.ToDecimal(carrito.Cells[7].Value.ToString());
                     DetallesFacturas.AddDetalleFactura(detallesFacturas);
+                    Inventarios inventarios = new Inventarios();
+                    inventarios.id_inventario = detallesFacturas.id_inventario;
+                    inventarios.cantidad = detallesFacturas.cantidad;
+                    listaCant.Add(inventarios);
                 }
 
                 Facturas facturas = new Facturas();
@@ -165,7 +170,7 @@ namespace Essenza.FormsVentasYFacturas
                 facturas.fecha_venta = fechaHoy;
                 facturas.id_metodo_pago = 1;
                 facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
-                FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas);
+                FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas, listaCant);
                 PagoEfectivo.ShowDialog();
             }
             if(radioButtonTransferencia.Checked)
