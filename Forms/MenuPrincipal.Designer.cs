@@ -53,7 +53,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelMenuPrincipal = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LbWelcome = new System.Windows.Forms.Label();
+            this.groupBoxDatosUser = new System.Windows.Forms.GroupBox();
+            this.LbIDuser = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.LBrol = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BuDashBoard = new System.Windows.Forms.Button();
             this.BuAcercaDe = new System.Windows.Forms.Button();
             this.BuExit = new System.Windows.Forms.Button();
@@ -71,6 +77,8 @@
             this.panelClientesSM.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             this.panelMenuPrincipal.SuspendLayout();
+            this.groupBoxDatosUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelBns
@@ -414,8 +422,9 @@
             // panelMenuPrincipal
             // 
             this.panelMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.panelMenuPrincipal.Controls.Add(this.groupBoxDatosUser);
             this.panelMenuPrincipal.Controls.Add(this.label2);
-            this.panelMenuPrincipal.Controls.Add(this.label1);
+            this.panelMenuPrincipal.Controls.Add(this.LbWelcome);
             this.panelMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMenuPrincipal.Location = new System.Drawing.Point(200, 0);
             this.panelMenuPrincipal.Name = "panelMenuPrincipal";
@@ -433,16 +442,88 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Essenza, donde tu cuidado personal es nuestra prioridad.";
             // 
-            // label1
+            // LbWelcome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(54)))), ((int)(((byte)(163)))));
-            this.label1.Location = new System.Drawing.Point(18, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome Usuario!";
+            this.LbWelcome.AutoSize = true;
+            this.LbWelcome.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(54)))), ((int)(((byte)(163)))));
+            this.LbWelcome.Location = new System.Drawing.Point(18, 14);
+            this.LbWelcome.Name = "LbWelcome";
+            this.LbWelcome.Size = new System.Drawing.Size(164, 22);
+            this.LbWelcome.TabIndex = 0;
+            this.LbWelcome.Text = "Welcome Usuario!";
+            // 
+            // groupBoxDatosUser
+            // 
+            this.groupBoxDatosUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatosUser.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxDatosUser.Controls.Add(this.LBrol);
+            this.groupBoxDatosUser.Controls.Add(this.label9);
+            this.groupBoxDatosUser.Controls.Add(this.LbIDuser);
+            this.groupBoxDatosUser.Controls.Add(this.pictureBox2);
+            this.groupBoxDatosUser.Controls.Add(this.label5);
+            this.groupBoxDatosUser.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDatosUser.Location = new System.Drawing.Point(422, 14);
+            this.groupBoxDatosUser.Name = "groupBoxDatosUser";
+            this.groupBoxDatosUser.Size = new System.Drawing.Size(450, 88);
+            this.groupBoxDatosUser.TabIndex = 52;
+            this.groupBoxDatosUser.TabStop = false;
+            this.groupBoxDatosUser.Text = "Destalles del Usuario";
+            // 
+            // LbIDuser
+            // 
+            this.LbIDuser.AutoSize = true;
+            this.LbIDuser.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbIDuser.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LbIDuser.Location = new System.Drawing.Point(134, 28);
+            this.LbIDuser.Name = "LbIDuser";
+            this.LbIDuser.Size = new System.Drawing.Size(21, 18);
+            this.LbIDuser.TabIndex = 70;
+            this.LbIDuser.Text = "id";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label5.Location = new System.Drawing.Point(72, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 18);
+            this.label5.TabIndex = 51;
+            this.label5.Text = "UserID:";
+            // 
+            // LBrol
+            // 
+            this.LBrol.AutoSize = true;
+            this.LBrol.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBrol.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LBrol.Location = new System.Drawing.Point(135, 53);
+            this.LBrol.Name = "LBrol";
+            this.LBrol.Size = new System.Drawing.Size(27, 18);
+            this.LBrol.TabIndex = 74;
+            this.LBrol.Text = "rol";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(72, 54);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 18);
+            this.label9.TabIndex = 73;
+            this.label9.Text = "UserRol:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Essenza.Properties.Resources.User;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 24);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(62, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 69;
+            this.pictureBox2.TabStop = false;
             // 
             // BuDashBoard
             // 
@@ -611,6 +692,9 @@
             this.PanelLogo.PerformLayout();
             this.panelMenuPrincipal.ResumeLayout(false);
             this.panelMenuPrincipal.PerformLayout();
+            this.groupBoxDatosUser.ResumeLayout(false);
+            this.groupBoxDatosUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -643,12 +727,18 @@
         private System.Windows.Forms.Button BuRegistrarInventario;
         private System.Windows.Forms.Panel panelMenuPrincipal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LbWelcome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BuDashBoard;
         private System.Windows.Forms.Panel panelDashBoard;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BuEstadisticas;
+        private System.Windows.Forms.GroupBox groupBoxDatosUser;
+        private System.Windows.Forms.Label LBrol;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label LbIDuser;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label5;
     }
 }

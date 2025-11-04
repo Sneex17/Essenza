@@ -105,6 +105,7 @@
     <Compile Include="Clases\EstadosCiviles.cs" />
     <Compile Include="Clases\Inventarios.cs" />
     <Compile Include="Clases\Paises.cs" />
+    <Compile Include="Clases\Roles.cs" />
     <Compile Include="Clases\Sexos.cs" />
     <Compile Include="Clases\Suplidores.cs" />
     <Compile Include="Clases\Usuarios.cs" />
@@ -305,6 +306,7 @@
     <Content Include="Icons\Suplidores.png" />
     <Content Include="Icons\Total Ingresos.png" />
     <Content Include="Icons\Total Ventas.png" />
+    <Content Include="Icons\User.png" />
     <Content Include="Icons\Warehouse.png" />
     <Content Include="Photos\Fondo1-Login.png" />
     <Content Include="SqlServerTypes\readme.htm" />

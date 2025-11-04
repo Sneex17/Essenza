@@ -1,4 +1,5 @@
-﻿using Essenza.Clases;
+﻿using DocumentFormat.OpenXml.Vml;
+using Essenza.Clases;
 using Essenza.ClasesAR;
 using System;
 using System.Collections.Generic;
@@ -28,61 +29,79 @@ namespace Essenza.FormsVentasYFacturas
 
         }
 
+        private void BuCancelar_Click(object sender, EventArgs e)
+        {
+            DetallesFacturas detallesFacturas = new DetallesFacturas();
+            detallesFacturas.id_cliente = idCliente;
+            detallesFacturas.fecha_venta = fecha;
+            DetallesFacturas.PagoCancelado(detallesFacturas);
+            this.Close();
+        }
+
         private void BuPagarFinal_Click(object sender, EventArgs e)
         {
-            
-            decimal devuelta = 0;
-            decimal PagoCon = Convert.ToDecimal(txtEfectivo.Text);
-            string Efectivo = lbTotal.Text;
-            decimal Total = Convert.ToDecimal(Efectivo);
-
-            if (PagoCon >= Total)
+            try
             {
-                devuelta = PagoCon - Total;
-                Facturas facturas = new Facturas();
+                decimal devuelta = 0;
+                decimal PagoCon = Convert.ToDecimal(txtEfectivo.Text);
+                string Efectivo = lbTotal.Text;
+                decimal Total = Convert.ToDecimal(Efectivo);
 
-                facturas.id_cliente = idCliente;
-                facturas.fecha_venta = fecha;
-                facturas.id_metodo_pago = idPago;
-                facturas.total_pagado = Total;
-                Facturas.PagoRealizado(facturas);
-                DetallesFacturas detallesFacturas = new DetallesFacturas();
-                detallesFacturas.id_factura = Facturas.IdFactura(facturas);
-                detallesFacturas.id_cliente = facturas.id_cliente;
-                detallesFacturas.descripcion = "Pago realizado con exito";
-                DetallesFacturas.FinProcesoPago(detallesFacturas);
-
-                int cantiadadActual;
-                foreach(var list in listaCantidad)
+                if (PagoCon >= Total)
                 {
-                    Inventarios inventarios = new Inventarios();
-                    inventarios.id_inventario = list.id_inventario;
-                    cantiadadActual = Convert.ToInt32(Inventarios.cantidadActual(inventarios));
-                    inventarios.cantidad = cantiadadActual - list.cantidad;
-                    Inventarios.UpdateStok(inventarios);
-                }
+                    devuelta = PagoCon - Total;
+                    Facturas facturas = new Facturas();
 
-                MessageBox.Show($"Pago realizado con exito!\nPreciototal: ${Total}" +
-                    $"\nDevolucion: ${devuelta}", "Pago realizado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else
-            {
-                var condicionPago = MessageBox.Show($"Necesitas mas efectivo para pagar\nAgregar mas " +
-                    $"efectivo: SI\nCancelar pago: NO", "Pago en Proceso",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
-                if(condicionPago == DialogResult.No)
-                {
+                    facturas.id_cliente = idCliente;
+                    facturas.fecha_venta = fecha;
+                    facturas.id_metodo_pago = idPago;
+                    facturas.total_pagado = Total;
+                    Facturas.PagoRealizado(facturas);
                     DetallesFacturas detallesFacturas = new DetallesFacturas();
-                    detallesFacturas.id_cliente = idCliente;
-                    detallesFacturas.fecha_venta = fecha;
-                    DetallesFacturas.PagoCancelado(detallesFacturas);
+                    detallesFacturas.id_factura = Facturas.IdFactura(facturas);
+                    detallesFacturas.id_cliente = facturas.id_cliente;
+                    detallesFacturas.descripcion = "Pago realizado con exito";
+                    DetallesFacturas.FinProcesoPago(detallesFacturas);
+
+                    int cantiadadActual;
+                    foreach (var list in listaCantidad)
+                    {
+                        Inventarios inventarios = new Inventarios();
+                        inventarios.id_inventario = list.id_inventario;
+                        cantiadadActual = Convert.ToInt32(Inventarios.cantidadActual(inventarios));
+                        inventarios.cantidad = cantiadadActual - list.cantidad;
+                        Inventarios.UpdateStok(inventarios);
+                    }
+
+                    MessageBox.Show($"Pago realizado con exito!\nPreciototal: ${Total}" +
+                        $"\nDevolucion: ${devuelta}", "Pago realizado",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
+                else
+                {
+                    var condicionPago = MessageBox.Show($"Necesitas mas efectivo para pagar\nAgregar mas " +
+                        $"efectivo: SI\nCancelar pago: NO", "Pago en Proceso",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
+                    if (condicionPago == DialogResult.No)
+                    {
+                        DetallesFacturas detallesFacturas = new DetallesFacturas();
+                        detallesFacturas.id_cliente = idCliente;
+                        detallesFacturas.fecha_venta = fecha;
+                        DetallesFacturas.PagoCancelado(detallesFacturas);
+                        this.Close();
+                    }
+
+                }
             }
+            catch (FormatException error)
+            {
+                MessageBox.Show($"Argumento no valido\nDebe ingresar solo numeros", "Error en el Sistema",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEfectivo.Text = String.Empty;
+            }
+            
             
         }
     }

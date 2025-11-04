@@ -53,6 +53,25 @@ namespace Essenza.Clases
             return usuarios.id_rol;
         }
 
+        public static int UserID(Usuarios usuarios)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                string NewQuery = $"Select id_usuario from Usuarios where usuario = @usuario and pass = @pass";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@usuario", usuarios.usuario);
+                comando.Parameters.AddWithValue("@pass", usuarios.pass);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+
+                    usuarios.id_usuario = (int)reader["id_usuario"];
+                }
+                reader.Close();
+            }
+            return usuarios.id_usuario;
+        }
+
         public static List<Usuarios> VerificacionUsuarios()
         {
             List<Usuarios> listU = new List<Usuarios>();

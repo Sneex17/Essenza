@@ -15,6 +15,11 @@ namespace Essenza.ViewsAdmin
         public AcercaDe()
         {
             InitializeComponent();
+
+            BuExit.Click += (sender, e) =>
+            {
+                this.Close();
+            };
         }
     }
 }

@@ -117,4 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Requisitos mínimos:
+  Sistema operativo: Windows 10 (64 bits)
+  Procesador: Intel Core i3 / AMD equivalente
+  Memoria RAM: 4 GB
+  Espacio en disco: 500 MB libres
+  Resolución recomendada: 1366x768 píxeles
+  Conexión a Internet: Conexión de banda ancha
+
+Requisitos recomendados:
+  Sistema operativo: Windows 11
+  Procesador: Intel Core i5 o superior
+  Memoria RAM: 8 GB
+  Espacio en disco: 750 MB libres
+  Conexión a Internet: Conexión de banda ancha
+</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Essenza es una aplicación moderna diseñada para ofrecerte una experiencia
+única en el mundo del cuidado personal y la belleza. Nuestro objetivo es 
+brindarte productos cosméticos de calidad y un sistema de eservas y 
+compras fácil, rápido y confiable.
+
+En Essenza, tu bienestar y confianza son nuestra prioridad.
+</value>
+  </data>
 </root>

@@ -20,10 +20,19 @@ namespace Essenza.Forms
         {
             InitializeComponent();
             offSubMenu();
-            Roles(usuarios);
+            Rol(usuarios);
         }
 
-        private void Roles(Usuarios usuarios)
+        private void users(Usuarios usuarios)
+        {
+            Roles roles = new Roles();
+            roles.id_rol = usuarios.id_rol;
+
+            LBrol.Text = Roles.UserRol(roles);
+            LbWelcome.Text = $"Welcome {usuarios.usuario}";
+            LbIDuser.Text = Convert.ToString(Usuarios.UserID(usuarios));
+        }
+        private void Rol(Usuarios usuarios)
         {
             usuarios.id_rol = Usuarios.rol(usuarios);
 
@@ -31,7 +40,7 @@ namespace Essenza.Forms
             {
                 case 1: //Administrador General
                     {
-
+                        users(usuarios);
                     }
                     break;
 
@@ -41,6 +50,7 @@ namespace Essenza.Forms
                         BnInventario.Enabled = false;
                         BuVentas.Enabled = false;
                         BuDashBoard.Visible = false;
+                        users(usuarios);
                     }
                     break;
 
@@ -50,6 +60,7 @@ namespace Essenza.Forms
                         BuEmpleados.Enabled = false;
                         BuVentas.Enabled = false;
                         BuDashBoard.Visible = false;
+                        users(usuarios);
                     }
                     break;
 
@@ -60,6 +71,7 @@ namespace Essenza.Forms
                         BuClientes.Enabled = false;
                         BuEmpleados.Enabled = false;
                         BuDashBoard.Visible = false;
+                        users(usuarios);
                     }
                     break;
             }
