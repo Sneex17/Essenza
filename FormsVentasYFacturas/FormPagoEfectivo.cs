@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Essenza.FormsVentasYFacturas
 {
@@ -35,7 +36,13 @@ namespace Essenza.FormsVentasYFacturas
             detallesFacturas.id_cliente = idCliente;
             detallesFacturas.fecha_venta = fecha;
             DetallesFacturas.PagoCancelado(detallesFacturas);
+            
             this.Close();
+        }
+
+        private void ImprimirFactura(object sender, PrintPageEventArgs l)
+        {
+            Font fuente = new Font("Time New Roman", 12);
         }
 
         private void BuPagarFinal_Click(object sender, EventArgs e)
@@ -77,6 +84,13 @@ namespace Essenza.FormsVentasYFacturas
                         $"\nDevolucion: ${devuelta}", "Pago realizado",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
+
+                    /*Imprecion de la Factura*/
+                    printFactura = new PrintDocument();
+                    PrinterSettings Styles = new PrinterSettings();
+                    printFactura.PrinterSettings = Styles;
+                    printFactura.PrintPage += ImprimirFactura;
+                    printFactura.Print();
                 }
                 else
                 {
@@ -90,6 +104,7 @@ namespace Essenza.FormsVentasYFacturas
                         detallesFacturas.id_cliente = idCliente;
                         detallesFacturas.fecha_venta = fecha;
                         DetallesFacturas.PagoCancelado(detallesFacturas);
+                        
                         this.Close();
                     }
 
@@ -104,5 +119,7 @@ namespace Essenza.FormsVentasYFacturas
             
             
         }
+
+        
     }
 }

@@ -207,6 +207,10 @@ namespace Essenza.Forms
                 empleados.id_empleado = Convert.ToInt32(lista.Cells[0].Value.ToString());
                 empleados.nombres = lista.Cells[1].Value.ToString();
                 empleados.apellidos = lista.Cells[2].Value.ToString();
+                empleados.id_sexo = Convert.ToInt32(lista.Cells[3].Value.ToString());
+                empleados.fecha_contrato = Convert.ToDateTime(lista.Cells[7].Value.ToString());
+                empleados.id_cargo = Convert.ToInt32(lista.Cells[11].Value.ToString());
+                empleados.id_estado = Convert.ToInt32(lista.Cells[13].Value.ToString());
                 DsEmpl.Add(empleados);
                 
             }

@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPagoEfectivo));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BuCancelar = new System.Windows.Forms.Button();
             this.BuPagarFinal = new System.Windows.Forms.Button();
             this.lbTotal = new System.Windows.Forms.Label();
             this.txtEfectivo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.BuCancelar = new System.Windows.Forms.Button();
+            this.printFactura = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -68,9 +69,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles del Pago";
             // 
+            // BuCancelar
+            // 
+            this.BuCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuCancelar.BackColor = System.Drawing.Color.Firebrick;
+            this.BuCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuCancelar.FlatAppearance.BorderSize = 0;
+            this.BuCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuCancelar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuCancelar.ForeColor = System.Drawing.Color.White;
+            this.BuCancelar.Image = global::Essenza.Properties.Resources.Delete;
+            this.BuCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuCancelar.Location = new System.Drawing.Point(173, 139);
+            this.BuCancelar.Name = "BuCancelar";
+            this.BuCancelar.Size = new System.Drawing.Size(130, 29);
+            this.BuCancelar.TabIndex = 79;
+            this.BuCancelar.Text = "Cancelar";
+            this.BuCancelar.UseVisualStyleBackColor = false;
+            this.BuCancelar.Click += new System.EventHandler(this.BuCancelar_Click);
+            // 
             // BuPagarFinal
             // 
             this.BuPagarFinal.BackColor = System.Drawing.Color.ForestGreen;
+            this.BuPagarFinal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuPagarFinal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuPagarFinal.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuPagarFinal.ForeColor = System.Drawing.Color.White;
@@ -126,24 +147,9 @@
             this.label9.TabIndex = 70;
             this.label9.Text = "Total a Pagar:";
             // 
-            // BuCancelar
+            // printFactura
             // 
-            this.BuCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuCancelar.BackColor = System.Drawing.Color.Firebrick;
-            this.BuCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuCancelar.FlatAppearance.BorderSize = 0;
-            this.BuCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuCancelar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuCancelar.ForeColor = System.Drawing.Color.White;
-            this.BuCancelar.Image = global::Essenza.Properties.Resources.Delete;
-            this.BuCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuCancelar.Location = new System.Drawing.Point(173, 139);
-            this.BuCancelar.Name = "BuCancelar";
-            this.BuCancelar.Size = new System.Drawing.Size(130, 29);
-            this.BuCancelar.TabIndex = 79;
-            this.BuCancelar.Text = "Cancelar";
-            this.BuCancelar.UseVisualStyleBackColor = false;
-            this.BuCancelar.Click += new System.EventHandler(this.BuCancelar_Click);
+            this.printFactura.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirFactura);
             // 
             // FormPagoEfectivo
             // 
@@ -172,5 +178,6 @@
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Button BuPagarFinal;
         private System.Windows.Forms.Button BuCancelar;
+        private System.Drawing.Printing.PrintDocument printFactura;
     }
 }

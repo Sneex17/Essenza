@@ -21,7 +21,7 @@ namespace Essenza.FormsVentasYFacturas
         {
             InitializeComponent();
         }
-
+        
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
 
         private void BuBuscarDatos_Click(object sender, EventArgs e)
@@ -137,7 +137,7 @@ namespace Essenza.FormsVentasYFacturas
             }
             txtTotalFact.Text = Math.Round(Total,2).ToString();
         }
-
+        
         private void BuPagar_Click(object sender, EventArgs e)
         {
             if(radioButtonEfectivo.Checked)
@@ -172,12 +172,16 @@ namespace Essenza.FormsVentasYFacturas
                 facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
                 FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas, listaCant);
                 PagoEfectivo.ShowDialog();
+                LimpiarDGV();
             }
             if(radioButtonTransferencia.Checked)
             {
-
+                
             }
            
         }
+
+        //Limpiar el Carrito
+        private void LimpiarDGV() => dataCarrito.Rows.Clear(); 
     }
 }
