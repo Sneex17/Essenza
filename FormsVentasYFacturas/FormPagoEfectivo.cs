@@ -16,10 +16,11 @@ namespace Essenza.FormsVentasYFacturas
 {
     public partial class FormPagoEfectivo : Form
     {
-        int idCliente, idPago;
+        int idCliente, idPago, idFactura;
         DateTime fecha;
         List<Inventarios> listaCantidad;
-        public FormPagoEfectivo(Facturas facturas, Object lista)
+        List<DetallesFacturas> listFact;
+        public FormPagoEfectivo(Facturas facturas, Object lista, List<DetallesFacturas>listaFactura)
         {
             InitializeComponent();
             lbTotal.Text = $"{facturas.total_pagado.ToString()}";
@@ -27,6 +28,7 @@ namespace Essenza.FormsVentasYFacturas
             idPago = facturas.id_metodo_pago;
             fecha = facturas.fecha_venta;
             listaCantidad = (List<Inventarios>)lista;
+            listFact = listaFactura;
 
         }
 
@@ -42,7 +44,8 @@ namespace Essenza.FormsVentasYFacturas
 
         private void ImprimirFactura(object sender, PrintPageEventArgs l)
         {
-            Font fuente = new Font("Time New Roman", 12);
+            
+            Imprimir.ImprimirFacturaPDF(listFact, l, idPago, idFactura);
         }
 
         private void BuPagarFinal_Click(object sender, EventArgs e)
@@ -66,6 +69,7 @@ namespace Essenza.FormsVentasYFacturas
                     Facturas.PagoRealizado(facturas);
                     DetallesFacturas detallesFacturas = new DetallesFacturas();
                     detallesFacturas.id_factura = Facturas.IdFactura(facturas);
+                    idFactura = detallesFacturas.id_factura;
                     detallesFacturas.id_cliente = facturas.id_cliente;
                     detallesFacturas.descripcion = "Pago realizado con exito";
                     DetallesFacturas.FinProcesoPago(detallesFacturas);

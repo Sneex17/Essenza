@@ -95,6 +95,7 @@
     <Compile Include="ClasesAR\DetallesFacturas.cs" />
     <Compile Include="ClasesAR\ExportarExcel.cs" />
     <Compile Include="ClasesAR\Facturas.cs" />
+    <Compile Include="ClasesAR\Imprimir.cs" />
     <Compile Include="ClasesAR\rutaReportes.cs" />
     <Compile Include="Clases\CargosEmpleados.cs" />
     <Compile Include="Clases\Categorias.cs" />
