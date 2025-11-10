@@ -253,6 +253,16 @@ namespace Essenza.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Test_Results {
+            get {
+                object obj = ResourceManager.GetObject("Test Results", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Total_Ingresos {
             get {
                 object obj = ResourceManager.GetObject("Total Ingresos", resourceCulture);

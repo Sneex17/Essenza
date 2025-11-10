@@ -42,6 +42,7 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBoxDetallesFacturas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDetallesFacturas)).BeginInit();
@@ -54,6 +55,7 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.plDock.Controls.Add(this.BuGeneralReporte);
             this.plDock.Controls.Add(this.groupBoxDetallesFacturas);
             this.plDock.Controls.Add(this.groupBoxFacturas);
             this.plDock.Controls.Add(this.BuExit);
@@ -176,7 +178,7 @@
             // 
             this.BuExcelRI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BuExcelRI.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExcelRI.Location = new System.Drawing.Point(711, 448);
+            this.BuExcelRI.Location = new System.Drawing.Point(312, 449);
             this.BuExcelRI.Name = "BuExcelRI";
             this.BuExcelRI.Size = new System.Drawing.Size(131, 28);
             this.BuExcelRI.TabIndex = 71;
@@ -216,6 +218,22 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Ventas";
             // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(674, 445);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
+            this.BuGeneralReporte.TabIndex = 88;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            // 
             // ReportesVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,5 +270,6 @@
         private System.Windows.Forms.DataGridView dataDetallesFacturas;
         private System.Windows.Forms.GroupBox groupBoxFacturas;
         private System.Windows.Forms.DataGridView dataFacturas;
+        private System.Windows.Forms.Button BuGeneralReporte;
     }
 }

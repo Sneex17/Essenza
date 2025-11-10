@@ -3,60 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clasesar\\imprimir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clasesar\\imprimir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formpagotransferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formpagotransferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\reportes\\reportclientes.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:reportes\\reportclientes.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formpagotransferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formpagotransferencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\clasesar\\detallesfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:clasesar\\detallesfacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formpagoefectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsventasyfacturas\\formvender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:viewsadmin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\reportes\\reportempleados.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:reportes\\reportempleados.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportesg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportesg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\reportes\\reportempleados.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:reportes\\reportempleados.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "MenuPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
@@ -83,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
@@ -96,138 +64,49 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Imprimir.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\Imprimir.cs",
-              "RelativeDocumentMoniker": "ClasesAR\\Imprimir.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\Imprimir.cs",
-              "RelativeToolTip": "ClasesAR\\Imprimir.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T16:02:33.903Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DetallesFacturas.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\DetallesFacturas.cs",
-              "RelativeDocumentMoniker": "ClasesAR\\DetallesFacturas.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ClasesAR\\DetallesFacturas.cs",
-              "RelativeToolTip": "ClasesAR\\DetallesFacturas.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ReportClientes.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportClientes.rdlc",
+              "RelativeDocumentMoniker": "Reportes\\ReportClientes.rdlc",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportClientes.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "Reportes\\ReportClientes.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-11-10T16:59:43.199Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportesClientes.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesClientes.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesClientes.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesClientes.cs",
+              "RelativeToolTip": "FormsReportes\\ReportesClientes.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAADwv5gAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:17:41.226Z",
+              "WhenOpened": "2025-11-10T16:46:52.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormPagoEfectivo.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoEfectivo.cs",
-              "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormPagoEfectivo.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoEfectivo.cs",
-              "RelativeToolTip": "FormsVentasYFacturas\\FormPagoEfectivo.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAIwFsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:02:32.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormPagoTransferencia.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoTransferencia.cs",
-              "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormPagoTransferencia.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoTransferencia.cs",
-              "RelativeToolTip": "FormsVentasYFacturas\\FormPagoTransferencia.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:01:44.231Z",
-              "EditorCaption": ""
+              "Title": "ReportEmpleados.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportEmpleados.rdlc",
+              "RelativeDocumentMoniker": "Reportes\\ReportEmpleados.rdlc",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportEmpleados.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "Reportes\\ReportEmpleados.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-11-02T05:11:39.469Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormPagoTransferencia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoTransferencia.cs",
-              "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormPagoTransferencia.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoTransferencia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormsVentasYFacturas\\FormPagoTransferencia.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:01:42.167Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormPagoEfectivo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoEfectivo.cs",
-              "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormPagoEfectivo.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormPagoEfectivo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormsVentasYFacturas\\FormPagoEfectivo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:01:14.806Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormVender.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormVender.cs",
-              "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormVender.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormVender.cs",
-              "RelativeToolTip": "FormsVentasYFacturas\\FormVender.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAewKMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:53:44.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormVender.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormVender.cs",
-              "RelativeDocumentMoniker": "FormsVentasYFacturas\\FormVender.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsVentasYFacturas\\FormVender.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormsVentasYFacturas\\FormVender.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:53:15.605Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dashboard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs",
-              "RelativeDocumentMoniker": "ViewsAdmin\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\ViewsAdmin\\Dashboard.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ViewsAdmin\\Dashboard.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T02:56:55.885Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ReportesG.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesG.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\ReportesG.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesG.cs",
-              "RelativeToolTip": "FormsReportes\\ReportesG.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T01:17:25.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "ReportesG.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesG.cs",
               "RelativeDocumentMoniker": "FormsReportes\\ReportesG.cs",
@@ -236,17 +115,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T23:27:43.233Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ReportEmpleados.rdlc [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportEmpleados.rdlc",
-              "RelativeDocumentMoniker": "Reportes\\ReportEmpleados.rdlc",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportEmpleados.rdlc [Dise\u00F1o]",
-              "RelativeToolTip": "Reportes\\ReportEmpleados.rdlc [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-11-02T05:11:39.469Z"
             }
           ]
         }

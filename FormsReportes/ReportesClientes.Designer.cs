@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@
             this.rBza = new System.Windows.Forms.RadioButton();
             this.cbxOrderBy = new System.Windows.Forms.ComboBox();
             this.rBaz = new System.Windows.Forms.RadioButton();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plDock.SuspendLayout();
@@ -95,6 +96,7 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.plDock.Controls.Add(this.BuGeneralReporte);
             this.plDock.Controls.Add(this.dataReportsC);
             this.plDock.Controls.Add(this.BuExit);
             this.plDock.Controls.Add(this.groupBox3);
@@ -115,28 +117,28 @@
             this.dataReportsC.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataReportsC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataReportsC.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataReportsC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataReportsC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataReportsC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataReportsC.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataReportsC.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataReportsC.EnableHeadersVisualStyles = false;
-            this.dataReportsC.Location = new System.Drawing.Point(49, 164);
+            this.dataReportsC.Location = new System.Drawing.Point(28, 164);
             this.dataReportsC.Name = "dataReportsC";
             this.dataReportsC.RowHeadersWidth = 51;
-            this.dataReportsC.Size = new System.Drawing.Size(790, 270);
+            this.dataReportsC.Size = new System.Drawing.Size(811, 270);
             this.dataReportsC.TabIndex = 92;
             this.dataReportsC.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataReportsC_CellDoubleClick);
             // 
@@ -327,6 +329,23 @@
             this.rBaz.Text = "A-Z";
             this.rBaz.UseVisualStyleBackColor = true;
             // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
+            this.BuGeneralReporte.TabIndex = 93;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
+            // 
             // ReportesClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,5 +393,6 @@
         private System.Windows.Forms.RadioButton rBaz;
         private System.Windows.Forms.Button BuExit;
         private System.Windows.Forms.DataGridView dataReportsC;
+        private System.Windows.Forms.Button BuGeneralReporte;
     }
 }

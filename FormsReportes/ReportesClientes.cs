@@ -1,4 +1,6 @@
 ﻿using Essenza.Clases;
+using Essenza.ClasesAR;
+using Essenza.FormsReportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -136,6 +138,25 @@ namespace Essenza.Forms
             }
         }
 
-        
+        private void BuGeneralReporte_Click(object sender, EventArgs e)
+        {
+            List<Clientes> listClient = new List<Clientes>();
+
+            foreach (DataGridViewRow lista in dataReportsC.Rows)
+            {
+                Clientes clientes = new Clientes();
+                clientes.id_cliente = Convert.ToInt32(lista.Cells[0].Value.ToString());
+                clientes.nombres = lista.Cells[1].Value.ToString();
+                clientes.apellidos = lista.Cells[2].Value.ToString();
+                clientes.id_sexo = Convert.ToInt32(lista.Cells[3].Value.ToString());
+                clientes.cedula = lista.Cells[5].Value.ToString();
+                clientes.telefono = lista.Cells[6].Value.ToString();
+                clientes.id_estado = Convert.ToInt32(lista.Cells[9].Value.ToString());
+                listClient.Add(clientes);
+            }
+            rutaReportes ruta = new rutaReportes();
+            Reportes reportes = new Reportes("DsClientes", $"{ruta.ruta}ReportClientes.rdlc", listClient, "Reporte de Clientes");
+            reportes.ShowDialog();
+        }
     }
 }

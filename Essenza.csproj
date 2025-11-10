@@ -270,6 +270,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\ReportClientes.rdlc" />
     <EmbeddedResource Include="Reportes\ReportEmpleados.rdlc" />
     <EmbeddedResource Include="ViewsAdmin\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
@@ -278,7 +279,10 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Essenza.Clases.Clientes.datasource" />
     <None Include="Properties\DataSources\Essenza.Clases.Empleados.datasource" />
+    <None Include="Properties\DataSources\Essenza.Clases.Inventarios.datasource" />
+    <None Include="Properties\DataSources\Essenza.Clases.Suplidores.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -315,6 +319,7 @@
     <Content Include="Icons\Search in List.png" />
     <Content Include="Icons\Sell Stock.png" />
     <Content Include="Icons\Suplidores.png" />
+    <Content Include="Icons\Test Results.png" />
     <Content Include="Icons\Total Ingresos.png" />
     <Content Include="Icons\Total Ventas.png" />
     <Content Include="Icons\User.png" />

@@ -50,6 +50,7 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -62,6 +63,7 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.plDock.Controls.Add(this.BuGeneralReporte);
             this.plDock.Controls.Add(this.groupBox3);
             this.plDock.Controls.Add(this.groupBox2);
             this.plDock.Controls.Add(this.label1);
@@ -287,10 +289,10 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataListSuplidores.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataListSuplidores.EnableHeadersVisualStyles = false;
-            this.dataListSuplidores.Location = new System.Drawing.Point(49, 164);
+            this.dataListSuplidores.Location = new System.Drawing.Point(28, 164);
             this.dataListSuplidores.Name = "dataListSuplidores";
             this.dataListSuplidores.RowHeadersWidth = 51;
-            this.dataListSuplidores.Size = new System.Drawing.Size(790, 270);
+            this.dataListSuplidores.Size = new System.Drawing.Size(811, 270);
             this.dataListSuplidores.TabIndex = 0;
             this.dataListSuplidores.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListSuplidores_CellDoubleClick);
             // 
@@ -326,6 +328,22 @@
             this.label2.Size = new System.Drawing.Size(206, 22);
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Suplidores";
+            // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
+            this.BuGeneralReporte.TabIndex = 88;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
             // 
             // ReportesSuplidores
             // 
@@ -374,5 +392,6 @@
         private System.Windows.Forms.RadioButton rBza;
         private System.Windows.Forms.ComboBox cbxOrderBy;
         private System.Windows.Forms.RadioButton rBaz;
+        private System.Windows.Forms.Button BuGeneralReporte;
     }
 }
