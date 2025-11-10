@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.groupBoxDetallesFacturas = new System.Windows.Forms.GroupBox();
+            this.dataDetallesFacturas = new System.Windows.Forms.DataGridView();
+            this.groupBoxFacturas = new System.Windows.Forms.GroupBox();
+            this.dataFacturas = new System.Windows.Forms.DataGridView();
             this.BuExit = new System.Windows.Forms.Button();
             this.BuExcelRI = new System.Windows.Forms.Button();
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBoxFacturas = new System.Windows.Forms.GroupBox();
-            this.dataFacturas = new System.Windows.Forms.DataGridView();
-            this.groupBoxDetallesFacturas = new System.Windows.Forms.GroupBox();
-            this.dataDetallesFacturas = new System.Windows.Forms.DataGridView();
             this.plDock.SuspendLayout();
-            this.plTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxFacturas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataFacturas)).BeginInit();
             this.groupBoxDetallesFacturas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDetallesFacturas)).BeginInit();
+            this.groupBoxFacturas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataFacturas)).BeginInit();
+            this.plTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // plDock
@@ -64,10 +64,99 @@
             this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 18;
             // 
+            // groupBoxDetallesFacturas
+            // 
+            this.groupBoxDetallesFacturas.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxDetallesFacturas.Controls.Add(this.dataDetallesFacturas);
+            this.groupBoxDetallesFacturas.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDetallesFacturas.Location = new System.Drawing.Point(28, 214);
+            this.groupBoxDetallesFacturas.Name = "groupBoxDetallesFacturas";
+            this.groupBoxDetallesFacturas.Size = new System.Drawing.Size(814, 220);
+            this.groupBoxDetallesFacturas.TabIndex = 85;
+            this.groupBoxDetallesFacturas.TabStop = false;
+            this.groupBoxDetallesFacturas.Text = "Detalles de la Factura";
+            // 
+            // dataDetallesFacturas
+            // 
+            this.dataDetallesFacturas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataDetallesFacturas.BackgroundColor = System.Drawing.Color.LightSteelBlue;
+            this.dataDetallesFacturas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataDetallesFacturas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDetallesFacturas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataDetallesFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDetallesFacturas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataDetallesFacturas.EnableHeadersVisualStyles = false;
+            this.dataDetallesFacturas.Location = new System.Drawing.Point(9, 25);
+            this.dataDetallesFacturas.Name = "dataDetallesFacturas";
+            this.dataDetallesFacturas.RowHeadersWidth = 51;
+            this.dataDetallesFacturas.Size = new System.Drawing.Size(794, 181);
+            this.dataDetallesFacturas.TabIndex = 1;
+            // 
+            // groupBoxFacturas
+            // 
+            this.groupBoxFacturas.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxFacturas.Controls.Add(this.dataFacturas);
+            this.groupBoxFacturas.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxFacturas.Location = new System.Drawing.Point(28, 23);
+            this.groupBoxFacturas.Name = "groupBoxFacturas";
+            this.groupBoxFacturas.Size = new System.Drawing.Size(480, 185);
+            this.groupBoxFacturas.TabIndex = 84;
+            this.groupBoxFacturas.TabStop = false;
+            this.groupBoxFacturas.Text = "Facturas";
+            // 
+            // dataFacturas
+            // 
+            this.dataFacturas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataFacturas.BackgroundColor = System.Drawing.Color.LightSteelBlue;
+            this.dataFacturas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataFacturas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataFacturas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataFacturas.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataFacturas.EnableHeadersVisualStyles = false;
+            this.dataFacturas.Location = new System.Drawing.Point(9, 25);
+            this.dataFacturas.Name = "dataFacturas";
+            this.dataFacturas.RowHeadersWidth = 51;
+            this.dataFacturas.Size = new System.Drawing.Size(460, 145);
+            this.dataFacturas.TabIndex = 1;
+            this.dataFacturas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataFacturas_CellDoubleClick);
+            // 
             // BuExit
             // 
             this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuExit.FlatAppearance.BorderSize = 0;
             this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -127,95 +216,6 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Ventas";
             // 
-            // groupBoxFacturas
-            // 
-            this.groupBoxFacturas.BackColor = System.Drawing.Color.Snow;
-            this.groupBoxFacturas.Controls.Add(this.dataFacturas);
-            this.groupBoxFacturas.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxFacturas.Location = new System.Drawing.Point(28, 23);
-            this.groupBoxFacturas.Name = "groupBoxFacturas";
-            this.groupBoxFacturas.Size = new System.Drawing.Size(480, 185);
-            this.groupBoxFacturas.TabIndex = 84;
-            this.groupBoxFacturas.TabStop = false;
-            this.groupBoxFacturas.Text = "Facturas";
-            // 
-            // dataFacturas
-            // 
-            this.dataFacturas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataFacturas.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            this.dataFacturas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataFacturas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataFacturas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataFacturas.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataFacturas.EnableHeadersVisualStyles = false;
-            this.dataFacturas.Location = new System.Drawing.Point(9, 25);
-            this.dataFacturas.Name = "dataFacturas";
-            this.dataFacturas.RowHeadersWidth = 51;
-            this.dataFacturas.Size = new System.Drawing.Size(460, 145);
-            this.dataFacturas.TabIndex = 1;
-            this.dataFacturas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataFacturas_CellDoubleClick);
-            // 
-            // groupBoxDetallesFacturas
-            // 
-            this.groupBoxDetallesFacturas.BackColor = System.Drawing.Color.Snow;
-            this.groupBoxDetallesFacturas.Controls.Add(this.dataDetallesFacturas);
-            this.groupBoxDetallesFacturas.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxDetallesFacturas.Location = new System.Drawing.Point(28, 214);
-            this.groupBoxDetallesFacturas.Name = "groupBoxDetallesFacturas";
-            this.groupBoxDetallesFacturas.Size = new System.Drawing.Size(814, 220);
-            this.groupBoxDetallesFacturas.TabIndex = 85;
-            this.groupBoxDetallesFacturas.TabStop = false;
-            this.groupBoxDetallesFacturas.Text = "Detalles de la Factura";
-            // 
-            // dataDetallesFacturas
-            // 
-            this.dataDetallesFacturas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataDetallesFacturas.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            this.dataDetallesFacturas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataDetallesFacturas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataDetallesFacturas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataDetallesFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataDetallesFacturas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataDetallesFacturas.EnableHeadersVisualStyles = false;
-            this.dataDetallesFacturas.Location = new System.Drawing.Point(9, 25);
-            this.dataDetallesFacturas.Name = "dataDetallesFacturas";
-            this.dataDetallesFacturas.RowHeadersWidth = 51;
-            this.dataDetallesFacturas.Size = new System.Drawing.Size(794, 181);
-            this.dataDetallesFacturas.TabIndex = 1;
-            // 
             // ReportesVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,13 +229,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReportesVentas";
             this.plDock.ResumeLayout(false);
+            this.groupBoxDetallesFacturas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataDetallesFacturas)).EndInit();
+            this.groupBoxFacturas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataFacturas)).EndInit();
             this.plTop.ResumeLayout(false);
             this.plTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxFacturas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataFacturas)).EndInit();
-            this.groupBoxDetallesFacturas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataDetallesFacturas)).EndInit();
             this.ResumeLayout(false);
 
         }

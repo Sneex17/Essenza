@@ -40,6 +40,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
@@ -57,15 +58,16 @@
             // 
             // reportViewerGeneral
             // 
-            this.reportViewerGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewerGeneral.Location = new System.Drawing.Point(0, 0);
+            this.reportViewerGeneral.Location = new System.Drawing.Point(65, 0);
+            this.reportViewerGeneral.Margin = new System.Windows.Forms.Padding(0);
             this.reportViewerGeneral.Name = "reportViewerGeneral";
             this.reportViewerGeneral.ServerReport.BearerToken = null;
-            this.reportViewerGeneral.Size = new System.Drawing.Size(834, 542);
+            this.reportViewerGeneral.Size = new System.Drawing.Size(709, 451);
             this.reportViewerGeneral.TabIndex = 0;
             // 
             // panelButtons
             // 
+            this.panelButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.panelButtons.Controls.Add(this.BuExit);
             this.panelButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelButtons.Location = new System.Drawing.Point(0, 542);
@@ -76,7 +78,7 @@
             // BuExit
             // 
             this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuExit.FlatAppearance.BorderSize = 0;
             this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

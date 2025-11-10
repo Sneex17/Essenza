@@ -47,7 +47,7 @@
             this.BuLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
             this.BuLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuLogin.FlatAppearance.BorderSize = 0;
             this.BuLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -63,7 +63,7 @@
             // 
             // panelLogin
             // 
-            this.panelLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.panelLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.panelLogin.Controls.Add(this.checkSeePassword);
             this.panelLogin.Controls.Add(this.txtPass);
             this.panelLogin.Controls.Add(this.txtUser);
@@ -164,7 +164,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Montserrat Black", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.label3.Location = new System.Drawing.Point(247, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 64);
@@ -179,6 +179,7 @@
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.panelFondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(816, 500);
             this.MinimumSize = new System.Drawing.Size(816, 500);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

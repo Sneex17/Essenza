@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Essenza.ViewsAdmin;
 using Essenza.FormsVentasYFacturas;
+using System.Windows.Forms.DataVisualization.Charting;
+using Essenza.ClasesAR;
 
 namespace Essenza.Forms
 {
@@ -21,6 +23,7 @@ namespace Essenza.Forms
             InitializeComponent();
             offSubMenu();
             Rol(usuarios);
+            TopProductos();
         }
 
         private void users(Usuarios usuarios)
@@ -125,6 +128,21 @@ namespace Essenza.Forms
             FormChild.BringToFront();
             FormChild.Show();
 
+        }
+
+        private void TopProductos()
+        {
+            List<Facturas> list = Facturas.DatosFacturas();
+            var listTop = from t in list select (new {t.id_cliente, t.total_pagado });
+            GraficaProducts.Series.Clear();
+            Series serie = GraficaProducts.Series.Add("Top 10");
+            foreach (var i in list)
+            {
+                
+                serie.Points.AddY(i.total_pagado);
+                serie.Points.Add(i.id_cliente);
+                
+            }
         }
         private void BuExit_Click(object sender, EventArgs e)
         {

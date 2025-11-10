@@ -215,7 +215,7 @@ namespace Essenza.Forms
                 
             }
             rutaReportes ruta = new rutaReportes();
-            Reportes reportes = new Reportes("DsEmpleados", $"{ruta.ruta}ReportEmpleados.rdlc", DsEmpl);
+            Reportes reportes = new Reportes("DsEmpleados", $"{ruta.ruta}ReportEmpleados.rdlc", DsEmpl, "Reporte de Empleados");
             reportes.ShowDialog();
             
         }

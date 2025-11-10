@@ -62,7 +62,7 @@
             // BuExit
             // 
             this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuExit.FlatAppearance.BorderSize = 0;
             this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

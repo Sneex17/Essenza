@@ -298,6 +298,7 @@
     <Content Include="Icons\Financial Tasks.png" />
     <Content Include="Icons\Get Cash.png" />
     <Content Include="Icons\Info.png" />
+    <Content Include="Icons\Logo.png" />
     <Content Include="Icons\LogoApp.ico" />
     <Content Include="Icons\Logout Rounded Left.png" />
     <Content Include="Icons\Manager.png" />

@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbxFilroInventarios = new System.Windows.Forms.ComboBox();
             this.txtFilterInventarios = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,6 +77,18 @@
             this.plDock.Name = "plDock";
             this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 16;
+            // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.Location = new System.Drawing.Point(530, 448);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(131, 28);
+            this.BuGeneralReporte.TabIndex = 87;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = true;
+            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
             // 
             // groupBox3
             // 
@@ -174,7 +186,7 @@
             // BuExit
             // 
             this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(70)))), ((int)(((byte)(193)))));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuExit.FlatAppearance.BorderSize = 0;
             this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -343,18 +355,6 @@
             this.label2.Size = new System.Drawing.Size(211, 22);
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Empleados";
-            // 
-            // BuGeneralReporte
-            // 
-            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuGeneralReporte.Location = new System.Drawing.Point(530, 448);
-            this.BuGeneralReporte.Name = "BuGeneralReporte";
-            this.BuGeneralReporte.Size = new System.Drawing.Size(131, 28);
-            this.BuGeneralReporte.TabIndex = 87;
-            this.BuGeneralReporte.Text = "Gerenal Reporte";
-            this.BuGeneralReporte.UseVisualStyleBackColor = true;
-            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
             // 
             // EmployeeReports
             // 
