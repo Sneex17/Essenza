@@ -61,7 +61,7 @@
             // 
             // plDock
             // 
-            this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.plDock.Controls.Add(this.groupBox3);
             this.plDock.Controls.Add(this.groupBox2);
             this.plDock.Controls.Add(this.label1);

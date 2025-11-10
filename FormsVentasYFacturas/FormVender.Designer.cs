@@ -132,7 +132,7 @@
             // 
             // panelDatos
             // 
-            this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.panelDatos.Controls.Add(this.BuExit);
             this.panelDatos.Controls.Add(this.label15);
             this.panelDatos.Controls.Add(this.dataCarrito);

@@ -152,6 +152,12 @@
     <Compile Include="FormsVentasYFacturas\FormPagoEfectivo.Designer.cs">
       <DependentUpon>FormPagoEfectivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsVentasYFacturas\FormPagoTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsVentasYFacturas\FormPagoTransferencia.Designer.cs">
+      <DependentUpon>FormPagoTransferencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsVentasYFacturas\FormVender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsVentasYFacturas\FormPagoEfectivo.resx">
       <DependentUpon>FormPagoEfectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsVentasYFacturas\FormPagoTransferencia.resx">
+      <DependentUpon>FormPagoTransferencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsVentasYFacturas\FormVender.resx">
       <DependentUpon>FormVender.cs</DependentUpon>

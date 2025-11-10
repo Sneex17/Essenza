@@ -20,6 +20,7 @@ namespace Essenza.FormsVentasYFacturas
         public FormVender()
         {
             InitializeComponent();
+            TextBox();
         }
         
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
@@ -68,13 +69,34 @@ namespace Essenza.FormsVentasYFacturas
             }
 
         }
+        private void TextBox()
+        {
+            //Empleados
+            txtIdEmpFact.Enabled = false;
+            txtNameEmpFact.Enabled = false;
+            txtCargoEmpFact.Enabled = false;
+            txtEmailEmpFact.Enabled = false;
 
+            //Clientes
+            txtIdClientFact.Enabled = false;
+            txtNameClientFact.Enabled = false;
+            txtPhoneClientFact.Enabled = false;
+            txtCedulaClientFact.Enabled = false;
+
+            //Productos
+            txtIdProductFact.Enabled = false;
+            txtNameProductFact.Enabled = false;
+            txtPventaProductFact.Enabled= false;
+            txtSubTotalFact.Enabled = false;
+            txtTotalFact.Enabled = false;
+        }
         private void ClearTxtProducts()
         {
             txtIdProductFact.Text = String.Empty;
             txtNameProductFact.Text = String.Empty;
             txtPventaProductFact.Text = String.Empty;
             txtSubTotalFact.Text = String.Empty;
+            txtTotalFact.Text = String.Empty;
             CantidadPorProducto.Value = 1;
 
         }
@@ -138,48 +160,92 @@ namespace Essenza.FormsVentasYFacturas
             txtTotalFact.Text = Math.Round(Total,2).ToString();
         }
         
+      
         private void BuPagar_Click(object sender, EventArgs e)
         {
-            if(radioButtonEfectivo.Checked)
+            if (dataCarrito.RowCount < 2)
             {
-                List<Inventarios> listaCant = new List<Inventarios>();
-                List<DetallesFacturas> detalles = new List<DetallesFacturas>();
-                DateTime fechaHoy = DateTime.Now;
-                foreach (DataGridViewRow carrito in dataCarrito.Rows)
-                {
-                    if (carrito.IsNewRow) continue;
-                    DetallesFacturas detallesFacturas = new DetallesFacturas();
-                    detallesFacturas.id_cliente = Convert.ToInt32(carrito.Cells[0].Value.ToString());
-                    detallesFacturas.id_empleado = Convert.ToInt32(carrito.Cells[1].Value.ToString());
-                    detallesFacturas.id_inventario = Convert.ToInt32(carrito.Cells[2].Value.ToString());
-                    detallesFacturas.fecha_venta = fechaHoy;
-                    detallesFacturas.descripcion = "Procesando Pago";
-                    detallesFacturas.cantidad = Convert.ToInt32(carrito.Cells[3].Value.ToString());
-                    detallesFacturas.precio_unitario = Convert.ToDecimal(carrito.Cells[4].Value.ToString());
-                    detallesFacturas.precio_cantidad = Convert.ToDecimal(carrito.Cells[5].Value.ToString());
-                    detallesFacturas.itbis = Convert.ToDecimal(carrito.Cells[6].Value.ToString());
-                    detallesFacturas.subtotal = Convert.ToDecimal(carrito.Cells[7].Value.ToString());
-                    DetallesFacturas.AddDetalleFactura(detallesFacturas);
-                    Inventarios inventarios = new Inventarios();
-                    inventarios.id_inventario = detallesFacturas.id_inventario;
-                    inventarios.cantidad = detallesFacturas.cantidad;
-                    listaCant.Add(inventarios);
-                    detalles.Add(detallesFacturas);
-                }
-
-                Facturas facturas = new Facturas();
-                facturas.id_cliente = Convert.ToInt32(txtIdClientFact.Text);
-                facturas.fecha_venta = fechaHoy;
-                facturas.id_metodo_pago = 1;
-                facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
-                FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas, listaCant, detalles);
-                PagoEfectivo.ShowDialog();
-                LimpiarDGV();
-            }
-            if(radioButtonTransferencia.Checked)
-            {
+                MessageBox.Show("No hay productos para pagar", "Informacion",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
             }
+            else
+            {
+                DateTime fechaHoy = DateTime.Now;
+                if (radioButtonEfectivo.Checked)
+                {
+                    List<Inventarios> listaCant = new List<Inventarios>();
+                    List<DetallesFacturas> detalles = new List<DetallesFacturas>();
+
+                    foreach (DataGridViewRow carrito in dataCarrito.Rows)
+                    {
+                        if (carrito.IsNewRow) continue;
+                        DetallesFacturas detallesFacturas = new DetallesFacturas();
+                        detallesFacturas.id_cliente = Convert.ToInt32(carrito.Cells[0].Value.ToString());
+                        detallesFacturas.id_empleado = Convert.ToInt32(carrito.Cells[1].Value.ToString());
+                        detallesFacturas.id_inventario = Convert.ToInt32(carrito.Cells[2].Value.ToString());
+                        detallesFacturas.fecha_venta = fechaHoy;
+                        detallesFacturas.descripcion = "Procesando Pago";
+                        detallesFacturas.cantidad = Convert.ToInt32(carrito.Cells[3].Value.ToString());
+                        detallesFacturas.precio_unitario = Convert.ToDecimal(carrito.Cells[4].Value.ToString());
+                        detallesFacturas.precio_cantidad = Convert.ToDecimal(carrito.Cells[5].Value.ToString());
+                        detallesFacturas.itbis = Convert.ToDecimal(carrito.Cells[6].Value.ToString());
+                        detallesFacturas.subtotal = Convert.ToDecimal(carrito.Cells[7].Value.ToString());
+                        DetallesFacturas.AddDetalleFactura(detallesFacturas);
+                        Inventarios inventarios = new Inventarios();
+                        inventarios.id_inventario = detallesFacturas.id_inventario;
+                        inventarios.cantidad = detallesFacturas.cantidad;
+                        listaCant.Add(inventarios);
+                        detalles.Add(detallesFacturas);
+                    }
+
+                    Facturas facturas = new Facturas();
+                    facturas.id_cliente = Convert.ToInt32(txtIdClientFact.Text);
+                    facturas.fecha_venta = fechaHoy;
+                    facturas.id_metodo_pago = 1;
+                    facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
+                    FormPagoEfectivo PagoEfectivo = new FormPagoEfectivo(facturas, listaCant, detalles);
+                    PagoEfectivo.ShowDialog();
+                    LimpiarDGV();
+                }
+                if (radioButtonTransferencia.Checked)
+                {
+                    List<Inventarios> listaCant = new List<Inventarios>();
+                    List<DetallesFacturas> detalles = new List<DetallesFacturas>();
+
+                    foreach (DataGridViewRow carrito in dataCarrito.Rows)
+                    {
+                        if (carrito.IsNewRow) continue;
+                        DetallesFacturas detallesFacturas = new DetallesFacturas();
+                        detallesFacturas.id_cliente = Convert.ToInt32(carrito.Cells[0].Value.ToString());
+                        detallesFacturas.id_empleado = Convert.ToInt32(carrito.Cells[1].Value.ToString());
+                        detallesFacturas.id_inventario = Convert.ToInt32(carrito.Cells[2].Value.ToString());
+                        detallesFacturas.fecha_venta = fechaHoy;
+                        detallesFacturas.descripcion = "Procesando Pago";
+                        detallesFacturas.cantidad = Convert.ToInt32(carrito.Cells[3].Value.ToString());
+                        detallesFacturas.precio_unitario = Convert.ToDecimal(carrito.Cells[4].Value.ToString());
+                        detallesFacturas.precio_cantidad = Convert.ToDecimal(carrito.Cells[5].Value.ToString());
+                        detallesFacturas.itbis = Convert.ToDecimal(carrito.Cells[6].Value.ToString());
+                        detallesFacturas.subtotal = Convert.ToDecimal(carrito.Cells[7].Value.ToString());
+                        DetallesFacturas.AddDetalleFactura(detallesFacturas);
+                        Inventarios inventarios = new Inventarios();
+                        inventarios.id_inventario = detallesFacturas.id_inventario;
+                        inventarios.cantidad = detallesFacturas.cantidad;
+                        listaCant.Add(inventarios);
+                        detalles.Add(detallesFacturas);
+                    }
+
+                    Facturas facturas = new Facturas();
+                    facturas.id_cliente = Convert.ToInt32(txtIdClientFact.Text);
+                    facturas.fecha_venta = fechaHoy;
+                    facturas.id_metodo_pago = 2;
+                    facturas.total_pagado = Convert.ToDecimal(txtTotalFact.Text);
+                    FormPagoTransferencia pagoTransferencia = new FormPagoTransferencia(facturas, listaCant, detalles);
+                    pagoTransferencia.ShowDialog();
+                    LimpiarDGV();
+                }
+            }
+            
            
         }
 

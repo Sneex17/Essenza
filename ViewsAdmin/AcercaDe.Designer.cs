@@ -48,7 +48,7 @@
             // 
             // plDock
             // 
-            this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.plDock.Controls.Add(this.BuExit);
             this.plDock.Controls.Add(this.groupBox1);
             this.plDock.Controls.Add(this.groupBoxAcerdaDe);
@@ -80,7 +80,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(521, 332);
@@ -104,7 +104,7 @@
             // groupBoxAcerdaDe
             // 
             this.groupBoxAcerdaDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxAcerdaDe.BackColor = System.Drawing.Color.Snow;
+            this.groupBoxAcerdaDe.BackColor = System.Drawing.Color.White;
             this.groupBoxAcerdaDe.Controls.Add(this.label3);
             this.groupBoxAcerdaDe.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxAcerdaDe.Location = new System.Drawing.Point(521, 34);

@@ -108,6 +108,13 @@ namespace Essenza.ClasesAR
                 new RectangleF(130, y += 17, ancho, 20));
             l.Graphics.DrawString($"TOTAL: ${subtotal + impuesto}", f, Brushes.Black,
                 new RectangleF(130, y += 17, ancho, 20));
+
+
+            //Recibo de Transferencia
+            if(idpago != 1)
+            {
+
+            }
         }
     }
 }
