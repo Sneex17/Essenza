@@ -96,7 +96,7 @@ namespace Essenza.FormsVentasYFacturas
             txtNameProductFact.Text = String.Empty;
             txtPventaProductFact.Text = String.Empty;
             txtSubTotalFact.Text = String.Empty;
-            txtTotalFact.Text = String.Empty;
+            //txtTotalFact.Text = String.Empty; //no usar
             CantidadPorProducto.Value = 1;
 
         }

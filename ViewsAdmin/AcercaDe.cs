@@ -16,6 +16,7 @@ namespace Essenza.ViewsAdmin
         {
             InitializeComponent();
 
+            //Evento con excepciones Lambda
             BuExit.Click += (sender, e) =>
             {
                 this.Close();
