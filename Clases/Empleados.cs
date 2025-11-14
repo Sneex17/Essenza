@@ -50,6 +50,45 @@ namespace Essenza.Clases
             return employees.edad;  
         }
 
+        //General Email del Empleado
+        public static object GeneralEmail(Empleados empleados)
+        {
+            List<Empleados> list = Empleados.DatosReportsE();
+
+            foreach(var e in list)
+            {
+                if (e.telefono == empleados.telefono) { empleados.id_empleado = e.id_empleado;}
+            }
+            
+            empleados.email = $"{empleados.nombres}-ID{empleados.id_empleado}@essenza.org";
+
+            int resultado;
+            string NewQuery = $"Update empleados set email = @email where id_empleado = @id_empleado";
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue(@"id_empleado", empleados.id_empleado);
+                comando.Parameters.AddWithValue(@"email", empleados.email);
+                resultado = comando.ExecuteNonQuery();
+            }
+
+            return empleados;
+        }
+
+        //Agregar Email del Empleado
+        public static int AgregarEmail(Empleados empleados)
+        {
+            int resultado;
+            string NewQuery = $"Update empleados set email = @email where id_empleado = @id_empleado";
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue(@"id_empleado", empleados.id_empleado);
+                comando.Parameters.AddWithValue(@"email", empleados.email);
+                resultado = comando.ExecuteNonQuery();
+            }
+            return resultado;
+        }
         //Agregar Empleado
         public static int AddEmployee(Empleados employees)
         {

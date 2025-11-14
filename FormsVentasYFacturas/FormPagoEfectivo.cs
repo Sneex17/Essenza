@@ -95,8 +95,9 @@ namespace Essenza.FormsVentasYFacturas
                     printFactura.PrinterSettings = Styles;
                     printFactura.PrintPage += ImprimirFactura;
                     printFactura.Print();
+                    
                 }
-                else
+                if(PagoCon < Total)
                 {
                     var condicionPago = MessageBox.Show($"Necesitas mas efectivo para pagar\nAgregar mas " +
                         $"efectivo: SI\nCancelar pago: NO", "Pago en Proceso",
@@ -108,11 +109,18 @@ namespace Essenza.FormsVentasYFacturas
                         detallesFacturas.id_cliente = idCliente;
                         detallesFacturas.fecha_venta = fecha;
                         DetallesFacturas.PagoCancelado(detallesFacturas);
-                        
+
                         this.Close();
                     }
-
-                }
+                    string mensaje = $"Pago Cancelado";
+                    throw new SaldoInsuficiente(mensaje);
+                    
+                }   
+            }
+            catch (SaldoInsuficiente ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Pago en Proceso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (FormatException error)
             {

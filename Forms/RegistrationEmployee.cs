@@ -19,6 +19,7 @@ namespace Essenza.Forms
             InitializeComponent();
             txtIdE.Enabled = false;
             txtSalaryE.Enabled = false;
+            txtEmailE.Enabled = false;
             DatosTotal();
         }
         private void DatosTotal()
@@ -115,12 +116,14 @@ namespace Essenza.Forms
                 employees.edad = Convert.ToInt32(Empleados.AgeEmployee(employees));
                 employees.direccion = txtDirectionE.Text;
                 employees.id_estado_civil = Convert.ToInt32(cbxMaritalStatusE.SelectedValue.ToString());
-                employees.email = txtEmailE.Text;
+                employees.email = "Generando Email";
                 employees.fecha_contrato = dateContractE.Value;
                 employees.id_cargo = Convert.ToInt32(cbxCargoEmp.SelectedValue.ToString());
                 employees.salario = Convert.ToDecimal(txtSalaryE.Text);
                 employees.id_estado = Convert.ToInt32(cbxEmployeeStatuses.SelectedValue.ToString());
                 Empleados.AddEmployee(employees);
+                Empleados.GeneralEmail(employees);
+                
                 MessageBox.Show($"Empleado registrado!",
                     "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearTextBox();
