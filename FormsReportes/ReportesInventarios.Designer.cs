@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbxFilroInventarios = new System.Windows.Forms.ComboBox();
             this.txtFilterInventarios = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -76,8 +76,25 @@
             this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 18;
             // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
+            this.BuGeneralReporte.TabIndex = 88;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.cbxFilroInventarios);
             this.groupBox3.Controls.Add(this.txtFilterInventarios);
             this.groupBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,9 +111,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxFilroInventarios.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilroInventarios.FormattingEnabled = true;
-            this.cbxFilroInventarios.Location = new System.Drawing.Point(24, 55);
+            this.cbxFilroInventarios.Location = new System.Drawing.Point(20, 55);
             this.cbxFilroInventarios.Name = "cbxFilroInventarios";
-            this.cbxFilroInventarios.Size = new System.Drawing.Size(129, 23);
+            this.cbxFilroInventarios.Size = new System.Drawing.Size(133, 23);
             this.cbxFilroInventarios.TabIndex = 70;
             // 
             // txtFilterInventarios
@@ -105,22 +122,23 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilterInventarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilterInventarios.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterInventarios.Location = new System.Drawing.Point(24, 28);
+            this.txtFilterInventarios.Location = new System.Drawing.Point(20, 28);
             this.txtFilterInventarios.Name = "txtFilterInventarios";
-            this.txtFilterInventarios.Size = new System.Drawing.Size(130, 21);
+            this.txtFilterInventarios.Size = new System.Drawing.Size(134, 21);
             this.txtFilterInventarios.TabIndex = 67;
             this.txtFilterInventarios.TextChanged += new System.EventHandler(this.txtFilterInventarios_TextChanged);
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.cbxFechas);
             this.groupBox2.Controls.Add(this.fechaFin);
             this.groupBox2.Controls.Add(this.fechaInicio);
             this.groupBox2.Controls.Add(this.BuBuscarFechas);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(242, 52);
+            this.groupBox2.Location = new System.Drawing.Point(226, 52);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(248, 94);
+            this.groupBox2.Size = new System.Drawing.Size(393, 94);
             this.groupBox2.TabIndex = 95;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fechas";
@@ -133,7 +151,7 @@
             this.cbxFechas.FormattingEnabled = true;
             this.cbxFechas.Items.AddRange(new object[] {
             "Ingreso"});
-            this.cbxFechas.Location = new System.Drawing.Point(117, 50);
+            this.cbxFechas.Location = new System.Drawing.Point(264, 52);
             this.cbxFechas.Name = "cbxFechas";
             this.cbxFechas.Size = new System.Drawing.Size(114, 23);
             this.cbxFechas.TabIndex = 78;
@@ -142,30 +160,33 @@
             // 
             this.fechaFin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaFin.Location = new System.Drawing.Point(11, 53);
+            this.fechaFin.Location = new System.Drawing.Point(13, 53);
             this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(100, 21);
+            this.fechaFin.Size = new System.Drawing.Size(245, 21);
             this.fechaFin.TabIndex = 77;
             // 
             // fechaInicio
             // 
             this.fechaInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaInicio.Location = new System.Drawing.Point(11, 24);
+            this.fechaInicio.Location = new System.Drawing.Point(13, 24);
             this.fechaInicio.Name = "fechaInicio";
-            this.fechaInicio.Size = new System.Drawing.Size(100, 21);
+            this.fechaInicio.Size = new System.Drawing.Size(245, 21);
             this.fechaInicio.TabIndex = 76;
             // 
             // BuBuscarFechas
             // 
             this.BuBuscarFechas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuBuscarFechas.Location = new System.Drawing.Point(117, 21);
+            this.BuBuscarFechas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuBuscarFechas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuBuscarFechas.ForeColor = System.Drawing.Color.White;
+            this.BuBuscarFechas.Location = new System.Drawing.Point(264, 23);
             this.BuBuscarFechas.Name = "BuBuscarFechas";
             this.BuBuscarFechas.Size = new System.Drawing.Size(114, 23);
             this.BuBuscarFechas.TabIndex = 73;
             this.BuBuscarFechas.Text = "Buscar";
-            this.BuBuscarFechas.UseVisualStyleBackColor = true;
+            this.BuBuscarFechas.UseVisualStyleBackColor = false;
             this.BuBuscarFechas.Click += new System.EventHandler(this.BuBuscarFechas_Click);
             // 
             // label1
@@ -180,12 +201,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.BuOrdenar);
             this.groupBox1.Controls.Add(this.rBza);
             this.groupBox1.Controls.Add(this.cbxOrderBy);
             this.groupBox1.Controls.Add(this.rBaz);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(509, 52);
+            this.groupBox1.Location = new System.Drawing.Point(625, 52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(214, 94);
             this.groupBox1.TabIndex = 94;
@@ -196,12 +218,15 @@
             // 
             this.BuOrdenar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuOrdenar.Location = new System.Drawing.Point(21, 20);
+            this.BuOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuOrdenar.ForeColor = System.Drawing.Color.White;
+            this.BuOrdenar.Location = new System.Drawing.Point(14, 22);
             this.BuOrdenar.Name = "BuOrdenar";
             this.BuOrdenar.Size = new System.Drawing.Size(114, 23);
             this.BuOrdenar.TabIndex = 72;
             this.BuOrdenar.Text = "Ordenar";
-            this.BuOrdenar.UseVisualStyleBackColor = true;
+            this.BuOrdenar.UseVisualStyleBackColor = false;
             this.BuOrdenar.Click += new System.EventHandler(this.BuOrdenar_Click);
             // 
             // rBza
@@ -209,7 +234,7 @@
             this.rBza.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBza.AutoSize = true;
-            this.rBza.Location = new System.Drawing.Point(155, 55);
+            this.rBza.Location = new System.Drawing.Point(145, 55);
             this.rBza.Name = "rBza";
             this.rBza.Size = new System.Drawing.Size(44, 19);
             this.rBza.TabIndex = 82;
@@ -225,7 +250,7 @@
             this.cbxOrderBy.FormattingEnabled = true;
             this.cbxOrderBy.Items.AddRange(new object[] {
             "Productos"});
-            this.cbxOrderBy.Location = new System.Drawing.Point(21, 49);
+            this.cbxOrderBy.Location = new System.Drawing.Point(14, 51);
             this.cbxOrderBy.Name = "cbxOrderBy";
             this.cbxOrderBy.Size = new System.Drawing.Size(114, 23);
             this.cbxOrderBy.TabIndex = 80;
@@ -235,7 +260,7 @@
             this.rBaz.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBaz.AutoSize = true;
-            this.rBaz.Location = new System.Drawing.Point(155, 26);
+            this.rBaz.Location = new System.Drawing.Point(145, 26);
             this.rBaz.Name = "rBaz";
             this.rBaz.Size = new System.Drawing.Size(44, 19);
             this.rBaz.TabIndex = 81;
@@ -270,23 +295,23 @@
             this.dataListInventarios.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataListInventarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataListInventarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataListInventarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataListInventarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataListInventarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListInventarios.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListInventarios.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataListInventarios.EnableHeadersVisualStyles = false;
             this.dataListInventarios.Location = new System.Drawing.Point(28, 164);
             this.dataListInventarios.Name = "dataListInventarios";
@@ -327,22 +352,6 @@
             this.label2.Size = new System.Drawing.Size(212, 22);
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Inventarios";
-            // 
-            // BuGeneralReporte
-            // 
-            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
-            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
-            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
-            this.BuGeneralReporte.Name = "BuGeneralReporte";
-            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
-            this.BuGeneralReporte.TabIndex = 88;
-            this.BuGeneralReporte.Text = "Gerenal Reporte";
-            this.BuGeneralReporte.UseVisualStyleBackColor = false;
             // 
             // ReportesInventarios
             // 

@@ -15,18 +15,23 @@ namespace Essenza.Forms
 {
     public partial class ReportesClientes : Form
     {
+        //Evento para mover los datos
         public event Action<Clientes> ClienteSelecionado;
         public ReportesClientes()
         {
             InitializeComponent();
             DatosClientes();
         }
+
+        //Datos del DataGridView
         private void DatosClientes()
         {
             Clientes clientes = new Clientes();
             dataReportsC.DataSource = Clientes.DatosClientes();
             cbxFilroClientes.DataSource = clientes.ListDatosClientesFiltro;
         }
+
+        //Accion de mover los datos
         private void dataReportsC_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -49,12 +54,7 @@ namespace Essenza.Forms
             }
         }
 
-
-        private void BuExit_Click(object sender, EventArgs e) => this.Close();
-
-
-
-
+        //Filtros de datos
         private void txtFilterClientes_TextChanged(object sender, EventArgs e)
         {
             string campo = cbxFilroClientes.SelectedItem?.ToString();
@@ -80,7 +80,6 @@ namespace Essenza.Forms
                 dataReportsC.DataSource = Clientes.DatosReporteFiltroClientes(NewQuery);
             }
         }
-
         private void BuOrdenar_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(cbxOrderBy.Text))
@@ -108,7 +107,6 @@ namespace Essenza.Forms
                                 dataReportsC.DataSource = datos.ToList();
                             }
                             break;
-
                     }
 
                 }
@@ -131,13 +129,12 @@ namespace Essenza.Forms
                                 dataReportsC.DataSource = datos.ToList();
                             }
                             break;
-
                     }
                 }
-
             }
         }
 
+        //Boton de gerenal reporte
         private void BuGeneralReporte_Click(object sender, EventArgs e)
         {
             List<Clientes> listClient = new List<Clientes>();
@@ -158,5 +155,8 @@ namespace Essenza.Forms
             Reportes reportes = new Reportes("DsClientes", $"{ruta.ruta}ReportClientes.rdlc", listClient, "Reporte de Clientes");
             reportes.ShowDialog();
         }
+
+        //Salir de la ventana
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
     }
 }

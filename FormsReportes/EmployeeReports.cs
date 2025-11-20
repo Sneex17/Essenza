@@ -17,6 +17,7 @@ namespace Essenza.Forms
 {
     public partial class EmployeeReports : Form
     {
+        //Evento para mover los datos
         public event Action<Empleados> EmpleadoSelecionado;
         public EmployeeReports()
         {
@@ -24,6 +25,7 @@ namespace Essenza.Forms
             DatosEmp();
         }
 
+        //Datos del DataGridView
         private void DatosEmp()
         {
             Empleados empleados = new Empleados();
@@ -31,7 +33,7 @@ namespace Essenza.Forms
             cbxFilroInventarios.DataSource = empleados.ListDatosFiltro;
         }
 
-
+        //Accion de mover los datos
         private void dataReportsE_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -58,6 +60,7 @@ namespace Essenza.Forms
             }
         }
 
+        //Filtros de datos
         private void txtFilter_TextChanged(object sender, EventArgs e)
         {
             string campo = cbxFilroInventarios.SelectedItem?.ToString(); 
@@ -83,7 +86,6 @@ namespace Essenza.Forms
                 dataReportsInventarios.DataSource = Empleados.DatosReportsEFiltro(NewQuery);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             ExportarExcel excel = new ExportarExcel();
@@ -98,12 +100,8 @@ namespace Essenza.Forms
                 excel.row = dataReportsInventarios;
                 excel.RowCells = dataReportsInventarios.ColumnCount;
                 ExportarExcel.exportarExcel(excel);
-            }
-            
-            
+            }           
         }
-
-
         private void BuBuscarFechas_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrWhiteSpace(cbxFechas.Text))
@@ -138,7 +136,6 @@ namespace Essenza.Forms
             }
 
         }
-
         private void BuOrdenar_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(cbxOrderBy.Text))
@@ -196,8 +193,8 @@ namespace Essenza.Forms
             }
         }
 
-        private void BuExit_Click(object sender, EventArgs e) => this.Close();
-
+        
+        //Boton de gerenal reporte
         private void BuGeneralReporte_Click(object sender, EventArgs e)
         {
             List<Empleados> DsEmpl = new List<Empleados>();
@@ -211,13 +208,14 @@ namespace Essenza.Forms
                 empleados.fecha_contrato = Convert.ToDateTime(lista.Cells[7].Value.ToString());
                 empleados.id_cargo = Convert.ToInt32(lista.Cells[11].Value.ToString());
                 empleados.id_estado = Convert.ToInt32(lista.Cells[13].Value.ToString());
-                DsEmpl.Add(empleados);
-                
+                DsEmpl.Add(empleados);         
             }
             rutaReportes ruta = new rutaReportes();
             Reportes reportes = new Reportes("DsEmpleados", $"{ruta.ruta}ReportEmpleados.rdlc", DsEmpl, "Reporte de Empleados");
-            reportes.ShowDialog();
-            
+            reportes.ShowDialog();          
         }
+
+        //Salir de la venana
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
     }
 }

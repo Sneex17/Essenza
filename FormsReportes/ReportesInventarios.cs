@@ -13,6 +13,7 @@ namespace Essenza.FormsReportes
 {
     public partial class ReportesInventarios : Form
     {
+        //Evento para mover los datos
         public event Action<Inventarios> SelecionalInventario;
         public ReportesInventarios()
         {
@@ -20,6 +21,7 @@ namespace Essenza.FormsReportes
             ListaInventarios();
         }
 
+        //Datos del DataGridView
         private void ListaInventarios()
         {
             Inventarios inventarios = new Inventarios();
@@ -27,6 +29,7 @@ namespace Essenza.FormsReportes
             cbxFilroInventarios.DataSource = inventarios.listDatosCbx;
         }
 
+        //Accion de mover los datos
         private void dataListInventarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -49,12 +52,8 @@ namespace Essenza.FormsReportes
             }
             
         }
-
-        private void BuExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
+        //Filtros de datos
         private void txtFilterInventarios_TextChanged(object sender, EventArgs e)
         {
             string campo = cbxFilroInventarios.SelectedItem?.ToString();
@@ -80,7 +79,6 @@ namespace Essenza.FormsReportes
                 dataListInventarios.DataSource = Inventarios.ListaFiltroInventarios(NewQuery);
             }
         }
-
         private void BuBuscarFechas_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(cbxFechas.Text))
@@ -101,11 +99,9 @@ namespace Essenza.FormsReportes
                             dataListInventarios.DataSource = datosPorFechas.ToList();
                         }
                         break;
-
                 }
             }
         }
-
         private void BuOrdenar_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(cbxOrderBy.Text))
@@ -126,9 +122,7 @@ namespace Essenza.FormsReportes
                                 dataListInventarios.DataSource = datos.ToList();
                             }
                             break;
-
                     }
-
                 }
                 if (rBza.Checked)
                 {
@@ -145,5 +139,8 @@ namespace Essenza.FormsReportes
                 }
             }
         }
+
+        //Salir de la venana
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
     }
 }

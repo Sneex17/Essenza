@@ -28,17 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbxFilroSuplidores = new System.Windows.Forms.ComboBox();
             this.txtFilterSuplidores = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cbxFechas = new System.Windows.Forms.ComboBox();
-            this.fechaFin = new System.Windows.Forms.DateTimePicker();
-            this.fechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.BuBuscarFechas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BuOrdenar = new System.Windows.Forms.Button();
@@ -50,10 +46,8 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListSuplidores)).BeginInit();
             this.plTop.SuspendLayout();
@@ -65,7 +59,6 @@
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.plDock.Controls.Add(this.BuGeneralReporte);
             this.plDock.Controls.Add(this.groupBox3);
-            this.plDock.Controls.Add(this.groupBox2);
             this.plDock.Controls.Add(this.label1);
             this.plDock.Controls.Add(this.groupBox1);
             this.plDock.Controls.Add(this.BuExit);
@@ -76,8 +69,25 @@
             this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 18;
             // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
+            this.BuGeneralReporte.TabIndex = 88;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.cbxFilroSuplidores);
             this.groupBox3.Controls.Add(this.txtFilterSuplidores);
             this.groupBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,9 +104,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxFilroSuplidores.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilroSuplidores.FormattingEnabled = true;
-            this.cbxFilroSuplidores.Location = new System.Drawing.Point(24, 55);
+            this.cbxFilroSuplidores.Location = new System.Drawing.Point(20, 55);
             this.cbxFilroSuplidores.Name = "cbxFilroSuplidores";
-            this.cbxFilroSuplidores.Size = new System.Drawing.Size(129, 23);
+            this.cbxFilroSuplidores.Size = new System.Drawing.Size(133, 23);
             this.cbxFilroSuplidores.TabIndex = 70;
             // 
             // txtFilterSuplidores
@@ -105,68 +115,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilterSuplidores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilterSuplidores.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterSuplidores.Location = new System.Drawing.Point(24, 28);
+            this.txtFilterSuplidores.Location = new System.Drawing.Point(20, 28);
             this.txtFilterSuplidores.Name = "txtFilterSuplidores";
-            this.txtFilterSuplidores.Size = new System.Drawing.Size(130, 21);
+            this.txtFilterSuplidores.Size = new System.Drawing.Size(134, 21);
             this.txtFilterSuplidores.TabIndex = 67;
             this.txtFilterSuplidores.TextChanged += new System.EventHandler(this.txtFilterSuplidores_TextChanged);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.cbxFechas);
-            this.groupBox2.Controls.Add(this.fechaFin);
-            this.groupBox2.Controls.Add(this.fechaInicio);
-            this.groupBox2.Controls.Add(this.BuBuscarFechas);
-            this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(242, 52);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(248, 94);
-            this.groupBox2.TabIndex = 95;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Fechas";
-            // 
-            // cbxFechas
-            // 
-            this.cbxFechas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxFechas.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxFechas.FormattingEnabled = true;
-            this.cbxFechas.Items.AddRange(new object[] {
-            "Contrato",
-            "Nacimiento"});
-            this.cbxFechas.Location = new System.Drawing.Point(117, 50);
-            this.cbxFechas.Name = "cbxFechas";
-            this.cbxFechas.Size = new System.Drawing.Size(114, 23);
-            this.cbxFechas.TabIndex = 78;
-            // 
-            // fechaFin
-            // 
-            this.fechaFin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaFin.Location = new System.Drawing.Point(11, 53);
-            this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(100, 21);
-            this.fechaFin.TabIndex = 77;
-            // 
-            // fechaInicio
-            // 
-            this.fechaInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaInicio.Location = new System.Drawing.Point(11, 24);
-            this.fechaInicio.Name = "fechaInicio";
-            this.fechaInicio.Size = new System.Drawing.Size(100, 21);
-            this.fechaInicio.TabIndex = 76;
-            // 
-            // BuBuscarFechas
-            // 
-            this.BuBuscarFechas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuBuscarFechas.Location = new System.Drawing.Point(117, 21);
-            this.BuBuscarFechas.Name = "BuBuscarFechas";
-            this.BuBuscarFechas.Size = new System.Drawing.Size(114, 23);
-            this.BuBuscarFechas.TabIndex = 73;
-            this.BuBuscarFechas.Text = "Buscar";
-            this.BuBuscarFechas.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -180,12 +133,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.BuOrdenar);
             this.groupBox1.Controls.Add(this.rBza);
             this.groupBox1.Controls.Add(this.cbxOrderBy);
             this.groupBox1.Controls.Add(this.rBaz);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(509, 52);
+            this.groupBox1.Location = new System.Drawing.Point(625, 52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(214, 94);
             this.groupBox1.TabIndex = 94;
@@ -196,12 +150,15 @@
             // 
             this.BuOrdenar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuOrdenar.Location = new System.Drawing.Point(21, 20);
+            this.BuOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuOrdenar.ForeColor = System.Drawing.Color.White;
+            this.BuOrdenar.Location = new System.Drawing.Point(14, 22);
             this.BuOrdenar.Name = "BuOrdenar";
             this.BuOrdenar.Size = new System.Drawing.Size(114, 23);
             this.BuOrdenar.TabIndex = 72;
             this.BuOrdenar.Text = "Ordenar";
-            this.BuOrdenar.UseVisualStyleBackColor = true;
+            this.BuOrdenar.UseVisualStyleBackColor = false;
             this.BuOrdenar.Click += new System.EventHandler(this.BuOrdenar_Click);
             // 
             // rBza
@@ -209,7 +166,7 @@
             this.rBza.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBza.AutoSize = true;
-            this.rBza.Location = new System.Drawing.Point(155, 55);
+            this.rBza.Location = new System.Drawing.Point(145, 55);
             this.rBza.Name = "rBza";
             this.rBza.Size = new System.Drawing.Size(44, 19);
             this.rBza.TabIndex = 82;
@@ -226,7 +183,7 @@
             this.cbxOrderBy.Items.AddRange(new object[] {
             "Nombres",
             "Email"});
-            this.cbxOrderBy.Location = new System.Drawing.Point(21, 49);
+            this.cbxOrderBy.Location = new System.Drawing.Point(14, 51);
             this.cbxOrderBy.Name = "cbxOrderBy";
             this.cbxOrderBy.Size = new System.Drawing.Size(114, 23);
             this.cbxOrderBy.TabIndex = 80;
@@ -236,7 +193,7 @@
             this.rBaz.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBaz.AutoSize = true;
-            this.rBaz.Location = new System.Drawing.Point(155, 26);
+            this.rBaz.Location = new System.Drawing.Point(145, 26);
             this.rBaz.Name = "rBaz";
             this.rBaz.Size = new System.Drawing.Size(44, 19);
             this.rBaz.TabIndex = 81;
@@ -271,23 +228,23 @@
             this.dataListSuplidores.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataListSuplidores.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataListSuplidores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataListSuplidores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataListSuplidores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dataListSuplidores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListSuplidores.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListSuplidores.DefaultCellStyle = dataGridViewCellStyle22;
             this.dataListSuplidores.EnableHeadersVisualStyles = false;
             this.dataListSuplidores.Location = new System.Drawing.Point(28, 164);
             this.dataListSuplidores.Name = "dataListSuplidores";
@@ -329,22 +286,6 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Suplidores";
             // 
-            // BuGeneralReporte
-            // 
-            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
-            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
-            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
-            this.BuGeneralReporte.Name = "BuGeneralReporte";
-            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
-            this.BuGeneralReporte.TabIndex = 88;
-            this.BuGeneralReporte.Text = "Gerenal Reporte";
-            this.BuGeneralReporte.UseVisualStyleBackColor = false;
-            // 
             // ReportesSuplidores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -359,7 +300,6 @@
             this.plDock.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListSuplidores)).EndInit();
@@ -381,11 +321,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cbxFilroSuplidores;
         private System.Windows.Forms.TextBox txtFilterSuplidores;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cbxFechas;
-        private System.Windows.Forms.DateTimePicker fechaFin;
-        private System.Windows.Forms.DateTimePicker fechaInicio;
-        private System.Windows.Forms.Button BuBuscarFechas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BuOrdenar;

@@ -13,6 +13,7 @@ namespace Essenza.FormsReportes
 {
     public partial class Reportes : Form
     {
+        //variables generales
         string rt;
         string ds;
         object Datos;
@@ -26,6 +27,7 @@ namespace Essenza.FormsReportes
             nombreReporte = nombre;
         }
 
+        //General reporte
         private void Reportes_Load(object sender, EventArgs e)
         {
             int num1, num2;
@@ -47,6 +49,7 @@ namespace Essenza.FormsReportes
 
         }
 
+        //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
        
     }

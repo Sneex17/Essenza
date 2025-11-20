@@ -13,6 +13,7 @@ namespace Essenza.FormsReportes
 {
     public partial class ReportesSuplidores : Form
     {
+        //Evento para mover los datos
         public event Action<Suplidores> SelecionalSuplidor;
         public ReportesSuplidores()
         {
@@ -20,6 +21,7 @@ namespace Essenza.FormsReportes
             DatosSuplidores();
         }
 
+        //Datos del DataGridView
         private void DatosSuplidores()
         {
             Suplidores suplidores = new Suplidores();   
@@ -27,6 +29,7 @@ namespace Essenza.FormsReportes
             cbxFilroSuplidores.DataSource = suplidores.listDatosCbx;
         }
 
+        //Accion de mover los datos
         private void dataListSuplidores_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex >=0)
@@ -47,8 +50,7 @@ namespace Essenza.FormsReportes
             
         }
 
-        private void BuExit_Click(object sender, EventArgs e) => this.Close();
-
+        //Filtros de datos
         private void txtFilterSuplidores_TextChanged(object sender, EventArgs e)
         {
             string campo = cbxFilroSuplidores.SelectedItem?.ToString();
@@ -73,7 +75,6 @@ namespace Essenza.FormsReportes
                 dataListSuplidores.DataSource = Suplidores.ListaFiltroSuplidores(NewQuery);
             }
         }
-
         private void BuOrdenar_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(cbxOrderBy.Text))
@@ -102,9 +103,7 @@ namespace Essenza.FormsReportes
                                 dataListSuplidores.DataSource = datos.ToList();
                             }
                             break;
-
                     }
-
                 }
                 if (rBza.Checked)
                 {
@@ -125,10 +124,12 @@ namespace Essenza.FormsReportes
                                 dataListSuplidores.DataSource = datos.ToList();
                             }
                             break;
-
                     }
                 }
             }
         }
+        
+        //Salir de la ventana
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
     }
 }
