@@ -21,6 +21,17 @@ namespace Essenza.Forms
             DatosCbx();
         }
 
+        //Limpiar los textbox
+        private void ClearTxt()
+        {
+            txtNamesC.Text = String.Empty;
+            txtLstNamesC.Text = String.Empty;
+            txtPhoneC.Text = String.Empty;
+            txtCedulaC.Text = String.Empty;
+            txtEmailC.Text = String.Empty;
+            txtDirectionC.Text = String.Empty;
+        }
+        //Llenar los combobox con datos
         private void DatosCbx()
         {
             DatosSexos();
@@ -54,16 +65,8 @@ namespace Essenza.Forms
                 cbxEstadoCivilC.DisplayMember = "estado_civil";
             }
         }
-        private void ClearTxt()
-        {
-            txtNamesC.Text = String.Empty;
-            txtLstNamesC.Text = String.Empty;
-            txtPhoneC.Text = String.Empty;
-            txtCedulaC.Text = String.Empty;
-            txtEmailC.Text = String.Empty;
-            txtDirectionC.Text = String.Empty;
-
-        }
+        
+        //Boton de registrar
         private void BuRegisterC_Click(object sender, EventArgs e)
         {
             var Mensaje = MessageBox.Show($"¿Desea registrar los datos de esta persona como cliente?", "Informe de registro",
@@ -86,27 +89,9 @@ namespace Essenza.Forms
                 ClearTxt();
             }
 
-        }
+        }      
 
-        private void BuBuscarC_Click(object sender, EventArgs e)
-        {
-            ReportesClientes reportesClientes = new ReportesClientes();
-            reportesClientes.ClienteSelecionado += (clientes) =>
-            {
-                txtIdC.Text = clientes.id_cliente.ToString();
-                txtNamesC.Text = clientes.nombres.ToString();
-                txtLstNamesC.Text = clientes.apellidos.ToString();
-                cbxSexoC.SelectedValue = clientes.id_sexo;
-                txtPhoneC.Text = clientes.telefono.ToString();
-                txtCedulaC.Text = clientes.cedula.ToString();
-                cbxEstadoCivilC.SelectedValue = clientes.id_estado_civil;
-                txtEmailC.Text = clientes.email.ToString();
-                txtDirectionC.Text = clientes.direccion.ToString();
-                cbxEstadoC.SelectedValue = clientes.id_estado;
-            };
-            reportesClientes.ShowDialog();
-        }
-
+        //Boton de actualizar
         private void BuUpdateC_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrWhiteSpace(txtIdC.Text))
@@ -141,15 +126,10 @@ namespace Essenza.Forms
             }
         }
 
-        private void RegistroClientes_Load(object sender, EventArgs e)
-        {
-
-            
-        }
-
+        //Boton de eliminar
         private void BuDeleteC_Click(object sender, EventArgs e)
         {
-            if(String.IsNullOrWhiteSpace(txtIdC.Text))
+            if (String.IsNullOrWhiteSpace(txtIdC.Text))
             {
                 MessageBox.Show($"Debe buscar y selecional a un cliente para elinimarlo",
                "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -169,10 +149,35 @@ namespace Essenza.Forms
                     ClearTxt();
                 }
             }
-                   
-
         }
 
+        //Evento para Buscar los datos de algun registro
+        private void BuBuscarC_Click(object sender, EventArgs e)
+        {
+            ReportesClientes reportesClientes = new ReportesClientes();
+            reportesClientes.ClienteSelecionado += (clientes) =>
+            {
+                txtIdC.Text = clientes.id_cliente.ToString();
+                txtNamesC.Text = clientes.nombres.ToString();
+                txtLstNamesC.Text = clientes.apellidos.ToString();
+                cbxSexoC.SelectedValue = clientes.id_sexo;
+                txtPhoneC.Text = clientes.telefono.ToString();
+                txtCedulaC.Text = clientes.cedula.ToString();
+                cbxEstadoCivilC.SelectedValue = clientes.id_estado_civil;
+                txtEmailC.Text = clientes.email.ToString();
+                txtDirectionC.Text = clientes.direccion.ToString();
+                cbxEstadoC.SelectedValue = clientes.id_estado;
+            };
+            reportesClientes.ShowDialog();
+        }
+
+        private void RegistroClientes_Load(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
        
     }

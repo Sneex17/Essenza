@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClasesAR\DetallesFacturas.cs" />
+    <Compile Include="ClasesAR\ExcepcionesPersonalizadas.cs" />
     <Compile Include="ClasesAR\ExportarExcel.cs" />
     <Compile Include="ClasesAR\Facturas.cs" />
     <Compile Include="ClasesAR\Imprimir.cs" />

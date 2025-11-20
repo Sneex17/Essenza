@@ -25,7 +25,7 @@ namespace Essenza.Forms
             Rol(usuarios);
             TopProductos();
         }
-
+        //Control de los Roles
         private void users(Usuarios usuarios)
         {
             Roles roles = new Roles();
@@ -80,6 +80,8 @@ namespace Essenza.Forms
             }
 
         }
+
+        //Metodo para control del SubMenu
         private void offSubMenu()
         {
             panelClientesSM.Visible = false;
@@ -144,13 +146,8 @@ namespace Essenza.Forms
                 
             }
         }
-        private void BuExit_Click(object sender, EventArgs e)
-        {
-            Form1 inicio = new Form1();
-            inicio.Show();
-            this.Hide();
-        }
-
+        
+        //Botones Generales
         private void BuClientes_Click(object sender, EventArgs e) => showSubMenu(panelClientesSM); 
         private void BuEmpleados_Click(object sender, EventArgs e) => showSubMenu(panelEmpleadosSM); 
         private void BuSuplidores_Click(object sender, EventArgs e) => showSubMenu(panelSuplidoresSM);
@@ -158,11 +155,17 @@ namespace Essenza.Forms
         private void BuVentas_Click(object sender, EventArgs e) =>  showSubMenu(panelVentasSM);
         private void BuDashBoard_Click(object sender, EventArgs e) => showSubMenu(panelDashBoard);
 
+        //Botones de Clientes
         private void BuRegistrarClientes_Click(object sender, EventArgs e) 
         {
             OpenForms(new RegistroClientes());
         }
+        private void BuReportesClientes_Click(object sender, EventArgs e)
+        {
+            OpenForms(new ReportesClientes());
+        }
 
+        //Botones de EMpleados
         private void BuRegistrarEmpleados_Click(object sender, EventArgs e)
         {
             OpenForms(new RegistrationEmployee());
@@ -173,49 +176,51 @@ namespace Essenza.Forms
             OpenForms(new EmployeeReports());
         }
 
-        private void BuReportesClientes_Click(object sender, EventArgs e)
-        {
-            OpenForms(new ReportesClientes());
-        }
-
-        private void BuRegistrarInventario_Click(object sender, EventArgs e)
-        {
-            OpenForms(new RegistroInventarios());
-        }
-
-        private void BuReportesInventarios_Click(object sender, EventArgs e)
-        {
-            OpenForms(new ReportesInventarios());
-        }
-
+        //Botones de Suplidores
         private void BuRegistrarSuplidores_Click(object sender, EventArgs e)
         {
             OpenForms(new RegistroSuplidores());
         }
-
-        private void BuAcercaDe_Click(object sender, EventArgs e)
-        {
-            OpenForms(new AcercaDe());
-        }
-
         private void BuReportesSuplidores_Click(object sender, EventArgs e)
         {
             OpenForms(new ReportesSuplidores());
         }
 
+        //Botones de Inventarios
+        private void BuRegistrarInventario_Click(object sender, EventArgs e)
+        {
+            OpenForms(new RegistroInventarios());
+        }
+        private void BuReportesInventarios_Click(object sender, EventArgs e)
+        {
+            OpenForms(new ReportesInventarios());
+        }
+
+        //Botones de Ventas
         private void BuVender_Click(object sender, EventArgs e)
         {
             OpenForms(new FormVender());
         }
-
-        private void BuEstadisticas_Click(object sender, EventArgs e)
-        {
-            OpenForms(new Dashboard());
-        }
-
         private void BuReportesVentas_Click(object sender, EventArgs e)
         {
             OpenForms(new ReportesVentas());
         }
+
+        //Botones de Administracion
+        private void BuAcercaDe_Click(object sender, EventArgs e)
+        {
+            OpenForms(new AcercaDe());
+        }
+        private void BuEstadisticas_Click(object sender, EventArgs e)
+        {
+            OpenForms(new Dashboard());
+        }
+        private void BuExit_Click(object sender, EventArgs e)
+        {
+            Form1 inicio = new Form1();
+            inicio.Show();
+            this.Hide();
+        }
+
     }
 }

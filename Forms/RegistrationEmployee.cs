@@ -1,4 +1,5 @@
 ﻿using Essenza.Clases;
+using Essenza.ClasesAR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Management.Automation.Language;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,14 +24,9 @@ namespace Essenza.Forms
             txtEmailE.Enabled = false;
             DatosTotal();
         }
-        private void DatosTotal()
-        {
-            DatosSexs();
-            DatosMaritalStatus();
-            DatosEmployeeStatus();
-            DatosCargosEmpleados();
-        }
-        private void ClearTextBox()
+
+        //Limpiar los textbox
+        private void ClearTextBox() 
         {
             txtIdE.Clear();
             txtNamesE.Clear();
@@ -38,6 +35,15 @@ namespace Essenza.Forms
             txtDirectionE.Clear();
             txtEmailE.Clear();
             txtSalaryE.Clear();
+        }
+
+        //Llenar los combobox con datos
+        private void DatosTotal() 
+        {
+            DatosSexs();
+            DatosMaritalStatus();
+            DatosEmployeeStatus();
+            DatosCargosEmpleados();
         }
         private void DatosSexs()
         {
@@ -76,64 +82,78 @@ namespace Essenza.Forms
             }
         }
 
-        private void BuDeleteE_Click(object sender, EventArgs e)
+        //Metodo para obtener el salario
+        private void cbxCargoEmp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtIdE.Text))
+            using (SqlConnection conexion = EssenzaSystemDB.EssenzaDB())
             {
-                MessageBox.Show($"Debe buscar y selecional un empleado para elinimarlo",
-               "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                var Mensaje = MessageBox.Show($"¿Desea eliminar a este empleado del registro?", "Informe de eliminacion",
-                                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if(Mensaje == DialogResult.Yes)
+                string Newquery = @"SELECT salario FROM cargos WHERE cargo = @cargo";
+                SqlCommand comando = new SqlCommand(Newquery, conexion);
+                comando.Parameters.AddWithValue("@cargo", cbxCargoEmp.Text);
+                using (SqlDataReader leer = comando.ExecuteReader())
                 {
-                    Empleados employees = new Empleados();
-                    employees.id_empleado = Convert.ToInt32(txtIdE.Text);
-                    Empleados.DeleteEmployee(employees);
-                    MessageBox.Show($"Empleado eliminado!",
-                   "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTextBox();
+                    if (leer.Read())
+                    {
+                        txtSalaryE.Text = leer["salario"].ToString();
+                    }
+                    else
+                    {
+                        txtSalaryE.Text = "";
+                    }
                 }
-                
             }
         }
 
+        //Boton de registrar
         private void BuRegister_Click(object sender, EventArgs e)
-        {
-            var Mensaje = MessageBox.Show($"¿Desea registrar los datos de esta persona como empleado?", "Informe de registro",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(Mensaje == DialogResult.Yes)
+        {   
+            try
             {
                 Empleados employees = new Empleados();
-                employees.nombres = txtNamesE.Text;
-                employees.apellidos = txtLstNamesE.Text;
-                employees.id_sexo = Convert.ToInt32(cbxSexE.SelectedValue.ToString());
-                employees.telefono = txtPhoneE.Text;
                 employees.fecha_nacimiento = dateBirthE.Value;
                 employees.edad = Convert.ToInt32(Empleados.AgeEmployee(employees));
-                employees.direccion = txtDirectionE.Text;
-                employees.id_estado_civil = Convert.ToInt32(cbxMaritalStatusE.SelectedValue.ToString());
-                employees.email = "Generando Email";
-                employees.fecha_contrato = dateContractE.Value;
-                employees.id_cargo = Convert.ToInt32(cbxCargoEmp.SelectedValue.ToString());
-                employees.salario = Convert.ToDecimal(txtSalaryE.Text);
-                employees.id_estado = Convert.ToInt32(cbxEmployeeStatuses.SelectedValue.ToString());
-                Empleados.AddEmployee(employees);
-                Empleados.GeneralEmail(employees);
                 
-                MessageBox.Show($"Empleado registrado!",
-                    "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTextBox();
-            }
+                if (employees.edad >= 18 && employees.edad < 65)
+                {
+                    var Mensaje = MessageBox.Show($"¿Desea registrar los datos de esta persona como empleado?", "Informe de registro",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (Mensaje == DialogResult.Yes)
+                    {
+                        employees.nombres = txtNamesE.Text;
+                        employees.apellidos = txtLstNamesE.Text;
+                        employees.id_sexo = Convert.ToInt32(cbxSexE.SelectedValue.ToString());
+                        employees.telefono = txtPhoneE.Text;
+                        employees.direccion = txtDirectionE.Text;
+                        employees.id_estado_civil = Convert.ToInt32(cbxMaritalStatusE.SelectedValue.ToString());
+                        employees.email = "Generando Email";
+                        employees.fecha_contrato = dateContractE.Value;
+                        employees.id_cargo = Convert.ToInt32(cbxCargoEmp.SelectedValue.ToString());
+                        employees.salario = Convert.ToDecimal(txtSalaryE.Text);
+                        employees.id_estado = Convert.ToInt32(cbxEmployeeStatuses.SelectedValue.ToString());
+                        Empleados.AddEmployee(employees);
+                        Empleados.GeneralEmail(employees);
 
+                        MessageBox.Show($"Empleado registrado!",
+                            "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTextBox();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"La edad debe ser mayor o igual a 18 y menor a 65\nFavor de Modificar la Fecha de Nacimiento",
+                            "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}",
+                        "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        //Boton de actualizar
         private void BuUpdate_Click(object sender, EventArgs e)
-        {
-            
+        {  
             if (string.IsNullOrWhiteSpace(txtIdE.Text))
             {
                 MessageBox.Show($"Debe buscar y selecional un empleado para actualizar sus datos",
@@ -164,33 +184,37 @@ namespace Essenza.Forms
                     MessageBox.Show($"Datos del empleado actualizados!",
                    "Information de actualizacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearTextBox();
-                }
-                
+                }  
             }
         }
 
-        private void cbxCargoEmp_SelectedIndexChanged(object sender, EventArgs e)
+        //Boton de eliminar
+        private void BuDeleteE_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conexion = EssenzaSystemDB.EssenzaDB())
+            if (string.IsNullOrWhiteSpace(txtIdE.Text))
             {
-                string Newquery = @"SELECT salario FROM cargos WHERE cargo = @cargo";
-                SqlCommand comando = new SqlCommand(Newquery, conexion);
-                comando.Parameters.AddWithValue("@cargo", cbxCargoEmp.Text);
-                using (SqlDataReader leer = comando.ExecuteReader())
+                MessageBox.Show($"Debe buscar y selecional un empleado para elinimarlo",
+               "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                var Mensaje = MessageBox.Show($"¿Desea eliminar a este empleado del registro?", "Informe de eliminacion",
+                                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (Mensaje == DialogResult.Yes)
                 {
-                    if (leer.Read())
-                    {
-                        txtSalaryE.Text = leer["salario"].ToString();
-                    }
-                    else
-                    {
-                        txtSalaryE.Text = "";
-                    }
+                    Empleados employees = new Empleados();
+                    employees.id_empleado = Convert.ToInt32(txtIdE.Text);
+                    Empleados.DeleteEmployee(employees);
+                    MessageBox.Show($"Empleado eliminado!",
+                   "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearTextBox();
                 }
 
             }
         }
 
+        //Evento para Buscar los datos de algun registro
         private void BuBuscarE_Click(object sender, EventArgs e)
         {
             EmployeeReports EmployeesReports = new EmployeeReports();
@@ -215,15 +239,14 @@ namespace Essenza.Forms
             EmployeesReports.ShowDialog();
         }
 
+        //Metodos para moverse entre textbox
         private void txtNamesE_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtLstNamesE.Focus(); }
-
         private void txtLstNamesE_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtPhoneE.Focus(); }
         private void txtPhoneE_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtDirectionE.Focus(); }
-
         private void txtDirectionE_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtEmailE.Focus(); }
-
         private void txtEmailE_KeyPress(object sender, KeyPressEventArgs e) { if (e.KeyChar == Convert.ToChar(Keys.Enter)) txtNamesE.Focus(); }
 
+        //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
 
     }

@@ -20,6 +20,19 @@ namespace Essenza.Forms
             DatosCbx();
             txtIdInv.Enabled = false;
         }
+
+        //Limpiar los textbox
+        private void ClearTxt()
+        {
+            txtIdInv.Text = string.Empty;
+            txtProducto.Text = string.Empty;
+            txtCantidad.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            txtPcompras.Text = string.Empty;
+            txtPventas.Text = string.Empty;
+        }
+
+        //Llenar los combobox con datos
         private void DatosCbx()
         {
             DatosCategorias();
@@ -34,7 +47,6 @@ namespace Essenza.Forms
                 cbxCategoria.DisplayMember = "categoria";
             }
         }
-
         private void DatosSuplidores()
         {
             List<Suplidores> list = Suplidores.ListaSuplidores();
@@ -43,17 +55,9 @@ namespace Essenza.Forms
                 cbxSuplidor.ValueMember = "id_suplidor";
                 cbxSuplidor.DisplayMember = "nombres";
             }
-
         }
-        private void ClearTxt()
-        {
-            txtIdInv.Text = string.Empty;
-            txtProducto.Text = string.Empty;
-            txtCantidad.Text = string.Empty;
-            txtDescripcion.Text = string.Empty;
-            txtPcompras.Text = string.Empty;
-            txtPventas.Text = string.Empty;
-        }
+        
+        //Boton de registrar
         private void BuRegistroInventario_Click(object sender, EventArgs e)
         {
             Inventarios inventarios = new Inventarios();
@@ -104,29 +108,9 @@ namespace Essenza.Forms
                     ClearTxt();
                 }
             }
+        }   
 
-
-        }
-
-        private void BuBuscarE_Click(object sender, EventArgs e)
-        {
-            ReportesInventarios reportesInventarios = new ReportesInventarios();
-
-            reportesInventarios.SelecionalInventario += (inventarios) =>
-            {
-                txtIdInv.Text = inventarios.id_inventario.ToString();
-                cbxSuplidor.SelectedValue = inventarios.id_suplidor;
-                txtProducto.Text = inventarios.producto;
-                txtDescripcion.Text = inventarios.descripcion;
-                txtCantidad.Text = inventarios.cantidad.ToString();
-                txtPcompras.Text = inventarios.precio_compra.ToString();
-                txtPventas.Text = inventarios.precio_venta.ToString();
-                cbxCategoria.SelectedValue = inventarios.id_categoria;
-                dateIngreso.Value = inventarios.fecha_ingreso;
-            };
-            reportesInventarios.ShowDialog();
-        }
-
+        //Boton de actualizar
         private void BuUpdateInventario_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrWhiteSpace(txtIdInv.Text))
@@ -188,6 +172,7 @@ namespace Essenza.Forms
             }
         }
 
+        //Boton de eliminar
         private void BuDeleteInventario_Click(object sender, EventArgs e)
         {
             var mensaje = MessageBox.Show($"¿Desea eliminar este inventario?", "Eliminacion de Inventarios",
@@ -209,10 +194,30 @@ namespace Essenza.Forms
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearTxt();
                 }
-            }
-            
+            }       
         }
 
+        //Evento para Buscar los datos de algun registro
+        private void BuBuscarE_Click(object sender, EventArgs e)
+        {
+            ReportesInventarios reportesInventarios = new ReportesInventarios();
+
+            reportesInventarios.SelecionalInventario += (inventarios) =>
+            {
+                txtIdInv.Text = inventarios.id_inventario.ToString();
+                cbxSuplidor.SelectedValue = inventarios.id_suplidor;
+                txtProducto.Text = inventarios.producto;
+                txtDescripcion.Text = inventarios.descripcion;
+                txtCantidad.Text = inventarios.cantidad.ToString();
+                txtPcompras.Text = inventarios.precio_compra.ToString();
+                txtPventas.Text = inventarios.precio_venta.ToString();
+                cbxCategoria.SelectedValue = inventarios.id_categoria;
+                dateIngreso.Value = inventarios.fecha_ingreso;
+            };
+            reportesInventarios.ShowDialog();
+        }
+
+        //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
        
     }

@@ -21,33 +21,7 @@ namespace Essenza.Forms
             txtIdS.Enabled = false;
         }
 
-        private void DatosCbx()
-        {
-            DatosEstados();
-            DatosPaises();
-        }
-
-        private void DatosEstados()
-        {
-            List<Estados> list = Estados.DatosEstados();
-            {
-                cbxEstadoS.DataSource = list;
-                cbxEstadoS.ValueMember = "id_estado";
-                cbxEstadoS.DisplayMember = "estado";
-                
-            }
-        }
-
-        private void DatosPaises()
-        {
-            List<Paises> list = Paises.DatosPaises();
-            {
-                cbxPaisesS.DataSource = list;
-                cbxPaisesS.ValueMember = "id_pais";
-                cbxPaisesS.DisplayMember = "pais";
-                
-            }
-        }
+        //Limpiar los textbox
         private void ClearTxt()
         {
             txtIdS.Text = string.Empty;
@@ -56,6 +30,33 @@ namespace Essenza.Forms
             txtEmailS.Text = string.Empty;
             txtDirectionS.Text = string.Empty;
         }
+
+        //Llenar los combobox con datos
+        private void DatosCbx()
+        {
+            DatosEstados();
+            DatosPaises();
+        }
+        private void DatosEstados()
+        {
+            List<Estados> list = Estados.DatosEstados();
+            {
+                cbxEstadoS.DataSource = list;
+                cbxEstadoS.ValueMember = "id_estado";
+                cbxEstadoS.DisplayMember = "estado";               
+            }
+        }
+        private void DatosPaises()
+        {
+            List<Paises> list = Paises.DatosPaises();
+            {
+                cbxPaisesS.DataSource = list;
+                cbxPaisesS.ValueMember = "id_pais";
+                cbxPaisesS.DisplayMember = "pais";         
+            }
+        }
+
+        //Boton de registrar
         private void BuRegisterSuplidor_Click(object sender, EventArgs e)
         {
             var mensaje = MessageBox.Show($"¿Desea registrar este suplidor?", "Registro de Suplidores", 
@@ -77,6 +78,7 @@ namespace Essenza.Forms
             }
         }
 
+        //Boton de actualizar
         private void BuUpdateSuplidor_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrWhiteSpace(txtIdS.Text))
@@ -107,23 +109,7 @@ namespace Essenza.Forms
             }
         }
 
-        private void BuBuscarSuplidor_Click(object sender, EventArgs e)
-        {
-            ReportesSuplidores reportesSuplidores = new ReportesSuplidores();
-
-            reportesSuplidores.SelecionalSuplidor += (suplidores) =>
-            {
-                txtIdS.Text = suplidores.id_suplidor.ToString();
-                txtNamesS.Text = suplidores.nombres;
-                txtPhoneS.Text = suplidores.telefono;
-                txtEmailS.Text = suplidores.email;
-                txtDirectionS.Text = suplidores.direccion;
-                cbxPaisesS.SelectedValue = suplidores.id_pais;
-                cbxEstadoS.SelectedValue = suplidores.id_estado;
-            };
-            reportesSuplidores.ShowDialog();
-        }
-
+        //Boton de eliminar
         private void BuDeleteSuplidor_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(txtIdS.Text))
@@ -148,6 +134,26 @@ namespace Essenza.Forms
             }
         }
 
+        //Evento para Buscar los datos de algun registro
+        private void BuBuscarSuplidor_Click(object sender, EventArgs e)
+        {
+            ReportesSuplidores reportesSuplidores = new ReportesSuplidores();
+
+            reportesSuplidores.SelecionalSuplidor += (suplidores) =>
+            {
+                txtIdS.Text = suplidores.id_suplidor.ToString();
+                txtNamesS.Text = suplidores.nombres;
+                txtPhoneS.Text = suplidores.telefono;
+                txtEmailS.Text = suplidores.email;
+                txtDirectionS.Text = suplidores.direccion;
+                cbxPaisesS.SelectedValue = suplidores.id_pais;
+                cbxEstadoS.SelectedValue = suplidores.id_estado;
+            };
+            reportesSuplidores.ShowDialog();
+        }
+
+       
+        //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
         
     }
