@@ -145,9 +145,6 @@
   <data name="Suplidores" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Suplidores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,8 +157,11 @@
   <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sell Stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Sell Stock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Test Results" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Test Results.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Warehouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Warehouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,6 +172,9 @@
   <data name="Total Ventas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Total Ventas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ImgPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ImgPrincipal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Cash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,13 +184,16 @@
   <data name="Edit Property" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Edit Property.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Sell Stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Sell Stock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Checked Identification Documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Checked Identification Documents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Manager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Test Results" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Test Results.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tienda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\tienda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

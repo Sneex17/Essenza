@@ -183,6 +183,16 @@ namespace Essenza.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ImgPrincipal {
+            get {
+                object obj = ResourceManager.GetObject("ImgPrincipal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Info {
             get {
                 object obj = ResourceManager.GetObject("Info", resourceCulture);
@@ -256,6 +266,16 @@ namespace Essenza.Properties {
         internal static System.Drawing.Bitmap Test_Results {
             get {
                 object obj = ResourceManager.GetObject("Test Results", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tienda {
+            get {
+                object obj = ResourceManager.GetObject("tienda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -327,6 +327,8 @@
     <Content Include="Icons\User.png" />
     <Content Include="Icons\Warehouse.png" />
     <Content Include="Photos\Fondo1-Login.png" />
+    <Content Include="Photos\ImgPrincipal.jpg" />
+    <Content Include="Photos\tienda.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

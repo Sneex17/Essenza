@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Essenza.Clases;
+using Essenza.ClasesAR;
+using Essenza.FormsReportes;
+using OpenXmlPowerTools;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Essenza.Clases;
-using Essenza.FormsReportes;
 
 namespace Essenza.Forms
 {
@@ -56,145 +58,210 @@ namespace Essenza.Forms
                 cbxSuplidor.DisplayMember = "nombres";
             }
         }
-        
+        //Metodo de excepciones
+        private void Excepciones()
+        {
+            bool txP, txD, txC, txpV, txpC;
+            txP = String.IsNullOrWhiteSpace(txtProducto.Text);
+            txD = String.IsNullOrWhiteSpace(txtDescripcion.Text);
+            txC = String.IsNullOrWhiteSpace(txtCantidad.Text);
+            txpV = String.IsNullOrWhiteSpace(txtPventas.Text);
+            txpC = String.IsNullOrWhiteSpace(txtPcompras.Text);
+
+            if (txP || txD || txC || txpV || txpC)
+            {
+                if (txP) throw new ExcepcionesPersonalizadas("El campo Produco esta vacio");
+                if (txD) throw new ExcepcionesPersonalizadas("El campo Descripcion esta vacio");
+                if (txC) throw new ExcepcionesPersonalizadas("El campo Cantidad esta vacio");
+                if (txpV) throw new ExcepcionesPersonalizadas("El campo Precio Venta esta vacio");
+                if (txpC) throw new ExcepcionesPersonalizadas("El campo de Precio Compra esta vacio");
+            }
+        }
         //Boton de registrar
         private void BuRegistroInventario_Click(object sender, EventArgs e)
         {
-            Inventarios inventarios = new Inventarios();
-            inventarios.id_suplidor = Convert.ToInt32(cbxSuplidor.SelectedValue);
-            inventarios.producto = txtProducto.Text;
-            inventarios.descripcion = txtDescripcion.Text;
-            inventarios.cantidad = Convert.ToInt32(txtCantidad.Text);
-            inventarios.precio_compra = Convert.ToDecimal(txtPcompras.Text);
-            inventarios.precio_venta = Convert.ToDecimal(txtPventas.Text);
-            inventarios.id_categoria = Convert.ToInt32(cbxCategoria.SelectedValue);
-            inventarios.fecha_ingreso = dateIngreso.Value;
-
-            DateTime Today = DateTime.Now;
-            if(inventarios.fecha_ingreso > Today)
+            try
             {
-                MessageBox.Show($"La fecha debe ser menor o igual al dia de hoy: {Today}", "Error de fecha",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (inventarios.cantidad <= 0)
-            {
-                MessageBox.Show($"La cantidad debe ser mayor o igual al 1, " +
-                    $"usted ingreso una cantidad de: {inventarios.cantidad} unicades", "Error de cantidad",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (inventarios.precio_compra <= 0)
-            {
-                MessageBox.Show($"El precio de compra debe ser mayor o igual al 1.00, " +
-                    $"usted ingreso un precio de compra de: {inventarios.precio_compra} dolares", "Error de cantidad",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (inventarios.precio_venta <= inventarios.precio_compra)
-            {
-                MessageBox.Show($"El precio de venta debe ser mayor al precio de compra, " +
-                    $"usted ingreso un precio de venta de: {inventarios.precio_venta} dolares y el " +
-                    $"precio de compra es de: {inventarios.precio_compra}", "Error de cantidad",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                var mensaje = MessageBox.Show($"¿Desea registrar este producto como inventario?", "Registro de Inventarios",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if(mensaje == DialogResult.Yes)
+                if(String.IsNullOrWhiteSpace(txtIdInv.Text))
                 {
-                    Inventarios.RegistrarInvetarios(inventarios);
-                    MessageBox.Show($"Inventario registrado con exito!", "Registro de Inventarios",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTxt();
+                    Excepciones();
+
+                    Inventarios inventarios = new Inventarios();
+                    inventarios.id_suplidor = Convert.ToInt32(cbxSuplidor.SelectedValue);
+                    inventarios.producto = txtProducto.Text;
+                    inventarios.descripcion = txtDescripcion.Text;
+                    inventarios.cantidad = Convert.ToInt32(txtCantidad.Text);
+                    inventarios.precio_compra = Convert.ToDecimal(txtPcompras.Text);
+                    inventarios.precio_venta = Convert.ToDecimal(txtPventas.Text);
+                    inventarios.id_categoria = Convert.ToInt32(cbxCategoria.SelectedValue);
+                    inventarios.fecha_ingreso = dateIngreso.Value;
+
+                    DateTime Today = DateTime.Now;
+                    if (inventarios.fecha_ingreso > Today)
+                    {
+                        MessageBox.Show($"La fecha debe ser menor o igual al dia de hoy: {Today}", "Error de fecha",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (inventarios.cantidad <= 0)
+                    {
+                        MessageBox.Show($"La cantidad debe ser mayor o igual al 1, " +
+                            $"usted ingreso una cantidad de: {inventarios.cantidad} unicades", "Error de cantidad",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (inventarios.precio_compra <= 0)
+                    {
+                        MessageBox.Show($"El precio de compra debe ser mayor o igual al 1.00, " +
+                            $"usted ingreso un precio de compra de: {inventarios.precio_compra} dolares", "Error de cantidad",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (inventarios.precio_venta <= inventarios.precio_compra)
+                    {
+                        MessageBox.Show($"El precio de venta debe ser mayor al precio de compra, " +
+                            $"usted ingreso un precio de venta de: {inventarios.precio_venta} dolares y el " +
+                            $"precio de compra es de: {inventarios.precio_compra}", "Error de cantidad",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        var mensaje = MessageBox.Show($"¿Desea registrar este producto como inventario?", "Registro de Inventarios",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        if (mensaje == DialogResult.Yes)
+                        {
+                            Inventarios.RegistrarInvetarios(inventarios);
+                            MessageBox.Show($"Inventario registrado con exito!", "Registro de Inventarios",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearTxt();
+                        }
+                    }
                 }
+                else
+                {
+                    throw new Exception(ExcepcionesPersonalizadas.RegistroInValido());
+                }  
             }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "Campo requerido vacio",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }  
         }   
 
         //Boton de actualizar
         private void BuUpdateInventario_Click(object sender, EventArgs e)
         {
-            if(String.IsNullOrWhiteSpace(txtIdInv.Text))
+            try
             {
-                MessageBox.Show($"Debe buscar y selecional un inventario para actualizar sus datos",
-               "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                Inventarios inventarios = new Inventarios();
-                inventarios.id_inventario = Convert.ToInt32(txtIdInv.Text);
-                inventarios.id_suplidor = Convert.ToInt32(cbxSuplidor.SelectedValue);
-                inventarios.producto = txtProducto.Text;
-                inventarios.descripcion = txtDescripcion.Text;
-                inventarios.cantidad = Convert.ToInt32(txtCantidad.Text);
-                inventarios.precio_compra = Convert.ToDecimal(txtPcompras.Text);
-                inventarios.precio_venta = Convert.ToDecimal(txtPventas.Text);
-                inventarios.id_categoria = Convert.ToInt32(cbxCategoria.SelectedValue);
-                inventarios.fecha_ingreso = Convert.ToDateTime(dateIngreso.Text);
-
-                DateTime Today = DateTime.Now;
-                if (inventarios.fecha_ingreso > Today)
+                if (String.IsNullOrWhiteSpace(txtIdInv.Text))
                 {
-                    MessageBox.Show($"La fecha debe ser menor o igual al dia de hoy: {Today}", "Error de fecha",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (inventarios.cantidad <= 0)
-                {
-                    MessageBox.Show($"La cantidad debe ser mayor o igual al 1, " +
-                        $"usted ingreso una cantidad de: {inventarios.cantidad} unicades", "Error de cantidad",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (inventarios.precio_compra <= 0)
-                {
-                    MessageBox.Show($"El precio de compra debe ser mayor o igual al 1.00, " +
-                        $"usted ingreso un precio de compra de: {inventarios.precio_compra} dolares", "Error de cantidad",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (inventarios.precio_venta <= inventarios.precio_compra)
-                {
-                    MessageBox.Show($"El precio de venta debe ser mayor al precio de compra, " +
-                        $"usted ingreso un precio de venta de: {inventarios.precio_venta} dolares y el " +
-                        $"precio de compra es de: {inventarios.precio_compra}", "Error de cantidad",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Debe buscar y selecional un inventario para actualizar sus datos",
+                   "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    var mensaje = MessageBox.Show($"¿Desea actualizar los datos de este inventario?", "Actualizacion de Inventarios",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                    if (mensaje == DialogResult.Yes)
+                    Excepciones();
+
+                    Inventarios inventarios = new Inventarios();
+                    inventarios.id_inventario = Convert.ToInt32(txtIdInv.Text);
+                    inventarios.id_suplidor = Convert.ToInt32(cbxSuplidor.SelectedValue);
+                    inventarios.producto = txtProducto.Text;
+                    inventarios.descripcion = txtDescripcion.Text;
+                    inventarios.cantidad = Convert.ToInt32(txtCantidad.Text);
+                    inventarios.precio_compra = Convert.ToDecimal(txtPcompras.Text);
+                    inventarios.precio_venta = Convert.ToDecimal(txtPventas.Text);
+                    inventarios.id_categoria = Convert.ToInt32(cbxCategoria.SelectedValue);
+                    inventarios.fecha_ingreso = Convert.ToDateTime(dateIngreso.Text);
+
+                    DateTime Today = DateTime.Now;
+                    if (inventarios.fecha_ingreso > Today)
                     {
-                        Inventarios.ActualizarInventario(inventarios);
-                        MessageBox.Show($"Datos del inventario actualizados con exito!", "Actualizacion de Inventarios",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearTxt();
+                        MessageBox.Show($"La fecha debe ser menor o igual al dia de hoy: {Today}", "Error de fecha",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (inventarios.cantidad <= 0)
+                    {
+                        MessageBox.Show($"La cantidad debe ser mayor o igual al 1, " +
+                            $"usted ingreso una cantidad de: {inventarios.cantidad} unicades", "Error de cantidad",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (inventarios.precio_compra <= 0)
+                    {
+                        MessageBox.Show($"El precio de compra debe ser mayor o igual al 1.00, " +
+                            $"usted ingreso un precio de compra de: {inventarios.precio_compra} dolares", "Error de cantidad",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (inventarios.precio_venta <= inventarios.precio_compra)
+                    {
+                        MessageBox.Show($"El precio de venta debe ser mayor al precio de compra, " +
+                            $"usted ingreso un precio de venta de: {inventarios.precio_venta} dolares y el " +
+                            $"precio de compra es de: {inventarios.precio_compra}", "Error de cantidad",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        var mensaje = MessageBox.Show($"¿Desea actualizar los datos de este inventario?", "Actualizacion de Inventarios",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        if (mensaje == DialogResult.Yes)
+                        {
+                            Inventarios.ActualizarInventario(inventarios);
+                            MessageBox.Show($"Datos del inventario actualizados con exito!", "Actualizacion de Inventarios",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearTxt();
+                        }
                     }
                 }
             }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "Campo requerido vacio",
+                            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            } 
         }
 
         //Boton de eliminar
         private void BuDeleteInventario_Click(object sender, EventArgs e)
         {
-            var mensaje = MessageBox.Show($"¿Desea eliminar este inventario?", "Eliminacion de Inventarios",
+            try
+            {
+                var mensaje = MessageBox.Show($"¿Desea eliminar este inventario?", "Eliminacion de Inventarios",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(mensaje == DialogResult.Yes)
+                if (mensaje == DialogResult.Yes)
+                {
+                    if (String.IsNullOrWhiteSpace(txtIdInv.Text))
+                    {
+                        MessageBox.Show($"Debe buscar y selecional un inventario para elinimarlo",
+                       "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        Inventarios inventarios = new Inventarios();
+                        inventarios.id_inventario = Convert.ToInt32(txtIdInv.Text);
+                        Inventarios.EliminarInventarios(inventarios);
+                        MessageBox.Show($"Inventario eliminado con exito!", "Eliminacion de Inventarios",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTxt();
+                    }
+                }
+            }
+            catch (Exception ex)
             {
-                if (String.IsNullOrWhiteSpace(txtIdInv.Text))
-                {
-                    MessageBox.Show($"Debe buscar y selecional un inventario para elinimarlo",
-                   "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    Inventarios inventarios = new Inventarios();
-                    inventarios.id_inventario = Convert.ToInt32(txtIdInv.Text);
-                    Inventarios.EliminarInventarios(inventarios);
-                    MessageBox.Show($"Inventario eliminado con exito!", "Eliminacion de Inventarios",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTxt();
-                }
-            }       
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+                 
         }
 
         //Evento para Buscar los datos de algun registro

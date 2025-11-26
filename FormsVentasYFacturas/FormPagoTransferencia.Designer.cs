@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPagoTransferencia));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbTotal = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.pbProcesando = new System.Windows.Forms.ProgressBar();
             this.BuCancelar = new System.Windows.Forms.Button();
             this.BuPagarFinal = new System.Windows.Forms.Button();
+            this.lbTotal = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.printTransferencia = new System.Drawing.Printing.PrintDocument();
-            this.pbProcesando = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -53,7 +53,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.pbProcesando);
             this.groupBox1.Controls.Add(this.BuCancelar);
             this.groupBox1.Controls.Add(this.BuPagarFinal);
@@ -67,25 +67,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles del Pago";
             // 
-            // lbTotal
+            // pbProcesando
             // 
-            this.lbTotal.AutoSize = true;
-            this.lbTotal.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(196, 41);
-            this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(50, 18);
-            this.lbTotal.TabIndex = 74;
-            this.lbTotal.Text = "$ 0.00";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(82, 41);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 18);
-            this.label9.TabIndex = 70;
-            this.label9.Text = "Total a Pagar:";
+            this.pbProcesando.Location = new System.Drawing.Point(33, 91);
+            this.pbProcesando.Name = "pbProcesando";
+            this.pbProcesando.Size = new System.Drawing.Size(270, 33);
+            this.pbProcesando.TabIndex = 80;
             // 
             // BuCancelar
             // 
@@ -123,16 +110,29 @@
             this.BuPagarFinal.UseVisualStyleBackColor = false;
             this.BuPagarFinal.Click += new System.EventHandler(this.BuPagarFinal_Click);
             // 
+            // lbTotal
+            // 
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotal.Location = new System.Drawing.Point(196, 41);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(50, 18);
+            this.lbTotal.TabIndex = 74;
+            this.lbTotal.Text = "$ 0.00";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(82, 41);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 18);
+            this.label9.TabIndex = 70;
+            this.label9.Text = "Total a Pagar:";
+            // 
             // printTransferencia
             // 
             this.printTransferencia.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirFactura);
-            // 
-            // pbProcesando
-            // 
-            this.pbProcesando.Location = new System.Drawing.Point(33, 91);
-            this.pbProcesando.Name = "pbProcesando";
-            this.pbProcesando.Size = new System.Drawing.Size(270, 33);
-            this.pbProcesando.TabIndex = 80;
             // 
             // FormPagoTransferencia
             // 

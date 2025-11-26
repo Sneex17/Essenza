@@ -23,7 +23,7 @@ namespace Essenza.Forms
             InitializeComponent();
             offSubMenu();
             Rol(usuarios);
-            TopProductos();
+            
         }
         //Control de los Roles
         private void users(Usuarios usuarios)
@@ -132,20 +132,7 @@ namespace Essenza.Forms
 
         }
 
-        private void TopProductos()
-        {
-            List<Facturas> list = Facturas.DatosFacturas();
-            var listTop = from t in list select (new {t.id_cliente, t.total_pagado });
-            GraficaProducts.Series.Clear();
-            Series serie = GraficaProducts.Series.Add("Top 10");
-            foreach (var i in list)
-            {
-                
-                serie.Points.AddY(i.total_pagado);
-                serie.Points.Add(i.id_cliente);
-                
-            }
-        }
+       
         
         //Botones Generales
         private void BuClientes_Click(object sender, EventArgs e) => showSubMenu(panelClientesSM); 

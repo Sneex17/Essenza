@@ -1,5 +1,7 @@
 ﻿using Essenza.Clases;
+using Essenza.ClasesAR;
 using Essenza.FormsReportes;
+using OpenXmlPowerTools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,82 +58,146 @@ namespace Essenza.Forms
             }
         }
 
-        //Boton de registrar
-        private void BuRegisterSuplidor_Click(object sender, EventArgs e)
+        //Metodo de Excepciones
+        private void Excepciones()
         {
-            var mensaje = MessageBox.Show($"¿Desea registrar este suplidor?", "Registro de Suplidores", 
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if(mensaje == DialogResult.Yes)
+            bool tx1, tx2, tx3, tx4;
+            tx1 = String.IsNullOrWhiteSpace(txtNamesS.Text);
+            tx2 = String.IsNullOrWhiteSpace(txtPhoneS.Text);
+            tx3 = String.IsNullOrWhiteSpace(txtEmailS.Text);
+            tx4 = String.IsNullOrWhiteSpace(txtDirectionS.Text);
+            if (tx1 || tx2 || tx3 || tx4)
             {
-                Suplidores suplidores = new Suplidores();
-                suplidores.nombres = txtNamesS.Text;
-                suplidores.telefono = txtPhoneS.Text;
-                suplidores.email = txtEmailS.Text;
-                suplidores.direccion = txtDirectionS.Text;
-                suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
-                suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
-                Suplidores.AgregarSuplidor(suplidores);
-                MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTxt();
+                if (tx1) throw new ExcepcionesPersonalizadas("El campo de Nombre esta vacio");
+                if (tx2) throw new ExcepcionesPersonalizadas("El campo de Telefono esta vacio");
+                if (tx3) throw new ExcepcionesPersonalizadas("El campo de Email esta vacio");
+                if (tx4) throw new ExcepcionesPersonalizadas("El campo de Direccion esta vacio");
             }
         }
+        //Boton de registrar
+        private void BuRegisterSuplidor_Click(object sender, EventArgs e)
+        {  
+            try
+            {
+                if(String.IsNullOrWhiteSpace(txtIdS.Text))
+                {
+                    Excepciones();
+
+                    var mensaje = MessageBox.Show($"¿Desea registrar este suplidor?", "Registro de Suplidores",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (mensaje == DialogResult.Yes)
+                    {
+                        Suplidores suplidores = new Suplidores();
+                        suplidores.nombres = txtNamesS.Text;
+                        suplidores.telefono = txtPhoneS.Text;
+                        suplidores.email = txtEmailS.Text;
+                        suplidores.direccion = txtDirectionS.Text;
+                        suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
+                        suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
+                        Suplidores.AgregarSuplidor(suplidores);
+                        MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTxt();
+                    }
+                }
+                else
+                {
+                    throw new Exception(ExcepcionesPersonalizadas.RegistroInValido());
+                }
+                
+            }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "Campo requerido vacio", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Informacio",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        
 
         //Boton de actualizar
         private void BuUpdateSuplidor_Click(object sender, EventArgs e)
         {
-            if(String.IsNullOrWhiteSpace(txtIdS.Text))
+            try
             {
-                MessageBox.Show($"Debe de buscar y selecional a un suplidor para actualizar sus datos", "Informacion",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                var mensaje = MessageBox.Show($"¿Desea actualizar los datos de este suplidor?", "Actualizacion de datos",
+                if (String.IsNullOrWhiteSpace(txtIdS.Text))
+                {
+                    MessageBox.Show($"Debe de buscar y selecional a un suplidor para actualizar sus datos", "Informacion",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    Excepciones();
+
+                    var mensaje = MessageBox.Show($"¿Desea actualizar los datos de este suplidor?", "Actualizacion de datos",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (mensaje == DialogResult.Yes)
-                {
-                    Suplidores suplidores = new Suplidores();
-                    suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
-                    suplidores.nombres = txtNamesS.Text;
-                    suplidores.telefono = txtPhoneS.Text;
-                    suplidores.email = txtEmailS.Text;
-                    suplidores.direccion = txtDirectionS.Text;
-                    suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
-                    suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
-                    Suplidores.ActualizarSuplidor(suplidores);
-                    MessageBox.Show($"Datos del suplidor actualizados con exito!", "Actualizacion completa",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTxt();
+                    if (mensaje == DialogResult.Yes)
+                    {
+                        Suplidores suplidores = new Suplidores();
+                        suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
+                        suplidores.nombres = txtNamesS.Text;
+                        suplidores.telefono = txtPhoneS.Text;
+                        suplidores.email = txtEmailS.Text;
+                        suplidores.direccion = txtDirectionS.Text;
+                        suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
+                        suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
+                        Suplidores.ActualizarSuplidor(suplidores);
+                        MessageBox.Show($"Datos del suplidor actualizados con exito!", "Actualizacion completa",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTxt();
+                    }
                 }
             }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "Campo requerido vacio",
+                            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Informacio",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }           
         }
 
         //Boton de eliminar
         private void BuDeleteSuplidor_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(txtIdS.Text))
+            try
             {
-                MessageBox.Show($"Debe de buscar y selecional a un suplidor para eliminarlo", "Informacion",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                var mensaje = MessageBox.Show($"¿Desea eliminar a este suplidor?", "Eliminacion de suplidor",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (mensaje == DialogResult.Yes)
+                if (String.IsNullOrWhiteSpace(txtIdS.Text))
                 {
-                    Suplidores suplidores = new Suplidores();
-                    suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
-                    Suplidores.EliminarSuplidor(suplidores);
-                    MessageBox.Show($"Suplidor eliminado con exito!", "Eliminacion de suplidor",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTxt();
+                    MessageBox.Show($"Debe de buscar y selecional a un suplidor para eliminarlo", "Informacion",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    var mensaje = MessageBox.Show($"¿Desea eliminar a este suplidor?", "Eliminacion de suplidor",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (mensaje == DialogResult.Yes)
+                    {
+                        Suplidores suplidores = new Suplidores();
+                        suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
+                        Suplidores.EliminarSuplidor(suplidores);
+                        MessageBox.Show($"Suplidor eliminado con exito!", "Eliminacion de suplidor",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTxt();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         //Evento para Buscar los datos de algun registro

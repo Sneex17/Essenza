@@ -242,7 +242,7 @@
             // 
             // groupBoxBuscar
             // 
-            this.groupBoxBuscar.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBoxBuscar.BackColor = System.Drawing.Color.White;
             this.groupBoxBuscar.Controls.Add(this.BuBuscarDatos);
             this.groupBoxBuscar.Controls.Add(this.radioButtonProducto);
             this.groupBoxBuscar.Controls.Add(this.radioButtonCliente);
@@ -302,7 +302,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.txtPhoneClientFact);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtCedulaClientFact);
@@ -409,7 +409,7 @@
             // 
             // groupBoxVenta
             // 
-            this.groupBoxVenta.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBoxVenta.BackColor = System.Drawing.Color.White;
             this.groupBoxVenta.Controls.Add(this.txtSubTotalFact);
             this.groupBoxVenta.Controls.Add(this.label13);
             this.groupBoxVenta.Controls.Add(this.BuAddCarrito);
@@ -564,7 +564,7 @@
             // 
             // groupBoxEmpleado
             // 
-            this.groupBoxEmpleado.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBoxEmpleado.BackColor = System.Drawing.Color.White;
             this.groupBoxEmpleado.Controls.Add(this.txtEmailEmpFact);
             this.groupBoxEmpleado.Controls.Add(this.txtNameEmpFact);
             this.groupBoxEmpleado.Controls.Add(this.label5);
@@ -671,7 +671,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.SeaShell;
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.txtTotalFact);
             this.groupBox2.Controls.Add(this.BuPagar);
             this.groupBox2.Controls.Add(this.label16);

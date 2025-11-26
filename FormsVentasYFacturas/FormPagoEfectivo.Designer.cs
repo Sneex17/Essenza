@@ -44,7 +44,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -54,7 +54,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.BuCancelar);
             this.groupBox1.Controls.Add(this.BuPagarFinal);
             this.groupBox1.Controls.Add(this.lbTotal);
