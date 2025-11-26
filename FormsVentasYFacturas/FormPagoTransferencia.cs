@@ -14,8 +14,10 @@ using System.Drawing.Printing;
 
 namespace Essenza.FormsVentasYFacturas
 {
+    //Pago por Transferencia
     public partial class FormPagoTransferencia : Form
     {
+        //Variables y listas para almacenar los datos
         int idCliente, idPago, idFactura;
         DateTime fecha;
         List<Inventarios> listaCantidad;
@@ -34,11 +36,13 @@ namespace Essenza.FormsVentasYFacturas
             BuCancelar.Enabled = false;
         }
 
+        //Metodo para la imprimir la factura
         private void ImprimirFactura(object sender, PrintPageEventArgs t)
         {
             Imprimir.ImprimirFacturaPDF(listFact, t, idPago, idFactura);
         }
 
+        //Metedo de pago final
         private void BuPagarFinal_Click(object sender, EventArgs e)
         {
             for (int i = 0; i <= 100; i++)
@@ -49,6 +53,7 @@ namespace Essenza.FormsVentasYFacturas
                 Thread.Sleep(75);
             }
 
+            //Barra de progreso
             if(pbProcesando.Value == 100)
             {
                 string Efectivo = lbTotal.Text;
@@ -81,7 +86,7 @@ namespace Essenza.FormsVentasYFacturas
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
 
-                /*Imprecion de la Factura*/
+                //Imprecion de la Factura
                 printTransferencia = new PrintDocument();
                 PrinterSettings Styles = new PrinterSettings();
                 printTransferencia.PrinterSettings = Styles;

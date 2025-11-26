@@ -3,6 +3,7 @@ using Essenza.Clases;
 using Essenza.ClasesAR;
 using Essenza.Forms;
 using Essenza.FormsReportes;
+using OpenXmlPowerTools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,14 +18,15 @@ namespace Essenza.FormsVentasYFacturas
 {
     public partial class FormVender : Form
     {
+        int cant;
         public FormVender()
         {
             InitializeComponent();
             TextBox();
         }
         
-        private void BuExit_Click(object sender, EventArgs e) => this.Close();
-
+        
+        //Metodo para buscar los datos del ciente, empleado y producto
         private void BuBuscarDatos_Click(object sender, EventArgs e)
         {
             if (radioButtonEmpleado.Checked)
@@ -60,15 +62,37 @@ namespace Essenza.FormsVentasYFacturas
 
                 reportesInventarios.SelecionalInventario += (inventarios) =>
                 {
-                    txtIdProductFact.Text = inventarios.id_inventario.ToString();
-                    txtNameProductFact.Text = inventarios.producto;
-                    txtPventaProductFact.Text = inventarios.precio_venta.ToString();
-                    txtSubTotalFact.Text = txtPventaProductFact.Text;
+                    try
+                    {
+                        int cantidad = inventarios.cantidad;
+                        cant = cantidad;
+                        if (cantidad == 0)
+                        {
+                            string mensaje = $"No hay cantidad de producto: " +
+                            $"{inventarios.producto} disponible\nCantidad en almacen: {cantidad}";
+                            throw new ExcepcionesPersonalizadas(mensaje);
+                        }
+                        txtIdProductFact.Text = inventarios.id_inventario.ToString();
+                        txtNameProductFact.Text = inventarios.producto;
+                        txtPventaProductFact.Text = inventarios.precio_venta.ToString();
+                        txtSubTotalFact.Text = txtPventaProductFact.Text;
+                    }
+                    catch(ExcepcionesPersonalizadas exp)
+                    {
+                        MessageBox.Show($"{exp.Message}", "informacion", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"{ex.Message}", "informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 };
                 reportesInventarios.ShowDialog();
             }
-
         }
+
+        //Control de los TextBox
         private void TextBox()
         {
             //Empleados
@@ -100,6 +124,8 @@ namespace Essenza.FormsVentasYFacturas
             CantidadPorProducto.Value = 1;
 
         }
+
+        //Metodo para el precio por la cantidad
         private void CantidadPorProducto_ValueChanged(object sender, EventArgs e)
         {
             if(!String.IsNullOrWhiteSpace(txtPventaProductFact.Text))
@@ -108,34 +134,46 @@ namespace Essenza.FormsVentasYFacturas
                 decimal Precio = Convert.ToDecimal(txtPventaProductFact.Text);
                 PrecioCantidad = Precio * CantidadPorProducto.Value;
                 txtSubTotalFact.Text = PrecioCantidad.ToString();
-            }
-            
-            
+            } 
         }
 
+        //Metodo para agregar productos al carrito
         private void BuAddCarrito_Click(object sender, EventArgs e)
         {
-            string IdC, IdE, IdP, cantidad, precioU, precioC;
-            double itbis, subtotal;
+            try
+            {
+                string IdC, IdE, IdP, cantidad, precioU, precioC;
+                double itbis, subtotal;
+                
+                IdC = txtIdClientFact.Text;
+                IdE = txtIdEmpFact.Text;
+                IdP = txtIdProductFact.Text;
+                cantidad = CantidadPorProducto.Value.ToString();
+                precioU = txtPventaProductFact.Text;
+                precioC = txtSubTotalFact.Text;
 
-            IdC = txtIdClientFact.Text;
-            IdE = txtIdEmpFact.Text;
-            IdP = txtIdProductFact.Text;
-            cantidad = CantidadPorProducto.Value.ToString();
-            precioU = txtPventaProductFact.Text;
-            precioC = txtSubTotalFact.Text;
-
-            itbis = (Convert.ToDouble(precioC) * 0.18) / 1.18;
-            subtotal = Convert.ToDouble(precioC) + itbis;
-
-            dataCarrito.Rows.Add(new object[] { IdC, IdE, IdP, cantidad, 
+                itbis = (Convert.ToDouble(precioC) * 0.18) / 1.18;
+                subtotal = Convert.ToDouble(precioC) + itbis;
+                if(cant < Convert.ToInt32(cantidad))
+                {
+                    string mensaje = $"La cantidad es mayor a la cantidad disponible\nCantidad disponible: {cant}";
+                    throw new ExcepcionesPersonalizadas(mensaje);
+                }
+                dataCarrito.Rows.Add(new object[] { IdC, IdE, IdP, cantidad,
                 precioU, precioC, Math.Round(itbis, 2), Math.Round(subtotal, 2), "Eliminar" });
-            CalcularTotal();
-            ClearTxtProducts();
+                CalcularTotal();
+                ClearTxtProducts();
+            }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CantidadPorProducto.Value = 1;
+            }
             
-
         }
 
+        //Metodo para elimnar productos del carrito
         private void dataCarrito_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex < 0 || e.ColumnIndex != dataCarrito.Columns["opcion"].Index)
@@ -145,6 +183,7 @@ namespace Essenza.FormsVentasYFacturas
             CalcularTotal();
         }
 
+        //Metodo para el total
         private void CalcularTotal()
         {
             decimal Total = 0;
@@ -160,7 +199,7 @@ namespace Essenza.FormsVentasYFacturas
             txtTotalFact.Text = Math.Round(Total,2).ToString();
         }
         
-      
+        //Metodos para el Pago
         private void BuPagar_Click(object sender, EventArgs e)
         {
             if (dataCarrito.RowCount < 2)
@@ -244,12 +283,13 @@ namespace Essenza.FormsVentasYFacturas
                     pagoTransferencia.ShowDialog();
                     LimpiarDGV();
                 }
-            }
-            
-           
+            }   
         }
 
         //Limpiar el Carrito
-        private void LimpiarDGV() => dataCarrito.Rows.Clear(); 
+        private void LimpiarDGV() => dataCarrito.Rows.Clear();
+
+        //Salir de la ventana
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();
     }
 }

@@ -14,8 +14,10 @@ using System.Drawing.Printing;
 
 namespace Essenza.FormsVentasYFacturas
 {
+    //Pago en Efectivo
     public partial class FormPagoEfectivo : Form
     {
+        //variables y listas para almacenar los datos
         int idCliente, idPago, idFactura;
         DateTime fecha;
         List<Inventarios> listaCantidad;
@@ -29,25 +31,25 @@ namespace Essenza.FormsVentasYFacturas
             fecha = facturas.fecha_venta;
             listaCantidad = (List<Inventarios>)lista;
             listFact = listaFactura;
-
         }
 
+        //Metodo para cancelar el pago
         private void BuCancelar_Click(object sender, EventArgs e)
         {
             DetallesFacturas detallesFacturas = new DetallesFacturas();
             detallesFacturas.id_cliente = idCliente;
             detallesFacturas.fecha_venta = fecha;
             DetallesFacturas.PagoCancelado(detallesFacturas);
-            
             this.Close();
         }
 
+        //Metodo para la imprimir la factura
         private void ImprimirFactura(object sender, PrintPageEventArgs l)
-        {
-            
+        { 
             Imprimir.ImprimirFacturaPDF(listFact, l, idPago, idFactura);
         }
 
+        //Metedo de pago final
         private void BuPagarFinal_Click(object sender, EventArgs e)
         {
             try
@@ -89,13 +91,12 @@ namespace Essenza.FormsVentasYFacturas
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
 
-                    /*Imprecion de la Factura*/
+                    //Imprecion de la Factura
                     printFactura = new PrintDocument();
                     PrinterSettings Styles = new PrinterSettings();
                     printFactura.PrinterSettings = Styles;
                     printFactura.PrintPage += ImprimirFactura;
-                    printFactura.Print();
-                    
+                    printFactura.Print();  
                 }
                 if(PagoCon < Total)
                 {
@@ -109,12 +110,10 @@ namespace Essenza.FormsVentasYFacturas
                         detallesFacturas.id_cliente = idCliente;
                         detallesFacturas.fecha_venta = fecha;
                         DetallesFacturas.PagoCancelado(detallesFacturas);
-
                         this.Close();
                     }
                     string mensaje = $"Pago Cancelado";
-                    throw new SaldoInsuficiente(mensaje);
-                    
+                    throw new SaldoInsuficiente(mensaje); 
                 }   
             }
             catch (SaldoInsuficiente ex)
@@ -128,10 +127,6 @@ namespace Essenza.FormsVentasYFacturas
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtEfectivo.Text = String.Empty;
             }
-            
-            
-        }
-
-        
+        }   
     }
 }
