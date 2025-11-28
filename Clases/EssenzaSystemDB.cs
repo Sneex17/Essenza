@@ -11,6 +11,7 @@ namespace Essenza.Clases
 {
     public class EssenzaSystemDB
     {
+        //Metodo de conexion a la base de datos del sistema
         public static SqlConnection EssenzaDB()
         {
             try

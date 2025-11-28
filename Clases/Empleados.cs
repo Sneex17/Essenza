@@ -203,6 +203,7 @@ namespace Essenza.Clases
             }
         }
 
+        //Metodo para filtrar los datos 
         public static List<Empleados> DatosReportsEFiltro(String NewQuery)
         {
             List<Empleados> resultado = new List<Empleados>();

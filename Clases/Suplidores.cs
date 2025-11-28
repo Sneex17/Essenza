@@ -18,6 +18,8 @@ namespace Essenza.Clases
         public int id_pais { get; set; }
         public int id_estado { get; set; }
 
+
+        //lista de los atributos
         public List<string> listDatosCbx = new List<string>()
         {
             "id_suplidor", "nombres", "telefono", "email", "direccion", "id_pais", "id_estado"

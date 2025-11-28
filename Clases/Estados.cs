@@ -12,6 +12,7 @@ namespace Essenza.Clases
         public int id_estado {  get; set; }
         public string estado { get; set; }
 
+        //Metodo para obtener los datos de los estados
         public static List<Estados> DatosEstados()
         {
             List<Estados> listEmployeeStatues = new List<Estados>();

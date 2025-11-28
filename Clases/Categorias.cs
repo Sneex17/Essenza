@@ -12,7 +12,7 @@ namespace Essenza.Clases
         public int id_categoria {  get; set; }
         public string categoria { get; set; }
 
-        //Lista de las categorias
+        //Metodo para obtener los datos de las categorias de los productos
         public static List<Categorias> listaCategorias()
         {
             List<Categorias> listcategorias = new List<Categorias>();

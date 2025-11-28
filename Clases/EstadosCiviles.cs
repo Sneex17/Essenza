@@ -13,6 +13,7 @@ namespace Essenza.Clases
         public int id_estado_civil {  get; set; }
         public string estado_civil { get; set; }
 
+        //Metodo para obtener los datos de los estados civiles
         public static List<EstadosCiviles> DatosMaritalStatuses()
         {
             List<EstadosCiviles> listMariStatuses = new List<EstadosCiviles>();

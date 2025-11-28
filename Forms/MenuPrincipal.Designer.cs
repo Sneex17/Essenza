@@ -130,11 +130,12 @@
             this.button1.Location = new System.Drawing.Point(0, 40);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(183, 20);
+            this.button1.Size = new System.Drawing.Size(183, 40);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Reportes de Ventas";
+            this.button1.Text = "Administracion";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BuEstadisticas
             // 

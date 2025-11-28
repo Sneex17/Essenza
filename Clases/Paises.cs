@@ -13,7 +13,7 @@ namespace Essenza.Clases
         public int id_pais {  get; set; }
         public string pais { get; set; }
 
-        //Listado de paises
+        //Metodo para obtener los datos de los paises
         public static List<Paises> DatosPaises()
         {
             List<Paises> listPais = new List<Paises>();

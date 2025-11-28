@@ -13,6 +13,8 @@ namespace Essenza.Clases
         public string cargo { get; set; }
         public decimal salario { get; set; }
 
+
+        //Metodo para obtener los datos de los cargos de los empleados
         public static List<CargosEmpleados> DatosCargos()
         {
             List<CargosEmpleados> listCargos = new List<CargosEmpleados>();
@@ -34,6 +36,7 @@ namespace Essenza.Clases
             return listCargos;
         }
 
+        //Metodo para obtener los datos de los salarios dependiendo el cargo del empleado
         public static Object DatosSalario(CargosEmpleados cargos)
         {
             string NewQuery = $"select salario from cargos where id_cargo = '{cargos.id_cargo}'";

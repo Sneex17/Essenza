@@ -128,7 +128,7 @@ namespace Essenza.Clases
             return resultado;
         }
 
-
+        //Metodo para filtrar los datos
         public static List<Clientes> DatosReporteFiltroClientes(string NewQuery)
         {
             List<Clientes> listClientes = new List<Clientes>();

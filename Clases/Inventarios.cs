@@ -79,6 +79,7 @@ namespace Essenza.Clases
             return resultado;
         }
 
+        //Actualizar Inventarios
         public static void ActualizarInventario(Inventarios inventarios)
         {
             int resultado;

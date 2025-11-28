@@ -12,7 +12,7 @@ namespace Essenza.Clases
         public int id_rol {  get; set; }
         public string rol { get; set; }
 
-        //Rol del Usuario
+        //Metodo para obtener los datos de los roles
         public static string UserRol(Roles roles)
         {
             string NewQuery = @"select rol from roles where id_rol = @id_rol";
@@ -28,6 +28,30 @@ namespace Essenza.Clases
                 reader.Close();
             }
             return roles.rol;
+        }
+
+
+        public static List<Roles> listaRoles()
+        {
+            string NewQuery = @"select * from roles";
+            List<Roles> list = new List<Roles>();
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    Roles roles = new Roles(); 
+                    roles.id_rol = (int)reader["id_rol"];
+                    roles.rol = (string)reader["rol"];
+                    list.Add(roles);
+                }
+                reader.Close();
+                return list;
+            }
+            
         }
     }
 }

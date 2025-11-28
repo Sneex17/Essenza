@@ -10,7 +10,7 @@ namespace Essenza.ClasesAR
 {
     public class Imprimir
     {
-
+        //metodo de diseño de la factura
         public static void ImprimirFacturaPDF(List<DetallesFacturas> lista, PrintPageEventArgs l, int idpago, int idfact)
         {
             List<DetallesFacturas> products = new List<DetallesFacturas>();

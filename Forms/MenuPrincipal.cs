@@ -202,6 +202,10 @@ namespace Essenza.Forms
         {
             OpenForms(new Dashboard());
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenForms(new ControlAdmin());
+        }
         private void BuExit_Click(object sender, EventArgs e)
         {
             Form1 inicio = new Form1();
@@ -209,5 +213,6 @@ namespace Essenza.Forms
             this.Hide();
         }
 
+        
     }
 }

@@ -83,6 +83,16 @@ namespace Essenza.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Administrative_Tools {
+            get {
+                object obj = ResourceManager.GetObject("Administrative Tools", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cash {
             get {
                 object obj = ResourceManager.GetObject("Cash", resourceCulture);

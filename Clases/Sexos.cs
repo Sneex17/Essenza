@@ -12,6 +12,7 @@ namespace Essenza.Clases
         public int id_sexo {  get; set; }
         public string sexo { get; set; }
 
+        //Metodo para obtener los datos de los sexos
         public static List<Sexos> DatosSexos()
         {
             List<Sexos> listSexs = new List<Sexos>();
