@@ -68,7 +68,17 @@ namespace Essenza.Clases
             }
         }
 
-
+        //Eliminar usuarios
+        public static void EliminarUser(int id)
+        {
+            using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"delete usuarios where id_usuario = {id}";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
         //Lista de usuarios
         public static List<Usuarios> ListaUsuarios()
         {

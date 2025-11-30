@@ -262,3 +262,4 @@ C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.Form
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.FormsVentasYFacturas.FormPagoTransferencia.resources
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlAdmin.resources
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlUsuarios.resources
+C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlRoles.resources

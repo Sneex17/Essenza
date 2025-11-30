@@ -15,19 +15,23 @@ namespace Essenza.ViewsAdmin
     public partial class ControlUsuarios : Form
     {
         Usuarios user = new Usuarios();
-        public ControlUsuarios(int idUser)
+        public ControlUsuarios(int? idUser)
         {
             InitializeComponent();
             txtBox();
             DatosCBX();
-            user.id_usuario = idUser;
+            iduser(idUser);
             DatosUser();
             ctrlBotones();
 
 
 
         }
-
+        private void iduser(int? id)
+        {
+            if(id != null )
+                user.id_usuario = Convert.ToInt32(id);
+        }
         private void txtBox()
         {
             txtIdUser.Enabled = false;

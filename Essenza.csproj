@@ -217,6 +217,12 @@
     <Compile Include="ViewsAdmin\ControlAdmin.Designer.cs">
       <DependentUpon>ControlAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewsAdmin\ControlRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdmin\ControlRoles.Designer.cs">
+      <DependentUpon>ControlRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewsAdmin\ControlUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdmin\ControlAdmin.resx">
       <DependentUpon>ControlAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdmin\ControlRoles.resx">
+      <DependentUpon>ControlRoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdmin\ControlUsuarios.resx">
       <DependentUpon>ControlUsuarios.cs</DependentUpon>

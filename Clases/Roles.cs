@@ -30,7 +30,7 @@ namespace Essenza.Clases
             return roles.rol;
         }
 
-
+        //Metodo para la lista de los roles
         public static List<Roles> listaRoles()
         {
             string NewQuery = @"select * from roles";
@@ -53,5 +53,46 @@ namespace Essenza.Clases
             }
             
         }
+
+        //Agregar Roles
+        public static void AgregarRol(Roles roles)
+        {
+            using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"insert into roles (rol) values (@rol)";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@rol", roles.rol);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
+
+        //Actualizar Roles
+        public static void ActualizarRol(Roles roles)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = @"update roles set rol = @rol where id_rol = @id_rol";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@id_rol", roles.id_rol);
+                comando.Parameters.AddWithValue("@rol", roles.rol);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
+
+        //Eliminar Roles
+        public static void EliminarRol(int id)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = @"delete roles where id_rol = @id_rol";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@id_rol", id);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
+
     }
 }
