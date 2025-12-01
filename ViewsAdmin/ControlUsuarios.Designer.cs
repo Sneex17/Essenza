@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlUsuarios));
             this.plDock = new System.Windows.Forms.Panel();
-            this.BuGuardar = new System.Windows.Forms.Button();
+            this.BuBuscarE = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cbxEstadoUser = new System.Windows.Forms.ComboBox();
-            this.txtIdUser = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtIdEmp = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cbxRolUser = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbxRolUser = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.BuBuscarE = new System.Windows.Forms.Button();
+            this.txtIdEmp = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxEstadoUser = new System.Windows.Forms.ComboBox();
+            this.txtIdUser = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.BuGuardar = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -60,24 +61,24 @@
             this.plDock.Size = new System.Drawing.Size(509, 338);
             this.plDock.TabIndex = 21;
             // 
-            // BuGuardar
+            // BuBuscarE
             // 
-            this.BuGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuGuardar.BackColor = System.Drawing.Color.ForestGreen;
-            this.BuGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuGuardar.FlatAppearance.BorderSize = 0;
-            this.BuGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuGuardar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuGuardar.ForeColor = System.Drawing.Color.White;
-            this.BuGuardar.Image = global::Essenza.Properties.Resources.Add_New;
-            this.BuGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuGuardar.Location = new System.Drawing.Point(340, 274);
-            this.BuGuardar.Name = "BuGuardar";
-            this.BuGuardar.Size = new System.Drawing.Size(130, 40);
-            this.BuGuardar.TabIndex = 90;
-            this.BuGuardar.Text = "Guardar";
-            this.BuGuardar.UseVisualStyleBackColor = false;
-            this.BuGuardar.Click += new System.EventHandler(this.BuGuardar_Click);
+            this.BuBuscarE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuBuscarE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuBuscarE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuBuscarE.FlatAppearance.BorderSize = 0;
+            this.BuBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuBuscarE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuBuscarE.ForeColor = System.Drawing.Color.White;
+            this.BuBuscarE.Image = global::Essenza.Properties.Resources.Search_in_List;
+            this.BuBuscarE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuBuscarE.Location = new System.Drawing.Point(30, 274);
+            this.BuBuscarE.Name = "BuBuscarE";
+            this.BuBuscarE.Size = new System.Drawing.Size(154, 40);
+            this.BuBuscarE.TabIndex = 96;
+            this.BuBuscarE.Text = "Buscador";
+            this.BuBuscarE.UseVisualStyleBackColor = false;
+            this.BuBuscarE.Click += new System.EventHandler(this.BuBuscarE_Click);
             // 
             // groupBox3
             // 
@@ -102,68 +103,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos del Usuario";
             // 
-            // cbxEstadoUser
+            // cbxRolUser
             // 
-            this.cbxEstadoUser.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxEstadoUser.FormattingEnabled = true;
-            this.cbxEstadoUser.Location = new System.Drawing.Point(25, 170);
-            this.cbxEstadoUser.Name = "cbxEstadoUser";
-            this.cbxEstadoUser.Size = new System.Drawing.Size(179, 24);
-            this.cbxEstadoUser.TabIndex = 98;
+            this.cbxRolUser.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRolUser.FormattingEnabled = true;
+            this.cbxRolUser.Location = new System.Drawing.Point(234, 170);
+            this.cbxRolUser.Name = "cbxRolUser";
+            this.cbxRolUser.Size = new System.Drawing.Size(179, 24);
+            this.cbxRolUser.TabIndex = 106;
             // 
-            // txtIdUser
+            // label4
             // 
-            this.txtIdUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdUser.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdUser.Location = new System.Drawing.Point(25, 59);
-            this.txtIdUser.Name = "txtIdUser";
-            this.txtIdUser.Size = new System.Drawing.Size(179, 21);
-            this.txtIdUser.TabIndex = 97;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(22, 148);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 16);
-            this.label13.TabIndex = 96;
-            this.label13.Text = "Estado del Usuario";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(22, 40);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 16);
-            this.label14.TabIndex = 95;
-            this.label14.Text = "Id Usuario";
-            // 
-            // txtIdEmp
-            // 
-            this.txtIdEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdEmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdEmp.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdEmp.Location = new System.Drawing.Point(234, 59);
-            this.txtIdEmp.Name = "txtIdEmp";
-            this.txtIdEmp.Size = new System.Drawing.Size(179, 21);
-            this.txtIdEmp.TabIndex = 100;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(231, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 16);
-            this.label1.TabIndex = 99;
-            this.label1.Text = "Id Empleado";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(231, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 16);
+            this.label4.TabIndex = 105;
+            this.label4.Text = "Rol del Usuario";
             // 
             // txtPass
             // 
@@ -209,43 +166,87 @@
             this.label3.TabIndex = 101;
             this.label3.Text = "Usuario";
             // 
-            // cbxRolUser
+            // txtIdEmp
             // 
-            this.cbxRolUser.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxRolUser.FormattingEnabled = true;
-            this.cbxRolUser.Location = new System.Drawing.Point(234, 170);
-            this.cbxRolUser.Name = "cbxRolUser";
-            this.cbxRolUser.Size = new System.Drawing.Size(179, 24);
-            this.cbxRolUser.TabIndex = 106;
+            this.txtIdEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdEmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdEmp.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEmp.Location = new System.Drawing.Point(234, 59);
+            this.txtIdEmp.Name = "txtIdEmp";
+            this.txtIdEmp.Size = new System.Drawing.Size(179, 21);
+            this.txtIdEmp.TabIndex = 100;
             // 
-            // label4
+            // label1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(231, 148);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 16);
-            this.label4.TabIndex = 105;
-            this.label4.Text = "Rol del Usuario";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(231, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 16);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "Id Empleado";
             // 
-            // BuBuscarE
+            // cbxEstadoUser
             // 
-            this.BuBuscarE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuBuscarE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuBuscarE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuBuscarE.FlatAppearance.BorderSize = 0;
-            this.BuBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuBuscarE.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuBuscarE.ForeColor = System.Drawing.Color.White;
-            this.BuBuscarE.Image = global::Essenza.Properties.Resources.Search_in_List;
-            this.BuBuscarE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuBuscarE.Location = new System.Drawing.Point(30, 274);
-            this.BuBuscarE.Name = "BuBuscarE";
-            this.BuBuscarE.Size = new System.Drawing.Size(154, 40);
-            this.BuBuscarE.TabIndex = 96;
-            this.BuBuscarE.Text = "Buscador";
-            this.BuBuscarE.UseVisualStyleBackColor = false;
-            this.BuBuscarE.Click += new System.EventHandler(this.BuBuscarE_Click);
+            this.cbxEstadoUser.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxEstadoUser.FormattingEnabled = true;
+            this.cbxEstadoUser.Location = new System.Drawing.Point(25, 170);
+            this.cbxEstadoUser.Name = "cbxEstadoUser";
+            this.cbxEstadoUser.Size = new System.Drawing.Size(179, 24);
+            this.cbxEstadoUser.TabIndex = 98;
+            // 
+            // txtIdUser
+            // 
+            this.txtIdUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdUser.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdUser.Location = new System.Drawing.Point(25, 59);
+            this.txtIdUser.Name = "txtIdUser";
+            this.txtIdUser.Size = new System.Drawing.Size(179, 21);
+            this.txtIdUser.TabIndex = 97;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(22, 148);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(119, 16);
+            this.label13.TabIndex = 96;
+            this.label13.Text = "Estado del Usuario";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(22, 40);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 16);
+            this.label14.TabIndex = 95;
+            this.label14.Text = "Id Usuario";
+            // 
+            // BuGuardar
+            // 
+            this.BuGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGuardar.BackColor = System.Drawing.Color.ForestGreen;
+            this.BuGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuGuardar.FlatAppearance.BorderSize = 0;
+            this.BuGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGuardar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGuardar.ForeColor = System.Drawing.Color.White;
+            this.BuGuardar.Image = global::Essenza.Properties.Resources.Add_New;
+            this.BuGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGuardar.Location = new System.Drawing.Point(340, 274);
+            this.BuGuardar.Name = "BuGuardar";
+            this.BuGuardar.Size = new System.Drawing.Size(130, 40);
+            this.BuGuardar.TabIndex = 90;
+            this.BuGuardar.Text = "Guardar";
+            this.BuGuardar.UseVisualStyleBackColor = false;
+            this.BuGuardar.Click += new System.EventHandler(this.BuGuardar_Click);
             // 
             // ControlUsuarios
             // 
@@ -253,6 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 338);
             this.Controls.Add(this.plDock);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ControlUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control de Usuarios";

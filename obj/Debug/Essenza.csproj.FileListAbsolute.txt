@@ -263,3 +263,5 @@ C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.Form
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlAdmin.resources
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlUsuarios.resources
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlRoles.resources
+C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlCargos.resources
+C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.ViewsAdmin.ControlCategorias.resources

@@ -54,5 +54,51 @@ namespace Essenza.Clases
             }
             return cargos.salario;
         }
+
+        //Agregar cargos de empleado
+        public static void AgregarCargos(CargosEmpleados cargos)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"insert into cargos (cargo, salario) values (@cargo, @salario)";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@cargo", cargos.cargo);
+                comando.Parameters.AddWithValue("@salario", cargos.salario);
+                resultado = comando.ExecuteNonQuery();
+            }
+
+        }
+
+        //Actualizar cargos del empleado
+        public static void ActualizarCargos(CargosEmpleados cargos)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = @"update cargos set
+                                    cargo = @cargo,
+                                    salario = @salario
+                                    where id_cargo = @id_cargo";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@id_cargo", cargos.id_cargo);
+                comando.Parameters.AddWithValue("@cargo", cargos.cargo);
+                comando.Parameters.AddWithValue("@salario", cargos.salario);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
+
+        //Eliminar cargos del empleado
+        public static void EliminarCargos(int id)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"delete cargos where id_cargo = @id_cargo";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@id_cargo", id);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
     }
 }

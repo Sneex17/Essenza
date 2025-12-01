@@ -185,6 +185,7 @@
             this.dataCategorias.Name = "dataCategorias";
             this.dataCategorias.Size = new System.Drawing.Size(265, 197);
             this.dataCategorias.TabIndex = 0;
+            this.dataCategorias.SelectionChanged += new System.EventHandler(this.dataCategorias_SelectionChanged);
             // 
             // groupBox2
             // 
@@ -250,6 +251,7 @@
             this.dataCargos.Name = "dataCargos";
             this.dataCargos.Size = new System.Drawing.Size(473, 73);
             this.dataCargos.TabIndex = 0;
+            this.dataCargos.SelectionChanged += new System.EventHandler(this.dataCargos_SelectionChanged);
             // 
             // groupBoxUnderstock
             // 

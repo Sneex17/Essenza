@@ -217,6 +217,18 @@
     <Compile Include="ViewsAdmin\ControlAdmin.Designer.cs">
       <DependentUpon>ControlAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewsAdmin\ControlCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdmin\ControlCargos.Designer.cs">
+      <DependentUpon>ControlCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdmin\ControlCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdmin\ControlCategorias.Designer.cs">
+      <DependentUpon>ControlCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewsAdmin\ControlRoles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,6 +309,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdmin\ControlAdmin.resx">
       <DependentUpon>ControlAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdmin\ControlCargos.resx">
+      <DependentUpon>ControlCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdmin\ControlCategorias.resx">
+      <DependentUpon>ControlCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdmin\ControlRoles.resx">
       <DependentUpon>ControlRoles.cs</DependentUpon>

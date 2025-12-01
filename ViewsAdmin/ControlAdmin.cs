@@ -59,7 +59,8 @@ namespace Essenza.ViewsAdmin
             }
             else if (rbCargos.Checked)
             {
-                
+                ControlCargos clCargos = new ControlCargos(idCargo);
+                clCargos.ShowDialog();
             }
             else if (rbRoles.Checked)
             {
@@ -68,7 +69,8 @@ namespace Essenza.ViewsAdmin
             }
             else if (rbCategorias.Checked)
             {
-
+                ControlCategorias clCategorias = new ControlCategorias(idCategoria);
+                clCategorias.ShowDialog();
             }
             else
             {
@@ -87,7 +89,8 @@ namespace Essenza.ViewsAdmin
             }
             else if (rbCargos.Checked)
             {
-
+                ControlCargos clCargos = new ControlCargos(idCargo);
+                clCargos.ShowDialog();
             }
             else if (rbRoles.Checked)
             {
@@ -96,7 +99,8 @@ namespace Essenza.ViewsAdmin
             }
             else if (rbCategorias.Checked)
             {
-
+                ControlCategorias clCategorias = new ControlCategorias(idCategoria);
+                clCategorias.ShowDialog();
             }
             else
             {
@@ -132,6 +136,7 @@ namespace Essenza.ViewsAdmin
                     if (Mensaje == DialogResult.Yes)
                     {
                         int id = Convert.ToInt32(dataCargos.CurrentRow.Cells["id_cargo"].Value);
+                        CargosEmpleados.EliminarCargos(id);
                         MessageBox.Show($"cargo eliminado con exito!", "Eliminar cargo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Question);
                         DatosDGV();
@@ -162,7 +167,7 @@ namespace Essenza.ViewsAdmin
                     if (Mensaje == DialogResult.Yes)
                     {
                         int id = Convert.ToInt32(dataCategorias.CurrentRow.Cells["id_categoria"].Value);
-
+                        Categorias.EliminarCategorias(id);
                         MessageBox.Show($"Categoria eliminada con exito!", "Eliminar categoria",
                                 MessageBoxButtons.OK, MessageBoxIcon.Question);
                         DatosDGV();
@@ -176,7 +181,8 @@ namespace Essenza.ViewsAdmin
             }
             catch (Exception ex) 
             {
-
+                MessageBox.Show($"{ex.Message}", "informacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             
         }
@@ -194,6 +200,25 @@ namespace Essenza.ViewsAdmin
             BuNuevo.Visible = true;
             idUser = Convert.ToInt32(dataUsuarios.CurrentRow.Cells["id_usuario"].Value);
         }
+
+        private void dataCargos_SelectionChanged(object sender, EventArgs e)
+        {
+            BuRegister.Visible = false;
+            BuUpdate.Visible = true;
+            BuDeleteE.Visible = true;
+            BuNuevo.Visible = true;
+            idCargo = Convert.ToInt32(dataCargos.CurrentRow.Cells["id_cargo"].Value);
+        }
+
+        private void dataCategorias_SelectionChanged(object sender, EventArgs e)
+        {
+            BuRegister.Visible = false;
+            BuUpdate.Visible = true;
+            BuDeleteE.Visible = true;
+            BuNuevo.Visible = true;
+            idCategoria = Convert.ToInt32(dataCategorias.CurrentRow.Cells["id_Categoria"].Value);
+        }
+
         private void dataRoles_SelectionChanged(object sender, EventArgs e)
         {
             BuRegister.Visible = false;

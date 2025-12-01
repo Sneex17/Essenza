@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Essenza.Clases
 {
@@ -32,6 +33,46 @@ namespace Essenza.Clases
                 reader.Close();
             }
             return listcategorias;
+        }
+
+        //Agregar categorias
+        public static void AgregarCategorias(Categorias categorias)
+        {
+            using(SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"insert into categorias (categoria) values (@categoria)";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@categoria", categorias.categoria);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
+
+        //Actualizar categorias
+        public static void ActualizarCategorias(Categorias categorias)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"update categorias set categoria = @categoria where id_categoria = @id_categoria";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@id_categoria", categorias.id_categoria);
+                comando.Parameters.AddWithValue("@categoria", categorias.categoria);
+                resultado = comando.ExecuteNonQuery();
+            }
+        }
+
+        //Eliminar categorias
+        public static void EliminarCategorias(int id)
+        {
+            using (SqlConnection acceso = EssenzaSystemDB.EssenzaDB())
+            {
+                int resultado;
+                string NewQuery = $"delete categorias where id_categoria = @id_categoria";
+                SqlCommand comando = new SqlCommand(NewQuery, acceso);
+                comando.Parameters.AddWithValue("@id_categoria", id);
+                resultado = comando.ExecuteNonQuery();
+            }
         }
     }
 }
