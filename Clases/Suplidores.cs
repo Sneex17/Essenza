@@ -8,14 +8,14 @@ using Essenza.Clases;
 
 namespace Essenza.Clases
 {
-    public class Suplidores
+    public class Suplidores: TiposSuplidores
     {
         public int id_suplidor {  get; set; }
         public string nombres { get; set; }
         public string telefono { get; set; }
         public string email { get; set; }
         public string direccion { get; set; }
-        public int id_pais { get; set; }
+        //public int id_pais { get; set; }
         public int id_estado { get; set; }
 
 

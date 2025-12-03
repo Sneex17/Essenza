@@ -24,6 +24,7 @@ namespace Essenza.ViewsAdmin
 
         }
 
+        //metodos de control
         private void controlTxt()
         {
             txtIdCategoria.Enabled = false;
@@ -34,6 +35,7 @@ namespace Essenza.ViewsAdmin
                 categorias.id_categoria = Convert.ToInt32(id);
         }
 
+        //Metodo para obtener los datos con el id
         private void datosCategoria()
         {
             int id = categorias.id_categoria;
@@ -47,6 +49,7 @@ namespace Essenza.ViewsAdmin
             }
         }
 
+        //Metodo para guardar los cambios
         private void BuGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -85,9 +88,9 @@ namespace Essenza.ViewsAdmin
             }
             catch (Exception ex)
             {
-
-            }
-            
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } 
         }
     }
 }

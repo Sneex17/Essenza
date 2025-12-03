@@ -13,16 +13,19 @@ namespace Essenza.ViewsAdmin
 {
     public partial class ControlAdmin : Form
     {
+        //variables de tipo entero
         int? idUser, idRol, idCargo, idCategoria;
         //public event Action<Usuarios> MoverDatosUser;
         public ControlAdmin()
         {
             InitializeComponent();
+            Inicio();
             SeleccionDGV();
             DatosDGV();
             
         }
 
+        //Limpiar las seleciones de los dataGridView
         private void SeleccionDGV()
         {
             dataUsuarios.ClearSelection();
@@ -32,6 +35,7 @@ namespace Essenza.ViewsAdmin
             
         }
 
+        //Metodo de llenar los dataGridView
         private void DatosDGV()
         {
             dataUsuarios.Rows.Clear();
@@ -45,62 +49,102 @@ namespace Essenza.ViewsAdmin
 
             dataCargos.DataSource = CargosEmpleados.DatosCargos();
             dataCategorias.DataSource = Categorias.listaCategorias();
-            dataRoles.DataSource = Roles.listaRoles();
-            
+            dataRoles.DataSource = Roles.listaRoles();  
         }
 
+        //Boton de registrar
         private void BuRegister_Click(object sender, EventArgs e)
         {
-            if(rbUsuarios.Checked)
+            try
             {
-                ControlUsuarios clUsuarios = new ControlUsuarios(idUser);
-                clUsuarios.ShowDialog();
+                if (rbUsuarios.Checked)
+                {
+                    ControlUsuarios clUsuarios = new ControlUsuarios(idUser);
+                    clUsuarios.ShowDialog();
 
+                }
+                else if (rbCargos.Checked)
+                {
+                    ControlCargos clCargos = new ControlCargos(idCargo);
+                    clCargos.ShowDialog();
+                }
+                else if (rbRoles.Checked)
+                {
+                    ControlRoles clRoles = new ControlRoles(idRol);
+                    clRoles.ShowDialog();
+                }
+                else if (rbCategorias.Checked)
+                {
+                    ControlCategorias clCategorias = new ControlCategorias(idCategoria);
+                    clCategorias.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show($"Debe marcar el tipo de registro que desea registrar", "informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
             }
-            else if (rbCargos.Checked)
+            catch(Exception ex)
             {
-                ControlCargos clCargos = new ControlCargos(idCargo);
-                clCargos.ShowDialog();
-            }
-            else if (rbRoles.Checked)
-            {
-                ControlRoles clRoles = new ControlRoles(idRol);
-                clRoles.ShowDialog();
-            }
-            else if (rbCategorias.Checked)
-            {
-                ControlCategorias clCategorias = new ControlCategorias(idCategoria);
-                clCategorias.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show($"Debe marcar el tipo de registro que desea registrar", "informacion",
-                                MessageBoxButtons.OK, MessageBoxIcon.Question);
-            }
+                MessageBox.Show($"{ex.Message}", "informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }  
         }
 
+        //Boton de actualizar
         private void BuUpdate_Click(object sender, EventArgs e)
         {
             if (rbUsuarios.Checked)
             {
-                ControlUsuarios clUsuarios = new ControlUsuarios(idUser);
-                clUsuarios.ShowDialog();
-
+                if(dataUsuarios.SelectedRows.Count > 0)
+                {
+                    ControlUsuarios clUsuarios = new ControlUsuarios(idUser);
+                    clUsuarios.ShowDialog();
+                } 
+                else
+                {
+                    MessageBox.Show($"Intento de actualizar un registro de usuario.\nDebe de seleccionar una fila da la tabla de usuarios.", "informacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
             }
             else if (rbCargos.Checked)
             {
-                ControlCargos clCargos = new ControlCargos(idCargo);
-                clCargos.ShowDialog();
+                if(dataCargos.SelectedRows.Count > 0)
+                {
+                    ControlCargos clCargos = new ControlCargos(idCargo);
+                    clCargos.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show($"Intento de actualizar un registro de cargos de empleados.\nDebe de seleccionar una fila da la tabla de cargos.", "informacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }                
             }
             else if (rbRoles.Checked)
             {
-                ControlRoles clRoles = new ControlRoles(idRol);
-                clRoles.ShowDialog();
+                if(dataRoles.SelectedRows.Count > 0)
+                {
+                    ControlRoles clRoles = new ControlRoles(idRol);
+                    clRoles.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show($"Intento de actualizar un registro de roles de usuaios.\nDebe de seleccionar una fila da la tabla de roles.", "informacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
             }
             else if (rbCategorias.Checked)
             {
-                ControlCategorias clCategorias = new ControlCategorias(idCategoria);
-                clCategorias.ShowDialog();
+                if(dataCategorias.SelectedRows.Count > 0)
+                {
+                    ControlCategorias clCategorias = new ControlCategorias(idCategoria);
+                    clCategorias.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show($"Intento de actualizar un registro de categorias de productos.\nDebe de seleccionar una fila da la tabla de Categorias.", "informacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
             }
             else
             {
@@ -109,69 +153,98 @@ namespace Essenza.ViewsAdmin
             }
         }
 
+        //Boton de eliminar
         private void BuDeleteE_Click(object sender, EventArgs e)
         {
             try
             {
                 if (rbUsuarios.Checked)
                 {
-                    var Mensaje = MessageBox.Show($"¿Desea eliminar este usuario?", "Eliminar usuario",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    if(Mensaje == DialogResult.Yes)
+                    if (dataUsuarios.SelectedRows.Count > 0)
                     {
-                        int id = Convert.ToInt32(dataUsuarios.CurrentRow.Cells["id_usuario"].Value);
-                        Usuarios.EliminarUser(id);
-                        MessageBox.Show($"usuario eliminado con exito!", "Eliminar cargo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Question);
-                        DatosDGV();
+                        var Mensaje = MessageBox.Show($"¿Desea eliminar este usuario?", "Eliminar usuario",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        if (Mensaje == DialogResult.Yes)
+                        {
+                            int id = Convert.ToInt32(dataUsuarios.CurrentRow.Cells["id_usuario"].Value);
+                            Usuarios.EliminarUser(id);
+                            MessageBox.Show($"usuario eliminado con exito!", "Eliminar cargo",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            DatosDGV();
+                        }
                     }
-                    
+                    else
+                    {
+                        MessageBox.Show($"Intento de eliminar un registro de usuario.\nDebe de seleccionar una fila da la tabla de usuarios.", "informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    } 
                 }
                 else if (rbCargos.Checked)
                 {
-                    var Mensaje = MessageBox.Show($"¿Desea eliminar este cargo?", "Eliminar cargo",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    if (Mensaje == DialogResult.Yes)
+                    if (dataCargos.SelectedRows.Count > 0)
                     {
-                        int id = Convert.ToInt32(dataCargos.CurrentRow.Cells["id_cargo"].Value);
-                        CargosEmpleados.EliminarCargos(id);
-                        MessageBox.Show($"cargo eliminado con exito!", "Eliminar cargo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Question);
-                        DatosDGV();
+                        var Mensaje = MessageBox.Show($"¿Desea eliminar este cargo?", "Eliminar cargo",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        if (Mensaje == DialogResult.Yes)
+                        {
+                            int id = Convert.ToInt32(dataCargos.CurrentRow.Cells["id_cargo"].Value);
+                            CargosEmpleados.EliminarCargos(id);
+                            MessageBox.Show($"cargo eliminado con exito!", "Eliminar cargo",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            DatosDGV();
+                        }
                     }
-                    
+                    else
+                    {
+                        MessageBox.Show($"Intento de eliminar un registro de cargos de empleados.\nDebe de seleccionar una fila da la tabla de cargos.", "informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    }   
                 }
                 else if (rbRoles.Checked)
                 {
-                    var Mensaje = MessageBox.Show($"¿Desea eliminar este rol?", "Eliminar rol",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    if (Mensaje == DialogResult.Yes)
+                    if (dataRoles.SelectedRows.Count > 0)
                     {
-                        int id = Convert.ToInt32(dataRoles.CurrentRow.Cells["id_rol"].Value);
-                        Roles.EliminarRol(id);
-                        MessageBox.Show($"Rol eliminado con exito!", "Eliminar rol",
-                                MessageBoxButtons.OK, MessageBoxIcon.Question);
-                        DatosDGV();
-                    }
+                        var Mensaje = MessageBox.Show($"¿Desea eliminar este rol?", "Eliminar rol",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                    
+                        if (Mensaje == DialogResult.Yes)
+                        {
+                            int id = Convert.ToInt32(dataRoles.CurrentRow.Cells["id_rol"].Value);
+                            Roles.EliminarRol(id);
+                            MessageBox.Show($"Rol eliminado con exito!", "Eliminar rol",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            DatosDGV();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Intento de eliminar un registro de roles de usuaios.\nDebe de seleccionar una fila da la tabla de roles.", "informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    }  
                 }
                 else if (rbCategorias.Checked)
                 {
-                    var Mensaje = MessageBox.Show($"¿Desea eliminar esta categoria?", "Eliminar categoria",
+                    if (dataCategorias.SelectedRows.Count > 0)
+                    {
+                        var Mensaje = MessageBox.Show($"¿Desea eliminar esta categoria?", "Eliminar categoria",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                    if (Mensaje == DialogResult.Yes)
+                        if (Mensaje == DialogResult.Yes)
+                        {
+                            int id = Convert.ToInt32(dataCategorias.CurrentRow.Cells["id_categoria"].Value);
+                            Categorias.EliminarCategorias(id);
+                            MessageBox.Show($"Categoria eliminada con exito!", "Eliminar categoria",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            DatosDGV();
+                        }
+                    }
+                    else
                     {
-                        int id = Convert.ToInt32(dataCategorias.CurrentRow.Cells["id_categoria"].Value);
-                        Categorias.EliminarCategorias(id);
-                        MessageBox.Show($"Categoria eliminada con exito!", "Eliminar categoria",
-                                MessageBoxButtons.OK, MessageBoxIcon.Question);
-                        DatosDGV();
-                    } 
+                        MessageBox.Show($"Intento de eliminar un registro de categorias de productos.\nDebe de seleccionar una fila da la tabla de Categorias.", "informacion",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    }                
                 }
                 else
                 {
@@ -183,15 +256,11 @@ namespace Essenza.ViewsAdmin
             {
                 MessageBox.Show($"{ex.Message}", "informacion",
                                 MessageBoxButtons.OK, MessageBoxIcon.Question);
-            }
-            
+            }          
         }
 
-        private void dataUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //idUser = Convert.ToInt32(dataUsuarios.CurrentRow.Cells["id_usuario"].Value);
-        }
 
+        //Metodos para obtener los ids 
         private void dataUsuarios_SelectionChanged(object sender, EventArgs e)
         {
             BuRegister.Visible = false;
@@ -228,8 +297,14 @@ namespace Essenza.ViewsAdmin
             idRol = Convert.ToInt32(dataRoles.CurrentRow.Cells["id_rol"].Value);
         }
 
-
+        //Control para los nuevos registros
         private void BuNuevo_Click(object sender, EventArgs e)
+        {
+            Inicio();
+        }
+
+        //Metodo de control de inicio
+        private void Inicio()
         {
             SeleccionDGV();
             BuRegister.Visible = true;
@@ -240,14 +315,9 @@ namespace Essenza.ViewsAdmin
             idRol = null;
             idCargo = null;
             idCategoria = null;
-
         }
 
         //Salir de la ventana
-        private void BuExit_Click(object sender, EventArgs e) => this.Close();
-
-        
-
-        
+        private void BuExit_Click(object sender, EventArgs e) => this.Close();  
     }
 }

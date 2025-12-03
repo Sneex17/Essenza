@@ -23,10 +23,9 @@ namespace Essenza.ViewsAdmin
             iduser(idUser);
             DatosUser();
             ctrlBotones();
-
-
-
         }
+
+        //metodos de control
         private void iduser(int? id)
         {
             if(id != null )
@@ -37,7 +36,6 @@ namespace Essenza.ViewsAdmin
             txtIdUser.Enabled = false;
             txtIdEmp.Enabled = false;
         }
-
         private void ctrlBotones()
         {
             if(!(String.IsNullOrWhiteSpace(txtIdUser.Text)))
@@ -64,6 +62,7 @@ namespace Essenza.ViewsAdmin
 
         }
 
+        //Metodo de Buscar empleados
         private void BuBuscarE_Click(object sender, EventArgs e)
         {
             EmployeeReports reporteE = new EmployeeReports();
@@ -75,6 +74,7 @@ namespace Essenza.ViewsAdmin
             reporteE.ShowDialog();   
         }
 
+        //Metodo para obtener los datos con el id
         private void DatosUser()
         {
             int id = user.id_usuario;
@@ -92,6 +92,8 @@ namespace Essenza.ViewsAdmin
                 cbxEstadoUser.SelectedValue = u.id_estado;
             }
         }
+
+        //Metodo para guardar los cambios
         private void BuGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -117,7 +119,6 @@ namespace Essenza.ViewsAdmin
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
-
                 }
                 else
                 {
@@ -142,10 +143,10 @@ namespace Essenza.ViewsAdmin
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

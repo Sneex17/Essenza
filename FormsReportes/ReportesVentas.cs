@@ -28,11 +28,20 @@ namespace Essenza.FormsReportes
         //Datos detallados
         private void dataFacturas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         { 
-            DetallesFacturas detallesFacturas = new DetallesFacturas();
-            detallesFacturas.id_factura = Convert.ToInt32(dataFacturas.Rows[e.RowIndex].Cells["id_factura"].Value);
-            List<DetallesFacturas> list = DetallesFacturas.datosDetallesFactura();
-            var Detalles = from f in list where(f.id_factura == detallesFacturas.id_factura) select f;
-            dataDetallesFacturas.DataSource = Detalles.ToList();
+            try
+            {
+                DetallesFacturas detallesFacturas = new DetallesFacturas();
+                detallesFacturas.id_factura = Convert.ToInt32(dataFacturas.Rows[e.RowIndex].Cells["id_factura"].Value);
+                List<DetallesFacturas> list = DetallesFacturas.datosDetallesFactura();
+                var Detalles = from f in list where (f.id_factura == detallesFacturas.id_factura) select f;
+                dataDetallesFacturas.DataSource = Detalles.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}",
+                        "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         //Salir de la ventana

@@ -111,6 +111,7 @@
     <Compile Include="Clases\Roles.cs" />
     <Compile Include="Clases\Sexos.cs" />
     <Compile Include="Clases\Suplidores.cs" />
+    <Compile Include="Clases\TiposSuplidores.cs" />
     <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

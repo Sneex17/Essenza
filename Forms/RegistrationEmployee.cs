@@ -1,4 +1,5 @@
-﻿using Essenza.Clases;
+﻿using DocumentFormat.OpenXml.Drawing;
+using Essenza.Clases;
 using Essenza.ClasesAR;
 using System;
 using System.Collections.Generic;
@@ -104,11 +105,32 @@ namespace Essenza.Forms
             }
         }
 
+        //Metodo de Excepciones
+        private void Excepciones()
+        {
+            bool txN, txA, txT, txD;
+
+            txN = String.IsNullOrWhiteSpace(txtNamesE.Text);
+            txA = String.IsNullOrWhiteSpace(txtLstNamesE.Text);
+            txT = String.IsNullOrWhiteSpace(txtPhoneE.Text);
+            txD = String.IsNullOrWhiteSpace(txtDirectionE.Text);
+
+            if(txN || txA || txT || txD)
+            {
+                if (txN) throw new ExcepcionesPersonalizadas("El campo de Nombre esta vacio");
+                if (txA) throw new ExcepcionesPersonalizadas("El campo de Apellido esta vacio");
+                if (txT) throw new ExcepcionesPersonalizadas("El campo de Telefono esta vacio");
+                if (txD) throw new ExcepcionesPersonalizadas("El campo de Direccion esta vacio");
+            }
+
+        }
         //Boton de registrar
         private void BuRegister_Click(object sender, EventArgs e)
         {   
             try
             {
+                Excepciones();
+
                 Empleados employees = new Empleados();
                 employees.fecha_nacimiento = dateBirthE.Value;
                 employees.edad = Convert.ToInt32(Empleados.AgeEmployee(employees));
@@ -144,6 +166,11 @@ namespace Essenza.Forms
                             "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } 
             }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}",
+                        "Campo requerido vacio", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message}",
@@ -154,64 +181,89 @@ namespace Essenza.Forms
         //Boton de actualizar
         private void BuUpdate_Click(object sender, EventArgs e)
         {  
-            if (string.IsNullOrWhiteSpace(txtIdE.Text))
+            try
             {
-                MessageBox.Show($"Debe buscar y selecional un empleado para actualizar sus datos",
-               "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                var Mensaje = MessageBox.Show($"¿Desea actualizar los datos de este empleado?", "Informe de actualizacion",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(Mensaje == DialogResult.Yes)
+                if (string.IsNullOrWhiteSpace(txtIdE.Text))
                 {
-                    Empleados employees = new Empleados();
-                    employees.id_empleado = Convert.ToInt32(txtIdE.Text);
-                    employees.nombres = txtNamesE.Text;
-                    employees.apellidos = txtLstNamesE.Text;
-                    employees.id_sexo = Convert.ToInt32(cbxSexE.SelectedValue.ToString());
-                    employees.telefono = txtPhoneE.Text;
-                    employees.fecha_nacimiento = dateBirthE.Value;
-                    employees.edad = Convert.ToInt32(Empleados.AgeEmployee(employees));
-                    employees.direccion = txtDirectionE.Text;
-                    employees.id_estado_civil = Convert.ToInt32(cbxMaritalStatusE.SelectedValue.ToString());
-                    employees.email = txtEmailE.Text;
-                    employees.fecha_contrato = dateContractE.Value;
-                    employees.id_cargo = Convert.ToInt32(cbxCargoEmp.SelectedValue.ToString());
-                    employees.salario = Convert.ToDecimal(txtSalaryE.Text);
-                    employees.id_estado = Convert.ToInt32(cbxEmployeeStatuses.SelectedValue.ToString());
-                    Empleados.UpdateEmployee(employees);
-                    MessageBox.Show($"Datos del empleado actualizados!",
-                   "Information de actualizacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTextBox();
-                }  
+                    MessageBox.Show($"Debe buscar y selecional un empleado para actualizar sus datos",
+                   "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    Excepciones();
+
+                    var Mensaje = MessageBox.Show($"¿Desea actualizar los datos de este empleado?", "Informe de actualizacion",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (Mensaje == DialogResult.Yes)
+                    {
+                        Empleados employees = new Empleados();
+                        employees.id_empleado = Convert.ToInt32(txtIdE.Text);
+                        employees.nombres = txtNamesE.Text;
+                        employees.apellidos = txtLstNamesE.Text;
+                        employees.id_sexo = Convert.ToInt32(cbxSexE.SelectedValue.ToString());
+                        employees.telefono = txtPhoneE.Text;
+                        employees.fecha_nacimiento = dateBirthE.Value;
+                        employees.edad = Convert.ToInt32(Empleados.AgeEmployee(employees));
+                        employees.direccion = txtDirectionE.Text;
+                        employees.id_estado_civil = Convert.ToInt32(cbxMaritalStatusE.SelectedValue.ToString());
+                        employees.email = txtEmailE.Text;
+                        employees.fecha_contrato = dateContractE.Value;
+                        employees.id_cargo = Convert.ToInt32(cbxCargoEmp.SelectedValue.ToString());
+                        employees.salario = Convert.ToDecimal(txtSalaryE.Text);
+                        employees.id_estado = Convert.ToInt32(cbxEmployeeStatuses.SelectedValue.ToString());
+                        Empleados.UpdateEmployee(employees);
+                        MessageBox.Show($"Datos del empleado actualizados!",
+                       "Information de actualizacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTextBox();
+                    }
+                }
             }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}",
+                        "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}",
+                        "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         //Boton de eliminar
         private void BuDeleteE_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtIdE.Text))
+            try
             {
-                MessageBox.Show($"Debe buscar y selecional un empleado para elinimarlo",
-               "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                var Mensaje = MessageBox.Show($"¿Desea eliminar a este empleado del registro?", "Informe de eliminacion",
-                                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (Mensaje == DialogResult.Yes)
+                if (string.IsNullOrWhiteSpace(txtIdE.Text))
                 {
-                    Empleados employees = new Empleados();
-                    employees.id_empleado = Convert.ToInt32(txtIdE.Text);
-                    Empleados.DeleteEmployee(employees);
-                    MessageBox.Show($"Empleado eliminado!",
+                    MessageBox.Show($"Debe buscar y selecional un empleado para elinimarlo",
                    "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearTextBox();
                 }
+                else
+                {
+                    var Mensaje = MessageBox.Show($"¿Desea eliminar a este empleado del registro?", "Informe de eliminacion",
+                                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+                    if (Mensaje == DialogResult.Yes)
+                    {
+                        Empleados employees = new Empleados();
+                        employees.id_empleado = Convert.ToInt32(txtIdE.Text);
+                        Empleados.DeleteEmployee(employees);
+                        MessageBox.Show($"Empleado eliminado!",
+                       "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTextBox();
+                    }
+
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}",
+                        "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         //Evento para Buscar los datos de algun registro
