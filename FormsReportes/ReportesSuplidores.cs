@@ -1,4 +1,6 @@
-﻿using Essenza.Clases;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using Essenza.Clases;
+using Essenza.ClasesAR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -129,8 +131,29 @@ namespace Essenza.FormsReportes
                 }
             }
         }
-        
+        //Boton de gerenal reporte
+        private void BuGeneralReporte_Click(object sender, EventArgs e)
+        {
+            List<Suplidores> DsSupli = new List<Suplidores>();
+            foreach (DataGridViewRow lista in dataListSuplidores.Rows)
+            {
+                Suplidores suplidores = new Suplidores();
+                suplidores.id_suplidor = Convert.ToInt32(lista.Cells[0].Value.ToString());
+                suplidores.nombres = lista.Cells[1].Value.ToString();
+                suplidores.email = lista.Cells[3].Value.ToString();
+                suplidores.id_pais = Convert.ToInt32(lista.Cells[5].Value.ToString());
+                suplidores.id_estado = Convert.ToInt32(lista.Cells[6].Value.ToString());
+                suplidores.RNC = lista.Cells[7].Value.ToString();
+                DsSupli.Add(suplidores);
+            }
+            rutaReportes ruta = new rutaReportes();
+            Reportes reportes = new Reportes("DsSuplidores", $"{ruta.ruta}ReportSuplidores.rdlc", DsSupli, "Reporte de Suplidores");
+            reportes.ShowDialog();
+        }
+
         //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
+
+        
     }
 }

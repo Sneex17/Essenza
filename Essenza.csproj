@@ -305,6 +305,8 @@
     </Compile>
     <EmbeddedResource Include="Reportes\ReportClientes.rdlc" />
     <EmbeddedResource Include="Reportes\ReportEmpleados.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportInventarios.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportSuplidores.rdlc" />
     <EmbeddedResource Include="ViewsAdmin\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>

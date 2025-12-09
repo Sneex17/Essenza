@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Essenza.Clases;
+using Essenza.ClasesAR;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Essenza.Clases;
 
 namespace Essenza.FormsReportes
 {
@@ -139,8 +140,29 @@ namespace Essenza.FormsReportes
                 }
             }
         }
-
+        //Boton de General reportes
+        private void BuGeneralReporte_Click(object sender, EventArgs e)
+        {
+            List<Inventarios> DsInv = new List<Inventarios>();
+            foreach (DataGridViewRow lista in dataListInventarios.Rows)
+            {
+                Inventarios inventarios = new Inventarios();
+                inventarios.id_inventario = Convert.ToInt32(lista.Cells[0].Value.ToString());
+                inventarios.id_suplidor = Convert.ToInt32(lista.Cells[1].Value.ToString());
+                inventarios.producto = lista.Cells[2].Value.ToString();
+                inventarios.cantidad = Convert.ToInt32(lista.Cells[4].Value.ToString());
+                inventarios.precio_compra = Convert.ToDecimal(lista.Cells[5].Value.ToString());
+                inventarios.precio_venta = Convert.ToDecimal(lista.Cells[6].Value.ToString());
+                inventarios.id_categoria = Convert.ToInt32(lista.Cells[7].Value.ToString());
+                DsInv.Add(inventarios);
+            }
+            rutaReportes ruta = new rutaReportes();
+            Reportes reportes = new Reportes("DsInventarios", $"{ruta.ruta}ReportInventarios.rdlc", DsInv, "Reporte de Inventarios");
+            reportes.ShowDialog();
+        }
         //Salir de la venana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
+
+        
     }
 }

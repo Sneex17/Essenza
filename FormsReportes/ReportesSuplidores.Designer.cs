@@ -84,6 +84,7 @@
             this.BuGeneralReporte.TabIndex = 88;
             this.BuGeneralReporte.Text = "Gerenal Reporte";
             this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
             // 
             // groupBox3
             // 
