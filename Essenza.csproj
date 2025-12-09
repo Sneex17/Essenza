@@ -307,6 +307,7 @@
     <EmbeddedResource Include="Reportes\ReportEmpleados.rdlc" />
     <EmbeddedResource Include="Reportes\ReportInventarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportSuplidores.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportVentas.rdlc" />
     <EmbeddedResource Include="ViewsAdmin\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +334,13 @@
     <None Include="Properties\DataSources\Essenza.Clases.Empleados.datasource" />
     <None Include="Properties\DataSources\Essenza.Clases.Inventarios.datasource" />
     <None Include="Properties\DataSources\Essenza.Clases.Suplidores.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.DetallesFacturas.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.ExcepcionesPersonalizadas.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.ExportarExcel.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.Facturas.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.Imprimir.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.rutaReportes.datasource" />
+    <None Include="Properties\DataSources\Essenza.ClasesAR.SaldoInsuficiente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

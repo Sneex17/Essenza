@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\reportes\\reportinventarios.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:reportes\\reportinventarios.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\reportes\\reportempleados.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:reportes\\reportempleados.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\reportes\\reportventas.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:reportes\\reportventas.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportesinventarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\reportessuplidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|c:\\users\\xrami\\onedrive\\escritorio\\proyecto final\\essenza\\formsreportes\\employeereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|solutionrelative:formsreportes\\employeereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFCF687-51E1-442D-9398-4273A081EE36}|Essenza.csproj|C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\forms\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MenuPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
@@ -59,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "MenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Forms\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\MenuPrincipal.cs",
@@ -74,43 +70,22 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReportInventarios.rdlc [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportInventarios.rdlc",
-              "RelativeDocumentMoniker": "Reportes\\ReportInventarios.rdlc",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportInventarios.rdlc [Dise\u00F1o]",
-              "RelativeToolTip": "Reportes\\ReportInventarios.rdlc [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-12-09T03:01:24.822Z",
+              "Title": "ReportesVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesVentas.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "FormsReportes\\ReportesVentas.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T05:37:40.754Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReportesInventarios.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\ReportesInventarios.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs",
-              "RelativeToolTip": "FormsReportes\\ReportesInventarios.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAuwJ8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:54:53.952Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReportEmpleados.rdlc [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportEmpleados.rdlc",
-              "RelativeDocumentMoniker": "Reportes\\ReportEmpleados.rdlc",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportEmpleados.rdlc [Dise\u00F1o]*",
-              "RelativeToolTip": "Reportes\\ReportEmpleados.rdlc [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-12-09T01:51:44.05Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ReportesInventarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesInventarios.cs",
               "RelativeDocumentMoniker": "FormsReportes\\ReportesInventarios.cs",
@@ -121,33 +96,40 @@
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReportVentas.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportVentas.rdlc",
+              "RelativeDocumentMoniker": "Reportes\\ReportVentas.rdlc",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\Reportes\\ReportVentas.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "Reportes\\ReportVentas.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-12-09T03:57:07.408Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReportesSuplidores.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\ReportesSuplidores.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesSuplidores.cs",
-              "RelativeToolTip": "FormsReportes\\ReportesSuplidores.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAuwJYAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ReportesG.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesG.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesG.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesG.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormsReportes\\ReportesG.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:03:32.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T04:36:30.454Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeeReports.cs",
-              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\EmployeeReports.cs",
-              "RelativeDocumentMoniker": "FormsReportes\\EmployeeReports.cs",
-              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\EmployeeReports.cs",
-              "RelativeToolTip": "FormsReportes\\EmployeeReports.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAAuwNQAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ReportesVentas.cs",
+              "DocumentMoniker": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs",
+              "RelativeDocumentMoniker": "FormsReportes\\ReportesVentas.cs",
+              "ToolTip": "C:\\Users\\xrami\\OneDrive\\Escritorio\\Proyecto Final\\Essenza\\FormsReportes\\ReportesVentas.cs*",
+              "RelativeToolTip": "FormsReportes\\ReportesVentas.cs*",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAmwKUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T01:57:07.742Z",
+              "WhenOpened": "2025-12-09T03:22:00.344Z",
               "EditorCaption": ""
             }
           ]

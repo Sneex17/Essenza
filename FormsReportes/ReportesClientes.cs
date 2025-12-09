@@ -152,7 +152,7 @@ namespace Essenza.Forms
                 listClient.Add(clientes);
             }
             rutaReportes ruta = new rutaReportes();
-            Reportes reportes = new Reportes("DsClientes", $"{ruta.ruta}ReportClientes.rdlc", listClient, "Reporte de Clientes");
+            Reportes reportes = new Reportes("DsClientes", "", $"{ruta.ruta}ReportClientes.rdlc", listClient, null, "Reporte de Clientes");
             reportes.ShowDialog();
         }
 

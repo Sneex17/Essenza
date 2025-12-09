@@ -157,7 +157,7 @@ namespace Essenza.FormsReportes
                 DsInv.Add(inventarios);
             }
             rutaReportes ruta = new rutaReportes();
-            Reportes reportes = new Reportes("DsInventarios", $"{ruta.ruta}ReportInventarios.rdlc", DsInv, "Reporte de Inventarios");
+            Reportes reportes = new Reportes("DsInventarios", "", $"{ruta.ruta}ReportInventarios.rdlc", DsInv, null, "Reporte de Inventarios");
             reportes.ShowDialog();
         }
         //Salir de la venana

@@ -134,7 +134,7 @@ namespace Essenza.FormsReportes
         //Boton de gerenal reporte
         private void BuGeneralReporte_Click(object sender, EventArgs e)
         {
-            List<Suplidores> DsSupli = new List<Suplidores>();
+            List<Object> DsSupli = new List<Object>();
             foreach (DataGridViewRow lista in dataListSuplidores.Rows)
             {
                 Suplidores suplidores = new Suplidores();
@@ -147,7 +147,7 @@ namespace Essenza.FormsReportes
                 DsSupli.Add(suplidores);
             }
             rutaReportes ruta = new rutaReportes();
-            Reportes reportes = new Reportes("DsSuplidores", $"{ruta.ruta}ReportSuplidores.rdlc", DsSupli, "Reporte de Suplidores");
+            Reportes reportes = new Reportes("DsSuplidores", "", $"{ruta.ruta}ReportSuplidores.rdlc", DsSupli, null, "Reporte de Suplidores");
             reportes.ShowDialog();
         }
 

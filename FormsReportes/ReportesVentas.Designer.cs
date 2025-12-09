@@ -33,17 +33,26 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BuEsteA = new System.Windows.Forms.Button();
+            this.BuEsteM = new System.Windows.Forms.Button();
+            this.BuHoy = new System.Windows.Forms.Button();
+            this.dateFechaDesde = new System.Windows.Forms.DateTimePicker();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.groupBoxDetallesFacturas = new System.Windows.Forms.GroupBox();
             this.dataDetallesFacturas = new System.Windows.Forms.DataGridView();
             this.groupBoxFacturas = new System.Windows.Forms.GroupBox();
             this.dataFacturas = new System.Windows.Forms.DataGridView();
             this.BuExit = new System.Windows.Forms.Button();
-            this.BuExcelRI = new System.Windows.Forms.Button();
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BuGeneralReporte = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateFechaHasta = new System.Windows.Forms.DateTimePicker();
+            this.BuFechaCustom = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBoxDetallesFacturas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDetallesFacturas)).BeginInit();
             this.groupBoxFacturas.SuspendLayout();
@@ -55,16 +64,107 @@
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.plDock.Controls.Add(this.groupBox1);
             this.plDock.Controls.Add(this.BuGeneralReporte);
             this.plDock.Controls.Add(this.groupBoxDetallesFacturas);
             this.plDock.Controls.Add(this.groupBoxFacturas);
             this.plDock.Controls.Add(this.BuExit);
-            this.plDock.Controls.Add(this.BuExcelRI);
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
             this.plDock.Size = new System.Drawing.Size(884, 507);
             this.plDock.TabIndex = 18;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.Controls.Add(this.BuFechaCustom);
+            this.groupBox1.Controls.Add(this.dateFechaHasta);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.dateFechaDesde);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.BuEsteA);
+            this.groupBox1.Controls.Add(this.BuEsteM);
+            this.groupBox1.Controls.Add(this.BuHoy);
+            this.groupBox1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(514, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(328, 185);
+            this.groupBox1.TabIndex = 90;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Reportes por";
+            // 
+            // BuEsteA
+            // 
+            this.BuEsteA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuEsteA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuEsteA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuEsteA.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuEsteA.ForeColor = System.Drawing.Color.White;
+            this.BuEsteA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuEsteA.Location = new System.Drawing.Point(220, 133);
+            this.BuEsteA.Name = "BuEsteA";
+            this.BuEsteA.Size = new System.Drawing.Size(97, 37);
+            this.BuEsteA.TabIndex = 94;
+            this.BuEsteA.Text = "Este Año";
+            this.BuEsteA.UseVisualStyleBackColor = false;
+            this.BuEsteA.Click += new System.EventHandler(this.BuEsteA_Click);
+            // 
+            // BuEsteM
+            // 
+            this.BuEsteM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuEsteM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuEsteM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuEsteM.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuEsteM.ForeColor = System.Drawing.Color.White;
+            this.BuEsteM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuEsteM.Location = new System.Drawing.Point(117, 133);
+            this.BuEsteM.Name = "BuEsteM";
+            this.BuEsteM.Size = new System.Drawing.Size(97, 37);
+            this.BuEsteM.TabIndex = 93;
+            this.BuEsteM.Text = "Este Mes";
+            this.BuEsteM.UseVisualStyleBackColor = false;
+            this.BuEsteM.Click += new System.EventHandler(this.BuEsteM_Click);
+            // 
+            // BuHoy
+            // 
+            this.BuHoy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuHoy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuHoy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuHoy.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuHoy.ForeColor = System.Drawing.Color.White;
+            this.BuHoy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuHoy.Location = new System.Drawing.Point(14, 133);
+            this.BuHoy.Name = "BuHoy";
+            this.BuHoy.Size = new System.Drawing.Size(97, 37);
+            this.BuHoy.TabIndex = 92;
+            this.BuHoy.Text = "Hoy";
+            this.BuHoy.UseVisualStyleBackColor = false;
+            this.BuHoy.Click += new System.EventHandler(this.BuHoy_Click);
+            // 
+            // dateFechaDesde
+            // 
+            this.dateFechaDesde.Location = new System.Drawing.Point(74, 34);
+            this.dateFechaDesde.Name = "dateFechaDesde";
+            this.dateFechaDesde.Size = new System.Drawing.Size(243, 23);
+            this.dateFechaDesde.TabIndex = 89;
+            // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(674, 445);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
+            this.BuGeneralReporte.TabIndex = 88;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
             // 
             // groupBoxDetallesFacturas
             // 
@@ -174,17 +274,6 @@
             this.BuExit.UseVisualStyleBackColor = false;
             this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
-            // BuExcelRI
-            // 
-            this.BuExcelRI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuExcelRI.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExcelRI.Location = new System.Drawing.Point(312, 449);
-            this.BuExcelRI.Name = "BuExcelRI";
-            this.BuExcelRI.Size = new System.Drawing.Size(131, 28);
-            this.BuExcelRI.TabIndex = 71;
-            this.BuExcelRI.Text = "Exportar en Excel";
-            this.BuExcelRI.UseVisualStyleBackColor = true;
-            // 
             // plTop
             // 
             this.plTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(30)))), ((int)(((byte)(91)))));
@@ -218,21 +307,46 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Ventas";
             // 
-            // BuGeneralReporte
+            // label1
             // 
-            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
-            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
-            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuGeneralReporte.Location = new System.Drawing.Point(674, 445);
-            this.BuGeneralReporte.Name = "BuGeneralReporte";
-            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
-            this.BuGeneralReporte.TabIndex = 88;
-            this.BuGeneralReporte.Text = "Gerenal Reporte";
-            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 18);
+            this.label1.TabIndex = 95;
+            this.label1.Text = "Desde";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 18);
+            this.label3.TabIndex = 96;
+            this.label3.Text = "Hasta";
+            // 
+            // dateFechaHasta
+            // 
+            this.dateFechaHasta.Location = new System.Drawing.Point(74, 66);
+            this.dateFechaHasta.Name = "dateFechaHasta";
+            this.dateFechaHasta.Size = new System.Drawing.Size(243, 23);
+            this.dateFechaHasta.TabIndex = 97;
+            // 
+            // BuFechaCustom
+            // 
+            this.BuFechaCustom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuFechaCustom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuFechaCustom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuFechaCustom.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuFechaCustom.ForeColor = System.Drawing.Color.White;
+            this.BuFechaCustom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuFechaCustom.Location = new System.Drawing.Point(74, 97);
+            this.BuFechaCustom.Name = "BuFechaCustom";
+            this.BuFechaCustom.Size = new System.Drawing.Size(243, 29);
+            this.BuFechaCustom.TabIndex = 98;
+            this.BuFechaCustom.Text = "Aplicar";
+            this.BuFechaCustom.UseVisualStyleBackColor = false;
+            this.BuFechaCustom.Click += new System.EventHandler(this.BuFechaCustom_Click);
             // 
             // ReportesVentas
             // 
@@ -247,6 +361,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReportesVentas";
             this.plDock.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBoxDetallesFacturas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDetallesFacturas)).EndInit();
             this.groupBoxFacturas.ResumeLayout(false);
@@ -262,7 +378,6 @@
 
         private System.Windows.Forms.Panel plDock;
         private System.Windows.Forms.Button BuExit;
-        private System.Windows.Forms.Button BuExcelRI;
         private System.Windows.Forms.Panel plTop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
@@ -271,5 +386,14 @@
         private System.Windows.Forms.GroupBox groupBoxFacturas;
         private System.Windows.Forms.DataGridView dataFacturas;
         private System.Windows.Forms.Button BuGeneralReporte;
+        private System.Windows.Forms.DateTimePicker dateFechaDesde;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button BuEsteA;
+        private System.Windows.Forms.Button BuEsteM;
+        private System.Windows.Forms.Button BuHoy;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BuFechaCustom;
+        private System.Windows.Forms.DateTimePicker dateFechaHasta;
     }
 }

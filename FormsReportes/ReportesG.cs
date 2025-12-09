@@ -15,15 +15,17 @@ namespace Essenza.FormsReportes
     {
         //variables generales
         string rt;
-        string ds;
-        object Datos;
+        string ds, ds2;
+        object Datos, Datos2;
         string nombreReporte;
-        public Reportes(string DataSet, string ruta, object datos, string nombre)
+        public Reportes(string DataSet,string DataSet2, string ruta, object datos, object datos2, string nombre)
         {
             InitializeComponent();
             rt = ruta;
             ds = DataSet;
+            ds2 = DataSet2;
             Datos = datos;
+            Datos2 = datos2;
             nombreReporte = nombre;
         }
 
@@ -43,6 +45,10 @@ namespace Essenza.FormsReportes
             reportViewerGeneral.LocalReport.ReportPath = rt;
             reportViewerGeneral.LocalReport.DataSources.Clear();
             reportViewerGeneral.LocalReport.DataSources.Add(new ReportDataSource(ds, Datos));
+            if(ds2 != "" && Datos2 != null)
+            {
+                reportViewerGeneral.LocalReport.DataSources.Add(new ReportDataSource(ds2, Datos2));
+            }
             reportViewerGeneral.LocalReport.DisplayName = $"{nombreReporte} " +
                 $"#{letras[num1]}{num1}{letras[num2]}{num2}";
             reportViewerGeneral.RefreshReport();
