@@ -47,18 +47,27 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lbPais = new System.Windows.Forms.Label();
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBoxBuscar = new System.Windows.Forms.GroupBox();
+            this.rbInternacional = new System.Windows.Forms.RadioButton();
+            this.rbNacional = new System.Windows.Forms.RadioButton();
+            this.txtRNC = new System.Windows.Forms.TextBox();
+            this.lbRNC = new System.Windows.Forms.Label();
             this.plDock.SuspendLayout();
             this.plTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
             // plDock
             // 
             this.plDock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.plDock.Controls.Add(this.txtRNC);
+            this.plDock.Controls.Add(this.lbRNC);
+            this.plDock.Controls.Add(this.groupBoxBuscar);
             this.plDock.Controls.Add(this.BuExit);
             this.plDock.Controls.Add(this.BuBuscarSuplidor);
             this.plDock.Controls.Add(this.BuRegisterSuplidor);
@@ -77,7 +86,7 @@
             this.plDock.Controls.Add(this.label17);
             this.plDock.Controls.Add(this.label19);
             this.plDock.Controls.Add(this.label21);
-            this.plDock.Controls.Add(this.label24);
+            this.plDock.Controls.Add(this.lbPais);
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plDock.Location = new System.Drawing.Point(0, 54);
             this.plDock.Name = "plDock";
@@ -195,7 +204,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmailS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmailS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailS.Location = new System.Drawing.Point(412, 60);
+            this.txtEmailS.Location = new System.Drawing.Point(232, 109);
             this.txtEmailS.Name = "txtEmailS";
             this.txtEmailS.Size = new System.Drawing.Size(136, 21);
             this.txtEmailS.TabIndex = 59;
@@ -204,7 +213,7 @@
             // 
             this.cbxPaisesS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxPaisesS.FormattingEnabled = true;
-            this.cbxPaisesS.Location = new System.Drawing.Point(232, 108);
+            this.cbxPaisesS.Location = new System.Drawing.Point(54, 220);
             this.cbxPaisesS.Name = "cbxPaisesS";
             this.cbxPaisesS.Size = new System.Drawing.Size(136, 24);
             this.cbxPaisesS.TabIndex = 58;
@@ -216,7 +225,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDirectionS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDirectionS.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectionS.Location = new System.Drawing.Point(412, 108);
+            this.txtDirectionS.Location = new System.Drawing.Point(232, 164);
             this.txtDirectionS.Name = "txtDirectionS";
             this.txtDirectionS.Size = new System.Drawing.Size(136, 21);
             this.txtDirectionS.TabIndex = 57;
@@ -291,7 +300,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(409, 41);
+            this.label17.Location = new System.Drawing.Point(229, 90);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 16);
             this.label17.TabIndex = 48;
@@ -301,7 +310,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(409, 89);
+            this.label19.Location = new System.Drawing.Point(229, 145);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(65, 16);
             this.label19.TabIndex = 47;
@@ -317,15 +326,15 @@
             this.label21.TabIndex = 46;
             this.label21.Text = "Telefono";
             // 
-            // label24
+            // lbPais
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(229, 86);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(107, 16);
-            this.label24.TabIndex = 44;
-            this.label24.Text = "Pais del Suplidor";
+            this.lbPais.AutoSize = true;
+            this.lbPais.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPais.Location = new System.Drawing.Point(51, 198);
+            this.lbPais.Name = "lbPais";
+            this.lbPais.Size = new System.Drawing.Size(107, 16);
+            this.lbPais.TabIndex = 44;
+            this.lbPais.Text = "Pais del Suplidor";
             // 
             // plTop
             // 
@@ -360,6 +369,65 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Registro de Suplidores";
             // 
+            // groupBoxBuscar
+            // 
+            this.groupBoxBuscar.BackColor = System.Drawing.Color.White;
+            this.groupBoxBuscar.Controls.Add(this.rbInternacional);
+            this.groupBoxBuscar.Controls.Add(this.rbNacional);
+            this.groupBoxBuscar.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBuscar.Location = new System.Drawing.Point(404, 60);
+            this.groupBoxBuscar.Name = "groupBoxBuscar";
+            this.groupBoxBuscar.Size = new System.Drawing.Size(125, 76);
+            this.groupBoxBuscar.TabIndex = 86;
+            this.groupBoxBuscar.TabStop = false;
+            this.groupBoxBuscar.Text = "Tipo";
+            // 
+            // rbInternacional
+            // 
+            this.rbInternacional.AutoSize = true;
+            this.rbInternacional.Location = new System.Drawing.Point(6, 47);
+            this.rbInternacional.Name = "rbInternacional";
+            this.rbInternacional.Size = new System.Drawing.Size(116, 22);
+            this.rbInternacional.TabIndex = 1;
+            this.rbInternacional.TabStop = true;
+            this.rbInternacional.Text = "Internacional";
+            this.rbInternacional.UseVisualStyleBackColor = true;
+            this.rbInternacional.CheckedChanged += new System.EventHandler(this.rbInternacional_CheckedChanged);
+            // 
+            // rbNacional
+            // 
+            this.rbNacional.AutoSize = true;
+            this.rbNacional.Location = new System.Drawing.Point(6, 26);
+            this.rbNacional.Name = "rbNacional";
+            this.rbNacional.Size = new System.Drawing.Size(86, 22);
+            this.rbNacional.TabIndex = 0;
+            this.rbNacional.TabStop = true;
+            this.rbNacional.Text = "Nacional";
+            this.rbNacional.UseVisualStyleBackColor = true;
+            this.rbNacional.CheckedChanged += new System.EventHandler(this.rbNacional_CheckedChanged);
+            // 
+            // txtRNC
+            // 
+            this.txtRNC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRNC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRNC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRNC.Location = new System.Drawing.Point(232, 223);
+            this.txtRNC.Name = "txtRNC";
+            this.txtRNC.Size = new System.Drawing.Size(136, 21);
+            this.txtRNC.TabIndex = 88;
+            // 
+            // lbRNC
+            // 
+            this.lbRNC.AutoSize = true;
+            this.lbRNC.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRNC.Location = new System.Drawing.Point(229, 204);
+            this.lbRNC.Name = "lbRNC";
+            this.lbRNC.Size = new System.Drawing.Size(35, 16);
+            this.lbRNC.TabIndex = 87;
+            this.lbRNC.Text = "RNC";
+            // 
             // RegistroSuplidores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,6 +444,8 @@
             this.plTop.ResumeLayout(false);
             this.plTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBoxBuscar.ResumeLayout(false);
+            this.groupBoxBuscar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -400,10 +470,15 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lbPais;
         private System.Windows.Forms.Panel plTop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BuExit;
+        private System.Windows.Forms.TextBox txtRNC;
+        private System.Windows.Forms.Label lbRNC;
+        private System.Windows.Forms.GroupBox groupBoxBuscar;
+        private System.Windows.Forms.RadioButton rbInternacional;
+        private System.Windows.Forms.RadioButton rbNacional;
     }
 }

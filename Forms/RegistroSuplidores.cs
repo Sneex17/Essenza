@@ -21,6 +21,8 @@ namespace Essenza.Forms
             InitializeComponent();
             DatosCbx();
             txtIdS.Enabled = false;
+            CtrlSuplidores();
+            //CheckBoxSuplidores();
         }
 
         //Limpiar los textbox
@@ -31,8 +33,39 @@ namespace Essenza.Forms
             txtPhoneS.Text = string.Empty;
             txtEmailS.Text = string.Empty;
             txtDirectionS.Text = string.Empty;
+            txtRNC.Text = string.Empty;
         }
 
+        //Control de los tipos de suplidores
+        private void CtrlSuplidores()
+        {
+            lbPais.Visible = false;
+            cbxPaisesS.Visible = false;
+            lbRNC.Visible = false;
+            txtRNC.Visible = false;
+        }
+
+        //Ctrl de los ChecBox
+        private void rbNacional_CheckedChanged(object sender, EventArgs e)
+        {
+            lbRNC.Visible = true;
+            txtRNC.Visible = true;
+
+
+            lbPais.Visible = false;
+            cbxPaisesS.Visible = false;
+
+        }
+        private void rbInternacional_CheckedChanged(object sender, EventArgs e)
+        {
+            lbPais.Visible = true;
+            cbxPaisesS.Visible = true;
+
+            lbRNC.Visible = false;
+            txtRNC.Visible = false;
+        }
+        
+        
         //Llenar los combobox con datos
         private void DatosCbx()
         {
@@ -61,17 +94,19 @@ namespace Essenza.Forms
         //Metodo de Excepciones
         private void Excepciones()
         {
-            bool tx1, tx2, tx3, tx4;
+            bool tx1, tx2, tx3, tx4, tx5;
             tx1 = String.IsNullOrWhiteSpace(txtNamesS.Text);
             tx2 = String.IsNullOrWhiteSpace(txtPhoneS.Text);
             tx3 = String.IsNullOrWhiteSpace(txtEmailS.Text);
             tx4 = String.IsNullOrWhiteSpace(txtDirectionS.Text);
-            if (tx1 || tx2 || tx3 || tx4)
+            tx5 = String.IsNullOrWhiteSpace(txtRNC.Text);
+            if (tx1 || tx2 || tx3 || tx4 || tx5)
             {
                 if (tx1) throw new ExcepcionesPersonalizadas("El campo de Nombre esta vacio");
                 if (tx2) throw new ExcepcionesPersonalizadas("El campo de Telefono esta vacio");
                 if (tx3) throw new ExcepcionesPersonalizadas("El campo de Email esta vacio");
                 if (tx4) throw new ExcepcionesPersonalizadas("El campo de Direccion esta vacio");
+                if (tx5) throw new ExcepcionesPersonalizadas("El campo de RNC esta vacio");
             }
         }
         //Boton de registrar
@@ -88,17 +123,38 @@ namespace Essenza.Forms
 
                     if (mensaje == DialogResult.Yes)
                     {
-                        Suplidores suplidores = new Suplidores();
-                        suplidores.nombres = txtNamesS.Text;
-                        suplidores.telefono = txtPhoneS.Text;
-                        suplidores.email = txtEmailS.Text;
-                        suplidores.direccion = txtDirectionS.Text;
-                        suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
-                        suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
-                        Suplidores.AgregarSuplidor(suplidores);
-                        MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearTxt();
+                        if(rbNacional.Checked)
+                        {
+                            Suplidores suplidores = new Suplidores();
+                            suplidores.nombres = txtNamesS.Text;
+                            suplidores.telefono = txtPhoneS.Text;
+                            suplidores.email = txtEmailS.Text;
+                            suplidores.direccion = txtDirectionS.Text;
+                            suplidores.id_pais = 7;
+                            suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
+                            suplidores.RNC = txtRNC.Text;
+                            Suplidores.AgregarSuplidor(suplidores);
+                            MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearTxt();
+                        }
+                        if(rbInternacional.Checked)
+                        {
+                            Suplidores suplidores = new Suplidores();
+                            suplidores.nombres = txtNamesS.Text;
+                            suplidores.telefono = txtPhoneS.Text;
+                            suplidores.email = txtEmailS.Text;
+                            suplidores.direccion = txtDirectionS.Text;
+                            suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
+                            suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
+                            suplidores.RNC = "0";
+                            Suplidores.AgregarSuplidor(suplidores);
+                            MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearTxt();
+                        }
+
+                        
                     }
                 }
                 else
@@ -139,18 +195,40 @@ namespace Essenza.Forms
 
                     if (mensaje == DialogResult.Yes)
                     {
-                        Suplidores suplidores = new Suplidores();
-                        suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
-                        suplidores.nombres = txtNamesS.Text;
-                        suplidores.telefono = txtPhoneS.Text;
-                        suplidores.email = txtEmailS.Text;
-                        suplidores.direccion = txtDirectionS.Text;
-                        suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
-                        suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
-                        Suplidores.ActualizarSuplidor(suplidores);
-                        MessageBox.Show($"Datos del suplidor actualizados con exito!", "Actualizacion completa",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearTxt();
+
+                        if(rbNacional.Checked)
+                        {
+                            Suplidores suplidores = new Suplidores();
+                            suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
+                            suplidores.nombres = txtNamesS.Text;
+                            suplidores.telefono = txtPhoneS.Text;
+                            suplidores.email = txtEmailS.Text;
+                            suplidores.direccion = txtDirectionS.Text;
+                            suplidores.id_pais = 7;
+                            suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
+                            suplidores.RNC = txtRNC.Text;
+                            Suplidores.ActualizarSuplidor(suplidores);
+                            MessageBox.Show($"Datos del suplidor actualizados con exito!", "Actualizacion completa",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearTxt();
+                        }
+                        if(rbInternacional.Checked)
+                        {
+                            Suplidores suplidores = new Suplidores();
+                            suplidores.id_suplidor = Convert.ToInt32(txtIdS.Text);
+                            suplidores.nombres = txtNamesS.Text;
+                            suplidores.telefono = txtPhoneS.Text;
+                            suplidores.email = txtEmailS.Text;
+                            suplidores.direccion = txtDirectionS.Text;
+                            suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
+                            suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
+                            suplidores.RNC = "0";
+                            Suplidores.ActualizarSuplidor(suplidores);
+                            MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearTxt();
+                        }
+                        
                     }
                 }
             }
@@ -207,13 +285,37 @@ namespace Essenza.Forms
 
             reportesSuplidores.SelecionalSuplidor += (suplidores) =>
             {
-                txtIdS.Text = suplidores.id_suplidor.ToString();
-                txtNamesS.Text = suplidores.nombres;
-                txtPhoneS.Text = suplidores.telefono;
-                txtEmailS.Text = suplidores.email;
-                txtDirectionS.Text = suplidores.direccion;
-                cbxPaisesS.SelectedValue = suplidores.id_pais;
-                cbxEstadoS.SelectedValue = suplidores.id_estado;
+                if(suplidores.RNC.Length > 1)
+                {
+                    lbRNC.Visible = true;
+                    txtRNC.Visible = true;
+                    rbNacional.Checked = true;
+
+                    txtIdS.Text = suplidores.id_suplidor.ToString();
+                    txtNamesS.Text = suplidores.nombres;
+                    txtPhoneS.Text = suplidores.telefono;
+                    txtEmailS.Text = suplidores.email;
+                    txtDirectionS.Text = suplidores.direccion;
+                    cbxPaisesS.SelectedValue = suplidores.id_pais;
+                    cbxEstadoS.SelectedValue = suplidores.id_estado;
+                    txtRNC.Text = suplidores.RNC;
+                }
+                else
+                {
+                    lbPais.Visible = true;
+                    cbxPaisesS.Visible = true;
+                    rbInternacional.Checked = true;
+
+                    txtIdS.Text = suplidores.id_suplidor.ToString();
+                    txtNamesS.Text = suplidores.nombres;
+                    txtPhoneS.Text = suplidores.telefono;
+                    txtEmailS.Text = suplidores.email;
+                    txtDirectionS.Text = suplidores.direccion;
+                    cbxPaisesS.SelectedValue = suplidores.id_pais;
+                    cbxEstadoS.SelectedValue = suplidores.id_estado;
+                    txtRNC.Text = suplidores.RNC;
+                }
+                
             };
             reportesSuplidores.ShowDialog();
         }
@@ -221,6 +323,7 @@ namespace Essenza.Forms
        
         //Salir de la ventana
         private void BuExit_Click(object sender, EventArgs e) => this.Close();
+
         
     }
 }

@@ -42,7 +42,8 @@ namespace Essenza.FormsReportes
                     email = dataListSuplidores.Rows[e.RowIndex].Cells["email"].Value.ToString(),
                     direccion = dataListSuplidores.Rows[e.RowIndex].Cells["direccion"].Value.ToString(),
                     id_pais = Convert.ToInt32(dataListSuplidores.Rows[e.RowIndex].Cells["id_pais"].Value),
-                    id_estado = Convert.ToInt32(dataListSuplidores.Rows[e.RowIndex].Cells["id_estado"].Value)
+                    id_estado = Convert.ToInt32(dataListSuplidores.Rows[e.RowIndex].Cells["id_estado"].Value),
+                    RNC = dataListSuplidores.Rows[e.RowIndex].Cells["RNC"].Value.ToString()
                 };
                 SelecionalSuplidor?.Invoke(suplidores);
                 this.Close();

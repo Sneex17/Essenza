@@ -22,7 +22,7 @@ namespace Essenza.Clases
         //lista de los atributos
         public List<string> listDatosCbx = new List<string>()
         {
-            "id_suplidor", "nombres", "telefono", "email", "direccion", "id_pais", "id_estado"
+            "id_suplidor", "nombres", "telefono", "email", "direccion", "id_pais", "id_estado", "RNC"
         };
 
 
@@ -33,7 +33,7 @@ namespace Essenza.Clases
             {
                 int resultado;
                 string NewQuery = @"insert into suplidores (nombres, telefono, email, 
-                       direccion, id_pais, id_estado) values (@nombres, @telefono, @email, @direccion, @id_pais, @id_estado)";
+                       direccion, id_pais, id_estado, RNC) values (@nombres, @telefono, @email, @direccion, @id_pais, @id_estado, @RNC)";
                 SqlCommand comando = new SqlCommand(NewQuery, acceso);
                 comando.Parameters.AddWithValue("@nombres", suplidores.nombres);
                 comando.Parameters.AddWithValue("@telefono", suplidores.telefono);
@@ -41,6 +41,7 @@ namespace Essenza.Clases
                 comando.Parameters.AddWithValue("@direccion", suplidores.direccion);
                 comando.Parameters.AddWithValue("@id_pais", suplidores.id_pais);
                 comando.Parameters.AddWithValue("@id_estado", suplidores.id_estado);
+                comando.Parameters.AddWithValue("@RNC", suplidores.RNC);
                 resultado = comando.ExecuteNonQuery();
             }
         }
@@ -57,7 +58,8 @@ namespace Essenza.Clases
                         email = @email,
                         direccion = @direccion,
                         id_pais = @id_pais,
-                        id_estado = @id_estado
+                        id_estado = @id_estado,
+                        RNC = @RNC
                         where id_suplidor = @id_suplidor";
 
                 SqlCommand comando = new SqlCommand(NewQuery, acceso);
@@ -68,6 +70,7 @@ namespace Essenza.Clases
                 comando.Parameters.AddWithValue("@direccion", suplidores.direccion);
                 comando.Parameters.AddWithValue("@id_pais", suplidores.id_pais);
                 comando.Parameters.AddWithValue("@id_estado", suplidores.id_estado);
+                comando.Parameters.AddWithValue("@RNC", suplidores.RNC);
                 resultado = comando.ExecuteNonQuery();
             }
         }
@@ -104,6 +107,7 @@ namespace Essenza.Clases
                     suplidores.direccion = reader.GetString(4);
                     suplidores.id_pais = reader.GetInt32(5);
                     suplidores.id_estado = reader.GetInt32(6);
+                    suplidores.RNC = reader.GetString(7);
                     listSuplidores.Add(suplidores);
                 }
                 reader.Close();
@@ -129,6 +133,7 @@ namespace Essenza.Clases
                     suplidores.direccion = reader.GetString(4);
                     suplidores.id_pais = reader.GetInt32(5);
                     suplidores.id_estado = reader.GetInt32(6);
+                    suplidores.RNC = reader.GetString(7);
                     listSuplidores.Add(suplidores);
                 }
                 reader.Close();
