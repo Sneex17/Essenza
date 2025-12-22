@@ -117,13 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Essenza es una aplicación moderna diseñada para ofrecerte una experiencia
-única en el mundo del cuidado personal y la belleza. Nuestro objetivo es 
-brindarte productos cosméticos de calidad y un sistema de eservas y 
-compras fácil, rápido y confiable.
-
-En Essenza, tu bienestar y confianza son nuestra prioridad.
+  <data name="label5.Text" xml:space="preserve">
+    <value>Descripción general para todos los reportes:
+Esta sección permite consultar, filtrar y generar reportes
+personalizados de la información del sistema. Puedes elegir
+criterios de búsqueda, aplicar filtros, ordenar los datos y
+visualizar los resultados antes de generar el reporte final,
+facilitando un acceso rápido y organizado a la información.</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Descripción general para todos los reportes:
+Esta sección te permite consultar, filtrar y generar reportes
+personalizados sobre la información del sistema. Puedes 
+seleccionar los criterios de búsqueda, aplicar filtros adicionales,
+ordenar los datos y visualizar los resultados antes de generar el 
+reporte final.
 </value>
   </data>
   <data name="label3.Text" xml:space="preserve">
@@ -142,5 +150,13 @@ Requisitos recomendados:
   Espacio en disco: 750 MB libres
   Conexión a Internet: Conexión de banda ancha
 </value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Essenza es una aplicación moderna diseñada para ofrecerte una experiencia
+única en el mundo del cuidado personal y la belleza. Nuestro objetivo es 
+brindarte productos cosméticos de calidad y un sistema de eservas y 
+compras fácil, rápido y confiable.
+
+En Essenza, tu bienestar y confianza son nuestra prioridad.</value>
   </data>
 </root>

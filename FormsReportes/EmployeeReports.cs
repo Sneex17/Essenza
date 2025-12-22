@@ -86,22 +86,7 @@ namespace Essenza.Forms
                 dataReportsInventarios.DataSource = Empleados.DatosReportsEFiltro(NewQuery);
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ExportarExcel excel = new ExportarExcel();
-            SaveFileDialog guardar = new SaveFileDialog();
-            guardar.Filter = "Archivos de Excel (*.xlsx)|*.xlsx|Todos los archivos (*.*)|*.*";
-            guardar.Title = "Guardar reporte como";
-            guardar.FileName = "Reporte.xlsx";
-            if (guardar.ShowDialog() == DialogResult.OK)
-            {
-                excel.ruta = guardar.FileName;
-                excel.column = dataReportsInventarios;
-                excel.row = dataReportsInventarios;
-                excel.RowCells = dataReportsInventarios.ColumnCount;
-                ExportarExcel.exportarExcel(excel);
-            }           
-        }
+        
         private void BuBuscarFechas_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrWhiteSpace(cbxFechas.Text))

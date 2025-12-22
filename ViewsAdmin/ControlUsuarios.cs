@@ -1,4 +1,8 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using Essenza.Clases;
+using Essenza.ClasesAR;
+using Essenza.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Essenza.Clases;
-using Essenza.Forms;
 
 namespace Essenza.ViewsAdmin
 {
@@ -92,12 +94,31 @@ namespace Essenza.ViewsAdmin
                 cbxEstadoUser.SelectedValue = u.id_estado;
             }
         }
+        //Control de excepciones
+        private void Excepciones()
+        {
+            bool txU, txP;
 
+            txU = String.IsNullOrWhiteSpace(txtUser.Text);
+            txP = String.IsNullOrWhiteSpace(txtPass.Text);
+            
+
+            if (txU || txP )
+            {
+                if (txU) throw new ExcepcionesPersonalizadas("El campo de Usuario esta vacio");
+                if (txP) throw new ExcepcionesPersonalizadas("El campo de Contraseña esta vacio");
+                
+            }
+            if (!txtUser.Text.All(c => char.IsLetter(c)))
+                throw new ExcepcionesPersonalizadas("El campo de Nombre tiene caracteres no validos\nInserte solo letras.");
+        }
         //Metodo para guardar los cambios
         private void BuGuardar_Click(object sender, EventArgs e)
         {
             try
             {
+                Excepciones();
+
                 if (String.IsNullOrWhiteSpace(txtIdUser.Text))
                 {
                     var Mensaje = MessageBox.Show($"¿Desea crearle un usuario a este empleado?", "Creacion de usuario",
@@ -142,6 +163,11 @@ namespace Essenza.ViewsAdmin
                         this.Close();
                     }
                 }
+            }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "Informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

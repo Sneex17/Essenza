@@ -236,7 +236,6 @@ C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\bin\Debug\ru\Microsoft
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.csproj.AssemblyReference.cache
-C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.exe.config
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.Form1.resources
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.FormsReportes.ReportesInventarios.resources
 C:\Users\xrami\OneDrive\Escritorio\Proyecto Final\Essenza\obj\Debug\Essenza.FormsReportes.ReportesSuplidores.resources

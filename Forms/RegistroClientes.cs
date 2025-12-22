@@ -87,6 +87,14 @@ namespace Essenza.Forms
                 if (txE) throw new ExcepcionesPersonalizadas("El compo de Email esta vacio");
                 if (txD) throw new ExcepcionesPersonalizadas("El compo de Direccion esta vacio");        
             }
+            if (!txtNamesC.Text.All(c => char.IsLetter(c) || c == ' '))
+                throw new ExcepcionesPersonalizadas("El campo de Nombre tiene caracteres no validos\nInserte solo letras.");
+            if (!txtLstNamesC.Text.All(c => char.IsLetter(c) || c == ' '))
+                throw new ExcepcionesPersonalizadas("El campo de Apellido tiene caracteres no validos\nInserte solo letras.");
+            if (txtCedulaC.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Cedula tiene caracteres no validos\nInserte una Cedula valida 000-000000-0.");
+            if (txtPhoneC.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Telefono tiene caracteres no validos\nInserte un Telefono valido (000) 000-0000.");
 
         }
         //Boton de registrar

@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
+            this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbxFilroInventarios = new System.Windows.Forms.ComboBox();
             this.txtFilterInventarios = new System.Windows.Forms.TextBox();
@@ -39,7 +40,7 @@
             this.fechaFin = new System.Windows.Forms.DateTimePicker();
             this.fechaInicio = new System.Windows.Forms.DateTimePicker();
             this.BuBuscarFechas = new System.Windows.Forms.Button();
-            this.BuExcelRI = new System.Windows.Forms.Button();
+            this.BuExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataReportsInventarios = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,10 +49,8 @@
             this.cbxOrderBy = new System.Windows.Forms.ComboBox();
             this.rBaz = new System.Windows.Forms.RadioButton();
             this.plTop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.BuGeneralReporte = new System.Windows.Forms.Button();
-            this.BuExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.plDock.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,15 +67,33 @@
             this.plDock.Controls.Add(this.groupBox3);
             this.plDock.Controls.Add(this.groupBox2);
             this.plDock.Controls.Add(this.BuExit);
-            this.plDock.Controls.Add(this.BuExcelRI);
             this.plDock.Controls.Add(this.label1);
             this.plDock.Controls.Add(this.dataReportsInventarios);
             this.plDock.Controls.Add(this.groupBox1);
             this.plDock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plDock.Location = new System.Drawing.Point(0, 54);
+            this.plDock.Location = new System.Drawing.Point(0, 66);
+            this.plDock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.plDock.Name = "plDock";
-            this.plDock.Size = new System.Drawing.Size(884, 507);
+            this.plDock.Size = new System.Drawing.Size(1179, 624);
             this.plDock.TabIndex = 16;
+            // 
+            // BuGeneralReporte
+            // 
+            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
+            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
+            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuGeneralReporte.Location = new System.Drawing.Point(895, 543);
+            this.BuGeneralReporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BuGeneralReporte.Name = "BuGeneralReporte";
+            this.BuGeneralReporte.Size = new System.Drawing.Size(224, 46);
+            this.BuGeneralReporte.TabIndex = 87;
+            this.BuGeneralReporte.Text = "Gerenal Reporte";
+            this.BuGeneralReporte.UseVisualStyleBackColor = false;
+            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
             // 
             // groupBox3
             // 
@@ -84,9 +101,11 @@
             this.groupBox3.Controls.Add(this.cbxFilroInventarios);
             this.groupBox3.Controls.Add(this.txtFilterInventarios);
             this.groupBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(49, 52);
+            this.groupBox3.Location = new System.Drawing.Point(65, 64);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(171, 94);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(228, 116);
             this.groupBox3.TabIndex = 86;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Columnas";
@@ -97,9 +116,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxFilroInventarios.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilroInventarios.FormattingEnabled = true;
-            this.cbxFilroInventarios.Location = new System.Drawing.Point(20, 55);
+            this.cbxFilroInventarios.Location = new System.Drawing.Point(27, 68);
+            this.cbxFilroInventarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxFilroInventarios.Name = "cbxFilroInventarios";
-            this.cbxFilroInventarios.Size = new System.Drawing.Size(133, 23);
+            this.cbxFilroInventarios.Size = new System.Drawing.Size(176, 28);
             this.cbxFilroInventarios.TabIndex = 70;
             // 
             // txtFilterInventarios
@@ -108,9 +128,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilterInventarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilterInventarios.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterInventarios.Location = new System.Drawing.Point(20, 28);
+            this.txtFilterInventarios.Location = new System.Drawing.Point(27, 34);
+            this.txtFilterInventarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFilterInventarios.Name = "txtFilterInventarios";
-            this.txtFilterInventarios.Size = new System.Drawing.Size(134, 21);
+            this.txtFilterInventarios.Size = new System.Drawing.Size(178, 24);
             this.txtFilterInventarios.TabIndex = 67;
             this.txtFilterInventarios.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
@@ -122,9 +143,11 @@
             this.groupBox2.Controls.Add(this.fechaInicio);
             this.groupBox2.Controls.Add(this.BuBuscarFechas);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(226, 52);
+            this.groupBox2.Location = new System.Drawing.Point(301, 64);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(393, 94);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(524, 116);
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fechas";
@@ -138,27 +161,30 @@
             this.cbxFechas.Items.AddRange(new object[] {
             "Contrato",
             "Nacimiento"});
-            this.cbxFechas.Location = new System.Drawing.Point(264, 52);
+            this.cbxFechas.Location = new System.Drawing.Point(352, 64);
+            this.cbxFechas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxFechas.Name = "cbxFechas";
-            this.cbxFechas.Size = new System.Drawing.Size(114, 23);
+            this.cbxFechas.Size = new System.Drawing.Size(151, 28);
             this.cbxFechas.TabIndex = 78;
             // 
             // fechaFin
             // 
             this.fechaFin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaFin.Location = new System.Drawing.Point(13, 53);
+            this.fechaFin.Location = new System.Drawing.Point(17, 65);
+            this.fechaFin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(245, 21);
+            this.fechaFin.Size = new System.Drawing.Size(325, 24);
             this.fechaFin.TabIndex = 77;
             // 
             // fechaInicio
             // 
             this.fechaInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaInicio.Location = new System.Drawing.Point(13, 24);
+            this.fechaInicio.Location = new System.Drawing.Point(17, 30);
+            this.fechaInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fechaInicio.Name = "fechaInicio";
-            this.fechaInicio.Size = new System.Drawing.Size(245, 21);
+            this.fechaInicio.Size = new System.Drawing.Size(325, 24);
             this.fechaInicio.TabIndex = 76;
             // 
             // BuBuscarFechas
@@ -168,33 +194,43 @@
             this.BuBuscarFechas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.BuBuscarFechas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuBuscarFechas.ForeColor = System.Drawing.Color.White;
-            this.BuBuscarFechas.Location = new System.Drawing.Point(264, 23);
+            this.BuBuscarFechas.Location = new System.Drawing.Point(352, 28);
+            this.BuBuscarFechas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuBuscarFechas.Name = "BuBuscarFechas";
-            this.BuBuscarFechas.Size = new System.Drawing.Size(114, 23);
+            this.BuBuscarFechas.Size = new System.Drawing.Size(152, 28);
             this.BuBuscarFechas.TabIndex = 73;
             this.BuBuscarFechas.Text = "Buscar";
             this.BuBuscarFechas.UseVisualStyleBackColor = false;
             this.BuBuscarFechas.Click += new System.EventHandler(this.BuBuscarFechas_Click);
             // 
-            // BuExcelRI
+            // BuExit
             // 
-            this.BuExcelRI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuExcelRI.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExcelRI.Location = new System.Drawing.Point(342, 448);
-            this.BuExcelRI.Name = "BuExcelRI";
-            this.BuExcelRI.Size = new System.Drawing.Size(131, 28);
-            this.BuExcelRI.TabIndex = 71;
-            this.BuExcelRI.Text = "Exportar en Excel";
-            this.BuExcelRI.UseVisualStyleBackColor = true;
-            this.BuExcelRI.Click += new System.EventHandler(this.button1_Click);
+            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuExit.FlatAppearance.BorderSize = 0;
+            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuExit.ForeColor = System.Drawing.Color.White;
+            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
+            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuExit.Location = new System.Drawing.Point(37, 542);
+            this.BuExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BuExit.Name = "BuExit";
+            this.BuExit.Size = new System.Drawing.Size(171, 46);
+            this.BuExit.TabIndex = 83;
+            this.BuExit.Text = "Volver";
+            this.BuExit.UseVisualStyleBackColor = false;
+            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 21);
+            this.label1.Location = new System.Drawing.Point(87, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 21);
+            this.label1.Size = new System.Drawing.Size(168, 26);
             this.label1.TabIndex = 68;
             this.label1.Text = "Filtrar datos por";
             // 
@@ -224,10 +260,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataReportsInventarios.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataReportsInventarios.EnableHeadersVisualStyles = false;
-            this.dataReportsInventarios.Location = new System.Drawing.Point(28, 164);
+            this.dataReportsInventarios.Location = new System.Drawing.Point(37, 202);
+            this.dataReportsInventarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataReportsInventarios.Name = "dataReportsInventarios";
             this.dataReportsInventarios.RowHeadersWidth = 51;
-            this.dataReportsInventarios.Size = new System.Drawing.Size(811, 270);
+            this.dataReportsInventarios.Size = new System.Drawing.Size(1081, 332);
             this.dataReportsInventarios.TabIndex = 0;
             this.dataReportsInventarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataReportsE_CellDoubleClick);
             // 
@@ -239,9 +276,11 @@
             this.groupBox1.Controls.Add(this.cbxOrderBy);
             this.groupBox1.Controls.Add(this.rBaz);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(625, 52);
+            this.groupBox1.Location = new System.Drawing.Point(833, 64);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(214, 94);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(285, 116);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orden";
@@ -253,9 +292,10 @@
             this.BuOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
             this.BuOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BuOrdenar.ForeColor = System.Drawing.Color.White;
-            this.BuOrdenar.Location = new System.Drawing.Point(14, 22);
+            this.BuOrdenar.Location = new System.Drawing.Point(19, 27);
+            this.BuOrdenar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuOrdenar.Name = "BuOrdenar";
-            this.BuOrdenar.Size = new System.Drawing.Size(114, 23);
+            this.BuOrdenar.Size = new System.Drawing.Size(152, 28);
             this.BuOrdenar.TabIndex = 72;
             this.BuOrdenar.Text = "Ordenar";
             this.BuOrdenar.UseVisualStyleBackColor = false;
@@ -266,9 +306,10 @@
             this.rBza.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBza.AutoSize = true;
-            this.rBza.Location = new System.Drawing.Point(145, 55);
+            this.rBza.Location = new System.Drawing.Point(193, 68);
+            this.rBza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rBza.Name = "rBza";
-            this.rBza.Size = new System.Drawing.Size(44, 19);
+            this.rBza.Size = new System.Drawing.Size(54, 24);
             this.rBza.TabIndex = 82;
             this.rBza.TabStop = true;
             this.rBza.Text = "Z-A";
@@ -283,9 +324,10 @@
             this.cbxOrderBy.Items.AddRange(new object[] {
             "Nombres",
             "Apellidos"});
-            this.cbxOrderBy.Location = new System.Drawing.Point(14, 51);
+            this.cbxOrderBy.Location = new System.Drawing.Point(19, 63);
+            this.cbxOrderBy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxOrderBy.Name = "cbxOrderBy";
-            this.cbxOrderBy.Size = new System.Drawing.Size(114, 23);
+            this.cbxOrderBy.Size = new System.Drawing.Size(151, 28);
             this.cbxOrderBy.TabIndex = 80;
             // 
             // rBaz
@@ -293,9 +335,10 @@
             this.rBaz.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rBaz.AutoSize = true;
-            this.rBaz.Location = new System.Drawing.Point(145, 26);
+            this.rBaz.Location = new System.Drawing.Point(193, 32);
+            this.rBaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rBaz.Name = "rBaz";
-            this.rBaz.Size = new System.Drawing.Size(44, 19);
+            this.rBaz.Size = new System.Drawing.Size(54, 24);
             this.rBaz.TabIndex = 81;
             this.rBaz.TabStop = true;
             this.rBaz.Text = "A-Z";
@@ -308,76 +351,44 @@
             this.plTop.Controls.Add(this.label2);
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
+            this.plTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(884, 54);
+            this.plTop.Size = new System.Drawing.Size(1179, 66);
             this.plTop.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(103, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 22);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Reportes de Empleados";
-            // 
-            // BuGeneralReporte
-            // 
-            this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuGeneralReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuGeneralReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuGeneralReporte.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuGeneralReporte.ForeColor = System.Drawing.Color.White;
-            this.BuGeneralReporte.Image = global::Essenza.Properties.Resources.Test_Results;
-            this.BuGeneralReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuGeneralReporte.Location = new System.Drawing.Point(671, 441);
-            this.BuGeneralReporte.Name = "BuGeneralReporte";
-            this.BuGeneralReporte.Size = new System.Drawing.Size(168, 37);
-            this.BuGeneralReporte.TabIndex = 87;
-            this.BuGeneralReporte.Text = "Gerenal Reporte";
-            this.BuGeneralReporte.UseVisualStyleBackColor = false;
-            this.BuGeneralReporte.Click += new System.EventHandler(this.BuGeneralReporte_Click);
-            // 
-            // BuExit
-            // 
-            this.BuExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BuExit.FlatAppearance.BorderSize = 0;
-            this.BuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuExit.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuExit.ForeColor = System.Drawing.Color.White;
-            this.BuExit.Image = global::Essenza.Properties.Resources.Logout_Rounded_Left;
-            this.BuExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuExit.Location = new System.Drawing.Point(28, 440);
-            this.BuExit.Name = "BuExit";
-            this.BuExit.Size = new System.Drawing.Size(128, 37);
-            this.BuExit.TabIndex = 83;
-            this.BuExit.Text = "Volver";
-            this.BuExit.UseVisualStyleBackColor = false;
-            this.BuExit.Click += new System.EventHandler(this.BuExit_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = global::Essenza.Properties.Resources.Checked_Identification_Documents;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 54);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(137, 18);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(265, 27);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Reportes de Empleados";
+            // 
             // EmployeeReports
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.ClientSize = new System.Drawing.Size(1179, 690);
             this.Controls.Add(this.plDock);
             this.Controls.Add(this.plTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EmployeeReports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeReports";
@@ -406,7 +417,6 @@
         private System.Windows.Forms.TextBox txtFilterInventarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbxFilroInventarios;
-        private System.Windows.Forms.Button BuExcelRI;
         private System.Windows.Forms.Button BuOrdenar;
         private System.Windows.Forms.Button BuBuscarFechas;
         private System.Windows.Forms.ComboBox cbxFechas;

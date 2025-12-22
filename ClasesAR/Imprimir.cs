@@ -110,11 +110,6 @@ namespace Essenza.ClasesAR
                 new RectangleF(130, y += 17, ancho, 20));
 
 
-            //Recibo de Transferencia
-            if(idpago != 1)
-            {
-
-            }
         }
     }
 }

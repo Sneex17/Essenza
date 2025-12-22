@@ -76,6 +76,14 @@ namespace Essenza.Forms
                 if (txpV) throw new ExcepcionesPersonalizadas("El campo Precio Venta esta vacio");
                 if (txpC) throw new ExcepcionesPersonalizadas("El campo de Precio Compra esta vacio");
             }
+            if (!txtProducto.Text.All(c => char.IsLetter(c) || c == ' '))
+                throw new ExcepcionesPersonalizadas("El campo de Producto tiene caracteres no validos\nInserte solo letras.");
+            if (txtCantidad.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Cantidad tiene caracteres no validos\nInserte solo Numeros.");
+            if (txtPventas.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Precio de Venta tiene caracteres no validos\nInserte solo Numeros y puntos.");
+            if (txtPcompras.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Precio de Compra tiene caracteres no validos\nInserte solo Numeros y puntos.");
         }
         //Boton de registrar
         private void BuRegistroInventario_Click(object sender, EventArgs e)

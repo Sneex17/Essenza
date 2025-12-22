@@ -18,6 +18,8 @@ namespace Essenza.FormsVentasYFacturas
     public partial class FormPagoTransferencia : Form
     {
         //Variables y listas para almacenar los datos
+        private CancellationTokenSource Cancelar;
+        
         int idCliente, idPago, idFactura;
         DateTime fecha;
         List<Inventarios> listaCantidad;
@@ -43,15 +45,29 @@ namespace Essenza.FormsVentasYFacturas
         }
 
         //Metedo de pago final
-        private void BuPagarFinal_Click(object sender, EventArgs e)
+        private async void BuPagarFinal_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i <= 100; i++)
+            Cancelar = new CancellationTokenSource();
+            BuCancelar.Enabled = true;
+            pbProcesando.Visible = true;
+            try
             {
-                BuCancelar.Enabled = true;
-                pbProcesando.Visible = true;
-                pbProcesando.Value = i;
-                Thread.Sleep(75);
+                for (int i = 0; i <= 100; i++)
+                {
+                    //Uso de Async/Await
+                    Cancelar.Token.ThrowIfCancellationRequested();
+                    await Task.Delay(75, Cancelar.Token); 
+                    pbProcesando.Value = i; 
+                }
+
             }
+            catch (OperationCanceledException)
+            {
+                MessageBox.Show($"Pago cancelado", "Informacion",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+            
 
             //Barra de progreso
             if(pbProcesando.Value == 100)
@@ -96,9 +112,10 @@ namespace Essenza.FormsVentasYFacturas
 
             
         }
-
+        //Boton de cancelar transferencia
         private void BuCancelar_Click(object sender, EventArgs e)
         {
+            Cancelar?.Cancel();
             if(pbProcesando.Value < 100)
             {
                 DetallesFacturas detallesFacturas = new DetallesFacturas();

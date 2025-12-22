@@ -122,7 +122,13 @@ namespace Essenza.Forms
                 if (txT) throw new ExcepcionesPersonalizadas("El campo de Telefono esta vacio");
                 if (txD) throw new ExcepcionesPersonalizadas("El campo de Direccion esta vacio");
             }
-
+            
+            if(!txtNamesE.Text.All(c => char.IsLetter(c) || c == ' ')) 
+                throw new ExcepcionesPersonalizadas("El campo de Nombre tiene caracteres no validos\nInserte solo letras.");
+            if (!txtLstNamesE.Text.All(c => char.IsLetter(c) || c == ' '))
+                throw new ExcepcionesPersonalizadas("El campo de Apellido tiene caracteres no validos\nInserte solo letras.");
+            if (txtPhoneE.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Telefono tiene caracteres no validos\nInserte un Telefono valido (000) 000-0000.");
         }
         //Boton de registrar
         private void BuRegister_Click(object sender, EventArgs e)

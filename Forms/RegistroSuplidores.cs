@@ -108,6 +108,12 @@ namespace Essenza.Forms
                 if (tx4) throw new ExcepcionesPersonalizadas("El campo de Direccion esta vacio");
                 if (tx5) throw new ExcepcionesPersonalizadas("El campo de RNC esta vacio");
             }
+            if (!txtNamesS.Text.All(c => char.IsLetter(c) || c == ' '))
+                throw new ExcepcionesPersonalizadas("El campo de Nombre tiene caracteres no validos\nInserte solo Letras.");
+            if (txtPhoneS.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de Telefono tiene caracteres no validos\nInserte un Telefono valido (000) 000-0000.");
+            if (txtRNC.Text.All(char.IsLetter))
+                throw new ExcepcionesPersonalizadas("El campo de RNC tiene caracteres no validos\nInserte un RNC valido 001-0000001-1.");
         }
         //Boton de registrar
         private void BuRegisterSuplidor_Click(object sender, EventArgs e)
@@ -116,6 +122,10 @@ namespace Essenza.Forms
             {
                 if(String.IsNullOrWhiteSpace(txtIdS.Text))
                 {
+                    if(String.IsNullOrWhiteSpace(txtRNC.Text))
+                    {
+                        txtRNC.Text = "0";
+                    }
                     Excepciones();
 
                     var mensaje = MessageBox.Show($"¿Desea registrar este suplidor?", "Registro de Suplidores",
@@ -147,7 +157,7 @@ namespace Essenza.Forms
                             suplidores.direccion = txtDirectionS.Text;
                             suplidores.id_pais = Convert.ToInt32(cbxPaisesS.SelectedValue);
                             suplidores.id_estado = Convert.ToInt32(cbxEstadoS.SelectedValue);
-                            suplidores.RNC = "0";
+                            suplidores.RNC = txtRNC.Text;
                             Suplidores.AgregarSuplidor(suplidores);
                             MessageBox.Show($"Suplidor registrado con exito!", "Registro de Suplidores",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);

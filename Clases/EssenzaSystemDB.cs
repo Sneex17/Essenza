@@ -16,12 +16,10 @@ namespace Essenza.Clases
         {
             try
             {
-                //SqlConnection ConexionDB = new SqlConnection("Data Source=DESKTOP-5F1MSU0;Initial Catalog=essenza_system_db;" +
-                //"Integrated Security=True;TrustServerCertificate=True");
+              
 
                 SqlConnection ConexionDB = new SqlConnection("Data Source=DESKTOP-5F1MSU0;Initial " +
                     "Catalog=essenza_system_db;User ID=sa;Password=sa");
-
 
 
                 ConexionDB.Open();

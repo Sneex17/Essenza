@@ -34,10 +34,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plDock = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BuFechaCustom = new System.Windows.Forms.Button();
+            this.dateFechaHasta = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateFechaDesde = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.BuEsteA = new System.Windows.Forms.Button();
             this.BuEsteM = new System.Windows.Forms.Button();
             this.BuHoy = new System.Windows.Forms.Button();
-            this.dateFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.BuGeneralReporte = new System.Windows.Forms.Button();
             this.groupBoxDetallesFacturas = new System.Windows.Forms.GroupBox();
             this.dataDetallesFacturas = new System.Windows.Forms.DataGridView();
@@ -47,10 +51,6 @@
             this.plTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateFechaHasta = new System.Windows.Forms.DateTimePicker();
-            this.BuFechaCustom = new System.Windows.Forms.Button();
             this.plDock.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxDetallesFacturas.SuspendLayout();
@@ -93,6 +93,54 @@
             this.groupBox1.TabIndex = 90;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reportes por";
+            // 
+            // BuFechaCustom
+            // 
+            this.BuFechaCustom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuFechaCustom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
+            this.BuFechaCustom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BuFechaCustom.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuFechaCustom.ForeColor = System.Drawing.Color.White;
+            this.BuFechaCustom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuFechaCustom.Location = new System.Drawing.Point(74, 97);
+            this.BuFechaCustom.Name = "BuFechaCustom";
+            this.BuFechaCustom.Size = new System.Drawing.Size(243, 29);
+            this.BuFechaCustom.TabIndex = 98;
+            this.BuFechaCustom.Text = "Aplicar";
+            this.BuFechaCustom.UseVisualStyleBackColor = false;
+            this.BuFechaCustom.Click += new System.EventHandler(this.BuFechaCustom_Click);
+            // 
+            // dateFechaHasta
+            // 
+            this.dateFechaHasta.Location = new System.Drawing.Point(74, 66);
+            this.dateFechaHasta.Name = "dateFechaHasta";
+            this.dateFechaHasta.Size = new System.Drawing.Size(243, 23);
+            this.dateFechaHasta.TabIndex = 97;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 18);
+            this.label3.TabIndex = 96;
+            this.label3.Text = "Hasta";
+            // 
+            // dateFechaDesde
+            // 
+            this.dateFechaDesde.Location = new System.Drawing.Point(74, 34);
+            this.dateFechaDesde.Name = "dateFechaDesde";
+            this.dateFechaDesde.Size = new System.Drawing.Size(243, 23);
+            this.dateFechaDesde.TabIndex = 89;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 18);
+            this.label1.TabIndex = 95;
+            this.label1.Text = "Desde";
             // 
             // BuEsteA
             // 
@@ -142,13 +190,6 @@
             this.BuHoy.UseVisualStyleBackColor = false;
             this.BuHoy.Click += new System.EventHandler(this.BuHoy_Click);
             // 
-            // dateFechaDesde
-            // 
-            this.dateFechaDesde.Location = new System.Drawing.Point(74, 34);
-            this.dateFechaDesde.Name = "dateFechaDesde";
-            this.dateFechaDesde.Size = new System.Drawing.Size(243, 23);
-            this.dateFechaDesde.TabIndex = 89;
-            // 
             // BuGeneralReporte
             // 
             this.BuGeneralReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -197,7 +238,7 @@
             this.dataDetallesFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Info;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -241,7 +282,7 @@
             this.dataFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Info;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -306,47 +347,6 @@
             this.label2.Size = new System.Drawing.Size(175, 22);
             this.label2.TabIndex = 68;
             this.label2.Text = "Reportes de Ventas";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 18);
-            this.label1.TabIndex = 95;
-            this.label1.Text = "Desde";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 18);
-            this.label3.TabIndex = 96;
-            this.label3.Text = "Hasta";
-            // 
-            // dateFechaHasta
-            // 
-            this.dateFechaHasta.Location = new System.Drawing.Point(74, 66);
-            this.dateFechaHasta.Name = "dateFechaHasta";
-            this.dateFechaHasta.Size = new System.Drawing.Size(243, 23);
-            this.dateFechaHasta.TabIndex = 97;
-            // 
-            // BuFechaCustom
-            // 
-            this.BuFechaCustom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuFechaCustom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(73)))), ((int)(((byte)(135)))));
-            this.BuFechaCustom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BuFechaCustom.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuFechaCustom.ForeColor = System.Drawing.Color.White;
-            this.BuFechaCustom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuFechaCustom.Location = new System.Drawing.Point(74, 97);
-            this.BuFechaCustom.Name = "BuFechaCustom";
-            this.BuFechaCustom.Size = new System.Drawing.Size(243, 29);
-            this.BuFechaCustom.TabIndex = 98;
-            this.BuFechaCustom.Text = "Aplicar";
-            this.BuFechaCustom.UseVisualStyleBackColor = false;
-            this.BuFechaCustom.Click += new System.EventHandler(this.BuFechaCustom_Click);
             // 
             // ReportesVentas
             // 

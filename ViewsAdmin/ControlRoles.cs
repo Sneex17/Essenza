@@ -1,4 +1,5 @@
 ﻿using Essenza.Clases;
+using Essenza.ClasesAR;
 using Microsoft.ReportingServices.ReportProcessing.ReportObjectModel;
 using System;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ namespace Essenza.ViewsAdmin
             if(id != null)
                 rol.id_rol = Convert.ToInt32(id);  
         }
-
+        //Datos del rol
         private void DatosRol()
         {
             int id = rol.id_rol;
@@ -42,11 +43,29 @@ namespace Essenza.ViewsAdmin
                 txtRol.Text = u.rol.ToString();  
             }
         }
+
+        //Control de excepciones
+        private void Excepciones()
+        {
+            bool txR;
+
+            txR = String.IsNullOrWhiteSpace(txtRol.Text);
+
+            if (txR) throw new ExcepcionesPersonalizadas("El campo de Descripcion de roles esta vacio");
+
+            if (!txtRol.Text.All(c => char.IsLetter(c) || c == ' '))
+                throw new ExcepcionesPersonalizadas("El campo de Descripcion de roles tiene caracteres no validos\nInserte solo letras.");
+        }
+        //Boton de guardar
         private void BuGuardar_Click(object sender, EventArgs e)
         {
             try
             {
-                if(String.IsNullOrWhiteSpace(txtIdRol.Text))
+
+                Excepciones();
+
+
+                if (String.IsNullOrWhiteSpace(txtIdRol.Text))
                 {
                     var Mensaje = MessageBox.Show($"¿Desea agregar este rol de usuario?", "Registro de Roles",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -81,9 +100,15 @@ namespace Essenza.ViewsAdmin
                 }
 
             }
+            catch (ExcepcionesPersonalizadas exp)
+            {
+                MessageBox.Show($"{exp.Message}", "Informacion",
+                           MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             catch (Exception ex)
             {
-
+                MessageBox.Show($"{ex.Message}", "Informacion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
